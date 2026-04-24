@@ -27,8 +27,8 @@ const contactDetails = [
 
 export default function ContactHeroSection() {
   return (
-    <section className="w-full bg-[#F2F4F8]">
-      <div className="mx-auto w-full max-w-[1440px] px-[34px]">
+    <section className="w-full min-h-screen flex items-center bg-[#F2F4F8]">
+      <div className="w-full mx-auto max-w-[1440px] px-[34px]">
 
         {/* Hero banner */}
         <motion.div 

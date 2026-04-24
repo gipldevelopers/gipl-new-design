@@ -47,8 +47,8 @@ export default function ContactSection() {
   };
 
   return (
-    <section className="w-full bg-[#F7F9FE] py-[80px]">
-      <div className="mx-auto max-w-[1440px] px-[34px]">
+    <section className="w-full min-h-screen flex items-center bg-[#F7F9FE] py-[80px]">
+      <div className="w-full mx-auto max-w-[1440px] px-[34px]">
         <motion.div 
           className="bg-[#0A2347] rounded-[20px] overflow-hidden"
           initial={{ opacity: 0, y: 30 }}

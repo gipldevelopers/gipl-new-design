@@ -59,8 +59,8 @@ export default function CaseStudies() {
   };
 
   return (
-    <section className="w-full bg-[#F7F9FE] py-[80px]">
-      <div className="mx-auto max-w-[1440px] px-[34px]">
+    <section className="w-full min-h-screen flex items-center bg-[#F7F9FE] py-[80px]">
+      <div className="w-full mx-auto max-w-[1440px] px-[34px]">
         <motion.div 
           className="flex w-full items-end justify-between mb-[60px]"
           initial={{ opacity: 0, y: 30 }}

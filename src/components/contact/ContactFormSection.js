@@ -77,8 +77,8 @@ export default function ContactFormSection() {
   };
 
   return (
-    <section className="w-full bg-[#F2F4F8] py-[72px]">
-      <div className="mx-auto w-full max-w-[1440px] px-[34px]">
+    <section className="w-full min-h-screen flex items-center bg-[#F2F4F8] py-[72px]">
+      <div className="w-full mx-auto max-w-[1440px] px-[34px]">
         <motion.h2 
           className="text-center text-[40px] font-[700] leading-[1.2] tracking-[-0.03em] text-[#1D3557]"
           initial={{ opacity: 0, y: 20 }}
