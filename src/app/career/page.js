@@ -11,7 +11,7 @@ export default function CareerPage() {
   return (
     <>
       <Navbar />
-      <main className="w-full bg-[#F5F7FB]">
+      <main className="w-full bg-[#F5F7FB] overflow-x-hidden">
         <CareerPageSections />
       </main>
       <Footer />

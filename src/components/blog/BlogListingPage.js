@@ -85,7 +85,7 @@ export default function BlogListingPage() {
   const featuredContent = getFeaturedContent();
 
   return (
-    <main className="w-full bg-[#F5F7FB]">
+    <main className="w-full bg-[#F5F7FB] overflow-x-hidden">
       {/* Hero Section with Dynamic Content */}
       <section className="w-full bg-white">
         <div className="mx-auto w-full max-w-[1440px] px-[34px] py-[60px]">
