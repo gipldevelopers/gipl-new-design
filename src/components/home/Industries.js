@@ -23,7 +23,7 @@ const columns = [
     {
       title: "Insurance",
       icon: "/home/home_images/insurance-icon.png",
-      image: "/home/home_images/insurance-bg.jpg",
+      image: "/home/home_images/insurance-1-bg.jpg",
       className: "",
     },
     {
