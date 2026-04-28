@@ -6,7 +6,7 @@ export default function ContactPage() {
   return (
     <>
       <Navbar />
-      <main className="w-full bg-[#F2F4F8]">
+      <main className="w-full bg-[#F2F4F8] overflow-x-hidden">
         <ContactPageSections />
       </main>
       <Footer />

@@ -34,9 +34,9 @@ function ArrowUpRightIcon({ className = "" }) {
 
 export default function Hero() {
   return (
-    <section className="w-full bg-[linear-gradient(93.36deg,#0A1F3B_0.52%,#08254D_54.86%,#07234A_100%)] min-h-screen flex items-center justify-center overflow-hidden">
-      <div className="home-section-container flex w-full items-center justify-between gap-8 py-20">
-        <motion.div 
+    <section className="w-full bg-[linear-gradient(93.36deg,#0A1F3B_0.52%,#08254D_54.86%,#07234A_100%)] min-h-screen flex items-center justify-center overflow-x-clip">
+      <div className="home-section-container flex flex-wrap w-full items-center justify-between gap-12 py-20 ">
+        <motion.div
           className="flex-1"
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -56,7 +56,7 @@ export default function Hero() {
             </span>
           </h1>
 
-          <motion.p 
+          <motion.p
             className="mt-[30px] max-w-[600px] text-[22px] font-normal leading-[1.4] tracking-[-0.03em] text-white/90"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -71,7 +71,7 @@ export default function Hero() {
             </span>
           </motion.p>
 
-          <motion.div 
+          <motion.div
             className="mt-[40px] flex items-center gap-[20px]"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -99,7 +99,7 @@ export default function Hero() {
           </motion.div>
         </motion.div>
 
-        <motion.div 
+        <motion.div
           className="relative h-[500px] w-[500px] shrink-0"
           initial={{ opacity: 0, x: 30 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -116,7 +116,7 @@ export default function Hero() {
             />
           </div>
 
-          <motion.div 
+          <motion.div
             className="absolute bottom-[-30px] left-[-30px] flex h-[100px] w-[260px] items-center gap-[15px] rounded-[18px] bg-[#C9CDD3] px-6 shadow-[0_18px_45px_rgba(0,0,0,0.22)]"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}

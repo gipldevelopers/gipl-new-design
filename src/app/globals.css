@@ -16,9 +16,8 @@ html,
 body {
   background: var(--background);
   color: var(--foreground);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
+  max-width: 100%;
+  position: relative;
 }
 
 .main-container {
@@ -29,6 +28,7 @@ body {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
+
 }
 
 .home-section-container {
@@ -39,11 +39,11 @@ body {
   box-sizing: border-box;
 }
 
-.home-page > section {
+.home-page>section {
   width: 100%;
 }
 
-.home-page > section > .home-section-container {
+.home-page>section>.home-section-container {
   width: min(100%, 1440px);
 }
 

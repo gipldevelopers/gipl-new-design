@@ -40,7 +40,7 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${poppins.variable} font-sans h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col overflow-x-hidden">{children}</body>
     </html>
   );
 }
