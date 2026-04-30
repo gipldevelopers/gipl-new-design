@@ -8,19 +8,19 @@ import Link from "next/link";
 const solutions = [
   {
     title: "Customer Management",
-    icon: "/home/home_images/settings_1.svg",
+    icon: "/home/home_images/customer-management-icon.png",
   },
   {
     title: "Sales Management",
-    icon: "/home/home_images/Frame_(3).svg",
+    icon: "/home/home_images/sales-management-icon.png",
   },
   {
     title: "Business Intelligence",
-    icon: "/home/home_images/Frame_(1).svg",
+    icon: "/home/home_images/business-intelligence-icon.png",
   },
   {
     title: "Accounting Integration",
-    icon: "/home/home_images/Frame_(4).svg",
+    icon: "/home/home_images/accounting-integration-icon.png",
   },
 ];
 
@@ -56,7 +56,7 @@ export default function EngineeringSolutions() {
   return (
     <section className="w-full bg-[#F7F9FE] min-h-screen flex items-center justify-center py-20 overflow-hidden">
       <div className="home-section-container w-full">
-        <motion.div 
+        <motion.div
           className="flex w-full items-end justify-between"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -85,7 +85,7 @@ export default function EngineeringSolutions() {
           </motion.div>
         </motion.div>
 
-        <motion.div 
+        <motion.div
           className="mt-12 grid w-full grid-cols-4 gap-6"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}

@@ -1,12 +1,13 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function ServicesSection() {
   return (
     <section className="w-full bg-[#F7F9FE] py-[80px]">
       <div className="mx-auto max-w-[1440px] px-[34px]">
-        <motion.div 
+        <motion.div
           className="flex justify-between items-start mb-[60px]"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -24,7 +25,7 @@ export default function ServicesSection() {
           <button className="bg-[#5B73F7] text-white px-[28px] py-[14px] rounded-full text-[16px] font-[600] flex items-center gap-[8px] hover:bg-[#4F6EF7] transition-colors">
             Start your project
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M6 12L10 8L6 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              <path d="M6 12L10 8L6 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </button>
         </motion.div>
@@ -32,7 +33,7 @@ export default function ServicesSection() {
         {/* Top Row - 2 cards */}
         <div className="grid grid-cols-5 gap-[24px] mb-[24px]">
           {/* Custom Software Development - Takes 3 columns */}
-          <motion.div 
+          <motion.div
             className="col-span-3 bg-[#1A2332] rounded-[20px] p-[40px] text-white relative overflow-hidden h-[240px] flex flex-col justify-center"
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -41,9 +42,9 @@ export default function ServicesSection() {
             whileHover={{ scale: 1.02 }}
           >
             <div className="absolute inset-0">
-              <img 
-                src="/hire-us/243bbc3eaf9933e3a8dfd6eb280e396df46e86d1.png" 
-                alt="Code background" 
+              <img
+                src="/hire-us/243bbc3eaf9933e3a8dfd6eb280e396df46e86d1.png"
+                alt="Code background"
                 className="w-full h-full object-cover opacity-50"
               />
             </div>
@@ -58,7 +59,7 @@ export default function ServicesSection() {
           </motion.div>
 
           {/* Mobile Apps - Takes 2 columns */}
-          <motion.div 
+          <motion.div
             className="col-span-2 bg-[#5B73F7] rounded-[20px] p-[40px] text-white h-[240px] flex flex-col justify-center"
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -67,10 +68,7 @@ export default function ServicesSection() {
             whileHover={{ scale: 1.02 }}
           >
             <div className="w-[48px] h-[48px] bg-white/20 rounded-[12px] flex items-center justify-center mb-[24px]">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="5" y="2" width="14" height="20" rx="2" ry="2" stroke="currentColor" strokeWidth="2"/>
-                <line x1="12" y1="18" x2="12.01" y2="18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>
+              <Image src="/hire-us/mobile.png" alt="Mobile Apps" width={24} height={24} className="object-contain brightness-0 invert" />
             </div>
             <h3 className="text-[32px] font-[700] mb-[16px]">
               Mobile Apps
@@ -84,7 +82,7 @@ export default function ServicesSection() {
         {/* Bottom Row - 3 cards */}
         <div className="grid grid-cols-5 gap-[24px]">
           {/* Cloud Solutions - Takes 2 columns */}
-          <motion.div 
+          <motion.div
             className="col-span-2 bg-[#E6EAFF] rounded-[20px] p-[40px] h-[280px] flex flex-col justify-center"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -93,9 +91,7 @@ export default function ServicesSection() {
             whileHover={{ scale: 1.02 }}
           >
             <div className="w-[48px] h-[48px] bg-[#5B73F7]/20 rounded-[12px] flex items-center justify-center mb-[24px]">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z" stroke="#5B73F7" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>
+              <Image src="/hire-us/cloud.png" alt="Cloud Solutions" width={24} height={24} className="object-contain" />
             </div>
             <h3 className="text-[24px] font-[700] text-[#0F172A] mb-[12px]">
               Cloud Solutions
@@ -106,7 +102,7 @@ export default function ServicesSection() {
           </motion.div>
 
           {/* UI/UX Strategy - Takes 2 columns */}
-          <motion.div 
+          <motion.div
             className="col-span-2 bg-white rounded-[20px] p-[40px] h-[280px] flex flex-col justify-center"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -131,7 +127,7 @@ export default function ServicesSection() {
           </motion.div>
 
           {/* UI/UX Image - Takes 1 column */}
-          <motion.div 
+          <motion.div
             className="col-span-1 bg-[#6B8E7F] rounded-[20px] flex items-center justify-center h-[280px] overflow-hidden"
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
@@ -139,9 +135,9 @@ export default function ServicesSection() {
             viewport={{ once: false }}
             whileHover={{ scale: 1.05 }}
           >
-            <img 
-              src="/hire-us/d38a7fe648846fac21bcac9c7f47b0df8c15fa07.jpg" 
-              alt="UI/UX Design" 
+            <img
+              src="/hire-us/d38a7fe648846fac21bcac9c7f47b0df8c15fa07.jpg"
+              alt="UI/UX Design"
               className="w-full h-full object-cover"
             />
           </motion.div>

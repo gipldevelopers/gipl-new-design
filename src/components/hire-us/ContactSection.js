@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function ContactSection() {
   const [formData, setFormData] = useState({
@@ -31,7 +32,7 @@ export default function ContactSection() {
     try {
       // Here you would typically send the data to your backend
       await new Promise(resolve => setTimeout(resolve, 1000));
-      
+
       setSubmitMessage("Thank you! We'll get back to you within 24 hours.");
       setFormData({
         fullName: "",
@@ -49,7 +50,7 @@ export default function ContactSection() {
   return (
     <section className="w-full min-h-screen flex items-center bg-[#F7F9FE] py-[80px]">
       <div className="w-full mx-auto max-w-[1440px] px-[34px]">
-        <motion.div 
+        <motion.div
           className="bg-[#0A2347] rounded-[20px] overflow-hidden"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -58,7 +59,7 @@ export default function ContactSection() {
         >
           <div className="grid grid-cols-2 items-stretch">
             {/* Left Side - Contact Info */}
-            <motion.div 
+            <motion.div
               className="p-[60px] text-white flex flex-col justify-center"
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -73,7 +74,7 @@ export default function ContactSection() {
               </p>
 
               <div className="space-y-[24px]">
-                <motion.div 
+                <motion.div
                   className="flex items-center gap-[16px]"
                   initial={{ opacity: 0, x: -20 }}
                   whileInView={{ opacity: 1, x: 0 }}
@@ -81,10 +82,7 @@ export default function ContactSection() {
                   viewport={{ once: false }}
                 >
                   <div className="w-[48px] h-[48px] bg-[#2F2C8F] rounded-[12px] flex items-center justify-center flex-shrink-0">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M3 4L9 9L15 4" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                      <path d="M2 4H18V16C18 16.5304 17.7893 17.0391 17.4142 17.4142C17.0391 17.7893 16.5304 18 16 18H4C3.46957 18 2.96086 17.7893 2.58579 17.4142C2.21071 17.0391 2 16.5304 2 16V4Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                    </svg>
+                    <Image src="/hire-us/contact.png" alt="Email Us" width={20} height={20} className="object-contain brightness-0 invert" />
                   </div>
                   <div>
                     <div className="text-[16px] font-[600] mb-[4px]">Email Us</div>
@@ -92,7 +90,7 @@ export default function ContactSection() {
                   </div>
                 </motion.div>
 
-                <motion.div 
+                <motion.div
                   className="flex items-center gap-[16px]"
                   initial={{ opacity: 0, x: -20 }}
                   whileInView={{ opacity: 1, x: 0 }}
@@ -100,9 +98,7 @@ export default function ContactSection() {
                   viewport={{ once: false }}
                 >
                   <div className="w-[48px] h-[48px] bg-[#2F2C8F] rounded-[12px] flex items-center justify-center flex-shrink-0">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M2 3H6L8 8L5.5 9.5C6.57096 11.6715 8.32855 13.429 10.5 14.5L12 12L17 14V18C17 18.5304 16.7893 19.0391 16.4142 19.4142C16.0391 19.7893 15.5304 20 15 20C11.4 20 8.1 18.6 5.6 16.1C3.4 13.9 2 10.6 2 7C2 6.46957 2.21071 5.96086 2.58579 5.58579C2.96086 5.21071 3.46957 5 4 5H2Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                    </svg>
+                    <Image src="/hire-us/phone.png" alt="Call Anytime" width={20} height={20} className="object-contain brightness-0 invert" />
                   </div>
                   <div>
                     <div className="text-[16px] font-[600] mb-[4px]">Call Anytime</div>
@@ -110,7 +106,7 @@ export default function ContactSection() {
                   </div>
                 </motion.div>
 
-                <motion.div 
+                <motion.div
                   className="flex items-start gap-[16px]"
                   initial={{ opacity: 0, x: -20 }}
                   whileInView={{ opacity: 1, x: 0 }}
@@ -118,10 +114,7 @@ export default function ContactSection() {
                   viewport={{ once: false }}
                 >
                   <div className="w-[48px] h-[48px] bg-[#2F2C8F] rounded-[12px] flex items-center justify-center flex-shrink-0">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M10 10C11.1046 10 12 9.10457 12 8C12 6.89543 11.1046 6 10 6C8.89543 6 8 6.89543 8 8C8 9.10457 8.89543 10 10 10Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                      <path d="M10 1C7.79086 1 6 2.79086 6 5C6 8 10 14 10 14S14 8 14 5C14 2.79086 12.2091 1 10 1Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                    </svg>
+                    <Image src="/hire-us/location.png" alt="Office Location" width={20} height={20} className="object-contain brightness-0 invert" />
                   </div>
                   <div>
                     <div className="text-[16px] font-[600] mb-[4px]">Office Location</div>
@@ -135,7 +128,7 @@ export default function ContactSection() {
             </motion.div>
 
             {/* Right Side - Contact Form */}
-            <motion.div 
+            <motion.div
               className="bg-white p-[60px] flex flex-col justify-center"
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -178,7 +171,7 @@ export default function ContactSection() {
                   <label className="block text-[14px] font-[500] text-[#0F172A] mb-[8px]">
                     Service Type
                   </label>
-                  <select 
+                  <select
                     name="serviceType"
                     value={formData.serviceType}
                     onChange={handleChange}

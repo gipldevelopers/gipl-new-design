@@ -86,11 +86,11 @@ function IndustryCard({ title, icon, image, className }) {
     >
       {/* Background Image - Hidden by default, shown ONLY on hover */}
       <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-        <Image 
-          src={image} 
-          alt={title.replace("\n", " ")} 
-          fill 
-          className="object-cover" 
+        <Image
+          src={image}
+          alt={title.replace("\n", " ")}
+          fill
+          className="object-cover"
         />
         <div className="absolute inset-0 bg-[rgba(21,32,52,0.3)]" />
       </div>
@@ -121,7 +121,7 @@ export default function Industries() {
   return (
     <section className="w-full bg-[#F7F9FE] min-h-screen flex items-center justify-center py-20 overflow-hidden">
       <div className="home-section-container flex w-full items-center justify-between gap-12">
-        <motion.div 
+        <motion.div
           className="max-w-[500px]"
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -136,7 +136,7 @@ export default function Industries() {
           </p>
         </motion.div>
 
-        <motion.div 
+        <motion.div
           className="flex gap-6"
           initial={{ opacity: 0, x: 30 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -144,8 +144,8 @@ export default function Industries() {
           viewport={{ once: false }}
         >
           {columns.map((column, index) => (
-            <motion.div 
-              key={index} 
+            <motion.div
+              key={index}
               className="flex flex-col gap-6"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}

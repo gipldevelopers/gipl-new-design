@@ -8,25 +8,25 @@ const cards = [
     title: "Discovery",
     description:
       "Deep-dive into business logic, user pain points, and competitive analysis.",
-    icon: "/technology/Icon (5).svg",
+    icon: "/technology/discovery.png",
   },
   {
     title: "Design",
     description:
       "User-centric UI frameworks and high-end visual systems aligned with brand identity.",
-    icon: "/technology/Icon (1).svg",
+    icon: "/technology/design.png",
   },
   {
     title: "Develop",
     description:
       "Clear code architecture, robust backend APIs, and seamless frontend integration.",
-    icon: "/technology/Icon (2).svg",
+    icon: "/technology/develop.png",
   },
   {
     title: "Deploy",
     description:
       "CI/CD pipelines, cloud orchestration, and rigorous post-launch monitoring.",
-    icon: "/technology/Icon (4).svg",
+    icon: "/technology/deploy.png",
   },
 ];
 
@@ -34,7 +34,7 @@ export default function TechnologyProcessSection() {
   return (
     <section className="w-full bg-[#F3F5F9] py-[72px]">
       <div className="mx-auto w-full max-w-[1440px] px-[34px]">
-        <motion.h2 
+        <motion.h2
           className="text-center text-[40px] font-[700] leading-[1.2] tracking-[-0.03em] text-[#1F2937]"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -43,7 +43,7 @@ export default function TechnologyProcessSection() {
         >
           Our Proven Process
         </motion.h2>
-        <motion.p 
+        <motion.p
           className="mt-[16px] text-center text-[18px] font-[400] leading-[1.6] text-[#7B8794] max-w-[560px] mx-auto"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -65,7 +65,7 @@ export default function TechnologyProcessSection() {
               viewport={{ once: false }}
               whileHover={{ y: -5 }}
             >
-              <motion.div 
+              <motion.div
                 className="flex h-[52px] w-[52px] items-center justify-center rounded-[14px] bg-[#DDF1FF]"
                 whileHover={{ scale: 1.1 }}
               >

@@ -11,7 +11,7 @@ const miniServices = [
       "Robust blueprinting for microservices",
       "and distributed systems.",
     ],
-    icon: "/home/home_images/Icon_(1).svg",
+    icon: "/home/home_images/mobile-icon.png",
   },
   {
     title: "Business Automation",
@@ -20,7 +20,7 @@ const miniServices = [
       "web platforms built with modern",
       "stacks.",
     ],
-    icon: "/home/home_images/automation_1.svg",
+    icon: "/home/home_images/automation-icon.png",
   },
   {
     title: "ERP Solutions",
@@ -29,7 +29,7 @@ const miniServices = [
       "integrated at every layer of",
       "development.",
     ],
-    icon: "/home/home_images/Icon_(3).svg",
+    icon: "/home/home_images/erp-icon.png",
   },
 ];
 
@@ -65,7 +65,7 @@ export default function ServiceGrid() {
   return (
     <section className="w-full bg-[#EDF1F7] min-h-screen flex items-center justify-center py-20 overflow-hidden">
       <div className="home-section-container w-full">
-        <motion.div 
+        <motion.div
           className="flex w-full items-end justify-between"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -95,7 +95,7 @@ export default function ServiceGrid() {
         </motion.div>
 
         <div className="mt-12 grid w-full grid-cols-3 gap-6">
-          <motion.article 
+          <motion.article
             className="col-span-2 rounded-[24px] bg-white p-10 flex flex-col justify-between"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -105,7 +105,7 @@ export default function ServiceGrid() {
           >
             <div>
               <Image
-                src="/home/home_images/Icon_(2).svg"
+                src="/home/home_images/web-icon.png"
                 alt="Web development"
                 width={32}
                 height={32}
@@ -131,7 +131,7 @@ export default function ServiceGrid() {
             </div>
           </motion.article>
 
-          <motion.article 
+          <motion.article
             className="col-span-1 rounded-[24px] bg-[linear-gradient(180deg,#0F2B57_0%,#08234A_100%)] p-10 text-white flex flex-col"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -140,7 +140,7 @@ export default function ServiceGrid() {
             whileHover={{ y: -5 }}
           >
             <Image
-              src="/home/home_images/software-development_1.svg"
+              src="/home/home_images/custom-icon.png"
               alt="Custom software development"
               width={32}
               height={32}

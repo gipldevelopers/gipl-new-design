@@ -7,7 +7,7 @@ export default function ServiceDetailWhyChooseSection({ items }) {
   return (
     <section className="w-full bg-[#EEF1F6] py-[72px]">
       <div className="mx-auto w-full max-w-[1440px] px-[34px]">
-        <motion.h2 
+        <motion.h2
           className="text-center text-[40px] font-[700] leading-[1.2] tracking-[-0.03em] text-[#2E3642]"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -28,12 +28,12 @@ export default function ServiceDetailWhyChooseSection({ items }) {
               viewport={{ once: false }}
               whileHover={{ y: -5 }}
             >
-              <motion.div 
+              <motion.div
                 className="flex h-[52px] w-[52px] items-center justify-center rounded-[12px] bg-[#EEF2FF]"
                 whileHover={{ scale: 1.1 }}
               >
                 <Image
-                  src="/service-detailed/Frame (5).svg"
+                  src="/service-detailed/service-detail.png"
                   alt=""
                   width={24}
                   height={24}

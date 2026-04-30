@@ -1,18 +1,19 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 const serviceCards = [
-  { title: "Software Engineering", href: "/service/software-engineering" },
-  { title: "Web Development", href: "/service/web-development" },
-  { title: "AI & Automation", href: "/service/ai-automation" },
-  { title: "Data Solutions", href: "/service/data-solutions" },
-  { title: "Digital Marketing", href: "/service/digital-marketing" },
-  { title: "UI/UX Design", href: "/service/ui-ux-design" },
-  { title: "Cloud Solutions", href: "/service/cloud-solutions" },
-  { title: "eCommerce Solutions", href: "/service/ecommerce-solutions" },
-  { title: "Mobile App Development", href: "/service/mobile-app-development" },
+  { title: "Software Engineering", href: "/service/software-engineering", imgSrc: "/service/software.png" },
+  { title: "Web Development", href: "/service/web-development", imgSrc: "/service/web.png" },
+  { title: "AI & Automation", href: "/service/ai-automation", imgSrc: "/service/ai.png" },
+  { title: "Data Solutions", href: "/service/data-solutions", imgSrc: "/service/data-solution.png" },
+  { title: "Digital Marketing", href: "/service/digital-marketing", imgSrc: "/service/digital-marketing.png" },
+  { title: "UI/UX Design", href: "/service/ui-ux-design", imgSrc: "/service/ui-ux.png" },
+  { title: "Cloud Solutions", href: "/service/cloud-solutions", imgSrc: "/service/cloud.png" },
+  { title: "eCommerce Solutions", href: "/service/ecommerce-solutions", imgSrc: "/service/ecommerce.png" },
+  { title: "Mobile App Development", href: "/service/mobile-app-development", imgSrc: "/service/mobile-icon.png", imgClassName: "brightness-0 invert" },
 ];
 
 function ServiceCardIcon() {
@@ -74,7 +75,19 @@ export default function ServiceCardsSection() {
               className="rounded-[24px] bg-white px-[32px] pb-[32px] pt-[28px] shadow-[0_2px_12px_rgba(15,23,42,0.05)]"
             >
               <motion.div whileHover={{ scale: 1.1 }}>
-                <ServiceCardIcon />
+                <div className="flex h-[48px] w-[48px] items-center justify-center rounded-[12px] bg-[#1E2A45]">
+                  {item.imgSrc ? (
+                    <Image
+                      src={item.imgSrc}
+                      alt={item.title}
+                      width={24}
+                      height={24}
+                      className={`object-contain ${item.imgClassName || ""}`}
+                    />
+                  ) : (
+                    <ServiceCardIcon />
+                  )}
+                </div>
               </motion.div>
               <h3 className="mt-[20px] text-[20px] font-[700] leading-[1.25] tracking-[-0.02em] text-[#2F3641]">
                 {item.title}
