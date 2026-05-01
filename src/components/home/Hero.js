@@ -34,16 +34,16 @@ function ArrowUpRightIcon({ className = "" }) {
 
 export default function Hero() {
   return (
-    <section className="w-full bg-[linear-gradient(93.36deg,#0A1F3B_0.52%,#08254D_54.86%,#07234A_100%)] min-h-screen flex items-center justify-center overflow-x-clip">
-      <div className="home-section-container flex flex-wrap w-full items-center justify-between gap-12 py-20 ">
+    <section className="w-full bg-[linear-gradient(93.36deg,#0A1F3B_0.52%,#08254D_54.86%,#07234A_100%)] min-h-screen flex items-center justify-center overflow-hidden ">
+      <div className="home-section-container w-full flex flex-col md:flex-row items-center justify-between gap-12 py-12 md:py-0 ">
         <motion.div
-          className="flex-1"
+          className="flex-1 w-full"
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: false }}
         >
-          <h1 className="text-[64px] font-extrabold leading-[1.1] tracking-[-0.04em] text-white">
+          <h1 className="text-3xl sm:text-4xl md:text-[56px] lg:text-[64px] font-[800] leading-[1.2] md:leading-[1.1] tracking-[-0.04em] text-white font-poppins ">
             <span className="block">End-to-End IT</span>
             <span className="block">
               Services That{" "}
@@ -57,7 +57,7 @@ export default function Hero() {
           </h1>
 
           <motion.p
-            className="mt-[30px] max-w-[600px] text-[22px] font-normal leading-[1.4] tracking-[-0.03em] text-white/90"
+            className="mt-6 md:mt-[30px] max-w-[600px] text-base sm:text-lg md:text-[20px] lg:text-[22px] font-normal leading-[1.4] tracking-[-0.03em] text-white/90 font-manrope"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -72,26 +72,26 @@ export default function Hero() {
           </motion.p>
 
           <motion.div
-            className="mt-[40px] flex items-center gap-[20px]"
+            className="mt-8 md:mt-[40px] flex flex-col sm:flex-row items-center gap-[16px] sm:gap-[20px]"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
             viewport={{ once: false }}
           >
-            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="w-full sm:w-auto">
               <Link
                 href="/service"
-                className="inline-flex h-[56px] px-8 items-center justify-center gap-[12px] rounded-full bg-[linear-gradient(90deg,#426AF2_0%,#416BF4_100%)] text-[17px] font-semibold text-white"
+                className="inline-flex w-full sm:w-auto h-12 md:h-[56px] px-8 items-center justify-center gap-[12px] rounded-full bg-[linear-gradient(90deg,#426AF2_0%,#416BF4_100%)] text-[16px] md:text-[17px] font-semibold text-white"
               >
                 Explore Products
                 <ArrowUpRightIcon />
               </Link>
             </motion.div>
 
-            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="w-full sm:w-auto">
               <Link
                 href="/contact"
-                className="inline-flex h-[56px] px-8 items-center justify-center rounded-full border border-white/70 text-[17px] font-medium text-white"
+                className="inline-flex w-full sm:w-auto h-12 md:h-[56px] px-8 items-center justify-center rounded-full border border-white/70 text-[16px] md:text-[17px] font-medium text-white"
               >
                 Contact Us
               </Link>
@@ -99,44 +99,52 @@ export default function Hero() {
           </motion.div>
         </motion.div>
 
+        {/* Right image */}
         <motion.div
-          className="relative h-[500px] w-[500px] shrink-0"
+          className="relative w-full lg:w-[520px] max-w-[520px]"
           initial={{ opacity: 0, x: 30 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
           viewport={{ once: false }}
         >
-          <div className="relative h-full w-full overflow-hidden rounded-[24px] bg-black">
+          <motion.div
+            className="relative overflow-hidden rounded-[24px] bg-black h-[320px] xs:h-[400px] md:h-[480px] w-full"
+            whileHover={{ scale: 1.02 }}
+          >
             <Image
-              src="/home/home_images/35426d19ba38a55a742624ed86c4f5d95b7506e1.png"
-              alt="Abstract digital structure"
+              src="/career/35426d19ba38a55a742624ed86c4f5d95b7506e1.png"
+              alt="Career hero visual"
               fill
               priority
               className="object-cover"
             />
-          </div>
+          </motion.div>
 
           <motion.div
-            className="absolute bottom-[-30px] left-[-30px] flex h-[100px] w-[260px] items-center gap-[15px] rounded-[18px] bg-[#C9CDD3] px-6 shadow-[0_18px_45px_rgba(0,0,0,0.22)]"
+            className="absolute bottom-[-16px] left-[-16px] md:bottom-[-24px] md:left-[-24px] flex h-[72px] md:h-[88px] w-[220px] md:w-[260px] items-center rounded-[16px] bg-[#CFCFD0] pl-4 md:pl-[20px] shadow-[0_10px_24px_rgba(0,0,0,0.12)]"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
+            transition={{ duration: 0.6, delay: 0.5 }}
             viewport={{ once: false }}
+            whileHover={{ y: -5 }}
           >
-            <div className="flex h-[48px] w-[48px] shrink-0 items-center justify-center rounded-[6px] bg-[linear-gradient(180deg,#1EB6EC_0%,#2D348F_100%)]">
+            <motion.div
+              className="flex h-10 md:h-[48px] w-10 md:w-[48px] shrink-0 items-center justify-center rounded-[8px] bg-[linear-gradient(180deg,#18C3F1_0%,#2B3DAA_100%)]"
+              whileHover={{ scale: 1.1 }}
+            >
               <Image
-                src="/icons/Icon.svg"
-                alt="Status"
-                width={24}
-                height={24}
-                className="h-[24px] w-[24px]"
+                src="/career/Icon (9).svg"
+                alt=""
+                width={22}
+                height={22}
+                className="h-5 md:h-[22px] w-5 md:w-[22px]"
               />
-            </div>
-            <div>
-              <p className="text-[10px] font-bold uppercase leading-tight tracking-[0.16em] text-[#2F3850]">
-                SYSTEM STATUS
+            </motion.div>
+            <div className="ml-3 md:ml-[12px]">
+              <p className="text-[9px] md:text-[11px] font-[600] uppercase tracking-[1px] md:tracking-[1.4px] text-[#28344D]">
+                System Status
               </p>
-              <p className="mt-[1px] text-[15px] font-semibold leading-tight text-[#2F3850]">
+              <p className="mt-[2px] md:mt-[3px] text-sm md:text-[15px] font-[600] text-[#1F2937]">
                 100% Operational
               </p>
             </div>
@@ -144,5 +152,6 @@ export default function Hero() {
         </motion.div>
       </div>
     </section>
+
   );
 }

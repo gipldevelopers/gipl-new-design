@@ -65,34 +65,20 @@ function BenefitCard({ icon, title, copy, index }) {
 
 export default function CareerBenefitsSection() {
   return (
-    <section className="w-full bg-white py-[72px]">
-      <div className="w-full px-[34px]">
-        <div className="grid grid-cols-[1fr_1fr_1fr] gap-x-[24px] items-start">
-
-          {/* Column 1 */}
-          <div className="flex flex-col gap-[20px] h-full">
-            <BenefitCard {...benefitCards[0]} index={0} />
-            <BenefitCard {...benefitCards[2]} index={2} />
-            <BenefitCard {...benefitCards[4]} index={4} />
-          </div>
-
-          {/* Column 2 */}
-          <div className="flex flex-col gap-[20px] h-full">
-            <BenefitCard {...benefitCards[1]} index={1} />
-            <BenefitCard {...benefitCards[3]} index={3} />
-            <BenefitCard {...benefitCards[5]} index={5} />
-          </div>
-
-          {/* Column 3 — heading + image */}
+    <section className="w-full bg-white py-12 md:py-[72px]">
+      <div className="mx-auto w-full max-w-[1440px] px-6 md:px-[34px]">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-6 items-start">
+          
+          {/* Heading - Shows first on mobile */}
           <motion.div
-            className="flex flex-col"
+            className="flex flex-col lg:order-3 text-center lg:text-left"
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: false }}
           >
             <motion.h2
-              className="text-[52px] font-[600] leading-[1.1] tracking-[-2px] text-[#1E252B]"
+              className="text-3xl xs:text-4xl md:text-[52px] font-[600] leading-tight md:leading-[1.1] tracking-tight md:tracking-[-2px] text-[#1E252B]"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
@@ -101,7 +87,7 @@ export default function CareerBenefitsSection() {
               Working At GIPL
             </motion.h2>
             <motion.p
-              className="mt-[20px] text-[18px] leading-[1.6] tracking-[-0.3px] text-[#4E565C] font-[400]"
+              className="mt-4 md:mt-[20px] text-base md:text-[18px] leading-relaxed md:leading-[1.6] tracking-tight md:tracking-[-0.3px] text-[#4E565C] font-[400]"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
@@ -112,7 +98,7 @@ export default function CareerBenefitsSection() {
             </motion.p>
 
             <motion.div
-              className="relative mt-[28px] w-full overflow-hidden rounded-[16px] bg-[#0E1116]"
+              className="relative mt-8 md:mt-[28px] w-full overflow-hidden rounded-[16px] bg-[#0E1116] hidden lg:block"
               style={{ aspectRatio: "9/10" }}
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
@@ -128,8 +114,23 @@ export default function CareerBenefitsSection() {
               />
             </motion.div>
           </motion.div>
+
+          {/* Column 1 */}
+          <div className="flex flex-col gap-5 md:gap-[20px] h-full lg:order-1">
+            <BenefitCard {...benefitCards[0]} index={0} />
+            <BenefitCard {...benefitCards[2]} index={2} />
+            <BenefitCard {...benefitCards[4]} index={4} />
+          </div>
+
+          {/* Column 2 */}
+          <div className="flex flex-col gap-5 md:gap-[20px] h-full lg:order-2">
+            <BenefitCard {...benefitCards[1]} index={1} />
+            <BenefitCard {...benefitCards[3]} index={3} />
+            <BenefitCard {...benefitCards[5]} index={5} />
+          </div>
         </div>
       </div>
     </section>
+
   );
 }

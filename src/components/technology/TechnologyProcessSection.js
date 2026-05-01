@@ -32,10 +32,10 @@ const cards = [
 
 export default function TechnologyProcessSection() {
   return (
-    <section className="w-full bg-[#F3F5F9] py-[72px]">
-      <div className="mx-auto w-full max-w-[1440px] px-[34px]">
+    <section className="w-full bg-[#F3F5F9] py-12 md:py-[72px]">
+      <div className="mx-auto w-full max-w-[1440px] px-6 md:px-[34px]">
         <motion.h2
-          className="text-center text-[40px] font-[700] leading-[1.2] tracking-[-0.03em] text-[#1F2937]"
+          className="text-center text-2xl xs:text-3xl md:text-[40px] font-[700] leading-tight md:leading-[1.2] tracking-[-0.03em] text-[#1F2937]"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -44,7 +44,7 @@ export default function TechnologyProcessSection() {
           Our Proven Process
         </motion.h2>
         <motion.p
-          className="mt-[16px] text-center text-[18px] font-[400] leading-[1.6] text-[#7B8794] max-w-[560px] mx-auto"
+          className="mt-4 md:mt-[16px] text-center text-base md:text-[18px] font-[400] leading-relaxed md:leading-[1.6] text-[#7B8794] max-w-[560px] mx-auto"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
@@ -54,11 +54,11 @@ export default function TechnologyProcessSection() {
           delivery every time.
         </motion.p>
 
-        <div className="mt-[48px] grid grid-cols-4 gap-[24px]">
+        <div className="mt-10 md:mt-[48px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-[24px]">
           {cards.map((card, index) => (
             <motion.article
               key={card.title}
-              className="rounded-[20px] bg-white px-[28px] pb-[28px] pt-[24px] shadow-[0_6px_20px_rgba(15,23,42,0.06)]"
+              className="rounded-[20px] bg-white px-6 md:px-[28px] pb-8 md:pb-[28px] pt-7 md:pt-[24px] shadow-[0_6px_20px_rgba(15,23,42,0.06)]"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 + index * 0.1 }}
@@ -78,10 +78,10 @@ export default function TechnologyProcessSection() {
                 />
               </motion.div>
 
-              <h3 className="mt-[20px] text-[22px] font-[700] leading-[1.2] text-[#1F2937]">
+              <h3 className="mt-5 md:mt-[20px] text-lg md:text-[22px] font-[700] leading-tight md:leading-[1.2] text-[#1F2937]">
                 {card.title}
               </h3>
-              <p className="mt-[12px] text-[15px] font-[400] leading-[1.6] text-[#7B8794]">
+              <p className="mt-3 md:mt-[12px] text-sm md:text-[15px] font-[400] leading-relaxed md:leading-[1.6] text-[#7B8794]">
                 {card.description}
               </p>
             </motion.article>
@@ -89,5 +89,6 @@ export default function TechnologyProcessSection() {
         </div>
       </div>
     </section>
+
   );
 }

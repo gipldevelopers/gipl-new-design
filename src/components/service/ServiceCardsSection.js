@@ -61,9 +61,9 @@ function ArrowCircleIcon() {
 
 export default function ServiceCardsSection() {
   return (
-    <section className="w-full bg-[#ECEEF2] py-[72px]">
-      <div className="mx-auto w-full max-w-[1440px] px-[34px]">
-        <div className="grid grid-cols-3 gap-[24px]">
+    <section className="w-full bg-[#ECEEF2] py-12 md:py-[72px]">
+      <div className="mx-auto w-full max-w-[1440px] px-6 md:px-[34px]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-[24px]">
           {serviceCards.map((item, index) => (
             <motion.article
               key={`${item.title}-${index}`}
@@ -72,10 +72,10 @@ export default function ServiceCardsSection() {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: false }}
               whileHover={{ y: -5 }}
-              className="rounded-[24px] bg-white px-[32px] pb-[32px] pt-[28px] shadow-[0_2px_12px_rgba(15,23,42,0.05)]"
+              className="rounded-[24px] bg-white px-6 md:px-[32px] pb-8 md:pb-[32px] pt-7 md:pt-[28px] shadow-[0_2px_12px_rgba(15,23,42,0.05)]"
             >
               <motion.div whileHover={{ scale: 1.1 }}>
-                <div className="flex h-[48px] w-[48px] items-center justify-center rounded-[12px] bg-[#1E2A45]">
+                <div className="flex h-12 w-12 items-center justify-center rounded-[12px] bg-[#1E2A45]">
                   {item.imgSrc ? (
                     <Image
                       src={item.imgSrc}
@@ -89,10 +89,10 @@ export default function ServiceCardsSection() {
                   )}
                 </div>
               </motion.div>
-              <h3 className="mt-[20px] text-[20px] font-[700] leading-[1.25] tracking-[-0.02em] text-[#2F3641]">
+              <h3 className="mt-5 md:mt-[20px] text-lg md:text-[20px] font-[700] leading-tight md:leading-[1.25] tracking-[-0.02em] text-[#2F3641]">
                 {item.title}
               </h3>
-              <p className="mt-[12px] text-[15px] font-[400] leading-[1.6] text-[#4E5663]">
+              <p className="mt-3 md:mt-[12px] text-sm md:text-[15px] font-[400] leading-relaxed md:leading-[1.6] text-[#4E5663]">
                 Our {item.title} services help businesses build secure,
                 scalable, and high-performance applications tailored to their
                 needs. From custom solutions to enterprise platforms.
@@ -100,7 +100,7 @@ export default function ServiceCardsSection() {
               <motion.div whileHover={{ scale: 1.05 }}>
                 <Link
                   href={item.href}
-                  className="mt-[20px] inline-flex items-center gap-[8px] text-[14px] font-[600] leading-[1.2] text-[#2D5BE3] hover:underline"
+                  className="mt-5 md:mt-[20px] inline-flex items-center gap-[8px] text-[14px] font-[600] leading-[1.2] text-[#2D5BE3] hover:underline"
                 >
                   Learn More
                   <ArrowCircleIcon />
@@ -111,5 +111,6 @@ export default function ServiceCardsSection() {
         </div>
       </div>
     </section>
+
   );
 }

@@ -23,7 +23,7 @@ export default function Footer() {
   return (
     <footer className="w-full bg-white pt-[4px]">
       <motion.div 
-        className="relative mx-[4px] overflow-hidden rounded-t-[120px] bg-[linear-gradient(90deg,#12284A_0%,#08224A_52%,#003A61_100%)] text-white"
+        className="relative mx-[4px] overflow-hidden rounded-t-[40px] md:rounded-t-[80px] lg:rounded-t-[120px] bg-[linear-gradient(90deg,#12284A_0%,#08224A_52%,#003A61_100%)] text-white"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
@@ -31,7 +31,7 @@ export default function Footer() {
       >
         <div className="pointer-events-none absolute left-0 top-0 h-full w-full bg-[radial-gradient(circle_at_76%_16%,rgba(25,184,230,0.14),transparent_22%),radial-gradient(circle_at_12%_0%,rgba(255,255,255,0.03),transparent_18%)]" />
 
-        <div className="relative z-10 px-[75px] pb-[25px] pt-[70px]">
+        <div className="relative z-10 px-6 md:px-[75px] pb-10 pt-12 md:pt-16">
           <motion.div 
             className="mx-auto flex max-w-[820px] flex-col items-center text-center"
             initial={{ opacity: 0, y: 30 }}
@@ -40,27 +40,23 @@ export default function Footer() {
             viewport={{ once: false }}
           >
             <motion.h2 
-              className="text-[60px] font-semibold leading-[75px] tracking-[-2.0px] text-white"
+              className="text-3xl md:text-[40px] font-bold leading-tight tracking-tight text-white"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
               viewport={{ once: false }}
             >
-              Ready to Start Your
-              <br />
-              IT Project?
+              Ready to Start Your IT Project?
             </motion.h2>
 
             <motion.p 
-              className="mt-[20px] text-[17px] font-normal leading-[30px] tracking-[-0.18px] text-white"
+              className="mt-4 text-base md:text-[18px] font-normal leading-relaxed text-white/80"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
               viewport={{ once: false }}
             >
               Let&apos;s discuss your business needs and build the perfect IT solution together.
-              <br />
-              We make complex technology simple for your business.
             </motion.p>
 
             <motion.div
@@ -68,20 +64,19 @@ export default function Footer() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.5 }}
               viewport={{ once: false }}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
             >
               <Link
                 href="/contact"
-                className="mt-[30px] inline-flex h-[65px] w-[280px] items-center justify-center rounded-[11px] bg-[#F3F4F8] text-[16px] font-semibold leading-none tracking-[-0.18px] text-[#005676]"
+                className="mt-8 inline-flex h-12 md:h-[54px] px-10 items-center justify-center rounded-xl bg-white text-[16px] font-bold text-[#08224A] shadow-lg transition-all hover:bg-slate-50"
               >
-                Discussion your project
+                Discuss your project
               </Link>
             </motion.div>
           </motion.div>
 
+
           <motion.div 
-            className="mt-[80px] grid grid-cols-[369px_202px_260px_381px] gap-[37px]"
+            className="mt-12 md:mt-16 grid grid-cols-1 lg:grid-cols-4 gap-8 md:gap-[37px]"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
@@ -94,25 +89,24 @@ export default function Footer() {
               transition={{ duration: 0.6, delay: 0.5 }}
               viewport={{ once: false }}
             >
-              <motion.div whileHover={{ scale: 1.05 }}>
-                <Link href="/" className="inline-flex items-center gap-[12px]">
-                  <Image
-                    src="/home/home_images/Group_1688_(2).svg"
-                    alt="Gohil Infotech"
-                    width={42}
-                    height={45}
-                    className="h-[45px] w-[42px]"
-                  />
-                  <div className="flex flex-col leading-none text-white">
-                    <span className="text-[21px] font-semibold uppercase tracking-[-0.5px]">
-                      GOHIL
-                    </span>
-                    <span className="mt-[1px] text-[13px] font-normal uppercase tracking-[-0.1px]">
-                      INFOTECH
-                    </span>
-                  </div>
-                </Link>
-              </motion.div>
+              <Link href="/" className="inline-flex items-center gap-[12px] group">
+                <Image
+                  src="/home/home_images/Group_1688_(2).svg"
+                  alt="Gohil Infotech"
+                  width={40}
+                  height={43}
+                  className="h-[43px] w-[40px] transition-transform group-hover:scale-105"
+                />
+                <div className="flex flex-col leading-none text-white">
+                  <span className="text-[20px] font-bold uppercase tracking-tight">
+                    GOHIL
+                  </span>
+                  <span className="mt-[1px] text-[12px] font-semibold uppercase tracking-widest text-white/80">
+                    INFOTECH
+                  </span>
+                </div>
+              </Link>
+
 
               <motion.p 
                 className="mt-[22px] max-w-[350px] text-[16px] font-normal leading-[26px] tracking-[-0.14px] text-white"
@@ -121,17 +115,11 @@ export default function Footer() {
                 transition={{ duration: 0.6, delay: 0.6 }}
                 viewport={{ once: false }}
               >
-                We build powerful digital experiences that
-                <br />
-                drive growth and innovation for businesses
-                <br />
-                worldwide. Creating tomorrow&apos;s solutions
-                <br />
-                today.
+                We build powerful digital experiences that drive growth and innovation for businesses worldwide. Creating tomorrow&apos;s solutions today.
               </motion.p>
 
               <motion.div 
-                className="mt-[20px] flex h-[50px] w-[368px] overflow-hidden rounded-[5px] bg-white"
+                className="mt-[20px] flex h-[50px] w-full max-w-[368px] overflow-hidden rounded-[5px] bg-white"
                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.7 }}
@@ -142,7 +130,7 @@ export default function Footer() {
                   type="email"
                   placeholder="Email address"
                   id="footer-email"
-                  className="h-full w-[249px] bg-transparent px-[20px] text-[15px] font-normal text-[#70798E] outline-none placeholder:text-[#70798E]"
+                  className="h-full flex-1 min-w-0 bg-transparent px-[20px] text-[15px] font-normal text-[#70798E] outline-none placeholder:text-[#70798E]"
                 />
                 <motion.button
                   type="button"
@@ -164,6 +152,8 @@ export default function Footer() {
               </motion.div>
             </motion.div>
 
+            {/* Quick Links + Services: side-by-side on mobile, individual cols on desktop */}
+            <div className="grid grid-cols-2 gap-6 sm:col-span-1 lg:contents">
             {/* Quick Links Column */}
             <motion.div 
               className="pt-[8px]"
@@ -227,6 +217,7 @@ export default function Footer() {
                 ))}
               </ul>
             </motion.div>
+            </div>
 
             {/* Contact Column */}
             <motion.div 
@@ -315,7 +306,7 @@ export default function Footer() {
             transition={{ duration: 0.6, delay: 0.9 }}
             viewport={{ once: false }}
           >
-            <div className="flex items-center justify-between">
+            <div className="flex flex-col md:flex-row items-center md:items-center justify-between gap-4 text-center md:text-left">
               <motion.p 
                 className="text-[14px] font-normal leading-none tracking-[-0.08px] text-white"
                 initial={{ opacity: 0 }}

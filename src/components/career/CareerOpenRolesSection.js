@@ -65,11 +65,11 @@ export default function CareerOpenRolesSection() {
   }, [activeCategory, query]);
 
   return (
-    <section id="open-roles" className="w-full bg-[#F5F7FB] py-[72px]">
-      <div className="w-full px-[34px]">
+    <section id="open-roles" className="w-full bg-[#F5F7FB] py-12 md:py-[72px]">
+      <div className="mx-auto w-full max-w-[1440px] px-6 md:px-[34px]">
 
         {/* Header row */}
-        <div className="flex items-start justify-between gap-8">
+        <div className="flex flex-col lg:flex-row items-center lg:items-start justify-between gap-8 text-center lg:text-left">
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -77,7 +77,7 @@ export default function CareerOpenRolesSection() {
             viewport={{ once: false }}
           >
             <motion.h2 
-              className="text-[52px] font-[600] leading-none tracking-[-2px] text-[#1F2A44]"
+              className="text-3xl xs:text-4xl md:text-[52px] font-[600] leading-tight md:leading-none tracking-tight md:tracking-[-2px] text-[#1F2A44]"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
@@ -86,7 +86,7 @@ export default function CareerOpenRolesSection() {
               Open Roles
             </motion.h2>
             <motion.p 
-              className="mt-[16px] text-[20px] font-[400] leading-[1.5] tracking-[-0.3px] text-[#374151]"
+              className="mt-4 md:mt-[16px] text-base md:text-[20px] font-[400] leading-relaxed md:leading-[1.5] tracking-tight md:tracking-[-0.3px] text-[#374151]"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
@@ -97,7 +97,7 @@ export default function CareerOpenRolesSection() {
           </motion.div>
 
           <motion.label 
-            className="flex h-[56px] w-[420px] shrink-0 items-center gap-[14px] rounded-full bg-white px-[20px] shadow-[0_2px_12px_rgba(15,23,42,0.06)]"
+            className="flex h-12 md:h-[56px] w-full lg:w-[420px] shrink-0 items-center gap-[14px] rounded-full bg-white px-5 md:px-[20px] shadow-[0_2px_12px_rgba(15,23,42,0.06)]"
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
@@ -116,14 +116,14 @@ export default function CareerOpenRolesSection() {
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               placeholder="Search by role or keyword"
-              className="w-full bg-transparent text-[16px] font-[400] tracking-[-0.2px] text-[#6D7285] outline-none placeholder:text-[#6D7285]"
+              className="w-full bg-transparent text-sm md:text-[16px] font-[400] tracking-tight text-[#6D7285] outline-none placeholder:text-[#6D7285]"
             />
           </motion.label>
         </div>
 
         {/* Category filters */}
         <motion.div 
-          className="mt-[40px] flex flex-wrap gap-[12px]"
+          className="mt-8 md:mt-[40px] flex flex-wrap justify-center lg:justify-start gap-3 md:gap-[12px]"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
@@ -136,7 +136,7 @@ export default function CareerOpenRolesSection() {
                 key={category}
                 type="button"
                 onClick={() => setActiveCategory(category)}
-                className={`h-[42px] rounded-full px-[24px] text-[15px] font-[600] tracking-[-0.2px] transition-colors ${
+                className={`h-9 md:h-[42px] rounded-full px-5 md:px-[24px] text-sm md:text-[15px] font-[600] tracking-tight transition-colors ${
                   active
                     ? "bg-[#4F6EF7] text-white"
                     : "bg-[#EEF2FF] text-[#4F6EF7] hover:bg-[#E0E7FF]"
@@ -156,7 +156,7 @@ export default function CareerOpenRolesSection() {
 
         {/* Role cards */}
         <motion.div 
-          className="mt-[40px] space-y-[16px]"
+          className="mt-8 md:mt-[40px] space-y-4 md:space-y-[16px]"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.3 }}
@@ -175,7 +175,7 @@ export default function CareerOpenRolesSection() {
             filteredRoles.map((role, index) => (
               <motion.article
                 key={role.title}
-                className="flex items-center justify-between rounded-[24px] bg-white px-[36px] py-[32px] shadow-[0_2px_12px_rgba(15,23,42,0.05)]"
+                className="flex flex-col md:flex-row items-center justify-between rounded-[24px] bg-white px-6 md:px-[36px] py-8 md:py-[32px] shadow-[0_2px_12px_rgba(15,23,42,0.05)] gap-6 text-center md:text-left"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.4 + index * 0.1 }}
@@ -183,13 +183,13 @@ export default function CareerOpenRolesSection() {
                 whileHover={{ y: -5 }}
               >
                 <div>
-                  <div className="flex items-center gap-[12px]">
-                    <p className="text-[13px] font-[600] uppercase tracking-[2px] text-[#4F6EF7]">
+                  <div className="flex flex-wrap items-center justify-center md:justify-start gap-3 md:gap-[12px]">
+                    <p className="text-[11px] md:text-[13px] font-[600] uppercase tracking-[2px] text-[#4F6EF7]">
                       {role.category}
                     </p>
                     {role.badge && (
                       <motion.span 
-                        className="inline-flex h-[22px] items-center rounded-[6px] bg-[#EEF2FF] px-[10px] text-[12px] font-[700] leading-none text-[#4F6EF7]"
+                        className="inline-flex h-[22px] items-center rounded-[6px] bg-[#EEF2FF] px-[10px] text-[10px] md:text-[12px] font-[700] leading-none text-[#4F6EF7]"
                         initial={{ scale: 0 }}
                         whileInView={{ scale: 1 }}
                         transition={{ duration: 0.3, delay: 0.5 + index * 0.1 }}
@@ -200,23 +200,24 @@ export default function CareerOpenRolesSection() {
                     )}
                   </div>
 
-                  <h3 className="mt-[12px] text-[28px] font-[600] leading-none tracking-[-0.8px] text-[#1E252B]">
+                  <h3 className="mt-3 md:mt-[12px] text-xl xs:text-2xl md:text-[28px] font-[600] leading-tight md:leading-none tracking-tight text-[#1E252B]">
                     {role.title}
                   </h3>
 
-                  <div className="mt-[14px] flex items-center gap-[24px] text-[16px] leading-none tracking-[-0.2px] text-[#505860]">
+                  <div className="mt-4 md:mt-[14px] flex flex-wrap items-center justify-center md:justify-start gap-4 md:gap-[24px] text-sm md:text-[16px] leading-none text-[#505860]">
                     <RoleMeta icon="/career/Icon (8).svg" text={role.location} />
                     <RoleMeta icon="/career/Icon (10).svg" text={role.time} />
                   </div>
                 </div>
 
                 <motion.div
+                  className="w-full md:w-auto"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
                   <Link
                     href={`/contact?position=${encodeURIComponent(role.title)}`}
-                    className="inline-flex h-[52px] min-w-[160px] items-center justify-center gap-[10px] rounded-[16px] border-[2px] border-[#4F6EF7] px-[24px] text-[16px] font-[600] tracking-[-0.3px] text-[#4F6EF7] hover:bg-[#4F6EF7] hover:text-white transition-colors group"
+                    className="inline-flex h-[48px] md:h-[52px] w-full md:min-w-[160px] items-center justify-center gap-[10px] rounded-[16px] border-[2px] border-[#4F6EF7] px-[24px] text-sm md:text-[16px] font-[600] tracking-tight text-[#4F6EF7] hover:bg-[#4F6EF7] hover:text-white transition-colors group"
                   >
                     <span>Apply Now</span>
                     <div className="h-[16px] w-[16px] transition-all">
@@ -234,3 +235,4 @@ export default function CareerOpenRolesSection() {
     </section>
   );
 }
+

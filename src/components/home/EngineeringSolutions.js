@@ -54,30 +54,29 @@ function ArrowUpRightIcon({ className = "" }) {
 
 export default function EngineeringSolutions() {
   return (
-    <section className="w-full bg-[#F7F9FE] min-h-screen flex items-center justify-center py-20 overflow-hidden">
+    <section className="w-full min-h-screen flex items-center justify-center bg-[#F7F9FE] py-12 md:py-0 overflow-hidden">
       <div className="home-section-container w-full">
         <motion.div
-          className="flex w-full items-end justify-between"
+          className="flex flex-col md:flex-row w-full items-center md:items-end justify-between px-6 md:px-0 text-center md:text-left gap-6 md:gap-0"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: false }}
         >
           <div className="max-w-[800px]">
-            <h2 className="text-[38px] font-semibold leading-tight tracking-[-0.055em] text-[#2D3342]">
+
+            <h2 className="text-3xl md:text-[38px] font-bold leading-tight tracking-tight text-[#1E293B]">
               Engineering Solutions That Solve Your Biggest Challenges
             </h2>
-            <p className="mt-6 text-[20px] font-normal leading-relaxed tracking-[-0.042em] text-[#3B4352]">
-              <span className="block">
-                We don&apos;t just write code; we engineer value. Our services are tailored to solve specific business bottlenecks through high-fidelity technology.
-              </span>
+            <p className="mt-4 text-base md:text-[18px] font-normal leading-relaxed text-[#475569]">
+              We don&apos;t just write code; we engineer value. Our services are tailored to solve specific business bottlenecks.
             </p>
           </div>
 
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
             <Link
               href="/service"
-              className="inline-flex h-[56px] px-8 items-center justify-center gap-[12px] rounded-full bg-[#38339C] text-[17px] font-semibold text-white"
+              className="inline-flex h-12 md:h-[52px] px-8 items-center justify-center gap-[12px] rounded-full bg-[#38339C] text-[16px] md:text-[17px] font-semibold text-white shadow-lg"
             >
               Explore All Services
               <ArrowUpRightIcon />
@@ -86,7 +85,7 @@ export default function EngineeringSolutions() {
         </motion.div>
 
         <motion.div
-          className="mt-12 grid w-full grid-cols-4 gap-6"
+          className="mt-8 md:mt-12 grid w-full grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-6 md:px-0"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.1 }}
@@ -95,32 +94,33 @@ export default function EngineeringSolutions() {
           {solutions.map((solution, index) => (
             <motion.article
               key={solution.title}
-              className="rounded-[20px] bg-white p-8 shadow-[0_2px_0_rgba(233,237,245,0.7)] flex flex-col"
+              className="rounded-[24px] bg-white p-6 md:p-8 shadow-sm border border-slate-100 flex flex-col"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 + index * 0.1 }}
               viewport={{ once: false }}
               whileHover={{ y: -5 }}
             >
-              <div className="flex h-[52px] w-[52px] items-center justify-center rounded-[10px] bg-[#F5F7FB]">
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#F5F7FB]">
                 <Image
                   src={solution.icon}
                   alt={solution.title}
                   width={24}
                   height={24}
-                  className="h-[24px] w-[24px]"
+                  className="h-6 w-6"
                 />
               </div>
-              <h3 className="mt-10 text-[22px] font-semibold leading-tight tracking-[-0.05em] text-[#2D3342]">
+              <h3 className="mt-6 text-[20px] font-bold text-[#1E293B]">
                 {solution.title}
               </h3>
-              <p className="mt-4 text-[16px] font-normal leading-relaxed tracking-[-0.04em] text-[#3B4352]">
-                Track sales performance, manage leads, and grow your revenue.
+              <p className="mt-3 text-[15px] text-[#475569] leading-relaxed">
+                Track sales performance, manage leads, and grow your revenue efficiently.
               </p>
             </motion.article>
           ))}
         </motion.div>
       </div>
     </section>
+
   );
 }

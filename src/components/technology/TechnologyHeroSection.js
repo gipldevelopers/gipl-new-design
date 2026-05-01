@@ -1,120 +1,124 @@
 "use client";
 
-import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
-export default function TechnologyHeroSection() {
+function ArrowUpRightIcon({ className = "" }) {
   return (
-    <section className="w-full bg-[#031744]">
-      <div className="mx-auto flex w-full max-w-[1440px] items-center justify-between gap-8 px-[34px] py-20">
+    <svg
+      className={className}
+      width="20"
+      height="20"
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      <path
+        d="M5.83398 14.166L14.1673 5.83268"
+        stroke="currentColor"
+        strokeWidth="2.2"
+        strokeLinecap="round"
+      />
+      <path
+        d="M7.5 5.83301H14.1667V12.4997"
+        stroke="currentColor"
+        strokeWidth="2.2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
+export default function Hero() {
+  return (
+    <section className="w-full bg-[linear-gradient(93.36deg,#0A1F3B_0.52%,#08254D_54.86%,#07234A_100%)] min-h-screen flex items-center justify-center overflow-hidden ">
+      <div className="home-section-container w-full flex flex-col md:flex-row items-center justify-between gap-12 py-12 md:py-0 ">
         <motion.div
-          className="flex-1 max-w-[560px]"
+          className="flex-1 w-full"
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.8 }}
           viewport={{ once: false }}
         >
-          <motion.h1
-            className="text-[56px] font-[700] leading-[1.15] tracking-[-0.03em] text-white"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            viewport={{ once: false }}
-          >
-            Growth and Digital
-            <br />
-            Transformation
-          </motion.h1>
+          <h1 className="text-3xl sm:text-4xl md:text-[56px] lg:text-[64px] font-[800] leading-[1.2] md:leading-[1.1] tracking-[-0.04em] text-white font-poppins">
+            <span className="block">Growth and Digital</span>
+            <span className="block">
+              Transformation
+            </span>
+          </h1>
 
           <motion.p
-            className="mt-[24px] text-[20px] font-[400] leading-[1.6] tracking-[-0.02em] text-[#C8D6EE]"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
+            className="mt-6 md:mt-[30px] max-w-[650px] text-base sm:text-lg md:text-[20px] lg:text-[22px] font-normal leading-[1.6] tracking-[-0.02em] text-white/90 font-manrope"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: false }}
           >
-            Comprehensive solutions designed to accelerate your business growth
-            and digital transformation.
+            Comprehensive solutions designed to accelerate your business growth and digital transformation.
           </motion.p>
 
           <motion.div
+            className="mt-8 md:mt-[40px] flex flex-col sm:flex-row items-center gap-[16px] sm:gap-[20px]"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
             viewport={{ once: false }}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
           >
-            <Link
-              href="#"
-              className="mt-[40px] inline-flex h-[52px] items-center gap-[10px] rounded-[999px] bg-[#3E67F6] px-[28px] text-[16px] font-[600] leading-[1] tracking-[0px] text-white"
-            >
-              Start your project
-              <svg
-                width="16"
-                height="16"
-                viewBox="0 0 20 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
+            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="w-full sm:w-auto">
+              <Link
+                href="/contact"
+                className="inline-flex w-full sm:w-auto h-12 md:h-[56px] px-10 items-center justify-center gap-[12px] rounded-full bg-[linear-gradient(90deg,#426AF2_0%,#416BF4_100%)] text-[16px] md:text-[17px] font-semibold text-white font-manrope"
               >
-                <path
-                  d="M5.83398 14.1667L14.1673 5.83337M14.1673 5.83337H5.83398M14.1673 5.83337V14.1667"
-                  stroke="white"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </Link>
+                Start your project
+                <ArrowUpRightIcon />
+              </Link>
+            </motion.div>
           </motion.div>
         </motion.div>
 
+
+
         <motion.div
-          className="relative shrink-0"
+          className="relative w-full max-w-[400px] lg:max-w-[500px] aspect-square shrink-0 mx-auto mt-12 md:mt-0"
           initial={{ opacity: 0, x: 30 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
+          transition={{ duration: 0.8 }}
           viewport={{ once: false }}
         >
-          <motion.div
-            className="overflow-hidden rounded-[20px] bg-black"
-            whileHover={{ scale: 1.02 }}
-          >
+          <div className="relative h-full w-full overflow-hidden rounded-[24px] bg-black shadow-[0_32px_64px_rgba(0,0,0,0.3)]">
             <Image
-              src="/technology/35426d19ba38a55a742624ed86c4f5d95b7506e1 (1).png"
-              alt="Growth and digital transformation visual"
-              width={480}
-              height={400}
-              className="h-[400px] w-[480px] object-cover"
+              src="/home/home_images/35426d19ba38a55a742624ed86c4f5d95b7506e1.png"
+              alt="Abstract digital structure"
+              fill
+              priority
+              className="object-cover"
             />
-          </motion.div>
+          </div>
 
           <motion.div
-            className="absolute bottom-[-20px] left-[-20px] flex h-[72px] w-[220px] items-center gap-[14px] rounded-[14px] border border-[#BEC8D6] bg-[#E9EDF3] px-[16px] shadow-[0_8px_24px_rgba(15,23,42,0.18)]"
+            className="absolute bottom-[-20px] md:bottom-[-30px] left-4 md:left-[-30px] flex h-[70px] md:h-[90px] w-[200px] md:w-[260px] items-center gap-[12px] md:gap-[18px] rounded-[24px] bg-[#C9CDD3] px-4 md:px-6 shadow-[0_18px_45px_rgba(0,0,0,0.22)] z-10"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.5 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
             viewport={{ once: false }}
-            whileHover={{ y: -5 }}
           >
-            <motion.div
-              className="flex h-[40px] w-[40px] shrink-0 items-center justify-center rounded-[10px] bg-[#4B64F0]"
-              whileHover={{ scale: 1.1 }}
-            >
+            <div className="flex h-10 w-10 md:h-[52px] md:w-[52px] shrink-0 items-center justify-center rounded-[12px] bg-[linear-gradient(180deg,#1EB6EC_0%,#2D348F_100%)]">
               <Image
-                src="/technology/tech.png"
-                alt=""
-                width={20}
-                height={20}
-                className="h-[20px] w-[20px]"
+                src="/career/Icon (9).svg"
+                alt="Rocket status icon"
+                width={26}
+                height={26}
+                className="h-5 w-5 md:h-[26px] md:w-[26px]"
               />
-            </motion.div>
-            <div className="leading-[1]">
-              <p className="text-[10px] font-[700] uppercase tracking-[0.12em] text-[#6C7A89]">
-                SYSTEM STATUS
+            </div>
+            <div>
+              <p className="text-[9px] md:text-[11px] font-[700] uppercase tracking-[1px] md:tracking-[1.6px] text-[#28344D] font-manrope">
+                System Status
               </p>
-              <p className="mt-[4px] text-[14px] font-[600] text-[#1F2937]">
+              <p className="mt-[2px] md:mt-[4px] text-sm md:text-[16px] font-[700] text-[#111827] font-poppins">
                 100% Operational
               </p>
             </div>
@@ -122,5 +126,6 @@ export default function TechnologyHeroSection() {
         </motion.div>
       </div>
     </section>
+
   );
 }

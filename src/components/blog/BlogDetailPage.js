@@ -9,6 +9,7 @@ export default function BlogDetailPage({ post, relatedPosts }) {
       heroImageAlt={post.title}
       relatedItems={relatedPosts}
       relatedPathPrefix="/blog"
+      tech={post.tech}
       sections={[
         {
           heading:

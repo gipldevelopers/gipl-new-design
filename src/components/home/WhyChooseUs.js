@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const reasons = [
   {
-    number: "01",
+    number: "1",
     title: "Local Business Focus",
     description: [
       "We know Gujarat market requirements",
@@ -13,7 +13,7 @@ const reasons = [
     ],
   },
   {
-    number: "02",
+    number: "2",
     title: "Affordable Solutions",
     description: [
       "Quality IT development without heavy",
@@ -22,7 +22,7 @@ const reasons = [
     ],
   },
   {
-    number: "03",
+    number: "3",
     title: "Complete Customization",
     description: [
       "Every business is different. We build",
@@ -31,7 +31,7 @@ const reasons = [
     ],
   },
   {
-    number: "04",
+    number: "4",
     title: "Reliable Support",
     description: [
       "Based in Ahmedabad, we provide quick",
@@ -43,16 +43,16 @@ const reasons = [
 
 export default function WhyChooseUs() {
   return (
-    <section className="w-full bg-[#F7F9FE] min-h-screen flex items-center justify-center py-20 overflow-hidden">
-      <motion.div 
-        className="mx-auto w-full max-w-[1440px] rounded-[32px] bg-[linear-gradient(180deg,#0A2347_0%,#0A2346_100%)] px-12 py-16 flex flex-col items-center"
+    <section className="w-full min-h-[510px] flex items-center justify-center bg-[#F7F9FE] py-12 md:py-0 overflow-hidden">
+      <motion.div
+        className="mx-auto w-[calc(100%-3rem)] md:w-full max-w-[1440px] rounded-[32px] bg-[linear-gradient(180deg,#0A2347_0%,#0A2346_100%)] px-6 md:px-12 py-10 md:py-14 flex flex-col items-center"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7 }}
         viewport={{ once: false }}
       >
-        <motion.h2 
-          className="text-center text-[48px] font-semibold leading-tight tracking-[-0.05em] text-white"
+        <motion.h2
+          className="text-center text-3xl md:text-[42px] font-bold leading-tight tracking-tight text-white"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.1 }}
@@ -60,8 +60,8 @@ export default function WhyChooseUs() {
         >
           Why Choose Us
         </motion.h2>
-        <motion.p 
-          className="mt-4 text-center text-[20px] font-normal leading-relaxed tracking-[-0.04em] text-white/90 max-w-[800px]"
+        <motion.p
+          className="mt-4 text-center text-base md:text-[18px] font-normal leading-relaxed text-white/80 max-w-[700px]"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.2 }}
@@ -70,18 +70,18 @@ export default function WhyChooseUs() {
           We specialize in building reliable IT solutions for small and medium businesses.
         </motion.p>
 
-        <motion.div 
-          className="mt-16 w-full relative"
+        <motion.div
+          className="mt-12 w-full relative"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.3 }}
           viewport={{ once: false }}
         >
           {/* Steps Grid */}
-          <div className="grid grid-cols-4 gap-8 relative">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 lg:gap-8 relative">
             {reasons.map((reason, index) => (
-              <motion.article 
-                key={reason.number} 
+              <motion.article
+                key={reason.number}
                 className="flex flex-col relative"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -89,33 +89,18 @@ export default function WhyChooseUs() {
                 viewport={{ once: false }}
                 whileHover={{ y: -5 }}
               >
-                {/* Connecting Line - only show for first 3 steps */}
-                {index < 3 && (
-                  <motion.div
-                    className="absolute top-[30px] left-[60px] w-[calc(100%+32px-60px)] h-[2px] bg-gradient-to-r from-[#3F5682] to-[#5A7BA8] z-0"
-                    initial={{ scaleX: 0 }}
-                    whileInView={{ scaleX: 1 }}
-                    transition={{ duration: 0.8, delay: 0.5 + index * 0.2 }}
-                    viewport={{ once: false }}
-                    style={{ transformOrigin: "left" }}
-                  />
-                )}
 
-                <motion.div 
-                  className="flex h-[60px] w-[60px] items-center justify-center rounded-[12px] bg-[#3F5682] text-[22px] font-semibold leading-none text-white shadow-[0_18px_30px_rgba(38,136,214,0.2)] relative z-10"
+                <motion.div
+                  className="flex h-10 w-10 items-center justify-center rounded-[10px] bg-[#3F5682] text-[18px] font-bold leading-none text-white shadow-lg relative z-10"
                   whileHover={{ scale: 1.1 }}
                 >
                   {reason.number}
                 </motion.div>
-                <h3 className="mt-8 text-[22px] font-semibold leading-tight tracking-[-0.05em] text-white">
+                <h3 className="mt-6 text-[22px] font-bold leading-tight text-white">
                   {reason.title}
                 </h3>
-                <p className="mt-4 text-[16px] font-normal leading-relaxed tracking-[-0.04em] text-white/40">
-                  {reason.description.map((line) => (
-                    <span key={line} className="block">
-                      {line}
-                    </span>
-                  ))}
+                <p className="mt-3 text-[16px] font-normal leading-relaxed text-white/50">
+                  {reason.description.join(" ")}
                 </p>
               </motion.article>
             ))}
@@ -123,5 +108,6 @@ export default function WhyChooseUs() {
         </motion.div>
       </motion.div>
     </section>
+
   );
 }

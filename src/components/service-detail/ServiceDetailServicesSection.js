@@ -53,14 +53,15 @@ function ServiceDetailCard({ title, index }) {
 
 export default function ServiceDetailServicesSection({ items }) {
   return (
-    <section className="w-full bg-[#EEF1F6] py-[72px]">
-      <div className="mx-auto w-full max-w-[1440px] px-[34px]">
-        <div className="grid grid-cols-3 gap-[24px]">
+    <section className="w-full bg-[#EEF1F6] py-12 md:py-[72px]">
+      <div className="mx-auto w-full max-w-[1440px] px-6 md:px-[34px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-[24px]">
           {items.map((item, index) => (
             <ServiceDetailCard key={item} title={item} index={index} />
           ))}
         </div>
       </div>
     </section>
+
   );
 }

@@ -22,7 +22,7 @@ export default function TrustedLeaders() {
   const tripleLeaders = [...leaders, ...leaders, ...leaders];
 
   return (
-    <section className="w-full bg-white py-12 flex flex-col items-center gap-10 overflow-hidden">
+    <section className="w-full bg-[#F7F9FE] py-16 md:py-20 flex flex-col items-center overflow-hidden">
       <style dangerouslySetInnerHTML={{
         __html: `
         @keyframes scrollTicker {
@@ -30,25 +30,28 @@ export default function TrustedLeaders() {
           100% { transform: translateX(calc(-100% / 3)); }
         }
         .animate-ticker {
-          animation: scrollTicker 35s linear infinite;
+          animation: scrollTicker 40s linear infinite;
         }
-        /* Optional: Pause on hover still kept for usability, can be removed if strictly no effects desired */
         .animate-ticker:hover {
           animation-play-state: paused;
         }
       `}} />
 
-      <div className="home-section-container flex w-full flex-col items-center gap-10">
-        <p className="text-center text-[11px] font-bold uppercase tracking-[0.2em] text-slate-400">
-          Trusted by Industry Leaders
-        </p>
+      <div className="home-section-container flex w-full flex-col items-center gap-10 md:gap-16 px-6 md:px-0">
+        <h2 className="text-center text-2xl md:text-[38px] font-bold text-[#1E293B] tracking-tight">
+          Trusted by 100+ Leading Companies
+        </h2>
 
         <div className="relative w-full flex items-center overflow-hidden">
-          <div className="flex items-center gap-20 whitespace-nowrap animate-ticker">
+          {/* Gradient Overlays for smooth fading */}
+          <div className="absolute left-0 top-0 z-10 h-full w-20 md:w-32 bg-gradient-to-r from-[#F7F9FE] to-transparent" />
+          <div className="absolute right-0 top-0 z-10 h-full w-20 md:w-32 bg-gradient-to-l from-[#F7F9FE] to-transparent" />
+
+          <div className="flex items-center gap-12 md:gap-24 whitespace-nowrap animate-ticker py-4">
             {tripleLeaders.map((leader, idx) => (
               <div
                 key={idx}
-                className="relative h-10 w-32 flex-shrink-0 cursor-default"
+                className="relative h-8 md:h-12 w-32 md:w-40 flex-shrink-0 transition-all duration-300 hover:scale-105"
               >
                 <Image
                   src={leader.icon}
@@ -58,9 +61,11 @@ export default function TrustedLeaders() {
                 />
               </div>
             ))}
+
           </div>
         </div>
       </div>
     </section>
   );
 }
+

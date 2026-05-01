@@ -10,6 +10,8 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-poppins);
+  --font-roboto: var(--font-roboto);
+  --font-manrope: var(--font-manrope);
 }
 
 html,
@@ -18,6 +20,26 @@ body {
   color: var(--foreground);
   max-width: 100%;
   position: relative;
+  font-family: var(--font-manrope), var(--font-poppins), sans-serif;
+}
+
+/* Heading Font: Roboto (Applied to all main sections except Hero) */
+.home-page section h2,
+.home-page section h3,
+.home-page section h4 {
+  font-family: var(--font-roboto), sans-serif !important;
+}
+
+/* Paragraph Font: Manrope */
+.home-page section p {
+  font-family: var(--font-manrope), sans-serif !important;
+}
+
+/* Hero Section Override: Keep Poppins */
+.home-page section:first-of-type h1,
+.home-page section:first-of-type p,
+.home-page section:first-of-type span {
+  font-family: var(--font-poppins), sans-serif !important;
 }
 
 .main-container {
@@ -53,4 +75,13 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }

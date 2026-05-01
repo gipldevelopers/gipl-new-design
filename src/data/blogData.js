@@ -1,5 +1,24 @@
 export const blogPosts = [
   {
+    slug: "gvoice-hr-software",
+    title: "GVoice HR Software",
+    category: "PRODUCT ENGINEERING",
+    date: "April 15, 2026",
+    author: "GIPL Editorial Team",
+    image: "/blog/5dfc17f4d68f5f701ec8dc7de6475f65df490a95.png",
+    detailImage: "/blog/5dfc17f4d68f5f701ec8dc7de6475f65df490a95.png",
+    summary:
+      "GVoice HR Software is a comprehensive solution designed to simplify HR operations and empower organizations with smarter workforce management.",
+    excerpt:
+      "GVoice HR Software is a comprehensive solution designed to simplify HR operations and empower organizations with smarter workforce management. With a dashboard-driven design, it brings together employee data, attendance, and performance metrics in one place.",
+    tech: ["React"],
+    content: [
+      "GVoice HR Software was built to bridge the gap between complex HR processes and daily operational efficiency. By centralizing employee data, payroll triggers, and performance tracking, it allows leadership to make informed decisions faster.",
+      "The platform features a clean, intuitive dashboard that reduces training time for new users while providing deep drill-down capabilities for HR professionals. Automation is at the core, handling everything from attendance logs to compliance alerts.",
+      "This implementation highlights GIPL's ability to turn complex business requirements into high-performance, user-friendly digital tools that scale with the organization.",
+    ],
+  },
+  {
     slug: "aknani-daycare-management-system",
     title: "AkaNani [Daycare Management System]",
     category: "WEB DEVELOPMENT",

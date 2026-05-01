@@ -3,7 +3,7 @@ import Footer from "@/components/common/Footer";
 import Hero from "@/components/home/Hero";
 import TrustedLeaders from "@/components/home/TrustedLeaders";
 import PartnerSection from "@/components/home/PartnerSection";
-import StatisticsSection from "@/components/home/StatisticsSection";
+
 import ServiceGrid from "@/components/home/ServiceGrid";
 import EngineeringSolutions from "@/components/home/EngineeringSolutions";
 import WhyChooseUs from "@/components/home/WhyChooseUs";
@@ -20,7 +20,7 @@ export default function Home() {
         <Hero />
         <TrustedLeaders />
         <PartnerSection />
-        <StatisticsSection />
+
         <ServiceGrid />
         <EngineeringSolutions />
         <WhyChooseUs />

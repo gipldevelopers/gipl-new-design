@@ -1,10 +1,22 @@
-import { Poppins } from "next/font/google";
+import { Poppins, Roboto, Manrope } from "next/font/google";
 import "./globals.css";
 
 const poppins = Poppins({
   variable: "--font-poppins",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800", "900"],
+});
+
+const roboto = Roboto({
+  variable: "--font-roboto",
+  subsets: ["latin"],
+  weight: ["400", "500", "700", "900"],
+});
+
+const manrope = Manrope({
+  variable: "--font-manrope",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
 });
 
 export const metadata = {
@@ -38,9 +50,10 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      className={`${poppins.variable} font-sans h-full antialiased`}
+      className={`${poppins.variable} ${roboto.variable} ${manrope.variable} font-sans h-full antialiased`}
     >
       <body className="min-h-full flex flex-col overflow-x-hidden">{children}</body>
     </html>
   );
 }
+

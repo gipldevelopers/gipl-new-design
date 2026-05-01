@@ -58,80 +58,83 @@ const teamMembers = [
 const beliefs = [
   {
     id: 1,
-    title: "Uncompromising\nSecurity",
+    title: "We Constantly Innovate",
     description:
-      "In a world of evolving threats, security\nis not a feature-it is the bedrock of\neverything we deploy.",
+      "It's important to communicate clearly. You will always be aware of the status of your project, the rationale behind decisions, and the future steps. There is no complicated jargon. No unanticipated surprises. Just direct communication and honest updates.",
+    icon: "heart"
   },
   {
     id: 2,
-    title: "Scalable\nInnovation",
+    title: "Transparency is important to us.",
     description:
-      "We build solutions that grow with your\nbusiness, designed to handle tomorrow's\nchallenges today.",
+      "Continuous improvement is the only constant. Our motto fuels our drive to always stay ahead of the curve. We are a team of lifelong learners, constantly exploring new technologies and fresh ideas to deliver groundbreaking solutions that set you apart.",
+    icon: "lightbulb"
   },
   {
     id: 3,
-    title: "User-Centric\nDesign",
+    title: "We Promote Original Thought",
     description:
-      "Every pixel, every interaction is crafted\nwith the end user in mind, creating\nexperiences that delight.",
+      "We don't rely on one-size-fits-all solutions because every business is unique. We investigate concepts, challenge presumptions, and seek out more intelligent approaches to issues. We are able to provide outcomes that truly meet your needs thanks to our innovative method.",
+    icon: "shield"
   },
   {
     id: 4,
-    title: "Continuous\nImprovement",
+    title: "Our Commitment to Results",
     description:
-      "We never stop learning, evolving, and\nrefining our craft to deliver excellence\nin everything we do.",
-  },
-  {
-    id: 5,
-    title: "Transparent\nCommunication",
-    description:
-      "We believe in clear, honest dialogue with\nour clients, keeping you informed every\nstep of the journey.",
-  },
-  {
-    id: 6,
-    title: "Quality Over\nQuantity",
-    description:
-      "We prioritize delivering exceptional\nresults rather than rushing through\nprojects with mediocre outcomes.",
-  },
-  {
-    id: 7,
-    title: "Collaborative\nPartnership",
-    description:
-      "Your success is our success. We work\ntogether as true partners to achieve\nshared goals and vision.",
-  },
-  {
-    id: 8,
-    title: "Sustainable\nGrowth",
-    description:
-      "We build solutions designed for long-term\nsuccess, not quick fixes, ensuring\nlasting value for your business.",
+      "Our ultimate goal is to deliver tangible value. We focus on outcomes that move the needle for your business, ensuring that every project we undertake results in measurable success and long-term satisfaction.",
+    icon: "target"
   },
 ];
 
 function ShieldIcon() {
   return (
     <div className="flex h-[48px] w-[48px] items-center justify-center rounded-[10px] bg-[#3530A2]">
-      <svg
-        width="22"
-        height="22"
-        viewBox="0 0 24 24"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M12 3L18 5.5V11.2C18 15.15 15.44 18.83 12 20C8.56 18.83 6 15.15 6 11.2V5.5L12 3Z"
-          stroke="white"
-          strokeWidth="1.6"
-        />
-        <path
-          d="M10.4 11.9L11.5 13L13.9 10.6"
-          stroke="white"
-          strokeWidth="1.6"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
       </svg>
     </div>
   );
 }
+
+function HeartIcon() {
+  return (
+    <div className="flex h-[48px] w-[48px] items-center justify-center rounded-[10px] bg-[#3530A2]">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l8.82-8.82 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+      </svg>
+    </div>
+  );
+}
+
+function LightbulbIcon() {
+  return (
+    <div className="flex h-[48px] w-[48px] items-center justify-center rounded-[10px] bg-[#3530A2]">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M9 18h6M10 22h4M15.09 14c.18-.19.33-.4.46-.62a6 6 0 1 0-7.1 0c.13.22.28.43.46.62L10 16h4l1.09-2z"/>
+      </svg>
+    </div>
+  );
+}
+
+function TargetIcon() {
+  return (
+    <div className="flex h-[48px] w-[48px] items-center justify-center rounded-[10px] bg-[#3530A2]">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+        <circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/>
+      </svg>
+    </div>
+  );
+}
+
+const renderBeliefIcon = (icon) => {
+  switch (icon) {
+    case 'heart': return <HeartIcon />;
+    case 'lightbulb': return <LightbulbIcon />;
+    case 'shield': return <ShieldIcon />;
+    case 'target': return <TargetIcon />;
+    default: return <ShieldIcon />;
+  }
+};
 
 export default function AboutTeamBeliefsSection() {
   const [beliefSlide, setBeliefSlide] = useState(0);
@@ -155,205 +158,216 @@ export default function AboutTeamBeliefsSection() {
   };
 
   return (
-    <section className="w-full bg-[#E9EAEE] pt-[2px]">
-      <div className="flex items-start justify-between">
-        <motion.h2 
-          className="text-[57px] font-[600] leading-[57px] tracking-[-1.71px] text-[#1C232B]"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: false }}
-        >
-          The Gohil Infotech Team
-        </motion.h2>
-
-        <motion.div 
-          className="mt-[12px] flex gap-[12px]"
-          initial={{ opacity: 0, x: 20 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6, delay: 0.1 }}
-          viewport={{ once: false }}
-        >
-          <button
-            type="button"
-            onClick={handlePrevTeam}
-            className="flex h-[40px] w-[40px] items-center justify-center rounded-full bg-[#DDD8FF] text-[#5B4ED6] hover:bg-[#c8c0ff] transition-colors"
-            aria-label="Previous team members"
+    <section className="w-full bg-[#E9EAEE] py-12 md:py-20 overflow-hidden">
+      <div className="mx-auto w-full max-w-[1440px] px-6 md:px-[34px]">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+          <motion.h2
+            className="text-3xl xs:text-4xl md:text-[57px] font-[600] leading-tight md:leading-[57px] tracking-[-0.03em] md:tracking-[-1.71px] text-[#1C232B] text-center md:text-left"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: false }}
           >
-            <svg width="8" height="14" viewBox="0 0 8 14" fill="none">
-              <path
-                d="M6.5 1.5L1.5 7L6.5 12.5"
-                stroke="currentColor"
-                strokeWidth="1.8"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-          </button>
-          <button
-            type="button"
-            onClick={handleNextTeam}
-            className="flex h-[40px] w-[40px] items-center justify-center rounded-full bg-[#DDD8FF] text-[#5B4ED6] hover:bg-[#c8c0ff] transition-colors"
-            aria-label="Next team members"
-          >
-            <svg width="8" height="14" viewBox="0 0 8 14" fill="none">
-              <path
-                d="M1.5 1.5L6.5 7L1.5 12.5"
-                stroke="currentColor"
-                strokeWidth="1.8"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-          </button>
-        </motion.div>
-      </div>
+            The Gohil Infotech Team
+          </motion.h2>
 
-      <div className="mt-[42px] overflow-hidden">
-        <motion.div 
-          className="flex transition-transform duration-300 ease-out gap-[48px]" 
-          style={{ transform: `translateX(-${teamSlide * 326}px)` }}
-        >
-          {teamMembers.map((member, index) => (
-            <motion.article 
-              key={member.id} 
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 0.6, delay: index * 0.05 }}
-              viewport={{ once: true }}
-              className="w-[278px] shrink-0"
+          <motion.div
+            className="flex gap-[12px] hidden md:flex"
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            viewport={{ once: false }}
+          >
+            <button
+              type="button"
+              onClick={handlePrevTeam}
+              className="flex h-[40px] w-[40px] items-center justify-center rounded-full bg-[#DDD8FF] text-[#5B4ED6] hover:bg-[#c8c0ff] transition-colors"
+              aria-label="Previous team members"
             >
-              <motion.div 
-                className="relative h-[405px] w-[278px] overflow-hidden"
-                whileHover={{ scale: 1.02 }}
-              >
-                <Image
-                  src={member.image}
-                  alt={member.name}
-                  width={278}
-                  height={405}
-                  className="h-full w-full object-contain grayscale"
+              <svg width="8" height="14" viewBox="0 0 8 14" fill="none">
+                <path
+                  d="M6.5 1.5L1.5 7L6.5 12.5"
+                  stroke="currentColor"
+                  strokeWidth="1.8"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
-              </motion.div>
-              <h3 className="mt-[11px] text-[16px] font-[600] leading-[19px] tracking-[-0.16px] text-[#1C232B]">
-                {member.name}
-              </h3>
-              <p className="mt-[3px] text-[10px] font-[500] leading-[12px] tracking-[-0.1px] text-[#244EE4]">
-                {member.role}
-              </p>
-            </motion.article>
-          ))}
-        </motion.div>
-      </div>
-
-      <div className="mt-[22px] flex items-center justify-center gap-[6px]">
-        {Array.from({ length: Math.max(0, teamMembers.length - 3) }).map((_, index) => (
-          <button
-            key={index}
-            onClick={() => setTeamSlide(index)}
-            className={`h-[7px] rounded-full transition-all ${
-              index === teamSlide
-                ? "w-[33px] bg-[#403CB2]"
-                : "w-[7px] bg-[#D7D9E4] hover:bg-[#b8bcc8]"
-            }`}
-            aria-label={`Go to team slide ${index + 1}`}
-          />
-        ))}
-      </div>
-
-      <div className="mt-[96px] flex items-center justify-between">
-        <motion.h2 
-          className="text-[57px] font-[600] leading-[57px] tracking-[-1.71px] text-[#1C232B]"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: false }}
-        >
-          Our Beliefs
-        </motion.h2>
-
-        <motion.div 
-          className="flex gap-[12px]"
-          initial={{ opacity: 0, x: 20 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6, delay: 0.1 }}
-          viewport={{ once: false }}
-        >
-          <button
-            type="button"
-            onClick={handlePrevBelief}
-            className="flex h-[40px] w-[40px] items-center justify-center rounded-full bg-[#DDD8FF] text-[#5B4ED6] hover:bg-[#c8c0ff] transition-colors"
-            aria-label="Previous belief"
-          >
-            <svg width="8" height="14" viewBox="0 0 8 14" fill="none">
-              <path
-                d="M6.5 1.5L1.5 7L6.5 12.5"
-                stroke="currentColor"
-                strokeWidth="1.8"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-          </button>
-          <button
-            type="button"
-            onClick={handleNextBelief}
-            className="flex h-[40px] w-[40px] items-center justify-center rounded-full bg-[#DDD8FF] text-[#5B4ED6] hover:bg-[#c8c0ff] transition-colors"
-            aria-label="Next belief"
-          >
-            <svg width="8" height="14" viewBox="0 0 8 14" fill="none">
-              <path
-                d="M1.5 1.5L6.5 7L1.5 12.5"
-                stroke="currentColor"
-                strokeWidth="1.8"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-          </button>
-        </motion.div>
-      </div>
-
-      <div className="mt-[46px] overflow-hidden">
-        <motion.div 
-          className="flex transition-transform duration-300 ease-out" 
-          style={{ transform: `translateX(-${beliefSlide * 366}px)` }}
-        >
-          {beliefs.map((belief, index) => (
-            <motion.article
-              key={belief.id}
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 0.6, delay: index * 0.05 }}
-              viewport={{ once: true }}
-              className="h-[329px] w-[348px] shrink-0 rounded-[12px] bg-[#F1F2F5] px-[30px] pt-[30px] mr-[18px]"
+              </svg>
+            </button>
+            <button
+              type="button"
+              onClick={handleNextTeam}
+              className="flex h-[40px] w-[40px] items-center justify-center rounded-full bg-[#DDD8FF] text-[#5B4ED6] hover:bg-[#c8c0ff] transition-colors"
+              aria-label="Next team members"
             >
-              <ShieldIcon />
-              <h3 className="mt-[28px] whitespace-pre-line text-[20px] font-[600] leading-[25px] tracking-[-0.4px] text-[#2A313B]">
-                {belief.title}
-              </h3>
-              <p className="mt-[14px] whitespace-pre-line text-[14px] font-[400] leading-[22px] tracking-[0px] text-[#555C67]">
-                {belief.description}
-              </p>
-            </motion.article>
-          ))}
-        </motion.div>
-      </div>
+              <svg width="8" height="14" viewBox="0 0 8 14" fill="none">
+                <path
+                  d="M1.5 1.5L6.5 7L1.5 12.5"
+                  stroke="currentColor"
+                  strokeWidth="1.8"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </button>
+          </motion.div>
+        </div>
 
-      <div className="mt-[22px] flex items-center justify-center gap-[6px]">
-        {beliefs.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => setBeliefSlide(index)}
-            className={`h-[7px] rounded-full transition-all ${
-              index === beliefSlide
-                ? "w-[33px] bg-[#403CB2]"
-                : "w-[7px] bg-[#D7D9E4] hover:bg-[#b8bcc8]"
-            }`}
-            aria-label={`Go to belief ${index + 1}`}
-          />
-        ))}
+        <div className="mt-8 md:mt-[42px]">
+          <motion.div
+            className="grid grid-cols-1 sm:grid-cols-2 md:flex gap-6 md:gap-[48px] md:transition-transform md:duration-300 md:ease-out"
+            style={{
+              transform: typeof window !== 'undefined' && window.innerWidth >= 768
+                ? `translateX(-${teamSlide * 326}px)`
+                : 'none'
+            }}
+          >
+            {teamMembers.map((member, index) => (
+              <motion.article
+                key={member.id}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 0.6, delay: index * 0.05 }}
+                viewport={{ once: true }}
+                className="w-full xs:w-full md:w-[278px] shrink-0"
+              >
+                <motion.div
+                  className="relative h-[340px] xs:h-[405px] w-full overflow-hidden"
+                  whileHover={{ scale: 1.02 }}
+                >
+                  <Image
+                    src={member.image}
+                    alt={member.name}
+                    width={278}
+                    height={405}
+                    className="h-full w-full object-contain grayscale mx-auto md:mx-0"
+                  />
+                </motion.div>
+                <div className="text-center md:text-left">
+                  <h3 className="mt-3 md:mt-[11px] text-base md:text-[16px] font-[600] leading-tight text-[#1C232B]">
+                    {member.name}
+                  </h3>
+                  <p className="mt-[3px] text-[10px] font-[500] leading-tight uppercase tracking-widest text-[#244EE4]">
+                    {member.role}
+                  </p>
+                </div>
+              </motion.article>
+            ))}
+          </motion.div>
+        </div>
+
+        <div className="mt-8 md:mt-[22px] hidden md:flex items-center justify-center gap-[6px]">
+          {Array.from({ length: Math.max(0, teamMembers.length - 3) }).map((_, index) => (
+            <button
+              key={index}
+              onClick={() => setTeamSlide(index)}
+              className={`h-[7px] rounded-full transition-all ${index === teamSlide
+                  ? "w-[33px] bg-[#403CB2]"
+                  : "w-[7px] bg-[#D7D9E4] hover:bg-[#b8bcc8]"
+                }`}
+              aria-label={`Go to team slide ${index + 1}`}
+            />
+          ))}
+        </div>
+
+        <div className="mt-16 md:mt-[96px] flex flex-col md:flex-row items-center justify-between gap-6">
+          <motion.h2
+            className="text-3xl xs:text-4xl md:text-[57px] font-[600] leading-tight md:leading-[57px] tracking-[-0.03em] md:tracking-[-1.71px] text-[#1C232B] text-center md:text-left"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: false }}
+          >
+            Our Beliefs
+          </motion.h2>
+
+          <motion.div
+            className="flex gap-[12px] hidden md:flex"
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            viewport={{ once: false }}
+          >
+            <button
+              type="button"
+              onClick={handlePrevBelief}
+              className="flex h-[40px] w-[40px] items-center justify-center rounded-full bg-[#DDD8FF] text-[#5B4ED6] hover:bg-[#c8c0ff] transition-colors"
+              aria-label="Previous belief"
+            >
+              <svg width="8" height="14" viewBox="0 0 8 14" fill="none">
+                <path
+                  d="M6.5 1.5L1.5 7L6.5 12.5"
+                  stroke="currentColor"
+                  strokeWidth="1.8"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </button>
+            <button
+              type="button"
+              onClick={handleNextBelief}
+              className="flex h-[40px] w-[40px] items-center justify-center rounded-full bg-[#DDD8FF] text-[#5B4ED6] hover:bg-[#c8c0ff] transition-colors"
+              aria-label="Next belief"
+            >
+              <svg width="8" height="14" viewBox="0 0 8 14" fill="none">
+                <path
+                  d="M1.5 1.5L6.5 7L1.5 12.5"
+                  stroke="currentColor"
+                  strokeWidth="1.8"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </button>
+          </motion.div>
+        </div>
+
+        <div className="mt-8 md:mt-[46px]">
+          <motion.div
+            className="grid grid-cols-1 sm:grid-cols-2 md:flex gap-6 md:transition-transform md:duration-300 md:ease-out"
+            style={{
+              transform: typeof window !== 'undefined' && window.innerWidth >= 768
+                ? `translateX(-${beliefSlide * 366}px)`
+                : 'none'
+            }}
+          >
+            {beliefs.map((belief, index) => (
+              <motion.article
+                key={belief.id}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 0.6, delay: index * 0.05 }}
+                viewport={{ once: true }}
+                className="h-auto min-h-[280px] w-full md:w-[348px] shrink-0 rounded-[12px] bg-[#F1F2F5] p-6 md:p-[30px] mr-0 md:mr-[18px]"
+              >
+                {renderBeliefIcon(belief.icon)}
+                <h3 className="mt-6 md:mt-[28px] whitespace-pre-line text-lg md:text-[20px] font-[600] leading-tight md:leading-[25px] tracking-tight text-[#2A313B]">
+                  {belief.title}
+                </h3>
+                <p className="mt-3 md:mt-[14px] whitespace-pre-line text-sm md:text-[14px] font-[400] leading-relaxed text-[#555C67]">
+                  {belief.description}
+                </p>
+              </motion.article>
+            ))}
+          </motion.div>
+        </div>
+
+        <div className="mt-8 md:mt-[22px] hidden md:flex items-center justify-center gap-[6px]">
+          {beliefs.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => setBeliefSlide(index)}
+              className={`h-[7px] rounded-full transition-all ${index === beliefSlide
+                  ? "w-[33px] bg-[#403CB2]"
+                  : "w-[7px] bg-[#D7D9E4] hover:bg-[#b8bcc8]"
+                }`}
+              aria-label={`Go to belief ${index + 1}`}
+            />
+          ))}
+        </div>
       </div>
     </section>
+
   );
 }

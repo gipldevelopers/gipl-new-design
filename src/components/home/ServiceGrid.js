@@ -63,30 +63,28 @@ function ArrowUpRightIcon({ className = "" }) {
 
 export default function ServiceGrid() {
   return (
-    <section className="w-full bg-[#EDF1F7] min-h-screen flex items-center justify-center py-20 overflow-hidden">
-      <div className="home-section-container w-full">
+    <section className="w-full min-h-screen flex items-center justify-center bg-[#EDF1F7] py-12 md:py-0 overflow-hidden">
+      <div className="home-section-container w-full py-8 md:py-12">
         <motion.div
-          className="flex w-full items-end justify-between"
+          className="flex flex-col md:flex-row w-full items-center md:items-end justify-between gap-6 md:gap-8 px-6 md:px-0 mb-8 md:mb-10"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: false }}
         >
-          <div className="max-w-[700px]">
-            <h2 className="text-[42px] font-semibold leading-tight tracking-[-0.05em] text-[#2D3342]">
+          <div className="max-w-full md:max-w-[75%] text-center md:text-left">
+            <h2 className="text-3xl md:text-[38px] font-medium leading-tight tracking-tight text-[#1E293B]">
               Complete IT Development Services
             </h2>
-            <p className="mt-6 text-[20px] font-normal leading-relaxed tracking-[-0.04em] text-[#3B4352]">
-              <span className="block">
-                Professional IT solutions designed to help your business grow faster and work smarter in today&apos;s digital world.
-              </span>
+            <p className="mt-3 text-base md:text-[17px] font-normal leading-relaxed text-[#475569] max-w-[600px]">
+              Professional IT solutions designed to help your business grow faster and work smarter in today&apos;s digital landscape.
             </p>
           </div>
 
-          <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+          <motion.div className="flex-shrink-0" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
             <Link
               href="/service"
-              className="inline-flex h-[56px] px-8 items-center justify-center gap-[12px] rounded-full bg-[#38339C] text-[17px] font-semibold text-white"
+              className="inline-flex h-11 md:h-[52px] px-8 items-center justify-center gap-[10px] rounded-full bg-[#38339C] text-[15px] md:text-[16px] font-bold text-white shadow-lg transition-all"
             >
               View all services
               <ArrowUpRightIcon />
@@ -94,9 +92,9 @@ export default function ServiceGrid() {
           </motion.div>
         </motion.div>
 
-        <div className="mt-12 grid w-full grid-cols-3 gap-6">
+        <div className="grid w-full grid-cols-1 md:grid-cols-3 gap-6 px-6 md:px-0">
           <motion.article
-            className="col-span-2 rounded-[24px] bg-white p-10 flex flex-col justify-between"
+            className="col-span-1 md:col-span-2 rounded-[24px] bg-white p-6 md:p-8 flex flex-col justify-between shadow-sm border border-slate-100 transition-all duration-300"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
@@ -107,21 +105,18 @@ export default function ServiceGrid() {
               <Image
                 src="/home/home_images/web-icon.png"
                 alt="Web development"
-                width={32}
-                height={32}
-                className="h-8 w-8"
+                width={28}
+                height={28}
+                className="h-7 w-7"
               />
-              <h3 className="mt-8 text-[32px] font-semibold leading-tight tracking-[-0.05em] text-[#2D3342]">
+              <h3 className="mt-4 text-xl md:text-[28px] font-medium text-[#1E293B]">
                 Web Development
               </h3>
-              <p className="mt-4 text-[18px] font-normal leading-relaxed tracking-[-0.04em] text-[#3B4352]">
-                <span className="block">
-                  Professional websites that look great and help you get more
-                </span>
-                <span className="block">customers. Mobile-friendly and easy to manage</span>
+              <p className="mt-3 text-sm md:text-[16px] text-[#475569] leading-relaxed">
+                Professional websites that look great and help you get more customers. Mobile-friendly and easy to manage.
               </p>
             </div>
-            <div className="relative mt-8 h-[200px] w-full overflow-hidden rounded-[12px]">
+            <div className="relative mt-6 h-[140px] md:h-[180px] w-full overflow-hidden rounded-[20px]">
               <Image
                 src="/home/home_images/bf7783e7afd3bc0d69cd067a36fda981882aabce.png"
                 alt="Global network map"
@@ -132,7 +127,7 @@ export default function ServiceGrid() {
           </motion.article>
 
           <motion.article
-            className="col-span-1 rounded-[24px] bg-[linear-gradient(180deg,#0F2B57_0%,#08234A_100%)] p-10 text-white flex flex-col"
+            className="col-span-1 rounded-[24px] bg-[linear-gradient(180deg,#0F2B57_0%,#08234A_100%)] p-6 md:p-8 text-white flex flex-col shadow-xl transition-all duration-300"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
@@ -142,24 +137,20 @@ export default function ServiceGrid() {
             <Image
               src="/home/home_images/custom-icon.png"
               alt="Custom software development"
-              width={32}
-              height={32}
-              className="h-8 w-8 brightness-0 invert"
+              width={28}
+              height={28}
+              className="h-7 w-7 brightness-0 invert"
             />
-            <h3 className="mt-8 text-[32px] font-semibold leading-tight tracking-[-0.05em]">
-              <span className="block">Custom Software</span>
-              <span className="block">Development</span>
+            <h3 className="mt-4 text-xl md:text-[28px] font-medium">
+              Custom Software Development
             </h3>
-            <p className="mt-6 text-[18px] font-normal leading-relaxed tracking-[-0.04em] text-white/70">
-              <span className="block">Build software that fits your exact business</span>
-              <span className="block">needs. From billing systems to inventory</span>
-              <span className="block">management - we create solutions that</span>
-              <span className="block">work.</span>
+            <p className="mt-4 text-sm md:text-[16px] text-white/80 leading-relaxed">
+              Build software that fits your exact business needs. From billing systems to inventory management.
             </p>
-            <div className="mt-auto pt-10">
+            <div className="mt-auto pt-6">
               <Link
                 href="/service"
-                className="inline-flex items-center gap-[12px] text-[17px] font-semibold text-[#3E67FF]"
+                className="inline-flex items-center gap-[10px] text-[15px] md:text-[16px] font-bold text-[#426AF2]"
               >
                 Learn More
                 <ArrowUpRightIcon />
@@ -170,7 +161,7 @@ export default function ServiceGrid() {
           {miniServices.map((service, index) => (
             <motion.article
               key={service.title}
-              className="rounded-[24px] bg-white p-10"
+              className="rounded-[24px] bg-white p-6 md:p-8 shadow-sm border border-slate-100 transition-all duration-300"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 + index * 0.1 }}
@@ -180,19 +171,15 @@ export default function ServiceGrid() {
               <Image
                 src={service.icon}
                 alt={service.title}
-                width={32}
-                height={32}
-                className="h-8 w-8"
+                width={28}
+                height={28}
+                className="h-7 w-7"
               />
-              <h3 className="mt-8 text-[28px] font-semibold leading-tight tracking-[-0.05em] text-[#2D3342]">
+              <h3 className="mt-4 text-lg md:text-[22px] font-medium text-[#1E293B]">
                 {service.title}
               </h3>
-              <p className="mt-4 text-[18px] font-normal leading-relaxed tracking-[-0.04em] text-[#3B4352]">
-                {service.description.map((line) => (
-                  <span key={line} className="block">
-                    {line}
-                  </span>
-                ))}
+              <p className="mt-3 text-sm md:text-[15px] text-[#475569] leading-relaxed">
+                {service.description.join(" ")}
               </p>
             </motion.article>
           ))}
@@ -201,3 +188,4 @@ export default function ServiceGrid() {
     </section>
   );
 }
+
