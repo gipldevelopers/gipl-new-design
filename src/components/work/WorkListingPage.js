@@ -12,25 +12,25 @@ export default function WorkListingPage() {
   const featured = workItems[0];
 
   return (
-    <main className="w-full bg-[#F5F7FB] py-12 md:py-[64px] overflow-x-hidden">
+    <main className="w-full bg-[#F5F7FB] pt-10 md:pt-[40px] pb-12 md:pb-[80px] overflow-x-hidden">
       <div className="mx-auto w-full max-w-[1440px] px-6 md:px-[34px]">
 
         {/* Header */}
-        <div className="text-left">
+        <div className="mb-10 md:mb-[60px] text-left">
           <motion.p
-            className="text-[12px] font-[700] uppercase tracking-[2px] text-[#4F6EF7] font-roboto"
+            className="text-[11px] md:text-[14px] font-[500] text-[#2F2C8F] uppercase tracking-[0.1em] mb-3 md:mb-[16px]"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: false }}
           >
-            OUT WORK
+            OUR WORK
           </motion.p>
-          <h1 className="mt-3 md:mt-[16px] w-full text-3xl xs:text-4xl md:text-[56px] font-[800] leading-[1.1] tracking-[-0.03em] text-[#1E293B] font-poppins">
+          <h1 className="text-[28px] xs:text-4xl md:text-[56px] font-[700] leading-tight md:leading-[1.1] tracking-tight md:tracking-[-0.02em] text-[#0F172A] mb-4 md:mb-[16px] max-w-[800px]">
             Crafting Digital Solutions, Delivering Excellence
           </h1>
           <motion.p
-            className="mt-6 md:mt-[24px] w-full text-base md:text-[19px] font-[400] leading-relaxed text-[#64748B] font-manrope"
+            className="text-base md:text-[18px] font-[400] leading-relaxed md:leading-[1.7] text-[#64748B] max-w-[900px] md:mx-0"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
@@ -62,6 +62,7 @@ export default function WorkListingPage() {
               src={featured.image}
               alt={featured.projectName}
               fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-cover"
             />
           </motion.div>
@@ -92,6 +93,7 @@ export default function WorkListingPage() {
                   width={32}
                   height={32}
                   className="h-7 md:h-[32px] w-7 md:w-[32px]"
+                  style={{ width: "auto", height: "auto" }}
                 />
               </div>
             </div>
@@ -119,6 +121,7 @@ export default function WorkListingPage() {
           {workItems.concat(workItems, workItems).slice(0, 6).map((item, index) => (
             <motion.div
               key={`${item.slug}-${index}`}
+              className="h-full"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.5 + index * 0.1 }}

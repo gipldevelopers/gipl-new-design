@@ -77,13 +77,15 @@ export default function ServiceCardsSection() {
               <motion.div whileHover={{ scale: 1.1 }}>
                 <div className="flex h-12 w-12 items-center justify-center rounded-[12px] bg-[#1E2A45]">
                   {item.imgSrc ? (
+                  <div className="relative w-6 h-6">
                     <Image
                       src={item.imgSrc}
                       alt={item.title}
-                      width={24}
-                      height={24}
+                      fill
+                      sizes="24px"
                       className={`object-contain ${item.imgClassName || ""}`}
                     />
+                  </div>
                   ) : (
                     <ServiceCardIcon />
                   )}

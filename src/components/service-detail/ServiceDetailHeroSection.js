@@ -14,6 +14,7 @@ export default function ServiceDetailHeroSection({ service }) {
           width={120}
           height={120}
           className="pointer-events-none absolute bottom-[100px] left-[40px] opacity-20 hidden lg:block"
+          style={{ width: "auto", height: "auto" }}
         />
         <Image
           src="/service-detailed/Group 1688 (3).svg"
@@ -21,6 +22,7 @@ export default function ServiceDetailHeroSection({ service }) {
           width={48}
           height={48}
           className="pointer-events-none absolute bottom-[140px] right-[60px] opacity-20 hidden lg:block"
+          style={{ width: "auto", height: "auto" }}
         />
 
         <motion.h1 
@@ -77,7 +79,7 @@ export default function ServiceDetailHeroSection({ service }) {
             viewport={{ once: false }}
             whileHover={{ scale: 1.02, y: -5 }}
           >
-            <Image src={service.collageImages.leftBottom} alt="" fill className="object-cover" />
+            <Image src={service.collageImages.leftBottom} alt="" fill sizes="(max-width: 1024px) 100vw, 30vw" className="object-cover" />
           </motion.div>
           <motion.div 
             className="absolute left-[25.7%] top-0 h-[210px] w-[23%] overflow-hidden rounded-[16px] border-[6px] border-white shadow-lg"
@@ -87,7 +89,7 @@ export default function ServiceDetailHeroSection({ service }) {
             viewport={{ once: false }}
             whileHover={{ scale: 1.02, y: -5 }}
           >
-            <Image src={service.collageImages.centerTop} alt="" fill className="object-cover" />
+            <Image src={service.collageImages.centerTop} alt="" fill sizes="(max-width: 1024px) 100vw, 30vw" className="object-cover" />
           </motion.div>
           <motion.div 
             className="absolute left-[51.4%] top-0 h-[210px] w-[23%] overflow-hidden rounded-[16px] border-[6px] border-white shadow-lg"
@@ -97,7 +99,7 @@ export default function ServiceDetailHeroSection({ service }) {
             viewport={{ once: false }}
             whileHover={{ scale: 1.02, y: -5 }}
           >
-            <Image src={service.collageImages.rightTop} alt="" fill className="object-cover" />
+            <Image src={service.collageImages.rightTop} alt="" fill sizes="(max-width: 1024px) 100vw, 30vw" className="object-cover" />
           </motion.div>
           <motion.div 
             className="absolute right-0 bottom-0 h-[210px] w-[23%] overflow-hidden rounded-[16px] border-[6px] border-white shadow-lg"
@@ -107,7 +109,7 @@ export default function ServiceDetailHeroSection({ service }) {
             viewport={{ once: false }}
             whileHover={{ scale: 1.02, y: -5 }}
           >
-            <Image src={service.collageImages.farRight} alt="" fill className="object-cover" />
+            <Image src={service.collageImages.farRight} alt="" fill sizes="(max-width: 1024px) 100vw, 30vw" className="object-cover" />
           </motion.div>
           <motion.div 
             className="absolute bottom-0 left-[25.7%] h-[140px] w-[49.3%] overflow-hidden rounded-[16px] border-[6px] border-white shadow-lg"
@@ -117,7 +119,7 @@ export default function ServiceDetailHeroSection({ service }) {
             viewport={{ once: false }}
             whileHover={{ scale: 1.02, y: -5 }}
           >
-            <Image src={service.collageImages.bottomWide} alt="" fill className="object-cover" />
+            <Image src={service.collageImages.bottomWide} alt="" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover" />
           </motion.div>
         </motion.div>
       </div>

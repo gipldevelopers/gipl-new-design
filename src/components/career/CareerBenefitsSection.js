@@ -110,6 +110,7 @@ export default function CareerBenefitsSection() {
                 src="/career/bf7783e7afd3bc0d69cd067a36fda981882aabce.png"
                 alt="Global exposure graphic"
                 fill
+                sizes="(max-width: 1024px) 100vw, 33vw"
                 className="object-cover"
               />
             </motion.div>

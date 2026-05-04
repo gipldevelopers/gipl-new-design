@@ -2,61 +2,75 @@
 
 import { motion } from "framer-motion";
 
-export default function StatsSection() {
-  const stats = [
-    {
-      number: "200+",
-      label: "Projects Completed"
-    },
-    {
-      number: "95%",
-      label: "Client Satisfaction"
-    },
-    {
-      number: "5+",
-      label: "Years Experience"
-    },
-    {
-      number: "24/7",
-      label: "Technical Support"
-    }
-  ];
+const statistics = [
+  {
+    number: "200+",
+    label: "Projects Completed",
+  },
+  {
+    number: "95%",
+    label: "Client Satisfaction",
+  },
+  {
+    number: "5+",
+    label: "Years Experience",
+  },
+  {
+    number: "24/7",
+    label: "Technical Support",
+  },
+];
 
+export default function StatsSection() {
   return (
-    <section className="w-full bg-[#F7F9FE] pb-12 md:pb-[80px]">
+    <section className="w-full bg-[#F7F9FE] pt-8 pb-20">
       <div className="mx-auto w-full max-w-[1440px] px-6 md:px-[34px]">
         <motion.div
-          className="bg-[#0A2347] rounded-[20px] px-8 md:px-[60px] py-10 md:py-[40px]"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: false }}
+          className="rounded-[24px] bg-[#1E2A45] px-6 md:px-16 py-12"
         >
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-0">
-            {stats.map((stat, index) => (
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-y-12 md:gap-y-8 gap-x-4 md:gap-x-8">
+            {statistics.map((stat, index) => (
               <motion.div
-                key={index}
-                className="text-left relative px-4 md:px-[30px]"
+                key={stat.label}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: false }}
+                className="text-left relative md:px-4"
               >
-                <div className="text-3xl xs:text-4xl md:text-[48px] font-[700] text-white mb-2 md:mb-[8px] font-poppins">
-                  {stat.number}
-                </div>
-                <div className="text-xs md:text-[14px] font-[400] text-white font-manrope">
-                  {stat.label}
-                </div>
-                {index < stats.length - 1 && (
-                  <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-[2px] h-8 md:h-[40px] bg-[#2F5ACB] hidden md:block"></div>
+                {/* Divider line - visible between columns on mobile (grid-cols-2) and all except last on desktop */}
+                {index < statistics.length - 1 && (
+                  <div className={`absolute right-[-8px] md:right-0 top-1/2 h-12 md:h-16 w-[1px] bg-white/30 transform -translate-y-1/2 ${index % 2 === 1 ? 'hidden md:block' : ''}`} />
                 )}
+
+                <motion.h3
+                  className="text-3xl md:text-[48px] font-bold leading-tight text-white mb-2"
+                  initial={{ scale: 0.8 }}
+                  whileInView={{ scale: 1 }}
+                  transition={{ duration: 0.5, delay: index * 0.1 + 0.2 }}
+                  viewport={{ once: false }}
+                >
+                  {stat.number}
+                </motion.h3>
+
+                <motion.p
+                  className="text-[16px] font-medium text-white/80"
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  transition={{ duration: 0.5, delay: index * 0.1 + 0.3 }}
+                  viewport={{ once: false }}
+                >
+                  {stat.label}
+                </motion.p>
               </motion.div>
             ))}
           </div>
         </motion.div>
       </div>
     </section>
-
   );
 }

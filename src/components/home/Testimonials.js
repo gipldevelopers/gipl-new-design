@@ -117,6 +117,7 @@ export default function Testimonials() {
                       width={48}
                       height={48}
                       className="opacity-100"
+                      style={{ width: "auto", height: "auto" }}
                     />
                   </div>
 

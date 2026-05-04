@@ -20,7 +20,7 @@ export default function DetailLayout({
       <div className="mx-auto max-w-[1440px] px-6 md:px-[34px] pb-12 md:pb-[60px] pt-[8px]">
 
         {/* Hero Section */}
-        <motion.div 
+        <motion.div
           className="relative bg-[#031744] rounded-[20px] overflow-visible"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -33,7 +33,7 @@ export default function DetailLayout({
 
           {/* Content Container */}
           <div className="relative z-10 px-6 md:px-[48px] pt-12 md:pt-[50px] pb-0 text-center">
-            <motion.h1 
+            <motion.h1
               className="text-2xl xs:text-3xl md:text-[48px] font-[700] leading-tight md:leading-[1.2] tracking-[-0.03em] text-white max-w-[900px] mx-auto mb-4 md:mb-[16px]"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -42,7 +42,7 @@ export default function DetailLayout({
             >
               {title}
             </motion.h1>
-            <motion.p 
+            <motion.p
               className="mx-auto max-w-[1200px] text-sm md:text-[16px] font-[400] leading-relaxed md:leading-[1.5] tracking-[-0.01em] text-[#D8E4F3]"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -68,10 +68,14 @@ export default function DetailLayout({
                   {tech.map((t, i) => (
                     <div key={i} className="w-11 h-11 flex items-center justify-center rounded-xl bg-white/10 backdrop-blur-md border border-white/10 shadow-lg" title={t}>
                       {t === "React" && (
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#61DAFB" strokeWidth="2" />
-                          <path d="M8 12L11 15L16 9" stroke="#61DAFB" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                        </svg>
+                        <Image
+                          src="/blog/vscode-icons_file-type-reactjs.svg"
+                          alt="React logo"
+                          width={24}
+                          height={24}
+                          className="w-6 h-6 object-contain"
+                          style={{ width: "auto", height: "auto" }}
+                        />
                       )}
                     </div>
                   ))}
@@ -81,14 +85,14 @@ export default function DetailLayout({
           </div>
 
           {/* Hero Image - Responsive Positioning */}
-          <motion.div 
+          <motion.div
             className="relative px-6 md:px-[48px] pb-0"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
             viewport={{ once: false }}
           >
-            <motion.div 
+            <motion.div
               className="relative max-w-[900px] mx-auto h-[240px] xs:h-[300px] md:h-[450px] overflow-hidden rounded-[20px] shadow-[0_20px_60px_rgba(0,0,0,0.3)] transform translate-y-[40px] md:translate-y-[100px]"
               whileHover={{ scale: 1.02 }}
               transition={{ duration: 0.3 }}
@@ -97,6 +101,7 @@ export default function DetailLayout({
                 src={heroImage}
                 alt={heroImageAlt || title}
                 fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1440px) 900px, 900px"
                 className="object-cover"
                 priority
               />
@@ -117,7 +122,7 @@ export default function DetailLayout({
                   transition={{ duration: 0.6, delay: sectionIndex * 0.1 }}
                   viewport={{ once: false }}
                 >
-                  <motion.div 
+                  <motion.div
                     className="relative h-[240px] xs:h-[300px] md:h-[320px] overflow-hidden rounded-[16px]"
                     initial={{ opacity: 0, scale: 0.95 }}
                     whileInView={{ opacity: 1, scale: 1 }}
@@ -129,6 +134,7 @@ export default function DetailLayout({
                       src={section.image}
                       alt={section.imageAlt || section.heading}
                       fill
+                      sizes="(max-width: 1024px) 100vw, 50vw"
                       className="object-cover"
                     />
                   </motion.div>
@@ -162,7 +168,7 @@ export default function DetailLayout({
             }
 
             return (
-              <motion.div 
+              <motion.div
                 key={section.heading}
                 className="text-center md:text-left"
                 initial={{ opacity: 0, y: 30 }}
@@ -170,7 +176,7 @@ export default function DetailLayout({
                 transition={{ duration: 0.6, delay: sectionIndex * 0.1 }}
                 viewport={{ once: false }}
               >
-                <motion.h2 
+                <motion.h2
                   className="text-xl md:text-[28px] font-[700] leading-tight md:leading-[1.3] tracking-[-0.02em] text-[#1F2937]"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -194,7 +200,7 @@ export default function DetailLayout({
                   ))}
                 </div>
                 {section.bullets?.length ? (
-                  <motion.ul 
+                  <motion.ul
                     className="mt-6 md:mt-[20px] space-y-3 md:space-y-[12px] flex flex-col items-center md:items-start"
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
@@ -222,14 +228,14 @@ export default function DetailLayout({
         </div>
 
         {/* Related items */}
-        <motion.div 
+        <motion.div
           className="mt-16 md:mt-[72px]"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: false }}
         >
-          <motion.h3 
+          <motion.h3
             className="text-center text-2xl md:text-[28px] font-[700] leading-tight md:leading-[1.2] tracking-[-0.02em] text-[#2B3440]"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -238,7 +244,7 @@ export default function DetailLayout({
           >
             {relatedHeading}
           </motion.h3>
-          <motion.div 
+          <motion.div
             className="mx-auto mt-8 md:mt-[36px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-[24px] max-w-[1120px]"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -248,6 +254,7 @@ export default function DetailLayout({
             {relatedItems.map((item, index) => (
               <motion.div
                 key={item.slug}
+                className="h-full"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}

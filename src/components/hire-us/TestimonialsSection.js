@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 const testimonials = [
   {
@@ -124,11 +125,13 @@ export default function TestimonialsSection() {
                   </p>
 
                   <div className="mt-auto pt-6 flex items-center gap-4">
-                    <div className="w-[52px] h-[52px] rounded-full overflow-hidden shrink-0 border-2 border-white shadow-sm">
-                      <img
+                    <div className="w-[52px] h-[52px] rounded-full overflow-hidden shrink-0 border-2 border-white shadow-sm relative">
+                      <Image
                         src={item.image}
                         alt={item.name}
-                        className="h-full w-full object-cover grayscale"
+                        fill
+                        sizes="52px"
+                        className="object-cover grayscale"
                       />
                     </div>
                     <div className="flex flex-col min-w-0">

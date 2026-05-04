@@ -56,9 +56,15 @@ export default function BenefitsSection() {
               viewport={{ once: false }}
               whileHover={{ y: -5, transition: { duration: 0.2 } }}
             >
-              <div className="w-12 h-12 md:w-[56px] md:h-[56px] bg-[#EEF2FF] rounded-[12px] flex items-center justify-center mx-auto mb-5 md:mb-[24px]">
+              <div className="relative w-12 h-12 md:w-[56px] md:h-[56px] bg-[#EEF2FF] rounded-[12px] flex items-center justify-center mx-auto mb-5 md:mb-[24px] overflow-hidden p-3 md:p-4">
                 {benefit.imgSrc ? (
-                  <Image src={benefit.imgSrc} alt={benefit.title} width={24} height={24} className="object-contain" />
+                  <Image 
+                    src={benefit.imgSrc} 
+                    alt={benefit.title} 
+                    fill 
+                    sizes="(max-width: 768px) 48px, 56px"
+                    className="object-contain p-2" 
+                  />
                 ) : null}
               </div>
               <h3 className="text-lg md:text-[20px] font-[600] text-[#0F172A] mb-2 md:mb-[12px]">

@@ -57,6 +57,7 @@ export default function TrustedLeaders() {
                   src={leader.icon}
                   alt={leader.name}
                   fill
+                  sizes="(max-width: 768px) 128px, 160px"
                   className="object-contain"
                 />
               </div>

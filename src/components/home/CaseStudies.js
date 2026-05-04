@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 
 const projects = [
   {
@@ -127,10 +128,12 @@ export default function CaseStudies() {
               animate={{ scale: 1 }}
               transition={{ duration: 0.8 }}
             >
-              <img
+              <Image
                 src={project.image}
                 alt={`${project.title} Background`}
-                className="w-full h-full object-cover opacity-60"
+                fill
+                sizes="(max-width: 1024px) 100vw, 80vw"
+                className="object-cover opacity-60"
               />
               <div className="absolute inset-0 bg-gradient-to-r from-[#0F172A] via-[#0F172A]/80 to-transparent"></div>
             </motion.div>

@@ -34,98 +34,107 @@ function ArrowUpRightIcon({ className = "" }) {
 
 export default function Hero() {
   return (
-    <section className="w-full bg-[linear-gradient(93.36deg,#0A1F3B_0.52%,#08254D_54.86%,#07234A_100%)] min-h-screen flex items-center justify-center overflow-hidden ">
-      <div className="home-section-container w-full flex flex-col md:flex-row items-center justify-between gap-12 py-12 md:py-0 ">
-        <motion.div
-          className="flex-1 w-full"
-          initial={{ opacity: 0, x: -30 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: false }}
-        >
-          <h1 className="text-3xl sm:text-4xl md:text-[56px] lg:text-[64px] font-[800] leading-[1.2] md:leading-[1.1] tracking-[-0.04em] text-white font-poppins">
-            <span className="block">Growth and Digital</span>
-            <span className="block">
-              Transformation
-            </span>
-          </h1>
-
-          <motion.p
-            className="mt-6 md:mt-[30px] max-w-[650px] text-base sm:text-lg md:text-[20px] lg:text-[22px] font-normal leading-[1.6] tracking-[-0.02em] text-white/90 font-manrope"
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            viewport={{ once: false }}
-          >
-            Comprehensive solutions designed to accelerate your business growth and digital transformation.
-          </motion.p>
-
+    <section className="w-full bg-[linear-gradient(93.36deg,#0A1F3B_0.52%,#08254D_54.86%,#07234A_100%)] overflow-hidden">
+      <div className="mx-auto w-full max-w-[1440px] px-6 md:px-[34px] py-16 md:py-[90px]">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-16">
           <motion.div
-            className="mt-8 md:mt-[40px] flex flex-col sm:flex-row items-center gap-[16px] sm:gap-[20px]"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
+            className="w-full lg:flex-1 max-w-[640px] text-center lg:text-left"
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
             viewport={{ once: false }}
           >
-            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="w-full sm:w-auto">
-              <Link
-                href="/contact"
-                className="inline-flex w-full sm:w-auto h-12 md:h-[56px] px-10 items-center justify-center gap-[12px] rounded-full bg-[linear-gradient(90deg,#426AF2_0%,#416BF4_100%)] text-[16px] md:text-[17px] font-semibold text-white font-manrope"
-              >
-                Start your project
-                <ArrowUpRightIcon />
-              </Link>
+            <h1 className="text-4xl xs:text-5xl md:text-[64px] font-[800] leading-tight md:leading-[1.15] tracking-tight md:tracking-[-2px] text-white font-poppins">
+              <span className="block">Growth and Digital</span>
+              <span className="block">
+                Transformation
+              </span>
+            </h1>
+
+            <motion.p
+              className="mt-6 md:mt-[28px] text-base md:text-[20px] leading-relaxed md:leading-[1.6] tracking-tight md:tracking-[-0.3px] text-white/80 font-[400] font-manrope"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              viewport={{ once: false }}
+            >
+              Comprehensive solutions designed to accelerate your business growth and digital transformation.
+            </motion.p>
+
+            <motion.div
+              className="mt-8 md:mt-[36px] flex flex-col sm:flex-row items-center gap-[16px] sm:gap-[20px] justify-center lg:justify-start"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+              viewport={{ once: false }}
+            >
+              <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="w-full sm:w-auto">
+                <Link
+                  href="/contact"
+                  className="inline-flex w-full sm:w-auto h-[52px] md:h-[56px] px-10 items-center justify-center gap-[12px] rounded-full bg-[linear-gradient(90deg,#426AF2_0%,#416BF4_100%)] text-[16px] md:text-[17px] font-semibold text-white font-manrope"
+                >
+                  Start your project
+                  <ArrowUpRightIcon />
+                </Link>
+              </motion.div>
             </motion.div>
           </motion.div>
-        </motion.div>
 
-
-
-        <motion.div
-          className="relative w-full max-w-[400px] lg:max-w-[500px] aspect-square shrink-0 mx-auto mt-12 md:mt-0"
-          initial={{ opacity: 0, x: 30 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: false }}
-        >
-          <div className="relative h-full w-full overflow-hidden rounded-[24px] bg-black shadow-[0_32px_64px_rgba(0,0,0,0.3)]">
-            <Image
-              src="/home/home_images/35426d19ba38a55a742624ed86c4f5d95b7506e1.png"
-              alt="Abstract digital structure"
-              fill
-              priority
-              className="object-cover"
-            />
-          </div>
-
+          {/* Right image */}
           <motion.div
-            className="absolute bottom-[-20px] md:bottom-[-30px] left-4 md:left-[-30px] flex h-[70px] md:h-[90px] w-[200px] md:w-[260px] items-center gap-[12px] md:gap-[18px] rounded-[24px] bg-[#C9CDD3] px-4 md:px-6 shadow-[0_18px_45px_rgba(0,0,0,0.22)] z-10"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
+            className="relative w-full lg:w-[520px] max-w-[520px]"
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: false }}
           >
-            <div className="flex h-10 w-10 md:h-[52px] md:w-[52px] shrink-0 items-center justify-center rounded-[12px] bg-[linear-gradient(180deg,#1EB6EC_0%,#2D348F_100%)]">
+            <motion.div
+              className="relative overflow-hidden rounded-[24px] bg-black h-[320px] xs:h-[400px] md:h-[480px] w-full"
+              whileHover={{ scale: 1.02 }}
+            >
               <Image
-                src="/career/Icon (9).svg"
-                alt="Rocket status icon"
-                width={26}
-                height={26}
-                className="h-5 w-5 md:h-[26px] md:w-[26px]"
+                src="/career/35426d19ba38a55a742624ed86c4f5d95b7506e1.png"
+                alt="Technology hero visual"
+                fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                priority
+                className="object-cover"
               />
-            </div>
-            <div>
-              <p className="text-[9px] md:text-[11px] font-[700] uppercase tracking-[1px] md:tracking-[1.6px] text-[#28344D] font-manrope">
-                System Status
-              </p>
-              <p className="mt-[2px] md:mt-[4px] text-sm md:text-[16px] font-[700] text-[#111827] font-poppins">
-                100% Operational
-              </p>
-            </div>
+            </motion.div>
+
+            <motion.div
+              className="absolute bottom-[-16px] left-[-16px] md:bottom-[-24px] md:left-[-24px] flex h-[72px] md:h-[88px] w-[220px] md:w-[260px] items-center rounded-[16px] bg-[#CFCFD0] pl-4 md:pl-[20px] shadow-[0_10px_24px_rgba(0,0,0,0.12)]"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.5 }}
+              viewport={{ once: false }}
+              whileHover={{ y: -5 }}
+            >
+              <motion.div
+                className="flex h-10 md:h-[48px] w-10 md:w-[48px] shrink-0 items-center justify-center rounded-[8px] bg-[linear-gradient(180deg,#18C3F1_0%,#2B3DAA_100%)]"
+                whileHover={{ scale: 1.1 }}
+              >
+                <Image
+                  src="/career/Icon (9).svg"
+                  alt=""
+                  width={22}
+                  height={22}
+                  className="h-5 md:h-[22px] w-5 md:w-[22px]"
+                />
+              </motion.div>
+              <div className="ml-3 md:ml-[12px]">
+                <p className="text-[9px] md:text-[11px] font-[600] uppercase tracking-[1px] md:tracking-[1.4px] text-[#28344D]">
+                  System Status
+                </p>
+                <p className="mt-[2px] md:mt-[3px] text-sm md:text-[15px] font-[600] text-white">
+                  100% Operational
+                </p>
+              </div>
+            </motion.div>
           </motion.div>
-        </motion.div>
+        </div>
       </div>
     </section>
-
   );
 }
+

@@ -42,10 +42,12 @@ export default function ServicesSection() {
             whileHover={{ scale: 1.02 }}
           >
             <div className="absolute inset-0">
-              <img
+              <Image
                 src="/hire-us/243bbc3eaf9933e3a8dfd6eb280e396df46e86d1.png"
                 alt="Code background"
-                className="w-full h-full object-cover opacity-50"
+                fill
+                sizes="(max-width: 1024px) 100vw, 60vw"
+                className="object-cover opacity-50"
               />
             </div>
             <div className="relative z-10">
@@ -68,7 +70,7 @@ export default function ServicesSection() {
             whileHover={{ scale: 1.02 }}
           >
             <div className="w-10 h-10 md:w-[48px] md:h-[48px] bg-white/20 rounded-[12px] flex items-center justify-center mb-6 md:mb-[24px]">
-              <Image src="/hire-us/mobile.png" alt="Mobile Apps" width={24} height={24} className="object-contain brightness-0 invert" />
+              <Image src="/hire-us/mobile.png" alt="Mobile Apps" width={24} height={24} className="object-contain brightness-0 invert" style={{ width: "auto", height: "auto" }} />
             </div>
             <h3 className="text-2xl md:text-[32px] font-[700] mb-3 md:mb-[16px]">
               Mobile Apps
@@ -91,7 +93,7 @@ export default function ServicesSection() {
             whileHover={{ scale: 1.02 }}
           >
             <div className="w-10 h-10 md:w-[48px] md:h-[48px] bg-[#5B73F7]/20 rounded-[12px] flex items-center justify-center mb-6 md:mb-[24px]">
-              <Image src="/hire-us/cloud.png" alt="Cloud Solutions" width={24} height={24} className="object-contain" />
+              <Image src="/hire-us/cloud.png" alt="Cloud Solutions" width={24} height={24} className="object-contain" style={{ width: "auto", height: "auto" }} />
             </div>
             <h3 className="text-xl md:text-[24px] font-[700] text-[#0F172A] mb-3 md:mb-[12px]">
               Cloud Solutions
@@ -128,17 +130,19 @@ export default function ServicesSection() {
 
           {/* UI/UX Image - Takes 1 column */}
           <motion.div
-            className="md:col-span-1 bg-[#6B8E7F] rounded-[20px] flex items-center justify-center h-[240px] md:h-[280px] overflow-hidden"
+            className="md:col-span-1 bg-[#6B8E7F] rounded-[20px] flex items-center justify-center h-[240px] md:h-[280px] overflow-hidden relative"
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.3 }}
             viewport={{ once: false }}
             whileHover={{ scale: 1.05 }}
           >
-            <img
+            <Image
               src="/hire-us/d38a7fe648846fac21bcac9c7f47b0df8c15fa07.jpg"
               alt="UI/UX Design"
-              className="w-full h-full object-cover"
+              fill
+              sizes="(max-width: 1024px) 100vw, 30vw"
+              className="object-cover"
             />
           </motion.div>
         </div>

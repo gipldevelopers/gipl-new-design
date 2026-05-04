@@ -10,12 +10,13 @@ export default function Card({
   imageAlt,
 }) {
   return (
-    <article className="rounded-[16px] border border-[#E6EAF2] bg-white overflow-hidden shadow-[0_2px_12px_rgba(15,23,42,0.06)] flex flex-col">
+    <article className="h-full rounded-[16px] border border-[#E6EAF2] bg-white overflow-hidden shadow-[0_2px_12px_rgba(15,23,42,0.06)] flex flex-col">
       <div className="relative h-[200px] w-full overflow-hidden">
         <Image
           src={image}
           alt={imageAlt || title}
           fill
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
           className="object-cover"
         />
       </div>
@@ -38,7 +39,9 @@ export default function Card({
           >
             Learn More
           </Link>
-          <span className="text-[18px] leading-none text-[#4F6EF7]">→</span>
+          <Link href={href}>
+            <span className="text-[18px] leading-none text-[#4F6EF7] hover:translate-x-1 transition-transform inline-block">→</span>
+          </Link>
         </div>
       </div>
     </article>

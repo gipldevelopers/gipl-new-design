@@ -24,6 +24,7 @@ function ServiceDetailCard({ title, index }) {
           width={24}
           height={24}
           className="h-[24px] w-[24px]"
+          style={{ width: "auto", height: "auto" }}
         />
       </motion.div>
 

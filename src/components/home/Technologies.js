@@ -68,6 +68,7 @@ export default function ServiceTechnologySection() {
                     src={tech.icon}
                     alt={tech.name}
                     fill
+                    sizes="(max-width: 1024px) 100vw, 48px"
                     className="object-contain"
                   />
                 </div>

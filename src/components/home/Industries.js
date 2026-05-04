@@ -81,6 +81,7 @@ function IndustryCard({ title, icon, image, className }) {
           src={image}
           alt={title.replace("\n", " ")}
           fill
+          sizes="(max-width: 1024px) 100vw, 170px"
           className="object-cover"
         />
         <div className="absolute inset-0 bg-[rgba(21,32,52,0.3)]" />
@@ -93,6 +94,7 @@ function IndustryCard({ title, icon, image, className }) {
             src={icon}
             alt={title.replace("\n", " ")}
             fill
+            sizes="(max-width: 1024px) 100vw, 62px"
             className="object-contain"
           />
         </div>
