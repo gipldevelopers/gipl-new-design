@@ -108,6 +108,7 @@ export default function EngineeringSolutions() {
                   width={24}
                   height={24}
                   className="h-6 w-6"
+                  style={{ width: "auto", height: "auto" }}
                 />
               </div>
               <h3 className="mt-6 text-[20px] font-bold text-[#1E293B]">

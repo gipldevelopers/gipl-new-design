@@ -24,9 +24,9 @@ export const metadata = {
   description: "Gohil Infotech provides software development, HRMS, CRM, POS, ERP & complete digital solutions for businesses in Gujarat & worldwide.",
   keywords: "IT company Ahmedabad, software development Gujarat, HRMS, CRM, POS, ERP",
   icons: {
-    icon: '/icon.png',
-    shortcut: '/icon.png',
-    apple: '/icon.png',
+    icon: '/icons/Icon.svg',
+    shortcut: '/icons/Icon.svg',
+    apple: '/icons/Icon.svg',
   },
   openGraph: {
     title: "Gohil Infotech Private Limited",

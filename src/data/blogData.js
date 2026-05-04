@@ -5,8 +5,8 @@ export const blogPosts = [
     category: "PRODUCT ENGINEERING",
     date: "April 15, 2026",
     author: "GIPL Editorial Team",
-    image: "/blog/5dfc17f4d68f5f701ec8dc7de6475f65df490a95.png",
-    detailImage: "/blog/5dfc17f4d68f5f701ec8dc7de6475f65df490a95.png",
+    image: "/blog/blog-detail/cb1adf7635102eb66dffcef4f424a32cba202073.png",
+    detailImage: "/blog/blog-detail/cb1adf7635102eb66dffcef4f424a32cba202073.png",
     summary:
       "GVoice HR Software is a comprehensive solution designed to simplify HR operations and empower organizations with smarter workforce management.",
     excerpt:
@@ -24,7 +24,7 @@ export const blogPosts = [
     category: "WEB DEVELOPMENT",
     date: "March 12, 2026",
     author: "GIPL Editorial Team",
-    image: "/blog/5dfc17f4d68f5f701ec8dc7de6475f65df490a95.png",
+    image: "/blog/blog-detail/cb1adf7635102eb66dffcef4f424a32cba202073.png",
     detailImage: "/blog/blog-detail/cb1adf7635102eb66dffcef4f424a32cba202073.png",
     summary:
       "Exploring how childcare management platforms streamline operations, parent communication, and day-to-day visibility for growing centers.",
@@ -42,7 +42,7 @@ export const blogPosts = [
     category: "WEB DEVELOPMENT",
     date: "March 3, 2026",
     author: "GIPL Editorial Team",
-    image: "/blog/91b824002c5b478d1fafc6a4a81d3e848e7a3342.png",
+    image: "/blog/blog-detail/cb1adf7635102eb66dffcef4f424a32cba202073.png",
     detailImage: "/blog/blog-detail/cb1adf7635102eb66dffcef4f424a32cba202073 (1).png",
     summary:
       "What scalable product architecture looks like when speed, maintainability, and clarity all matter at once.",
@@ -60,7 +60,7 @@ export const blogPosts = [
     category: "WEB DEVELOPMENT",
     date: "February 18, 2026",
     author: "GIPL Editorial Team",
-    image: "/blog/5dfc17f4d68f5f701ec8dc7de6475f65df490a95.png",
+    image: "/blog/blog-detail/cb1adf7635102eb66dffcef4f424a32cba202073.png",
     detailImage: "/blog/blog-detail/cb1adf7635102eb66dffcef4f424a32cba202073.png",
     summary:
       "How product teams align UX, engineering, and business goals without sacrificing speed.",

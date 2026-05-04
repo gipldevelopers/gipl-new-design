@@ -121,6 +121,7 @@ export default function ServiceGrid() {
                 src="/home/home_images/bf7783e7afd3bc0d69cd067a36fda981882aabce.png"
                 alt="Global network map"
                 fill
+                sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover"
               />
             </div>

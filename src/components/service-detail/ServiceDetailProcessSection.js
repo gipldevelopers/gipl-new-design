@@ -68,6 +68,7 @@ export default function ServiceDetailProcessSection({ items }) {
                       width={24}
                       height={24}
                       className="h-[24px] w-[24px]"
+                      style={{ width: "auto", height: "auto" }}
                     />
                   </motion.div>
                   <h3 className="mt-5 md:mt-[20px] text-lg md:text-[18px] font-[700] leading-tight md:leading-[1.2] text-[#2E3642]">

@@ -85,6 +85,7 @@ export default function CareerHeroSection() {
                 src="/career/35426d19ba38a55a742624ed86c4f5d95b7506e1.png"
                 alt="Career hero visual"
                 fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
                 priority
                 className="object-cover"
               />
@@ -114,7 +115,7 @@ export default function CareerHeroSection() {
                 <p className="text-[9px] md:text-[11px] font-[600] uppercase tracking-[1px] md:tracking-[1.4px] text-[#28344D]">
                   System Status
                 </p>
-                <p className="mt-[2px] md:mt-[3px] text-sm md:text-[15px] font-[600] text-[#1F2937]">
+                <p className="mt-[2px] md:mt-[3px] text-sm md:text-[15px] font-[600] text-white">
                   100% Operational
                 </p>
               </div>

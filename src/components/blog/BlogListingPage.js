@@ -89,19 +89,19 @@ export default function BlogListingPage() {
   return (
     <main className="w-full bg-[#F5F7FB] overflow-x-hidden">
       {/* Hero Section with Dynamic Content */}
-      <section className="w-full bg-white">
-        <div className="mx-auto w-full max-w-[1440px] px-6 md:px-[34px] py-12 md:py-[60px]">
+      <section className="w-full bg-white pt-24 md:pt-[40px] pb-12 md:pb-[80px]">
+        <div className="mx-auto w-full max-w-[1440px] px-6 md:px-[34px]">
           <div className="flex flex-col md:flex-row items-center md:items-end justify-between gap-8">
             {/* Left Content */}
             <motion.div
-              className="w-full max-w-[600px] text-center md:text-left"
+              className="w-full max-w-[800px] text-left"
               key={activeCategory}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
               <motion.p
-                className="text-[11px] md:text-[12px] font-[700] uppercase tracking-[2px] text-[#4F6EF7]"
+                className="text-[11px] md:text-[14px] font-[500] text-[#2F2C8F] uppercase tracking-[0.1em] mb-3 md:mb-[16px]"
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: 0.1 }}
@@ -109,7 +109,7 @@ export default function BlogListingPage() {
                 {currentCategory.subtitle}
               </motion.p>
               <motion.h1
-                className="mt-3 md:mt-[16px] text-3xl xs:text-4xl md:text-[48px] font-[700] leading-tight md:leading-[1.12] tracking-[-0.03em] text-[#1F2937]"
+                className="text-[28px] xs:text-4xl md:text-[56px] font-[700] leading-tight md:leading-[1.1] tracking-tight md:tracking-[-0.02em] text-[#0F172A] mb-4 md:mb-[16px] max-w-[800px]"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
@@ -117,7 +117,7 @@ export default function BlogListingPage() {
                 {currentCategory.title}
               </motion.h1>
               <motion.p
-                className="mt-4 md:mt-[20px] text-base md:text-[18px] font-[400] leading-relaxed md:leading-[1.7] text-[#6B7280]"
+                className="text-base md:text-[18px] font-[400] leading-relaxed md:leading-[1.7] text-[#64748B] max-w-[900px] md:mx-0"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.3 }}
@@ -179,7 +179,10 @@ export default function BlogListingPage() {
                 src={featuredContent.image}
                 alt={featuredContent.title}
                 fill
+                sizes="(max-width: 1024px) 100vw, 55vw"
                 className="object-cover"
+                priority
+                loading="eager"
               />
             </motion.div>
             <motion.div
@@ -217,10 +220,13 @@ export default function BlogListingPage() {
                   {featuredContent.tech?.map((t, i) => (
                     <div key={i} className="w-9 h-9 flex items-center justify-center rounded-lg bg-[#F8FAFC] border border-[#E2E8F0] shadow-sm" title={t}>
                       {t === "React" && (
-                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#61DAFB" strokeWidth="2" />
-                          <path d="M8 12L11 15L16 9" stroke="#61DAFB" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                        </svg>
+                        <Image
+                          src="/blog/vscode-icons_file-type-reactjs.svg"
+                          alt="React logo"
+                          width={24}
+                          height={24}
+                          className="w-6 h-6 object-contain"
+                        />
                       )}
                     </div>
                   ))}
@@ -263,6 +269,7 @@ export default function BlogListingPage() {
             {blogPosts.concat(blogPosts).slice(0, 6).map((post, index) => (
               <motion.div
                 key={`${post.slug}-${index}`}
+                className="h-full"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}

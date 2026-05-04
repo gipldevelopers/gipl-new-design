@@ -38,6 +38,7 @@ export default function ServiceDetailWhyChooseSection({ items }) {
                   width={24}
                   height={24}
                   className="h-[24px] w-[24px]"
+                  style={{ width: "auto", height: "auto" }}
                 />
               </motion.div>
               <h3 className="mt-5 md:mt-[20px] text-lg md:text-[20px] font-[700] leading-tight text-[#2E3642]">

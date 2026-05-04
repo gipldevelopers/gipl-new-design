@@ -6,8 +6,8 @@ export default function AboutPage() {
   return (
     <>
       <Navbar />
-      <main className="w-full bg-[#E9EAEE] overflow-x-hidden">
-        <div className="mx-auto flex w-full max-w-[1440px] flex-col items-center gap-[56px] px-[34px] py-[26px]">
+      <main className="w-full  overflow-x-hidden">
+        <div className="mx-auto flex w-full max-w-[1440px] flex-col items-center gap-[56px]  md:py-[26px]">
           <AboutPageSections />
         </div>
       </main>

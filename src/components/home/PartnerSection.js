@@ -95,6 +95,7 @@ export default function PartnerSection() {
               src="/home/home_images/f5f38511eb7c731ea5bf9585cfeaa19f8e628677.png"
               alt="Office interior"
               fill
+              sizes="(max-width: 768px) 100vw, 500px"
               className="object-cover"
             />
           </motion.div>

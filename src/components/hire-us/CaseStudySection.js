@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function CaseStudySection() {
   return (
@@ -26,10 +27,12 @@ export default function CaseStudySection() {
           viewport={{ once: false }}
         >
           <div className="absolute inset-0">
-            <img 
+            <Image 
               src="/hire-us/6560e2566312a55b7797604a34bcdfe060398449.png"
               alt="Gvoice POS Background"
-              className="w-full h-full object-cover"
+              fill
+              sizes="100vw"
+              className="object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-b md:bg-gradient-to-r from-black/90 via-black/70 to-black/30 md:to-transparent"></div>
           </div>

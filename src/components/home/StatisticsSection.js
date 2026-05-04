@@ -40,11 +40,11 @@ export default function StatisticsSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: false }}
-                className="text-center relative"
+                className="text-left relative md:px-4"
               >
-                {/* Divider line - show for all except the last item on desktop, hide for 2nd and 4th on mobile */}
+                {/* Divider line - visible between columns on mobile (grid-cols-2) and all except last on desktop */}
                 {index < statistics.length - 1 && (
-                  <div className={`absolute right-0 top-1/2 h-16 w-[1px] bg-white/20 transform -translate-y-1/2 ${index % 2 === 1 ? 'hidden md:block' : ''}`} />
+                  <div className={`absolute right-[-8px] md:right-0 top-1/2 h-12 md:h-16 w-[1px] bg-white/30 transform -translate-y-1/2 ${index % 2 === 1 ? 'hidden md:block' : ''}`} />
                 )}
 
                 <motion.h3

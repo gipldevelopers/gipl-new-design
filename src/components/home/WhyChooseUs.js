@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const reasons = [
   {
-    number: "1",
+    number: "01",
     title: "Local Business Focus",
     description: [
       "We know Gujarat market requirements",
@@ -13,7 +13,7 @@ const reasons = [
     ],
   },
   {
-    number: "2",
+    number: "02",
     title: "Affordable Solutions",
     description: [
       "Quality IT development without heavy",
@@ -22,7 +22,7 @@ const reasons = [
     ],
   },
   {
-    number: "3",
+    number: "03",
     title: "Complete Customization",
     description: [
       "Every business is different. We build",
@@ -31,7 +31,7 @@ const reasons = [
     ],
   },
   {
-    number: "4",
+    number: "04",
     title: "Reliable Support",
     description: [
       "Based in Ahmedabad, we provide quick",
