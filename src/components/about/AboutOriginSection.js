@@ -1,6 +1,8 @@
 "use client";
+
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { siteData } from "@/data/siteData";
 
 export default function AboutOriginSection() {
   return (
@@ -25,10 +27,11 @@ export default function AboutOriginSection() {
               whileHover={{ scale: 1.02 }}
             >
               <Image
-                src="/about/1877c8ffc4eb50d23988e285e17a6c9610d3b1ce.png"
+                src={siteData.about.origin.office}
                 alt="Modern office with plants"
                 fill
                 sizes="(max-width: 768px) 150px, (max-width: 1024px) 220px, 320px"
+                unoptimized={true}
                 className="object-cover"
               />
             </motion.div>
@@ -43,10 +46,11 @@ export default function AboutOriginSection() {
               whileHover={{ scale: 1.02 }}
             >
               <Image
-                src="/about/19e45c51077943ef79bb30f2b8ca27af65faf874.png"
+                src={siteData.about.origin.workspace}
                 alt="Developer workspace"
                 fill
                 sizes="(max-width: 768px) 150px, (max-width: 1024px) 220px, 320px"
+                unoptimized={true}
                 className="object-cover"
               />
             </motion.div>

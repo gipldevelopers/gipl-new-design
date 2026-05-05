@@ -1,3 +1,5 @@
+import { siteData } from "./siteData";
+
 export const blogPosts = [
   {
     slug: "gvoice-hr-software",
@@ -5,8 +7,8 @@ export const blogPosts = [
     category: "PRODUCT ENGINEERING",
     date: "April 15, 2026",
     author: "GIPL Editorial Team",
-    image: "/blog/blog-detail/cb1adf7635102eb66dffcef4f424a32cba202073.png",
-    detailImage: "/blog/blog-detail/cb1adf7635102eb66dffcef4f424a32cba202073.png",
+    image: siteData.blogDetails.posts.hrSoftware.main,
+    detailImage: siteData.blogDetails.posts.hrSoftware.detail,
     summary:
       "GVoice HR Software is a comprehensive solution designed to simplify HR operations and empower organizations with smarter workforce management.",
     excerpt:
@@ -24,8 +26,8 @@ export const blogPosts = [
     category: "WEB DEVELOPMENT",
     date: "March 12, 2026",
     author: "GIPL Editorial Team",
-    image: "/blog/blog-detail/cb1adf7635102eb66dffcef4f424a32cba202073.png",
-    detailImage: "/blog/blog-detail/cb1adf7635102eb66dffcef4f424a32cba202073.png",
+    image: siteData.blogDetails.posts.daycare.main,
+    detailImage: siteData.blogDetails.posts.daycare.detail,
     summary:
       "Exploring how childcare management platforms streamline operations, parent communication, and day-to-day visibility for growing centers.",
     excerpt:
@@ -42,8 +44,8 @@ export const blogPosts = [
     category: "WEB DEVELOPMENT",
     date: "March 3, 2026",
     author: "GIPL Editorial Team",
-    image: "/blog/blog-detail/cb1adf7635102eb66dffcef4f424a32cba202073.png",
-    detailImage: "/blog/blog-detail/cb1adf7635102eb66dffcef4f424a32cba202073 (1).png",
+    image: siteData.blogDetails.posts.webSystems.main,
+    detailImage: siteData.blogDetails.posts.webSystems.detail,
     summary:
       "What scalable product architecture looks like when speed, maintainability, and clarity all matter at once.",
     excerpt:
@@ -60,8 +62,8 @@ export const blogPosts = [
     category: "WEB DEVELOPMENT",
     date: "February 18, 2026",
     author: "GIPL Editorial Team",
-    image: "/blog/blog-detail/cb1adf7635102eb66dffcef4f424a32cba202073.png",
-    detailImage: "/blog/blog-detail/cb1adf7635102eb66dffcef4f424a32cba202073.png",
+    image: siteData.blogDetails.posts.experiences.main,
+    detailImage: siteData.blogDetails.posts.experiences.detail,
     summary:
       "How product teams align UX, engineering, and business goals without sacrificing speed.",
     excerpt:

@@ -37,6 +37,8 @@ const testimonials = [
   },
 ];
 
+import { siteData } from "@/data/siteData";
+
 export default function Testimonials() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [itemsPerView, setItemsPerView] = useState(3);
@@ -112,7 +114,7 @@ export default function Testimonials() {
                 <div className="bg-white rounded-[32px] p-8 md:p-12 flex flex-col h-full min-h-[450px] shadow-sm border border-slate-50 transition-all duration-300 hover:shadow-md">
                   <div className="mb-8">
                     <Image
-                      src="/home/home_images/quotation-marks_1.svg"
+                      src={siteData.home.testimonials.quoteIcon}
                       alt="Quote"
                       width={48}
                       height={48}

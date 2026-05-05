@@ -2,11 +2,12 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { siteData } from "@/data/siteData";
 
 const contactDetails = [
   {
     title: "Our Office Location",
-    icon: "/contact/location.png",
+    icon: siteData.contact.hero.locationIcon,
     lines: [
       "209, Aamrakunj Business Centre",
       "Near Panchshlok, Chandkheda",
@@ -15,12 +16,12 @@ const contactDetails = [
   },
   {
     title: "Phone",
-    icon: "/contact/phone.png",
+    icon: siteData.contact.hero.phoneIcon,
     lines: ["+91 8866009512"],
   },
   {
     title: "Email",
-    icon: "/contact/email.png",
+    icon: siteData.contact.hero.emailIcon,
     lines: ["info@gohilinfotech.com"],
   },
 ];
@@ -39,14 +40,14 @@ export default function ContactHeroSection() {
           viewport={{ once: false }}
         >
           <Image
-            src="/contact/Group 1689.svg"
+            src={siteData.contact.hero.bgPattern1}
             alt=""
             width={120}
             height={80}
             className="pointer-events-none absolute left-[40px] top-[60px] opacity-20 hidden md:block"
           />
           <Image
-            src="/contact/Group 1688 (3).svg"
+            src={siteData.contact.hero.bgPattern2}
             alt=""
             width={48}
             height={48}

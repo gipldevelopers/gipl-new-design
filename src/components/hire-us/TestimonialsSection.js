@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import { siteData } from "@/data/siteData";
 
 const testimonials = [
   {
@@ -10,21 +11,21 @@ const testimonials = [
     role: "CTO, FinStream Inc.",
     text: "GohillInfotech transformed our legacy system into a modern cloud-native application. Their developers are truly top-tier.",
     rating: 5,
-    image: "/hire-us/p1.jpg"
+    image: siteData.hireUs.testimonials.p1
   },
   {
     name: "Elena Rodriguez",
     role: "Founder, HealthLogix",
     text: "The communication was seamless. It felt like they were in the next room, even though they were halfway across the globe.",
     rating: 5,
-    image: "/hire-us/p2.jpg"
+    image: siteData.hireUs.testimonials.p2
   },
   {
     name: "Marcus Thorne",
     role: "VP Engineering, ScaleUp",
     text: "Their technical leadership helped us pivot our entire product strategy in just three months. Highly recommended.",
     rating: 5,
-    image: "/hire-us/p3.jpg"
+    image: siteData.hireUs.testimonials.p3
   },
 ];
 
@@ -132,6 +133,7 @@ export default function TestimonialsSection() {
                         fill
                         sizes="52px"
                         className="object-cover grayscale"
+                        unoptimized={true}
                       />
                     </div>
                     <div className="flex flex-col min-w-0">

@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { siteData } from "@/data/siteData";
 
 export default function ServiceDetailWhyChooseSection({ items }) {
   return (
@@ -33,7 +34,7 @@ export default function ServiceDetailWhyChooseSection({ items }) {
                 whileHover={{ scale: 1.1 }}
               >
                 <Image
-                  src="/service-detailed/service-detail.png"
+                  src={siteData.serviceDetail.whyChoose.main}
                   alt=""
                   width={24}
                   height={24}

@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { siteData } from "@/data/siteData";
 
 export default function ServicesSection() {
   return (
@@ -43,11 +44,12 @@ export default function ServicesSection() {
           >
             <div className="absolute inset-0">
               <Image
-                src="/hire-us/243bbc3eaf9933e3a8dfd6eb280e396df46e86d1.png"
+                src={siteData.hireUs.services.codeBg}
                 alt="Code background"
                 fill
                 sizes="(max-width: 1024px) 100vw, 60vw"
                 className="object-cover opacity-50"
+                unoptimized={true}
               />
             </div>
             <div className="relative z-10">
@@ -70,7 +72,7 @@ export default function ServicesSection() {
             whileHover={{ scale: 1.02 }}
           >
             <div className="w-10 h-10 md:w-[48px] md:h-[48px] bg-white/20 rounded-[12px] flex items-center justify-center mb-6 md:mb-[24px]">
-              <Image src="/hire-us/mobile.png" alt="Mobile Apps" width={24} height={24} className="object-contain brightness-0 invert" style={{ width: "auto", height: "auto" }} />
+              <Image src={siteData.hireUs.services.mobile} alt="Mobile Apps" width={24} height={24} className="object-contain brightness-0 invert" unoptimized={true} style={{ width: "auto", height: "auto" }} />
             </div>
             <h3 className="text-2xl md:text-[32px] font-[700] mb-3 md:mb-[16px]">
               Mobile Apps
@@ -93,7 +95,7 @@ export default function ServicesSection() {
             whileHover={{ scale: 1.02 }}
           >
             <div className="w-10 h-10 md:w-[48px] md:h-[48px] bg-[#5B73F7]/20 rounded-[12px] flex items-center justify-center mb-6 md:mb-[24px]">
-              <Image src="/hire-us/cloud.png" alt="Cloud Solutions" width={24} height={24} className="object-contain" style={{ width: "auto", height: "auto" }} />
+              <Image src={siteData.hireUs.services.cloud} alt="Cloud Solutions" width={24} height={24} className="object-contain" unoptimized={true} style={{ width: "auto", height: "auto" }} />
             </div>
             <h3 className="text-xl md:text-[24px] font-[700] text-[#0F172A] mb-3 md:mb-[12px]">
               Cloud Solutions
@@ -138,11 +140,12 @@ export default function ServicesSection() {
             whileHover={{ scale: 1.05 }}
           >
             <Image
-              src="/hire-us/d38a7fe648846fac21bcac9c7f47b0df8c15fa07.jpg"
+              src={siteData.hireUs.services.uiux}
               alt="UI/UX Design"
               fill
               sizes="(max-width: 1024px) 100vw, 30vw"
               className="object-cover"
+              unoptimized={true}
             />
           </motion.div>
         </div>

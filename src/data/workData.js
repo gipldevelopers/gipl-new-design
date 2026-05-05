@@ -1,18 +1,20 @@
+import { siteData } from "./siteData";
+
 export const workItems = [
   {
     slug: "gvoice-hr-software",
     projectName: "GVoice HR Software",
     category: "CASE STUDY",
     client: "GVoice",
-    image: "/our work/91b824002c5b478d1fafc6a4a81d3e848e7a3342.png",
-    detailImage: "/our work/ourwork-detail/cb1adf7635102eb66dffcef4f424a32cba202073.png",
+    image: siteData.work.projects.gvoice.main,
+    detailImage: siteData.work.projects.gvoice.detail,
     description:
       "GVoice HR Software is a comprehensive solution designed to simplify HR operations and empower organizations with smarter workforce management.",
     excerpt:
       "GVoice HR Software is a comprehensive solution designed to simplify HR operations and empower organizations with smarter workforce management.",
     images: [
-      "/our work/ourwork-detail/cb1adf7635102eb66dffcef4f424a32cba202073.png",
-      "/our work/ourwork-detail/cb1adf7635102eb66dffcef4f424a32cba202073 (1).png",
+      siteData.work.projects.gvoice.detail,
+      siteData.blogDetails.posts.webSystems.detail,
     ],
     content: [
       "GVoice HR Software was created to modernize core HR operations for organizations that need better visibility, stronger workflows, and more reliable day-to-day execution.",
@@ -25,15 +27,15 @@ export const workItems = [
     projectName: "AkaNani [Daycare Management System]",
     category: "WEB DEVELOPMENT",
     client: "AkaNani",
-    image: "/our work/5dfc17f4d68f5f701ec8dc7de6475f65df490a95.png",
-    detailImage: "/our work/ourwork-detail/cb1adf7635102eb66dffcef4f424a32cba202073 (1).png",
+    image: siteData.work.projects.aknani.main,
+    detailImage: siteData.work.projects.aknani.detail,
     description:
       "AkaNani is a childcare management system designed to make daycare administration easier, smarter, and more reliable.",
     excerpt:
       "AkaNani is a childcare management system designed to make daycare administration easier, smarter, and more reliable.",
     images: [
-      "/our work/ourwork-detail/cb1adf7635102eb66dffcef4f424a32cba202073 (1).png",
-      "/our work/ourwork-detail/cb1adf7635102eb66dffcef4f424a32cba202073.png",
+      siteData.work.projects.aknani.detail,
+      siteData.work.projects.gvoice.detail,
     ],
     content: [
       "AkaNani was built for childcare providers who need a cleaner, more connected system for operations, communication, and reporting.",

@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { siteData } from "@/data/siteData";
 
 export default function ServiceDetailProcessSection({ items }) {
   return (
@@ -63,7 +64,7 @@ export default function ServiceDetailProcessSection({ items }) {
                     whileHover={{ scale: 1.1 }}
                   >
                     <Image
-                      src="/service-detailed/Icon (2).svg"
+                      src={siteData.serviceDetail.process.icon2}
                       alt=""
                       width={24}
                       height={24}

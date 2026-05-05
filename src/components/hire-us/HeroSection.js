@@ -2,13 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-
-const stats = [
-  { number: "10+", label: "Years Experience" },
-  { number: "500+", label: "Projects Delivered" },
-  { number: "100+", label: "Expert Team" },
-  { number: "50+", label: "Global Clients" },
-];
+import { siteData } from "@/data/siteData";
 
 export default function HeroSection() {
   return (
@@ -60,16 +54,16 @@ export default function HeroSection() {
           viewport={{ once: false }}
         >
           <Image
-            src="/hire-us/3b0f421f76d85ef2751a9a388ba2e5801db159d6.jpg"
+            src={siteData.hireUs.hero.teamImage}
             alt="GIPL Team"
             fill
             sizes="100vw"
             className="object-cover"
             priority
+            unoptimized={true}
           />
         </motion.div>
       </div>
     </section>
-
   );
 }

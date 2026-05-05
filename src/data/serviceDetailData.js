@@ -1,3 +1,5 @@
+import { siteData } from "./siteData";
+
 export const serviceDetails = [
   {
     slug: "software-engineering",
@@ -5,11 +7,11 @@ export const serviceDetails = [
     description:
       "Transform your business. Our Software Engineering services help businesses build secure, scalable, and high-performance applications tailored to their needs. From custom development to product engineering, API integrations, cloud-ready systems, and enterprise solutions, we deliver technology that improves efficiency and drives long-term digital growth.",
     collageImages: {
-      leftBottom: "/service-detailed/113a88ab39de1bc37eae02ae67a59d67eb42a2e5.png",
-      centerTop: "/service-detailed/c5e9a6bd39d1ca884f3c3ae0521aefcff29e572c.png",
-      rightTop: "/service-detailed/7ad0a4f235a63be20527f549e4186efc1a7d6ff9.png",
-      farRight: "/service-detailed/3af83b6680c7eb4e50032e48afa101c3b7ff3ef1.png",
-      bottomWide: "/service-detailed/20ef75d01715d9cec478b3a09564e5a8a0f7638a.png",
+      leftBottom: siteData.serviceDetailCollage.collage.leftBottom,
+      centerTop: siteData.serviceDetailCollage.collage.centerTop,
+      rightTop: siteData.serviceDetailCollage.collage.rightTop,
+      farRight: siteData.serviceDetailCollage.collage.farRight,
+      bottomWide: siteData.serviceDetailCollage.collage.bottomWide,
     },
     whyChoose: [
       {
@@ -28,17 +30,17 @@ export const serviceDetails = [
           "We deliver exceptional results through cutting-edge technology and industry best practices.",
       },
       {
-        title: "Expert Team",
+        title: "24/7 Support",
         description:
           "We deliver exceptional results through cutting-edge technology and industry best practices.",
       },
       {
-        title: "Proven Methodologies",
+        title: "Quality Assurance",
         description:
           "We deliver exceptional results through cutting-edge technology and industry best practices.",
       },
       {
-        title: "Scalable Solutions",
+        title: "On-time Delivery",
         description:
           "We deliver exceptional results through cutting-edge technology and industry best practices.",
       },
@@ -82,11 +84,11 @@ export const serviceDetails = [
     description:
       "Build powerful web applications that drive business growth. Our Web Development services combine modern technologies with user-centric design to create responsive, fast, and secure web solutions. From single-page applications to complex enterprise platforms.",
     collageImages: {
-      leftBottom: "/service-detailed/113a88ab39de1bc37eae02ae67a59d67eb42a2e5.png",
-      centerTop: "/service-detailed/c5e9a6bd39d1ca884f3c3ae0521aefcff29e572c.png",
-      rightTop: "/service-detailed/7ad0a4f235a63be20527f549e4186efc1a7d6ff9.png",
-      farRight: "/service-detailed/3af83b6680c7eb4e50032e48afa101c3b7ff3ef1.png",
-      bottomWide: "/service-detailed/20ef75d01715d9cec478b3a09564e5a8a0f7638a.png",
+      leftBottom: siteData.serviceDetailCollage.collage.leftBottom,
+      centerTop: siteData.serviceDetailCollage.collage.centerTop,
+      rightTop: siteData.serviceDetailCollage.collage.rightTop,
+      farRight: siteData.serviceDetailCollage.collage.farRight,
+      bottomWide: siteData.serviceDetailCollage.collage.bottomWide,
     },
     whyChoose: [
       {
@@ -159,11 +161,11 @@ export const serviceDetails = [
     description:
       "Leverage artificial intelligence and automation to transform your business operations. Our AI & Automation services help you streamline processes, reduce costs, and unlock new opportunities. From machine learning models to intelligent automation workflows, we deliver solutions that make your business smarter and more efficient.",
     collageImages: {
-      leftBottom: "/service-detailed/113a88ab39de1bc37eae02ae67a59d67eb42a2e5.png",
-      centerTop: "/service-detailed/c5e9a6bd39d1ca884f3c3ae0521aefcff29e572c.png",
-      rightTop: "/service-detailed/7ad0a4f235a63be20527f549e4186efc1a7d6ff9.png",
-      farRight: "/service-detailed/3af83b6680c7eb4e50032e48afa101c3b7ff3ef1.png",
-      bottomWide: "/service-detailed/20ef75d01715d9cec478b3a09564e5a8a0f7638a.png",
+      leftBottom: siteData.serviceDetailCollage.collage.leftBottom,
+      centerTop: siteData.serviceDetailCollage.collage.centerTop,
+      rightTop: siteData.serviceDetailCollage.collage.rightTop,
+      farRight: siteData.serviceDetailCollage.collage.farRight,
+      bottomWide: siteData.serviceDetailCollage.collage.bottomWide,
     },
     whyChoose: [
       {
@@ -236,11 +238,11 @@ export const serviceDetails = [
     description:
       "Transform raw data into actionable business intelligence. Our Data Solutions services help you collect, process, and analyze data to make informed decisions. From data warehousing to advanced analytics, we provide comprehensive solutions that unlock the value hidden in your data.",
     collageImages: {
-      leftBottom: "/service-detailed/113a88ab39de1bc37eae02ae67a59d67eb42a2e5.png",
-      centerTop: "/service-detailed/c5e9a6bd39d1ca884f3c3ae0521aefcff29e572c.png",
-      rightTop: "/service-detailed/7ad0a4f235a63be20527f549e4186efc1a7d6ff9.png",
-      farRight: "/service-detailed/3af83b6680c7eb4e50032e48afa101c3b7ff3ef1.png",
-      bottomWide: "/service-detailed/20ef75d01715d9cec478b3a09564e5a8a0f7638a.png",
+      leftBottom: siteData.serviceDetailCollage.collage.leftBottom,
+      centerTop: siteData.serviceDetailCollage.collage.centerTop,
+      rightTop: siteData.serviceDetailCollage.collage.rightTop,
+      farRight: siteData.serviceDetailCollage.collage.farRight,
+      bottomWide: siteData.serviceDetailCollage.collage.bottomWide,
     },
     whyChoose: [
       {
@@ -313,11 +315,11 @@ export const serviceDetails = [
     description:
       "Reach your audience and grow your business with strategic digital marketing. Our Digital Marketing services combine data-driven strategies with creative execution to build brand awareness, drive traffic, and increase conversions. From SEO to social media, we deliver results that matter.",
     collageImages: {
-      leftBottom: "/service-detailed/113a88ab39de1bc37eae02ae67a59d67eb42a2e5.png",
-      centerTop: "/service-detailed/c5e9a6bd39d1ca884f3c3ae0521aefcff29e572c.png",
-      rightTop: "/service-detailed/7ad0a4f235a63be20527f549e4186efc1a7d6ff9.png",
-      farRight: "/service-detailed/3af83b6680c7eb4e50032e48afa101c3b7ff3ef1.png",
-      bottomWide: "/service-detailed/20ef75d01715d9cec478b3a09564e5a8a0f7638a.png",
+      leftBottom: siteData.serviceDetailCollage.collage.leftBottom,
+      centerTop: siteData.serviceDetailCollage.collage.centerTop,
+      rightTop: siteData.serviceDetailCollage.collage.rightTop,
+      farRight: siteData.serviceDetailCollage.collage.farRight,
+      bottomWide: siteData.serviceDetailCollage.collage.bottomWide,
     },
     whyChoose: [
       {
@@ -390,11 +392,11 @@ export const serviceDetails = [
     description:
       "Create exceptional user experiences that delight your customers. Our UI/UX Design services combine user research, strategic thinking, and creative design to build interfaces that are beautiful, intuitive, and effective. From wireframes to high-fidelity designs, we craft experiences that drive engagement and loyalty.",
     collageImages: {
-      leftBottom: "/service-detailed/113a88ab39de1bc37eae02ae67a59d67eb42a2e5.png",
-      centerTop: "/service-detailed/c5e9a6bd39d1ca884f3c3ae0521aefcff29e572c.png",
-      rightTop: "/service-detailed/7ad0a4f235a63be20527f549e4186efc1a7d6ff9.png",
-      farRight: "/service-detailed/3af83b6680c7eb4e50032e48afa101c3b7ff3ef1.png",
-      bottomWide: "/service-detailed/20ef75d01715d9cec478b3a09564e5a8a0f7638a.png",
+      leftBottom: siteData.serviceDetailCollage.collage.leftBottom,
+      centerTop: siteData.serviceDetailCollage.collage.centerTop,
+      rightTop: siteData.serviceDetailCollage.collage.rightTop,
+      farRight: siteData.serviceDetailCollage.collage.farRight,
+      bottomWide: siteData.serviceDetailCollage.collage.bottomWide,
     },
     whyChoose: [
       {
@@ -467,11 +469,11 @@ export const serviceDetails = [
     description:
       "Migrate to the cloud and unlock scalability, reliability, and cost efficiency. Our Cloud Solutions services help you design, implement, and manage cloud infrastructure that supports your business growth. From cloud migration to managed services, we provide comprehensive cloud expertise.",
     collageImages: {
-      leftBottom: "/service-detailed/113a88ab39de1bc37eae02ae67a59d67eb42a2e5.png",
-      centerTop: "/service-detailed/c5e9a6bd39d1ca884f3c3ae0521aefcff29e572c.png",
-      rightTop: "/service-detailed/7ad0a4f235a63be20527f549e4186efc1a7d6ff9.png",
-      farRight: "/service-detailed/3af83b6680c7eb4e50032e48afa101c3b7ff3ef1.png",
-      bottomWide: "/service-detailed/20ef75d01715d9cec478b3a09564e5a8a0f7638a.png",
+      leftBottom: siteData.serviceDetailCollage.collage.leftBottom,
+      centerTop: siteData.serviceDetailCollage.collage.centerTop,
+      rightTop: siteData.serviceDetailCollage.collage.rightTop,
+      farRight: siteData.serviceDetailCollage.collage.farRight,
+      bottomWide: siteData.serviceDetailCollage.collage.bottomWide,
     },
     whyChoose: [
       {
@@ -544,11 +546,11 @@ export const serviceDetails = [
     description:
       "Build and grow your online business with powerful eCommerce solutions. Our eCommerce Services help you create engaging online stores, streamline operations, and increase sales. From platform selection to payment integration, we deliver complete eCommerce solutions.",
     collageImages: {
-      leftBottom: "/service-detailed/113a88ab39de1bc37eae02ae67a59d67eb42a2e5.png",
-      centerTop: "/service-detailed/c5e9a6bd39d1ca884f3c3ae0521aefcff29e572c.png",
-      rightTop: "/service-detailed/7ad0a4f235a63be20527f549e4186efc1a7d6ff9.png",
-      farRight: "/service-detailed/3af83b6680c7eb4e50032e48afa101c3b7ff3ef1.png",
-      bottomWide: "/service-detailed/20ef75d01715d9cec478b3a09564e5a8a0f7638a.png",
+      leftBottom: siteData.serviceDetailCollage.collage.leftBottom,
+      centerTop: siteData.serviceDetailCollage.collage.centerTop,
+      rightTop: siteData.serviceDetailCollage.collage.rightTop,
+      farRight: siteData.serviceDetailCollage.collage.farRight,
+      bottomWide: siteData.serviceDetailCollage.collage.bottomWide,
     },
     whyChoose: [
       {
@@ -621,11 +623,11 @@ export const serviceDetails = [
     description:
       "Create powerful mobile applications that engage your users. Our Mobile App Development services deliver native and cross-platform apps that are fast, secure, and user-friendly. From concept to launch and beyond, we provide end-to-end mobile development expertise.",
     collageImages: {
-      leftBottom: "/service-detailed/113a88ab39de1bc37eae02ae67a59d67eb42a2e5.png",
-      centerTop: "/service-detailed/c5e9a6bd39d1ca884f3c3ae0521aefcff29e572c.png",
-      rightTop: "/service-detailed/7ad0a4f235a63be20527f549e4186efc1a7d6ff9.png",
-      farRight: "/service-detailed/3af83b6680c7eb4e50032e48afa101c3b7ff3ef1.png",
-      bottomWide: "/service-detailed/20ef75d01715d9cec478b3a09564e5a8a0f7638a.png",
+      leftBottom: siteData.serviceDetailCollage.collage.leftBottom,
+      centerTop: siteData.serviceDetailCollage.collage.centerTop,
+      rightTop: siteData.serviceDetailCollage.collage.rightTop,
+      farRight: siteData.serviceDetailCollage.collage.farRight,
+      bottomWide: siteData.serviceDetailCollage.collage.bottomWide,
     },
     whyChoose: [
       {

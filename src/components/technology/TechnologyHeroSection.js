@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { siteData } from "@/data/siteData";
 
 function ArrowUpRightIcon({ className = "" }) {
   return (
@@ -93,7 +94,7 @@ export default function Hero() {
               whileHover={{ scale: 1.02 }}
             >
               <Image
-                src="/career/35426d19ba38a55a742624ed86c4f5d95b7506e1.png"
+                src={siteData.technology.hero.visual}
                 alt="Technology hero visual"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -115,7 +116,7 @@ export default function Hero() {
                 whileHover={{ scale: 1.1 }}
               >
                 <Image
-                  src="/career/Icon (9).svg"
+                  src={siteData.technology.hero.statusIcon}
                   alt=""
                   width={22}
                   height={22}

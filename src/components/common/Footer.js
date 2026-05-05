@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import { siteData } from "@/data/siteData";
 
 export default function Footer() {
   const quickLinks = [
@@ -22,7 +23,7 @@ export default function Footer() {
 
   return (
     <footer className="w-full bg-white pt-[4px]">
-      <motion.div 
+      <motion.div
         className="relative mx-[4px] overflow-hidden rounded-t-[40px] md:rounded-t-[80px] lg:rounded-t-[120px] bg-[linear-gradient(90deg,#12284A_0%,#08224A_52%,#003A61_100%)] text-white"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -32,14 +33,14 @@ export default function Footer() {
         <div className="pointer-events-none absolute left-0 top-0 h-full w-full bg-[radial-gradient(circle_at_76%_16%,rgba(25,184,230,0.14),transparent_22%),radial-gradient(circle_at_12%_0%,rgba(255,255,255,0.03),transparent_18%)]" />
 
         <div className="relative z-10 px-6 md:px-[75px] pb-10 pt-12 md:pt-16">
-          <motion.div 
+          <motion.div
             className="mx-auto flex max-w-[820px] flex-col items-center text-center"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: false }}
           >
-            <motion.h2 
+            <motion.h2
               className="text-3xl md:text-[40px] font-bold leading-tight tracking-tight text-white"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -49,7 +50,7 @@ export default function Footer() {
               Ready to Start Your IT Project?
             </motion.h2>
 
-            <motion.p 
+            <motion.p
               className="mt-4 text-base md:text-[18px] font-normal leading-relaxed text-white/80"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -75,7 +76,7 @@ export default function Footer() {
           </motion.div>
 
 
-          <motion.div 
+          <motion.div
             className="mt-12 md:mt-16 grid grid-cols-1 lg:grid-cols-4 gap-8 md:gap-[37px]"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -91,10 +92,11 @@ export default function Footer() {
             >
               <Link href="/" className="inline-flex items-center gap-[12px] group">
                 <Image
-                  src="/home/home_images/Group_1688_(2).svg"
+                  src={siteData.footer.logo}
                   alt="Gohil Infotech"
                   width={40}
                   height={43}
+                  unoptimized={true}
                   className="h-[43px] w-[40px] transition-transform group-hover:scale-105"
                 />
                 <div className="flex flex-col leading-none text-white">
@@ -108,7 +110,7 @@ export default function Footer() {
               </Link>
 
 
-              <motion.p 
+              <motion.p
                 className="mt-[22px] max-w-[350px] text-[16px] font-normal leading-[26px] tracking-[-0.14px] text-white"
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
@@ -118,7 +120,7 @@ export default function Footer() {
                 We build powerful digital experiences that drive growth and innovation for businesses worldwide. Creating tomorrow&apos;s solutions today.
               </motion.p>
 
-              <motion.div 
+              <motion.div
                 className="mt-[20px] flex h-[50px] w-full max-w-[368px] overflow-hidden rounded-[5px] bg-white"
                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -154,73 +156,73 @@ export default function Footer() {
 
             {/* Quick Links + Services: side-by-side on mobile, individual cols on desktop */}
             <div className="grid grid-cols-2 gap-6 sm:col-span-1 lg:contents">
-            {/* Quick Links Column */}
-            <motion.div 
-              className="pt-[8px]"
-              initial={{ opacity: 0, x: -10 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: 0.6 }}
-              viewport={{ once: false }}
-            >
-              <h3 className="text-[17px] font-semibold uppercase leading-none tracking-[-0.18px] text-white">
-                QUICK LINKS
-              </h3>
-              <ul className="mt-[28px] space-y-[18px]">
-                {quickLinks.map((item, index) => (
-                  <motion.li 
-                    key={item.label}
-                    initial={{ opacity: 0, x: -10 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.4, delay: 0.7 + index * 0.1 }}
-                    viewport={{ once: false }}
-                    whileHover={{ x: 5 }}
-                  >
-                    <Link
-                      href={item.href}
-                      className="text-[16px] font-normal leading-[24px] tracking-[-0.14px] text-white"
+              {/* Quick Links Column */}
+              <motion.div
+                className="pt-[8px]"
+                initial={{ opacity: 0, x: -10 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6, delay: 0.6 }}
+                viewport={{ once: false }}
+              >
+                <h3 className="text-[17px] font-semibold uppercase leading-none tracking-[-0.18px] text-white">
+                  QUICK LINKS
+                </h3>
+                <ul className="mt-[28px] space-y-[18px]">
+                  {quickLinks.map((item, index) => (
+                    <motion.li
+                      key={item.label}
+                      initial={{ opacity: 0, x: -10 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      transition={{ duration: 0.4, delay: 0.7 + index * 0.1 }}
+                      viewport={{ once: false }}
+                      whileHover={{ x: 5 }}
                     >
-                      {item.label}
-                    </Link>
-                  </motion.li>
-                ))}
-              </ul>
-            </motion.div>
+                      <Link
+                        href={item.href}
+                        className="text-[16px] font-normal leading-[24px] tracking-[-0.14px] text-white"
+                      >
+                        {item.label}
+                      </Link>
+                    </motion.li>
+                  ))}
+                </ul>
+              </motion.div>
 
-            {/* Services Column */}
-            <motion.div 
-              className="pt-[8px]"
-              initial={{ opacity: 0, x: 10 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: 0.7 }}
-              viewport={{ once: false }}
-            >
-              <h3 className="text-[17px] font-semibold uppercase leading-none tracking-[-0.18px] text-white">
-                SERVICES
-              </h3>
-              <ul className="mt-[28px] space-y-[18px]">
-                {services.map((item, index) => (
-                  <motion.li 
-                    key={item.label}
-                    initial={{ opacity: 0, x: -10 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.4, delay: 0.8 + index * 0.1 }}
-                    viewport={{ once: false }}
-                    whileHover={{ x: 5 }}
-                  >
-                    <Link
-                      href={item.href}
-                      className="text-[16px] font-normal leading-[24px] tracking-[-0.14px] text-white"
+              {/* Services Column */}
+              <motion.div
+                className="pt-[8px]"
+                initial={{ opacity: 0, x: 10 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6, delay: 0.7 }}
+                viewport={{ once: false }}
+              >
+                <h3 className="text-[17px] font-semibold uppercase leading-none tracking-[-0.18px] text-white">
+                  SERVICES
+                </h3>
+                <ul className="mt-[28px] space-y-[18px]">
+                  {services.map((item, index) => (
+                    <motion.li
+                      key={item.label}
+                      initial={{ opacity: 0, x: -10 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      transition={{ duration: 0.4, delay: 0.8 + index * 0.1 }}
+                      viewport={{ once: false }}
+                      whileHover={{ x: 5 }}
                     >
-                      {item.label}
-                    </Link>
-                  </motion.li>
-                ))}
-              </ul>
-            </motion.div>
+                      <Link
+                        href={item.href}
+                        className="text-[16px] font-normal leading-[24px] tracking-[-0.14px] text-white"
+                      >
+                        {item.label}
+                      </Link>
+                    </motion.li>
+                  ))}
+                </ul>
+              </motion.div>
             </div>
 
             {/* Contact Column */}
-            <motion.div 
+            <motion.div
               className="pt-[8px]"
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -232,7 +234,7 @@ export default function Footer() {
               </h3>
 
               <ul className="mt-[25px]">
-                <motion.li 
+                <motion.li
                   className="flex items-start gap-[20px]"
                   initial={{ opacity: 0, y: 10 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -240,12 +242,14 @@ export default function Footer() {
                   viewport={{ once: false }}
                   whileHover={{ x: 5 }}
                 >
-                  <Image
-                    src="/contact/Frame (3).svg"
+                   <Image
+                    src={siteData.footer.addressIcon}
                     alt=""
                     width={22}
                     height={22}
+                    unoptimized={true}
                     className="mt-[2px] h-[22px] w-[22px] shrink-0"
+                    style={{ width: "auto", height: "auto" }}
                   />
                   <p className="text-[16px] font-normal leading-[24px] tracking-[-0.14px] text-white">
                     Aamrakunj Business Centre, 209, nr.
@@ -256,7 +260,7 @@ export default function Footer() {
                   </p>
                 </motion.li>
 
-                <motion.li 
+                <motion.li
                   className="mt-[20px] flex items-center gap-[20px]"
                   initial={{ opacity: 0, y: 10 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -264,19 +268,21 @@ export default function Footer() {
                   viewport={{ once: false }}
                   whileHover={{ x: 5 }}
                 >
-                  <Image
-                    src="/contact/Frame (2).svg"
+                   <Image
+                    src={siteData.footer.phoneIcon}
                     alt=""
                     width={22}
                     height={22}
+                    unoptimized={true}
                     className="h-[22px] w-[22px] shrink-0"
+                    style={{ width: "auto", height: "auto" }}
                   />
                   <p className="text-[16px] font-normal leading-[24px] tracking-[-0.14px] text-white">
                     +91 8866009512
                   </p>
                 </motion.li>
 
-                <motion.li 
+                <motion.li
                   className="mt-[20px] flex items-center gap-[20px]"
                   initial={{ opacity: 0, y: 10 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -284,12 +290,14 @@ export default function Footer() {
                   viewport={{ once: false }}
                   whileHover={{ x: 5 }}
                 >
-                  <Image
-                    src="/contact/Frame (1).svg"
+                   <Image
+                    src={siteData.footer.emailIcon}
                     alt=""
                     width={22}
                     height={22}
+                    unoptimized={true}
                     className="h-[22px] w-[22px] shrink-0"
+                    style={{ width: "auto", height: "auto" }}
                   />
                   <p className="text-[16px] font-normal leading-[24px] tracking-[-0.14px] text-white">
                     info@gohilinfotech.com
@@ -299,7 +307,7 @@ export default function Footer() {
             </motion.div>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             className="mt-[20px] border-t border-white/20 pt-[18px]"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -307,7 +315,7 @@ export default function Footer() {
             viewport={{ once: false }}
           >
             <div className="flex flex-col md:flex-row items-center md:items-center justify-between gap-4 text-center md:text-left">
-              <motion.p 
+              <motion.p
                 className="text-[14px] font-normal leading-none tracking-[-0.08px] text-white"
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
@@ -317,7 +325,7 @@ export default function Footer() {
                 © 2026 <span className="font-medium text-white">Gohil Infotech Private Limited</span> . All rights reserved.
               </motion.p>
 
-              <motion.div 
+              <motion.div
                 className="flex items-center gap-[12px] text-[14px] font-normal leading-none tracking-[-0.08px] text-white"
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}

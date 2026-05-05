@@ -1,26 +1,26 @@
 "use client";
 
 import { motion } from "framer-motion";
-
 import Image from "next/image";
 import Link from "next/link";
+import { siteData } from "@/data/siteData";
 
 const solutions = [
   {
     title: "Customer Management",
-    icon: "/home/home_images/customer-management-icon.png",
+    icon: siteData.home.engineering.customer,
   },
   {
     title: "Sales Management",
-    icon: "/home/home_images/sales-management-icon.png",
+    icon: siteData.home.engineering.sales,
   },
   {
     title: "Business Intelligence",
-    icon: "/home/home_images/business-intelligence-icon.png",
+    icon: siteData.home.engineering.bi,
   },
   {
     title: "Accounting Integration",
-    icon: "/home/home_images/accounting-integration-icon.png",
+    icon: siteData.home.engineering.accounting,
   },
 ];
 

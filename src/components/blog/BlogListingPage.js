@@ -6,6 +6,7 @@ import Card from "@/components/Card";
 import { getAllBlogPosts } from "@/data/blogData";
 import Image from "next/image";
 import Link from "next/link";
+import { siteData } from "@/data/siteData";
 
 const blogPosts = getAllBlogPosts();
 
@@ -16,7 +17,7 @@ const categories = [
     title: "Insights & Ideas",
     subtitle: "MEDIA",
     description: "Updated articles, how-tos and deep dives on design, development and product thinking.",
-    heroImage: "/blog/5dfc17f4d68f5f701ec8dc7de6475f65df490a95.png"
+    heroImage: siteData.blog.heroAll
   },
   {
     slug: "ai",
@@ -24,7 +25,7 @@ const categories = [
     title: "AI & Machine Learning",
     subtitle: "ARTIFICIAL INTELLIGENCE",
     description: "Explore the latest in AI technology, machine learning algorithms, and intelligent automation solutions.",
-    heroImage: "/blog/91b824002c5b478d1fafc6a4a81d3e848e7a3342.png"
+    heroImage: siteData.blog.heroAI
   },
   {
     slug: "mobile-app-development",
@@ -32,7 +33,7 @@ const categories = [
     title: "Mobile Development",
     subtitle: "MOBILE TECHNOLOGY",
     description: "Native and cross-platform mobile app development insights, best practices, and emerging trends.",
-    heroImage: "/home/home_images/4904e6466549d651885efb22aae1321bd483d7aa.png"
+    heroImage: siteData.blog.heroMobile
   },
   {
     slug: "development",
@@ -40,7 +41,7 @@ const categories = [
     title: "Software Development",
     subtitle: "DEVELOPMENT",
     description: "Code quality, architecture patterns, development methodologies, and programming best practices.",
-    heroImage: "/home/home_images/320cf59abdb4f8edcf05a8c93d2555d725913c79.png"
+    heroImage: siteData.blog.heroDev
   }
 ];
 
@@ -53,28 +54,28 @@ export default function BlogListingPage() {
     switch (activeCategory) {
       case "ai":
         return {
-          image: "/blog/91b824002c5b478d1fafc6a4a81d3e848e7a3342.png",
+          image: siteData.blog.heroAI,
           title: "AI-Powered Business Solutions",
           excerpt: "Discover how artificial intelligence is transforming business operations and creating new opportunities for growth and innovation.",
 
         };
       case "mobile-app-development":
         return {
-          image: "/home/home_images/4904e6466549d651885efb22aae1321bd483d7aa.png",
+          image: siteData.blog.heroMobile,
           title: "Next-Gen Mobile Applications",
           excerpt: "Building powerful mobile experiences with cutting-edge technologies and user-centric design approaches.",
 
         };
       case "development":
         return {
-          image: "/home/home_images/320cf59abdb4f8edcf05a8c93d2555d725913c79.png",
+          image: siteData.blog.heroDev,
           title: "Modern Development Practices",
           excerpt: "Exploring advanced development methodologies, clean code principles, and scalable architecture patterns.",
         };
       default:
         return {
           slug: "gvoice-hr-software",
-          image: "/blog/5dfc17f4d68f5f701ec8dc7de6475f65df490a95.png",
+          image: siteData.blog.heroAll,
           badge: "Custom Software",
           title: "GVoice HR Software",
           excerpt: "GVoice HR Software is a comprehensive solution designed to simplify HR operations and empower organizations with smarter workforce management. With a dashboard-driven design, it brings together employee data, attendance, and performance metrics in one place.",
@@ -183,6 +184,7 @@ export default function BlogListingPage() {
                 className="object-cover"
                 priority
                 loading="eager"
+                unoptimized={true}
               />
             </motion.div>
             <motion.div
@@ -221,11 +223,13 @@ export default function BlogListingPage() {
                     <div key={i} className="w-9 h-9 flex items-center justify-center rounded-lg bg-[#F8FAFC] border border-[#E2E8F0] shadow-sm" title={t}>
                       {t === "React" && (
                         <Image
-                          src="/blog/vscode-icons_file-type-reactjs.svg"
+                          src={siteData.blog.reactIcon}
                           alt="React logo"
                           width={24}
                           height={24}
+                          unoptimized={true}
                           className="w-6 h-6 object-contain"
+                          style={{ width: "auto", height: "auto" }}
                         />
                       )}
                     </div>

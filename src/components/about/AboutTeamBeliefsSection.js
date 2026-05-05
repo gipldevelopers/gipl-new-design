@@ -3,55 +3,56 @@
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import { siteData } from "@/data/siteData";
 
 const teamMembers = [
   {
     id: 1,
     name: "Dr. Elena Vance",
     role: "Chief Technology Officer",
-    image: "/about/9a2c8e6fa5d620f403c9b2a6c2a0397fae9a2828.png",
+    image: siteData.about.team.placeholder,
   },
   {
     id: 2,
     name: "Sarah Mitchell",
     role: "Chief Executive Officer",
-    image: "/about/9a2c8e6fa5d620f403c9b2a6c2a0397fae9a2828.png",
+    image: siteData.about.team.placeholder,
   },
   {
     id: 3,
     name: "James Rodriguez",
     role: "Chief Product Officer",
-    image: "/about/9a2c8e6fa5d620f403c9b2a6c2a0397fae9a2828.png",
+    image: siteData.about.team.placeholder,
   },
   {
     id: 4,
     name: "Priya Sharma",
     role: "Head of Design",
-    image: "/about/9a2c8e6fa5d620f403c9b2a6c2a0397fae9a2828.png",
+    image: siteData.about.team.placeholder,
   },
   {
     id: 5,
     name: "Michael Chen",
     role: "VP Engineering",
-    image: "/about/9a2c8e6fa5d620f403c9b2a6c2a0397fae9a2828.png",
+    image: siteData.about.team.placeholder,
   },
   {
     id: 6,
     name: "Emma Thompson",
     role: "Head of Operations",
-    image: "/about/9a2c8e6fa5d620f403c9b2a6c2a0397fae9a2828.png",
+    image: siteData.about.team.placeholder,
   },
   {
     id: 7,
     name: "David Kumar",
     role: "Lead Architect",
-    image: "/about/9a2c8e6fa5d620f403c9b2a6c2a0397fae9a2828.png",
+    image: siteData.about.team.placeholder,
   },
   {
     id: 8,
     name: "Lisa Anderson",
     role: "Director of Sales",
-    image: "/about/9a2c8e6fa5d620f403c9b2a6c2a0397fae9a2828.png",
+    image: siteData.about.team.placeholder,
   },
 ];
 

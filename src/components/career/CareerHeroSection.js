@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import { siteData } from "@/data/siteData";
 
 export default function CareerHeroSection() {
   return (
@@ -59,10 +60,10 @@ export default function CareerHeroSection() {
               >
                 <span>Openings Available</span>
                 <Image
-                  src="/career/Frame (3).svg"
+                  src={siteData.career.hero.frame3}
                   alt=""
-                  width={18}
-                  height={18}
+                  width={0}
+                  height={0}
                   className="h-[18px] w-[18px]"
                 />
               </Link>
@@ -82,7 +83,7 @@ export default function CareerHeroSection() {
               whileHover={{ scale: 1.02 }}
             >
               <Image
-                src="/career/35426d19ba38a55a742624ed86c4f5d95b7506e1.png"
+                src={siteData.technology.hero.visual}
                 alt="Career hero visual"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -104,7 +105,7 @@ export default function CareerHeroSection() {
                 whileHover={{ scale: 1.1 }}
               >
                 <Image
-                  src="/career/Icon (9).svg"
+                  src={siteData.career.hero.statusIcon}
                   alt=""
                   width={22}
                   height={22}
@@ -124,6 +125,5 @@ export default function CareerHeroSection() {
         </div>
       </div>
     </section>
-
   );
 }
