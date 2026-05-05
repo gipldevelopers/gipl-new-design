@@ -3,17 +3,18 @@
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { siteData } from "@/data/siteData";
 
 const serviceCards = [
-  { title: "Software Engineering", href: "/service/software-engineering", imgSrc: "/service/software.png" },
-  { title: "Web Development", href: "/service/web-development", imgSrc: "/service/web.png" },
-  { title: "AI & Automation", href: "/service/ai-automation", imgSrc: "/service/ai.png" },
-  { title: "Data Solutions", href: "/service/data-solutions", imgSrc: "/service/data-solution.png" },
-  { title: "Digital Marketing", href: "/service/digital-marketing", imgSrc: "/service/digital-marketing.png" },
-  { title: "UI/UX Design", href: "/service/ui-ux-design", imgSrc: "/service/ui-ux.png" },
-  { title: "Cloud Solutions", href: "/service/cloud-solutions", imgSrc: "/service/cloud.png" },
-  { title: "eCommerce Solutions", href: "/service/ecommerce-solutions", imgSrc: "/service/ecommerce.png" },
-  { title: "Mobile App Development", href: "/service/mobile-app-development", imgSrc: "/service/mobile-icon.png", imgClassName: "brightness-0 invert" },
+  { title: "Software Engineering", href: "/service/software-engineering", imgSrc: siteData.service.cards.software },
+  { title: "Web Development", href: "/service/web-development", imgSrc: siteData.service.cards.web },
+  { title: "AI & Automation", href: "/service/ai-automation", imgSrc: siteData.service.cards.ai },
+  { title: "Data Solutions", href: "/service/data-solutions", imgSrc: siteData.service.cards.data },
+  { title: "Digital Marketing", href: "/service/digital-marketing", imgSrc: siteData.service.cards.marketing },
+  { title: "UI/UX Design", href: "/service/ui-ux-design", imgSrc: siteData.service.cards.uiux },
+  { title: "Cloud Solutions", href: "/service/cloud-solutions", imgSrc: siteData.service.cards.cloud },
+  { title: "eCommerce Solutions", href: "/service/ecommerce-solutions", imgSrc: siteData.service.cards.ecommerce },
+  { title: "Mobile App Development", href: "/service/mobile-app-development", imgSrc: siteData.service.cards.mobile, imgClassName: "brightness-0 invert" },
 ];
 
 function ServiceCardIcon() {

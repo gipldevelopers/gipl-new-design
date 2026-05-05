@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { siteData } from "@/data/siteData";
 
 export default function CareerCultureSection() {
   return (
@@ -18,7 +19,7 @@ export default function CareerCultureSection() {
           <div className="flex flex-row gap-4 md:gap-[24px] w-full lg:w-auto items-start">
             {/* Left Image - Greenhouse Office */}
             <motion.div
-              className="relative h-[240px] xs:h-[300px] md:h-[400px] w-full lg:w-[320px] overflow-hidden rounded-[20px] shadow-lg"
+              className="relative h-[180px] xs:h-[350px] md:h-[400px] w-full lg:w-[320px] overflow-hidden rounded-[20px] shadow-lg"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
@@ -26,16 +27,17 @@ export default function CareerCultureSection() {
               whileHover={{ scale: 1.02 }}
             >
               <Image
-                src="/about/1877c8ffc4eb50d23988e285e17a6c9610d3b1ce.png"
+                src={siteData.about.origin.office}
                 alt="Modern office with plants"
                 fill
                 sizes="(max-width: 1024px) 100vw, 320px"
+                unoptimized={true}
                 className="object-cover"
               />
             </motion.div>
             {/* Right Image - Code Monitors (Shifted Down) */}
             <motion.div
-              className="relative h-[240px] xs:h-[300px] md:h-[400px] w-full lg:w-[320px] overflow-hidden rounded-[20px] shadow-lg mt-8 md:mt-[64px]"
+              className="relative h-[180px] xs:h-[300px] md:h-[400px] w-full lg:w-[320px] overflow-hidden rounded-[20px] shadow-lg mt-8 md:mt-[64px]"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
@@ -43,10 +45,11 @@ export default function CareerCultureSection() {
               whileHover={{ scale: 1.02 }}
             >
               <Image
-                src="/about/19e45c51077943ef79bb30f2b8ca27af65faf874.png"
+                src={siteData.about.origin.workspace}
                 alt="Developer workspace"
                 fill
                 sizes="(max-width: 1024px) 100vw, 320px"
+                unoptimized={true}
                 className="object-cover"
               />
             </motion.div>

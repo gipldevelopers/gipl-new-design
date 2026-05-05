@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
+import { siteData } from "@/data/siteData";
 
 export default function ContactFormSection() {
   const searchParams = useSearchParams();
@@ -245,7 +246,7 @@ export default function ContactFormSection() {
             whileHover={{ scale: 1.02 }}
           >
             <Image
-              src="/contact/0ec4f49c17482fbf44680e05ea42a4257b9dee06.jpg"
+              src={siteData.contact.form.image}
               alt="Office interior"
               fill
               className="object-cover"

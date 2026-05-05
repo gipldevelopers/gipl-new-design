@@ -5,6 +5,7 @@ import Card from "@/components/Card";
 import { getAllWorkItems } from "@/data/workData";
 import Image from "next/image";
 import Link from "next/link";
+import { siteData } from "@/data/siteData";
 
 const workItems = getAllWorkItems();
 
@@ -64,6 +65,9 @@ export default function WorkListingPage() {
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-cover"
+              priority
+              loading="eager"
+              unoptimized={true}
             />
           </motion.div>
           <motion.div
@@ -88,10 +92,10 @@ export default function WorkListingPage() {
               </p>
               <div className="flex items-center gap-3">
                 <Image
-                  src="/our work/vscode-icons_file-type-reactjs.svg"
+                  src={siteData.work.reactIcon}
                   alt="React"
-                  width={32}
-                  height={32}
+                  width={0}
+                  height={0}
                   className="h-7 md:h-[32px] w-7 md:w-[32px]"
                   style={{ width: "auto", height: "auto" }}
                 />

@@ -2,28 +2,29 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { siteData } from "@/data/siteData";
 
 export default function BenefitsSection() {
   const benefits = [
     {
-      imgSrc: "/hire-us/hire-1.png",
-      title: "Proven Expertise",
-      description: "Access a team with deep domain knowledge and technical mastery across industries."
+      title: "Expert Team",
+      description: "Our team consists of highly skilled developers and designers with years of industry experience.",
+      imgSrc: siteData.hireUs.benefits.expertise
     },
     {
-      imgSrc: "/hire-us/hire-2.png",
-      title: "Clear Comms",
-      description: "Transparent, real-time updates through dedicated slack channels and weekly sprints."
+      title: "Seamless Communication",
+      description: "We maintain transparent and regular communication to keep you updated on project progress.",
+      imgSrc: siteData.hireUs.benefits.comms
     },
     {
-      imgSrc: "/hire-us/hire-3.png",
-      title: "Client-Centric",
-      description: "Your business goals drive our technical decisions. We prioritize your success."
+      title: "Client-Centric Approach",
+      description: "We prioritize your business goals and work closely with you to deliver tailored solutions.",
+      imgSrc: siteData.hireUs.benefits.clientCentric
     },
     {
-      imgSrc: "/hire-us/hire-4.png",
       title: "Rapid Delivery",
-      description: "Agile methodologies that cut development time by 40% without compromising quality."
+      description: "We use agile methodologies to ensure timely delivery of high-quality products.",
+      imgSrc: siteData.hireUs.benefits.rapidDelivery
     }
   ];
 
@@ -64,6 +65,7 @@ export default function BenefitsSection() {
                     fill 
                     sizes="(max-width: 768px) 48px, 56px"
                     className="object-contain p-2" 
+                    unoptimized={true}
                   />
                 ) : null}
               </div>

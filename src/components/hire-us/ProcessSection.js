@@ -2,26 +2,27 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { siteData } from "@/data/siteData";
 
 export default function ProcessSection() {
   const processes = [
     {
-      imgSrc: "/hire-us/discovery.png",
+      imgSrc: siteData.hireUs.process.discovery,
       title: "Discovery",
       description: "Deep-dive into business logic, user persona mapping, and competitive analysis."
     },
     {
-      imgSrc: "/hire-us/design.png",
+      imgSrc: siteData.hireUs.process.design,
       title: "Design",
       description: "User-centric UX frameworks and high-end visual systems aligned with brand identity."
     },
     {
-      imgSrc: "/hire-us/develop.png",
+      imgSrc: siteData.hireUs.process.develop,
       title: "Develop",
       description: "Clean code architecture, robust backend APIs, and seamless frontend integration."
     },
     {
-      imgSrc: "/hire-us/deploy.png",
+      imgSrc: siteData.hireUs.process.deploy,
       title: "Deploy",
       description: "CI/CD pipelines, cloud orchestration, and rigorous post-launch monitoring."
     }
@@ -58,7 +59,7 @@ export default function ProcessSection() {
             >
               <div className="w-12 h-12 md:w-[56px] md:h-[56px] bg-[#EEF2FF] rounded-[12px] flex items-center justify-center mx-auto mb-5 md:mb-[24px]">
                 {process.imgSrc && (
-                  <Image src={process.imgSrc} alt={process.title} width={24} height={24} className="object-contain" style={{ width: "auto", height: "auto" }} />
+                  <Image src={process.imgSrc} alt={process.title} width={24} height={24} className="object-contain" unoptimized={true} style={{ width: "auto", height: "auto" }} />
                 )}
               </div>
               <h3 className="text-lg md:text-[20px] font-[600] text-[#0F172A] mb-2 md:mb-[12px]">

@@ -2,20 +2,21 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { siteData } from "@/data/siteData";
 
 const technologies = [
-  { name: "React", icon: "/home/home_images/vscode-icons_file-type-reactjs.svg" },
-  { name: "Angular", icon: "/home/home_images/material-icon-theme_angular.svg" },
-  { name: "Python", icon: "/home/home_images/material-icon-theme_python.svg" },
-  { name: "Node.js", icon: "/home/home_images/logos_nodejs.svg" },
-  { name: "AWS", icon: "/home/home_images/logos_aws.svg" },
-  { name: "Java", icon: "/home/home_images/devicon_java-wordmark.svg" },
-  { name: ".NET", icon: "/home/home_images/asp.net-logo.png" },
-  { name: "MySQL", icon: "/home/home_images/mysql-logo.png" },
-  { name: "PHP", icon: "/home/home_images/devicon_php.svg" },
-  { name: "Laravel", icon: "/home/home_images/material-icon-theme_laravel.svg" },
-  { name: "Android", icon: "/home/home_images/devicon_android.svg" },
-  { name: "iOS", icon: "/home/home_images/ic_round-apple.svg" },
+  { name: "React", icon: siteData.home.technologies.react },
+  { name: "Angular", icon: siteData.home.technologies.angular },
+  { name: "Python", icon: siteData.home.technologies.python },
+  { name: "Node.js", icon: siteData.home.technologies.nodejs },
+  { name: "AWS", icon: siteData.home.technologies.aws },
+  { name: "Java", icon: siteData.home.technologies.java },
+  { name: ".NET", icon: siteData.home.technologies.dotnet },
+  { name: "MySQL", icon: siteData.home.technologies.mysql },
+  { name: "PHP", icon: siteData.home.technologies.php },
+  { name: "Laravel", icon: siteData.home.technologies.laravel },
+  { name: "Android", icon: siteData.home.technologies.android },
+  { name: "iOS", icon: siteData.home.technologies.ios },
 ];
 
 export default function ServiceTechnologySection() {

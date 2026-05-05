@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { siteData } from "@/data/siteData";
 
 const navItems = [
   { label: "Home", href: "/" },
@@ -67,11 +68,12 @@ export default function Navbar() {
         >
           <Link href="/" className="flex items-center gap-3 transition-transform hover:scale-[1.02]">
             <Image
-              src="/Group 1688 (1).svg"
+              src={siteData.logos.main}
               alt="Gohil Infotech logo"
               width={35}
               height={38}
               priority
+              unoptimized={true}
               className="object-contain"
               style={{ width: "auto", height: "auto" }}
             />
@@ -207,10 +209,11 @@ export default function Navbar() {
             <div className="h-20 flex items-center justify-between px-6 border-b border-gray-100">
               <Link href="/" onClick={() => setIsMobileMenuOpen(false)} className="flex items-center gap-3">
                 <Image
-                  src="/Group 1688 (1).svg"
+                  src={siteData.logos.main}
                   alt="Gohil Infotech logo"
                   width={35}
                   height={38}
+                  unoptimized={true}
                   className="object-contain"
                   style={{ width: "auto", height: "auto" }}
                 />

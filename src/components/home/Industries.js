@@ -1,66 +1,66 @@
 "use client";
 
 import { motion } from "framer-motion";
-
 import Image from "next/image";
+import { siteData } from "@/data/siteData";
 
 const columns = [
   [
     {
       title: "Government",
-      icon: "/home/home_images/government-icon.png",
-      image: "/home/home_images/government-bg.jpg",
+      icon: siteData.home.industries.government.icon,
+      image: siteData.home.industries.government.bg,
     },
     {
       title: "Finance &\nBanking",
-      icon: "/home/home_images/Finance-Banking-icon.png",
-      image: "/home/home_images/finance-bg.jpg",
+      icon: siteData.home.industries.finance.icon,
+      image: siteData.home.industries.finance.bg,
     },
   ],
   [
     {
       title: "Insurance",
-      icon: "/home/home_images/insurance-icon.png",
-      image: "/home/home_images/insurance-1-bg.jpg",
+      icon: siteData.home.industries.insurance.icon,
+      image: siteData.home.industries.insurance.bg,
     },
     {
       title: "Hotels, Travels &\nHolidays",
-      icon: "/home/home_images/hotel-icon.png",
-      image: "/home/home_images/hotel-bg.jpg",
+      icon: siteData.home.industries.hotel.icon,
+      image: siteData.home.industries.hotel.bg,
     },
     {
       title: "Education",
-      icon: "/home/home_images/education-icon.png",
-      image: "/home/home_images/education-bg.jpg",
+      icon: siteData.home.industries.education.icon,
+      image: siteData.home.industries.education.bg,
     },
   ],
   [
     {
       title: "Retail",
-      icon: "/home/home_images/retail-icon.png",
-      image: "/home/home_images/retail-bg.jpg",
+      icon: siteData.home.industries.retail.icon,
+      image: siteData.home.industries.retail.bg,
     },
     {
       title: "Internet of\nThings",
-      icon: "/home/home_images/iot-icon.png",
-      image: "/home/home_images/iot-bg.jpg",
+      icon: siteData.home.industries.iot.icon,
+      image: siteData.home.industries.iot.bg,
     },
   ],
   [
     {
       title: "Healthcare &\nMedical",
-      icon: "/home/home_images/health-icon.png",
-      image: "/home/home_images/health-bg.jpg",
+      icon: siteData.home.industries.health.icon,
+      image: siteData.home.industries.health.bg,
     },
     {
       title: "Real Estate",
-      icon: "/home/home_images/realestate-icon.png",
-      image: "/home/home_images/realestate-bg.jpg",
+      icon: siteData.home.industries.realEstate.icon,
+      image: siteData.home.industries.realEstate.bg,
     },
     {
       title: "Sports",
-      icon: "/home/home_images/sports-icon.png",
-      image: "/home/home_images/sports-bg.jpg",
+      icon: siteData.home.industries.sports.icon,
+      image: siteData.home.industries.sports.bg,
     },
   ],
 ];
@@ -83,6 +83,7 @@ function IndustryCard({ title, icon, image, className }) {
           fill
           sizes="(max-width: 1024px) 100vw, 170px"
           className="object-cover"
+          unoptimized={true}
         />
         <div className="absolute inset-0 bg-[rgba(21,32,52,0.3)]" />
       </div>
@@ -96,6 +97,7 @@ function IndustryCard({ title, icon, image, className }) {
             fill
             sizes="(max-width: 1024px) 100vw, 62px"
             className="object-contain"
+            unoptimized={true}
           />
         </div>
         <div className="mt-[16px] text-center text-[20px] font-normal leading-[32px] tracking-[-0.04em] text-white">

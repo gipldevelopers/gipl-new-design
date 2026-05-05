@@ -3,13 +3,14 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import { siteData } from "@/data/siteData";
 
 export default function ServiceDetailHeroSection({ service }) {
   return (
     <section className="w-full bg-[#031744] overflow-hidden">
       <div className="relative mx-auto w-full max-w-[1440px] px-6 md:px-[34px] pb-16 md:pb-[64px] pt-16 md:pt-[80px] text-center">
         <Image
-          src="/service-detailed/Group 1689.svg"
+          src={siteData.serviceDetail.hero.bgPattern1}
           alt=""
           width={120}
           height={120}
@@ -17,7 +18,7 @@ export default function ServiceDetailHeroSection({ service }) {
           style={{ width: "auto", height: "auto" }}
         />
         <Image
-          src="/service-detailed/Group 1688 (3).svg"
+          src={siteData.serviceDetail.hero.bgPattern2}
           alt=""
           width={48}
           height={48}

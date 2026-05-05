@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { siteData } from "@/data/siteData";
 
 export default function CaseStudySection() {
   return (
@@ -28,11 +29,12 @@ export default function CaseStudySection() {
         >
           <div className="absolute inset-0">
             <Image 
-              src="/hire-us/6560e2566312a55b7797604a34bcdfe060398449.png"
+              src={siteData.hireUs.caseStudy.bg}
               alt="Gvoice POS Background"
               fill
               sizes="100vw"
               className="object-cover"
+              unoptimized={true}
             />
             <div className="absolute inset-0 bg-gradient-to-b md:bg-gradient-to-r from-black/90 via-black/70 to-black/30 md:to-transparent"></div>
           </div>

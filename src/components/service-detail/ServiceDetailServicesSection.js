@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
+import { siteData } from "@/data/siteData";
 
 function ServiceDetailCard({ title, index }) {
   return (
@@ -19,7 +20,7 @@ function ServiceDetailCard({ title, index }) {
         whileHover={{ scale: 1.1 }}
       >
         <Image
-          src="/service-detailed/Icon (1).svg"
+          src={siteData.serviceDetail.services.icon1}
           alt=""
           width={24}
           height={24}

@@ -2,31 +2,32 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { siteData } from "@/data/siteData";
 
 const cards = [
   {
     title: "Discovery",
     description:
       "Deep-dive into business logic, user pain points, and competitive analysis.",
-    icon: "/technology/discovery.png",
+    icon: siteData.technology.process.discovery,
   },
   {
     title: "Design",
     description:
       "User-centric UI frameworks and high-end visual systems aligned with brand identity.",
-    icon: "/technology/design.png",
+    icon: siteData.technology.process.design,
   },
   {
     title: "Develop",
     description:
       "Clear code architecture, robust backend APIs, and seamless frontend integration.",
-    icon: "/technology/develop.png",
+    icon: siteData.technology.process.develop,
   },
   {
     title: "Deploy",
     description:
       "CI/CD pipelines, cloud orchestration, and rigorous post-launch monitoring.",
-    icon: "/technology/deploy.png",
+    icon: siteData.technology.process.deploy,
   },
 ];
 

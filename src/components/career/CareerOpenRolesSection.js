@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { useMemo, useState } from "react";
+import { siteData } from "@/data/siteData";
 
 const categories = [
   "All Roles",
@@ -76,7 +77,7 @@ export default function CareerOpenRolesSection() {
             transition={{ duration: 0.6 }}
             viewport={{ once: false }}
           >
-            <motion.h2 
+            <motion.h2
               className="text-3xl xs:text-4xl md:text-[52px] font-[600] leading-tight md:leading-none tracking-tight md:tracking-[-2px] text-[#1F2A44]"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -85,7 +86,7 @@ export default function CareerOpenRolesSection() {
             >
               Open Roles
             </motion.h2>
-            <motion.p 
+            <motion.p
               className="mt-4 md:mt-[16px] text-base md:text-[20px] font-[400] leading-relaxed md:leading-[1.5] tracking-tight md:tracking-[-0.3px] text-[#374151]"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -96,7 +97,7 @@ export default function CareerOpenRolesSection() {
             </motion.p>
           </motion.div>
 
-          <motion.label 
+          <motion.label
             className="flex h-12 md:h-[56px] w-full lg:w-[420px] shrink-0 items-center gap-[14px] rounded-full bg-white px-5 md:px-[20px] shadow-[0_2px_12px_rgba(15,23,42,0.06)]"
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -105,10 +106,10 @@ export default function CareerOpenRolesSection() {
             whileHover={{ scale: 1.02 }}
           >
             <Image
-              src="/career/Icon (7).svg"
+              src={siteData.career.openRoles.icon7}
               alt=""
-              width={18}
-              height={18}
+              width={0}
+              height={0}
               className="h-[18px] w-[18px] shrink-0"
             />
             <input
@@ -122,7 +123,7 @@ export default function CareerOpenRolesSection() {
         </div>
 
         {/* Category filters */}
-        <motion.div 
+        <motion.div
           className="mt-8 md:mt-[40px] flex flex-wrap justify-center lg:justify-start gap-3 md:gap-[12px]"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -136,11 +137,10 @@ export default function CareerOpenRolesSection() {
                 key={category}
                 type="button"
                 onClick={() => setActiveCategory(category)}
-                className={`h-9 md:h-[42px] rounded-full px-5 md:px-[24px] text-sm md:text-[15px] font-[600] tracking-tight transition-colors ${
-                  active
+                className={`h-9 md:h-[42px] rounded-full px-5 md:px-[24px] text-sm md:text-[15px] font-[600] tracking-tight transition-colors ${active
                     ? "bg-[#4F6EF7] text-white"
                     : "bg-[#EEF2FF] text-[#4F6EF7] hover:bg-[#E0E7FF]"
-                }`}
+                  }`}
                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: 0.3 + index * 0.05 }}
@@ -155,7 +155,7 @@ export default function CareerOpenRolesSection() {
         </motion.div>
 
         {/* Role cards */}
-        <motion.div 
+        <motion.div
           className="mt-8 md:mt-[40px] space-y-4 md:space-y-[16px]"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -163,7 +163,7 @@ export default function CareerOpenRolesSection() {
           viewport={{ once: false }}
         >
           {filteredRoles.length === 0 ? (
-            <motion.p 
+            <motion.p
               className="py-[40px] text-center text-[18px] text-[#6B7280]"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -188,7 +188,7 @@ export default function CareerOpenRolesSection() {
                       {role.category}
                     </p>
                     {role.badge && (
-                      <motion.span 
+                      <motion.span
                         className="inline-flex h-[22px] items-center rounded-[6px] bg-[#EEF2FF] px-[10px] text-[10px] md:text-[12px] font-[700] leading-none text-[#4F6EF7]"
                         initial={{ scale: 0 }}
                         whileInView={{ scale: 1 }}
@@ -205,8 +205,8 @@ export default function CareerOpenRolesSection() {
                   </h3>
 
                   <div className="mt-4 md:mt-[14px] flex flex-wrap items-center justify-center md:justify-start gap-4 md:gap-[24px] text-sm md:text-[16px] leading-none text-[#505860]">
-                    <RoleMeta icon="/career/Icon (8).svg" text={role.location} />
-                    <RoleMeta icon="/career/Icon (10).svg" text={role.time} />
+                    <RoleMeta icon={siteData.career.openRoles.location} text={role.location} />
+                    <RoleMeta icon={siteData.career.openRoles.time} text={role.time} />
                   </div>
                 </div>
 

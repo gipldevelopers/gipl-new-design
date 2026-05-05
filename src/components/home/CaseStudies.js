@@ -3,13 +3,14 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
+import { siteData } from "@/data/siteData";
 
 const projects = [
   {
     id: 1,
     title: "Gvoice POS",
     description: "A revolutionary point-of-sale system that integrated voice commands and AI inventory management for 5,000+ retail outlets.",
-    image: "/hire-us/6560e2566312a55b7797604a34bcdfe060398449.png",
+    image: siteData.home.caseStudies.pos,
     stats: [
       { value: "40%", label: "Efficiency Gain" },
       { value: "2.4M", label: "Monthly Trans." }
@@ -19,7 +20,7 @@ const projects = [
     id: 2,
     title: "EduTech Platform",
     description: "Revolutionary online learning platform that connects students with expert instructors worldwide with AI-powered progress tracking.",
-    image: "/hire-us/3b0f421f76d85ef2751a9a388ba2e5801db159d6.jpg",
+    image: siteData.home.caseStudies.edutech,
     stats: [
       { value: "85%", label: "User Retention" },
       { value: "50K+", label: "Active Students" }
@@ -29,7 +30,7 @@ const projects = [
     id: 3,
     title: "HealthCare App",
     description: "Comprehensive healthcare management app that enables patients to book appointments and consult with doctors through secure video calls.",
-    image: "/hire-us/d38a7fe648846fac21bcac9c7f47b0df8c15fa07.jpg",
+    image: siteData.home.caseStudies.healthcare,
     stats: [
       { value: "95%", label: "Patient Satisfaction" },
       { value: "10K+", label: "Consultations" }

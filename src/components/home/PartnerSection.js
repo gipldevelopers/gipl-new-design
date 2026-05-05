@@ -1,9 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-
 import Image from "next/image";
 import Link from "next/link";
+import { siteData } from "@/data/siteData";
 
 function ArrowUpRightIcon({ className = "" }) {
   return (
@@ -92,7 +92,7 @@ export default function PartnerSection() {
             viewport={{ once: false }}
           >
             <Image
-              src="/home/home_images/f5f38511eb7c731ea5bf9585cfeaa19f8e628677.png"
+              src={siteData.home.partner.office}
               alt="Office interior"
               fill
               sizes="(max-width: 768px) 100vw, 500px"

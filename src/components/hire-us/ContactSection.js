@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { siteData } from "@/data/siteData";
 
 export default function ContactSection() {
   const [formData, setFormData] = useState({
@@ -82,7 +83,7 @@ export default function ContactSection() {
                   viewport={{ once: false }}
                 >
                   <div className="w-12 h-12 md:w-[48px] md:h-[48px] bg-[#2F2C8F] rounded-[12px] flex items-center justify-center flex-shrink-0">
-                    <Image src="/hire-us/contact.png" alt="Email Us" width={20} height={20} className="object-contain brightness-0 invert" style={{ width: "auto", height: "auto" }} />
+                    <Image src={siteData.hireUs.contact.email} alt="Email Us" width={20} height={20} className="object-contain brightness-0 invert" unoptimized={true} style={{ width: "auto", height: "auto" }} />
                   </div>
                   <div>
                     <div className="text-base md:text-[16px] font-[600] mb-1 md:mb-[4px]">Email Us</div>
@@ -98,7 +99,7 @@ export default function ContactSection() {
                   viewport={{ once: false }}
                 >
                   <div className="w-12 h-12 md:w-[48px] md:h-[48px] bg-[#2F2C8F] rounded-[12px] flex items-center justify-center flex-shrink-0">
-                    <Image src="/hire-us/phone.png" alt="Call Anytime" width={20} height={20} className="object-contain brightness-0 invert" />
+                    <Image src={siteData.hireUs.contact.phone} alt="Call Anytime" width={20} height={20} className="object-contain brightness-0 invert" unoptimized={true} style={{ width: "auto", height: "auto" }} />
                   </div>
                   <div>
                     <div className="text-base md:text-[16px] font-[600] mb-1 md:mb-[4px]">Call Anytime</div>
@@ -114,7 +115,7 @@ export default function ContactSection() {
                   viewport={{ once: false }}
                 >
                   <div className="w-12 h-12 md:w-[48px] md:h-[48px] bg-[#2F2C8F] rounded-[12px] flex items-center justify-center flex-shrink-0">
-                    <Image src="/hire-us/location.png" alt="Office Location" width={20} height={20} className="object-contain brightness-0 invert" />
+                    <Image src={siteData.hireUs.contact.location} alt="Office Location" width={20} height={20} className="object-contain brightness-0 invert" unoptimized={true} style={{ width: "auto", height: "auto" }} />
                   </div>
                   <div>
                     <div className="text-base md:text-[16px] font-[600] mb-1 md:mb-[4px]">Office Location</div>

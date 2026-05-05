@@ -1,21 +1,20 @@
 "use client";
 
 import { motion } from "framer-motion";
-
 import Image from "next/image";
+import { siteData } from "@/data/siteData";
 
 const leaders = [
-  { name: "Houspire", icon: "/home/home_images/logo_final.svg" },
-  { name: "Novotion", icon: "/home/home_images/7f1863397780af7f5e9e74643c9b7c643ac49867.png" },
-  { name: "Security Service", icon: "/home/home_images/f6b64672120b618212e8c06a63eee54647947a20.png" },
-  { name: "Asknani", icon: "/home/home_images/320cf59abdb4f8edcf05a8c93d2555d725913c79.png" },
-  { name: "Vadilal", icon: "/home/home_images/0ff353fe1efa261839bc0dbb95ecb183b6380600.png" },
-  { name: "Open Heart", icon: "/home/home_images/47c487286549e202819fb0b9208c57a748719512.png" },
-  { name: "Global", icon: "/home/home_images/4904e6466549d651885efb22aae1321bd483d7aa.png" },
-  { name: "A140", icon: "/home/home_images/a140556f9bbe37bf598be7381d5086d92d0df4be.png" },
-  { name: "Healthcare", icon: "/home/home_images/bacc2ca4fb8671777a04a9a5fc79f9d3fda1e195.png" },
-  { name: "Real Estate", icon: "/home/home_images/c86f3a155da69ce8f4c4bf2f43d99585bc85c4d2.png" },
-
+  { name: "Houspire", icon: siteData.home.trustedLeaders.houspire },
+  { name: "Novotion", icon: siteData.home.trustedLeaders.novotion },
+  { name: "Security Service", icon: siteData.home.trustedLeaders.security },
+  { name: "Asknani", icon: siteData.home.trustedLeaders.asknani },
+  { name: "Vadilal", icon: siteData.home.trustedLeaders.vadilal },
+  { name: "Open Heart", icon: siteData.home.trustedLeaders.openHeart },
+  { name: "Global", icon: siteData.home.trustedLeaders.global },
+  { name: "A140", icon: siteData.home.trustedLeaders.a140 },
+  { name: "Healthcare", icon: siteData.home.trustedLeaders.healthcare },
+  { name: "Real Estate", icon: siteData.home.trustedLeaders.realEstate },
 ];
 
 export default function TrustedLeaders() {

@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Card from "@/components/Card";
+import { siteData } from "@/data/siteData";
 
 export default function DetailLayout({
   title,
@@ -66,13 +67,14 @@ export default function DetailLayout({
                 </p>
                 <div className="flex gap-4">
                   {tech.map((t, i) => (
-                    <div key={i} className="w-11 h-11 flex items-center justify-center rounded-xl bg-white/10 backdrop-blur-md border border-white/10 shadow-lg" title={t}>
+                    <div key={i} className="w-11 h-11 flex items-center justify-center rounded-xl bg-white shadow-lg" title={t}>
                       {t === "React" && (
                         <Image
-                          src="/blog/vscode-icons_file-type-reactjs.svg"
+                          src={siteData.blog.reactIcon}
                           alt="React logo"
                           width={24}
                           height={24}
+                          unoptimized={true}
                           className="w-6 h-6 object-contain"
                           style={{ width: "auto", height: "auto" }}
                         />
@@ -104,6 +106,7 @@ export default function DetailLayout({
                 sizes="(max-width: 768px) 100vw, (max-width: 1440px) 900px, 900px"
                 className="object-cover"
                 priority
+                unoptimized={true}
               />
             </motion.div>
           </motion.div>

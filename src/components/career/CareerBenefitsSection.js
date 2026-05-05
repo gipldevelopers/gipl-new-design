@@ -2,35 +2,36 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { siteData } from "@/data/siteData";
 
 const benefitCards = [
   {
-    icon: "/career/career-1.svg",
+    icon: siteData.career.benefits.career1,
     title: "Development of Professionals",
     copy: "Through ongoing instruction, hands-on courses, and certifications, we make an investment in your education. You'll have the chance to hone your abilities and keep up with emerging technologies.",
   },
   {
-    icon: "/career/career-2.svg",
+    icon: siteData.career.benefits.career2,
     title: "An Environment Focused on Growth",
     copy: "Through ongoing instruction, hands-on courses, and certifications, we make an investment in your education. You'll have the chance to hone your abilities and keep up with emerging technologies.",
   },
   {
-    icon: "/career/internet.svg",
+    icon: siteData.career.benefits.internet,
     title: "Global Exposure",
     copy: "Work on projects for a diverse client base and collaborate with teams and partners from around the world. Gain invaluable experience in a global business landscape.",
   },
   {
-    icon: "/career/internet.svg",
+    icon: siteData.career.benefits.internet,
     title: "Worldwide Exposure",
     copy: "Work on projects for customers in various sectors and geographical areas. Gain practical experience in a global workplace by working with teams and partners throughout the globe.",
   },
   {
-    icon: "/career/career-5.svg",
+    icon: siteData.career.benefits.career5,
     title: "Cooperation Team",
     copy: "The foundation of our work is teamwork. We support one another, exchange ideas, and think that teamwork yields the finest outcomes.",
   },
   {
-    icon: "/career/career-6.svg",
+    icon: siteData.career.benefits.career6,
     title: "Self-determination and Empowerment",
     copy: "We have faith in our people. With the backing of a helpful team, you will be able to take responsibility for your work, make decisions, and confidently lead your tasks.",
   },
@@ -107,7 +108,7 @@ export default function CareerBenefitsSection() {
               whileHover={{ scale: 1.02 }}
             >
               <Image
-                src="/career/bf7783e7afd3bc0d69cd067a36fda981882aabce.png"
+                src={siteData.home.serviceGrid.network}
                 alt="Global exposure graphic"
                 fill
                 sizes="(max-width: 1024px) 100vw, 33vw"

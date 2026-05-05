@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { siteData } from "@/data/siteData";
 
 const miniServices = [
   {
@@ -11,7 +12,7 @@ const miniServices = [
       "Robust blueprinting for microservices",
       "and distributed systems.",
     ],
-    icon: "/home/home_images/mobile-icon.png",
+    icon: siteData.home.serviceGrid.mobile,
   },
   {
     title: "Business Automation",
@@ -20,7 +21,7 @@ const miniServices = [
       "web platforms built with modern",
       "stacks.",
     ],
-    icon: "/home/home_images/automation-icon.png",
+    icon: siteData.home.serviceGrid.automation,
   },
   {
     title: "ERP Solutions",
@@ -29,7 +30,7 @@ const miniServices = [
       "integrated at every layer of",
       "development.",
     ],
-    icon: "/home/home_images/erp-icon.png",
+    icon: siteData.home.serviceGrid.erp,
   },
 ];
 
@@ -103,7 +104,7 @@ export default function ServiceGrid() {
           >
             <div>
               <Image
-                src="/home/home_images/web-icon.png"
+                src={siteData.home.serviceGrid.web}
                 alt="Web development"
                 width={28}
                 height={28}
@@ -118,7 +119,7 @@ export default function ServiceGrid() {
             </div>
             <div className="relative mt-6 h-[140px] md:h-[180px] w-full overflow-hidden rounded-[20px]">
               <Image
-                src="/home/home_images/bf7783e7afd3bc0d69cd067a36fda981882aabce.png"
+                src={siteData.home.serviceGrid.network}
                 alt="Global network map"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
@@ -136,7 +137,7 @@ export default function ServiceGrid() {
             whileHover={{ y: -5 }}
           >
             <Image
-              src="/home/home_images/custom-icon.png"
+              src={siteData.home.serviceGrid.custom}
               alt="Custom software development"
               width={28}
               height={28}

@@ -1,5 +1,6 @@
 import { Poppins, Roboto, Manrope } from "next/font/google";
 import "./globals.css";
+import { siteData } from "@/data/siteData";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -20,18 +21,19 @@ const manrope = Manrope({
 });
 
 export const metadata = {
+  metadataBase: new URL("http://localhost:3000"),
   title: "Gohil Infotech Private Limited | Smart IT Solutions for Growing Businesses",
   description: "Gohil Infotech provides software development, HRMS, CRM, POS, ERP & complete digital solutions for businesses in Gujarat & worldwide.",
   keywords: "IT company Ahmedabad, software development Gujarat, HRMS, CRM, POS, ERP",
   icons: {
-    icon: '/icons/Icon.svg',
-    shortcut: '/icons/Icon.svg',
-    apple: '/icons/Icon.svg',
+    icon: siteData.common.icons.main,
+    shortcut: siteData.common.icons.main,
+    apple: siteData.common.icons.main,
   },
   openGraph: {
     title: "Gohil Infotech Private Limited",
     description: "Smart IT Solutions for Growing Businesses – software, apps, CRM, POS, ERP & automation.",
-    images: ["/gipl-og.png"],
+    images: [siteData.common.ogImage],
     type: "website",
   },
   twitter: {
