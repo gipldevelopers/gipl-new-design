@@ -29,10 +29,10 @@ export default function BenefitsSection() {
   ];
 
   return (
-    <section className="w-full bg-[#F5F7FB] py-12 md:py-[80px]">
+    <section className="w-full bg-[#F7F9FE] py-12 md:py-[80px]">
       <div className="mx-auto w-full max-w-[1440px] px-6 md:px-[34px]">
         <motion.div
-          className="text-center lg:text-left mb-10 md:mb-[64px]"
+          className="text-center mb-10 md:mb-[60px]"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -41,7 +41,7 @@ export default function BenefitsSection() {
           <h2 className="text-3xl xs:text-4xl md:text-[48px] font-[700] leading-tight md:leading-[1.2] tracking-tight md:tracking-[-0.02em] text-[#0F172A] mb-4 md:mb-[16px]">
             Benefits of Partnering with Us
           </h2>
-          <p className="text-base md:text-[18px] font-[400] leading-relaxed md:leading-[1.7] text-[#64748B] max-w-[600px] mx-auto lg:mx-0">
+          <p className="text-base md:text-[18px] font-[400] leading-relaxed md:leading-[1.7] text-[#64748B] max-w-[600px] mx-auto">
             We don't just build software; we build the future of your business through strategic technical partnership.
           </p>
         </motion.div>

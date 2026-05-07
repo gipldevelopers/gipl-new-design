@@ -21,7 +21,6 @@ const manrope = Manrope({
 });
 
 export const metadata = {
-  metadataBase: new URL("http://localhost:3000"),
   title: "Gohil Infotech Private Limited | Smart IT Solutions for Growing Businesses",
   description: "Gohil Infotech provides software development, HRMS, CRM, POS, ERP & complete digital solutions for businesses in Gujarat & worldwide.",
   keywords: "IT company Ahmedabad, software development Gujarat, HRMS, CRM, POS, ERP",
