@@ -7,7 +7,7 @@ import { siteData } from "@/data/siteData";
 export default function ServicesSection() {
   return (
     <section className="w-full bg-[#F7F9FE] py-12 md:py-[80px]">
-      <div className="mx-auto w-full max-w-[1440px] px-6 md:px-[34px]">
+      <div className="mx-auto w-full max-w-[1440px] px-6 md:px-[35px]">
         <motion.div
           className="flex flex-col md:flex-row justify-between items-center md:items-start mb-10 md:mb-[60px] text-center md:text-left gap-6"
           initial={{ opacity: 0, y: 30 }}
@@ -23,11 +23,18 @@ export default function ServicesSection() {
               Comprehensive technology solutions tailored to your unique business challenges.
             </p>
           </div>
-          <button className="bg-[#5B73F7] text-white px-6 md:px-[28px] py-3 md:py-[14px] rounded-full text-sm md:text-[16px] font-[600] flex items-center gap-[8px] hover:bg-[#4F6EF7] transition-colors shrink-0">
+          <button className="bg-[#5B73F7] text-white px-6 md:px-[28px] py-3 md:py-[14px] rounded-full text-sm md:text-[16px] font-[600] flex items-center gap-[8px] hover:bg-[#4F6EF7] transition-all group shrink-0">
             Start your project
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M6 12L10 8L6 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
+            <div className="w-[16px] h-[16px] flex items-center justify-center transition-transform group-hover:translate-x-1">
+              <Image
+                src={siteData.common.icons.btnArrow}
+                alt=""
+                width={16}
+                height={16}
+                className="object-contain brightness-0 invert"
+                unoptimized={true}
+              />
+            </div>
           </button>
         </motion.div>
 
@@ -35,7 +42,7 @@ export default function ServicesSection() {
         <div className="grid grid-cols-1 md:grid-cols-5 gap-6 md:gap-[24px] mb-6 md:mb-[24px]">
           {/* Custom Software Development - Takes 3 columns */}
           <motion.div
-            className="md:col-span-3 bg-[#1A2332] rounded-[20px] p-8 md:p-[40px] text-white relative overflow-hidden min-h-[220px] md:h-[240px] flex flex-col justify-center"
+            className="md:col-span-3 bg-[#1A2332] rounded-[20px] p-8 md:p-[40px] text-white relative overflow-hidden min-h-[220px] md:h-[260px] flex flex-col justify-center"
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
@@ -52,8 +59,8 @@ export default function ServicesSection() {
                 unoptimized={true}
               />
             </div>
-            <div className="relative z-10">
-              <h3 className="text-2xl md:text-[32px] font-[700] mb-3 md:mb-[16px]">
+            <div className="relative z-10 md:mt-20">
+              <h3 className="text-2xl md:text-[32px] font-[700] mb-3 md:mb-[15px]">
                 Custom Software Development
               </h3>
               <p className="text-sm md:text-[16px] font-[400] leading-relaxed md:leading-[1.6] text-white/80">
@@ -64,7 +71,7 @@ export default function ServicesSection() {
 
           {/* Mobile Apps - Takes 2 columns */}
           <motion.div
-            className="md:col-span-2 bg-[#5B73F7] rounded-[20px] p-8 md:p-[40px] text-white min-h-[220px] md:h-[240px] flex flex-col justify-center"
+            className="md:col-span-2 bg-[#5B73F7] rounded-[20px] p-8 md:p-[40px] text-white min-h-[220px] md:h-[260px] flex flex-col justify-center"
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
@@ -72,7 +79,7 @@ export default function ServicesSection() {
             whileHover={{ scale: 1.02 }}
           >
             <div className="w-10 h-10 md:w-[48px] md:h-[48px] bg-white/20 rounded-[12px] flex items-center justify-center mb-6 md:mb-[24px]">
-              <Image src={siteData.hireUs.services.mobile} alt="Mobile Apps" width={24} height={24} className="object-contain brightness-0 invert" unoptimized={true} style={{ width: "auto", height: "auto" }} />
+              <Image src={siteData.hireUs.services.mobile} alt="Mobile Apps" width={0} height={0} className="object-contain brightness-0 invert" unoptimized={true} style={{ width: "100%", height: "60%" }} />
             </div>
             <h3 className="text-2xl md:text-[32px] font-[700] mb-3 md:mb-[16px]">
               Mobile Apps
@@ -95,7 +102,7 @@ export default function ServicesSection() {
             whileHover={{ scale: 1.02 }}
           >
             <div className="w-10 h-10 md:w-[48px] md:h-[48px] bg-[#5B73F7]/20 rounded-[12px] flex items-center justify-center mb-6 md:mb-[24px]">
-              <Image src={siteData.hireUs.services.cloud} alt="Cloud Solutions" width={24} height={24} className="object-contain" unoptimized={true} style={{ width: "auto", height: "auto" }} />
+              <Image src={siteData.hireUs.services.cloud} alt="Cloud Solutions" width={0} height={0} className="object-contain" unoptimized={true} style={{ width: "100%", height: "40%" }} />
             </div>
             <h3 className="text-xl md:text-[24px] font-[700] text-[#0F172A] mb-3 md:mb-[12px]">
               Cloud Solutions

@@ -177,46 +177,7 @@ export default function AboutTeamBeliefsSection() {
             The Gohil Infotech Team
           </motion.h2>
 
-          <motion.div
-            className="flex gap-[12px] hidden md:flex"
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-            viewport={{ once: false }}
-          >
-            <button
-              type="button"
-              onClick={handlePrevTeam}
-              className="flex h-[40px] w-[40px] items-center justify-center rounded-full bg-[#DDD8FF] text-[#5B4ED6] hover:bg-[#c8c0ff] transition-colors"
-              aria-label="Previous team members"
-            >
-              <svg width="8" height="14" viewBox="0 0 8 14" fill="none">
-                <path
-                  d="M6.5 1.5L1.5 7L6.5 12.5"
-                  stroke="currentColor"
-                  strokeWidth="1.8"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </button>
-            <button
-              type="button"
-              onClick={handleNextTeam}
-              className="flex h-[40px] w-[40px] items-center justify-center rounded-full bg-[#DDD8FF] text-[#5B4ED6] hover:bg-[#c8c0ff] transition-colors"
-              aria-label="Next team members"
-            >
-              <svg width="8" height="14" viewBox="0 0 8 14" fill="none">
-                <path
-                  d="M1.5 1.5L6.5 7L1.5 12.5"
-                  stroke="currentColor"
-                  strokeWidth="1.8"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </button>
-          </motion.div>
+
         </div>
 
         <div className="mt-8 md:mt-[42px]">
@@ -287,46 +248,7 @@ export default function AboutTeamBeliefsSection() {
             Our Beliefs
           </motion.h2>
 
-          <motion.div
-            className="flex gap-[12px] hidden md:flex"
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-            viewport={{ once: false }}
-          >
-            <button
-              type="button"
-              onClick={handlePrevBelief}
-              className="flex h-[40px] w-[40px] items-center justify-center rounded-full bg-[#DDD8FF] text-[#5B4ED6] hover:bg-[#c8c0ff] transition-colors"
-              aria-label="Previous belief"
-            >
-              <svg width="8" height="14" viewBox="0 0 8 14" fill="none">
-                <path
-                  d="M6.5 1.5L1.5 7L6.5 12.5"
-                  stroke="currentColor"
-                  strokeWidth="1.8"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </button>
-            <button
-              type="button"
-              onClick={handleNextBelief}
-              className="flex h-[40px] w-[40px] items-center justify-center rounded-full bg-[#DDD8FF] text-[#5B4ED6] hover:bg-[#c8c0ff] transition-colors"
-              aria-label="Next belief"
-            >
-              <svg width="8" height="14" viewBox="0 0 8 14" fill="none">
-                <path
-                  d="M1.5 1.5L6.5 7L1.5 12.5"
-                  stroke="currentColor"
-                  strokeWidth="1.8"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </button>
-          </motion.div>
+
         </div>
 
         <div className="mt-8 md:mt-[46px]">

@@ -7,7 +7,7 @@ import { siteData } from "@/data/siteData";
 
 function ServiceDetailCard({ title, index }) {
   return (
-    <motion.article 
+    <motion.article
       className="rounded-[20px] bg-white px-[28px] pb-[28px] pt-[24px] shadow-[0_2px_12px_rgba(15,23,42,0.05)]"
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
@@ -15,7 +15,7 @@ function ServiceDetailCard({ title, index }) {
       viewport={{ once: false }}
       whileHover={{ y: -5 }}
     >
-      <motion.div 
+      <motion.div
         className="flex h-[48px] w-[48px] items-center justify-center rounded-[12px] bg-[#1E2A45]"
         whileHover={{ scale: 1.1 }}
       >
@@ -44,9 +44,13 @@ function ServiceDetailCard({ title, index }) {
           className="mt-[20px] inline-flex items-center gap-[8px] text-[14px] font-[600] leading-[1] text-[#2D5BE3] hover:underline"
         >
           View all services
-          <span className="flex h-[18px] w-[18px] items-center justify-center rounded-full border border-[#2D5BE3] text-[12px] leading-none">
-            →
-          </span>
+          <Image
+            src={siteData.common.icons.arrowCircle}
+            alt="Arrow"
+            width={18}
+            height={18}
+            className="shrink-0"
+          />
         </Link>
       </motion.div>
     </motion.article>

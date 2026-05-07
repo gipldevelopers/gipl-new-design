@@ -127,14 +127,14 @@ export default function BlogListingPage() {
               </motion.p>
             </motion.div>
 
-            {/* Category Tabs - Scrollable on mobile */}
+            {/* Category Tabs - High-fidelity redesigned pill layout */}
             <motion.div
-              className="flex w-full md:w-auto items-center gap-2 overflow-x-auto pb-2 md:pb-0 no-scrollbar"
+              className="flex w-full md:w-auto items-center overflow-x-auto no-scrollbar"
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              <div className="flex items-center gap-2 mx-auto md:mx-0">
+              <div className="flex items-center bg-[#F1F5F9] p-1 rounded-full w-full md:w-auto overflow-x-auto no-scrollbar">
                 {categories.map((category, index) => (
                   <motion.button
                     key={category.slug}
@@ -142,11 +142,10 @@ export default function BlogListingPage() {
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.4, delay: 0.3 + index * 0.1 }}
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.98 }}
-                    className={`whitespace-nowrap px-4 md:px-[20px] py-2 md:py-[10px] rounded-[8px] text-xs md:text-[14px] font-[500] transition-colors ${activeCategory === category.slug
-                      ? "bg-[#4F6EF7] text-white"
-                      : "bg-[#F3F4F6] text-[#6B7280] hover:bg-[#E5E7EB]"
+                    whileTap={{ scale: 0.95 }}
+                    className={`whitespace-nowrap h-[40px] md:h-[44px] px-5 md:px-[24px] rounded-full text-[13px] md:text-[14px] font-[600] transition-all duration-300 ${activeCategory === category.slug
+                      ? "bg-white text-[#4F6EF7] shadow-[0_2px_8px_rgba(0,0,0,0.06)]"
+                      : "text-[#64748B] hover:text-[#4F6EF7]"
                       }`}
                   >
                     {category.label}
@@ -159,7 +158,7 @@ export default function BlogListingPage() {
       </section>
 
       {/* Content Section */}
-      <section className="w-full py-12 md:py-[64px]">
+      <section className="w-full py-12 md:py-[64px] bg-white">
         <div className="mx-auto w-full max-w-[1440px] px-6 md:px-[34px]">
           {/* Featured post - Dynamic based on selected category */}
           <motion.div
@@ -170,23 +169,25 @@ export default function BlogListingPage() {
             transition={{ duration: 0.6 }}
             whileHover={{ y: -5 }}
           >
-            <motion.div
-              className="relative min-h-[280px] md:min-h-[360px]"
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-            >
-              <Image
-                src={featuredContent.image}
-                alt={featuredContent.title}
-                fill
-                sizes="(max-width: 1024px) 100vw, 55vw"
-                className="object-cover"
-                priority
-                loading="eager"
-                unoptimized={true}
-              />
-            </motion.div>
+            <Link href={`/blog/${featuredContent.slug}`} className="relative min-h-[280px] md:min-h-[360px] block overflow-hidden group">
+              <motion.div
+                className="w-full h-full"
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+              >
+                <Image
+                  src={featuredContent.image}
+                  alt={featuredContent.title}
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 55vw"
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  priority
+                  loading="eager"
+                  unoptimized={true}
+                />
+              </motion.div>
+            </Link>
             <motion.div
               className="px-6 md:px-[40px] py-8 md:py-[40px] flex flex-col justify-center"
               initial={{ opacity: 0, x: 20 }}
@@ -196,14 +197,16 @@ export default function BlogListingPage() {
               <span className="inline-flex w-fit rounded-[999px] bg-[#EEF2FF] px-[14px] py-[6px] text-[12px] font-[600] leading-[1] text-[#4F6EF7]">
                 {featuredContent.badge || "Editor's Pick"}
               </span>
-              <motion.h2
-                className="mt-4 md:mt-[20px] text-xl md:text-[28px] font-[600] leading-tight md:leading-[1.3] text-[#1F2937]"
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.3 }}
-              >
-                {featuredContent.title}
-              </motion.h2>
+              <Link href={`/blog/${featuredContent.slug}`}>
+                <motion.h2
+                  className="mt-4 md:mt-[20px] text-xl md:text-[28px] font-[600] leading-tight md:leading-[1.3] text-[#1F2937] hover:text-[#4F6EF7] transition-colors"
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 0.3 }}
+                >
+                  {featuredContent.title}
+                </motion.h2>
+              </Link>
               <motion.p
                 className="mt-3 md:mt-[16px] text-sm md:text-[16px] font-[400] leading-relaxed md:leading-[1.7] text-[#6B7280] font-manrope"
                 initial={{ opacity: 0, y: 10 }}
@@ -250,12 +253,23 @@ export default function BlogListingPage() {
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ duration: 0.5, delay: 0.5 }}
+                  className="w-fit"
                 >
                   <Link
                     href={`/blog/${featuredContent.slug}`}
-                    className="inline-flex items-center gap-2 text-[13px] md:text-[14px] font-[600] text-[#4F6EF7] hover:underline"
+                    className="flex items-center gap-2 text-[13px] md:text-[14px] font-[600] text-[#4F6EF7] hover:underline group"
                   >
-                    Read More →
+                    Read More
+                    <div className="w-[15px] h-[15px] flex items-center justify-center transition-transform group-hover:translate-x-1">
+                      <Image
+                        src={siteData.common.icons.cardArrow}
+                        alt=""
+                        width={15}
+                        height={15}
+                        className="object-contain"
+                        unoptimized={true}
+                      />
+                    </div>
                   </Link>
                 </motion.div>
               </div>

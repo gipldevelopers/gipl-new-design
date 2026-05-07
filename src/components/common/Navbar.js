@@ -2,14 +2,29 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { siteData } from "@/data/siteData";
 
 const navItems = [
   { label: "Home", href: "/" },
-  { label: "Services", href: "/service" },
+  {
+    label: "Services",
+    href: "/service",
+    dropdown: [
+      { label: "All Services", href: "/service#services" },
+      { label: "Software Engineering", href: "/service/software-engineering" },
+      { label: "Web Development", href: "/service/web-development" },
+      { label: "AI & Automation", href: "/service/ai-automation" },
+      { label: "Data Solutions", href: "/service/data-solutions" },
+      { label: "Digital Marketing", href: "/service/digital-marketing" },
+      { label: "UI/UX Design", href: "/service/ui-ux-design" },
+      { label: "Cloud Solutions", href: "/service/cloud-solutions" },
+      { label: "eCommerce Solutions", href: "/service/ecommerce-solutions" },
+      { label: "Mobile App Development", href: "/service/mobile-app-development" }
+    ]
+  },
   { label: "Technologies", href: "/technology" },
   { label: "Blog", href: "/blog" },
   {
@@ -26,6 +41,7 @@ const navItems = [
 
 export default function Navbar() {
   const pathname = usePathname();
+  const router = useRouter();
   const [activeDropdown, setActiveDropdown] = useState(null);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -106,40 +122,51 @@ export default function Navbar() {
               whileHover={{ y: -2 }}
             >
               {item.dropdown ? (
-                <>
-                  <button
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      handleDropdownToggle(index);
-                    }}
-                    className={`text-[15px] font-semibold transition-colors relative pb-1 flex items-center gap-1 h-[20px] ${["/about", "/career", "/work"].includes(pathname)
-                      ? "text-[#2F2C8E] after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-full after:h-[2px] after:bg-[#2F2C8E]"
-                      : "text-[#475569] hover:text-[#2F2C8E]"
-                      }`}
-                  >
-                    {item.label}
-                    <svg
-                      className={`w-4 h-4 transition-transform ${activeDropdown === index ? 'rotate-180' : ''}`}
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
+                <div
+                  className="relative flex items-center group h-full"
+                  onMouseEnter={() => setActiveDropdown(index)}
+                  onMouseLeave={() => setActiveDropdown(null)}
+                >
+                  <div className="flex items-center gap-1">
+                    <Link
+                      href={item.href}
+                      className={`text-[16px] font-roboto font-bold transition-colors relative flex items-center h-[20px] hover:no-underline ${(pathname === item.href || item.dropdown.some(d => d.href === pathname))
+                        ? "text-[#2F2C8F]"
+                        : "text-[#475569] hover:text-[#2F2C8F]"
+                        }`}
                     >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                    </svg>
-                  </button>
+                      {item.label}
+                    </Link>
+                    <button
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        handleDropdownToggle(index);
+                      }}
+                      className="p-1 hover:text-[#2F2C8F] transition-colors"
+                    >
+                      <svg
+                        className={`w-4 h-4 transition-transform ${activeDropdown === index ? 'rotate-180' : ''}`}
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </button>
+                  </div>
 
                   {activeDropdown === index && (
                     <div
-                      className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-gray-100 py-2 z-50"
+                      className="absolute top-full left-0 mt-0 w-48 bg-white rounded-lg shadow-lg border border-gray-100 py-2 z-50"
                       onClick={(e) => e.stopPropagation()}
                     >
                       {item.dropdown.map((subItem) => (
                         <Link
                           key={subItem.label}
                           href={subItem.href}
-                          className={`block px-4 py-2 text-[14px] font-medium transition-colors ${pathname === subItem.href
-                            ? "text-[#2F2C8E] bg-[#F8F9FF]"
-                            : "text-[#475569] hover:text-[#2F2C8E] hover:bg-[#F8F9FF]"
+                          className={`block px-4 py-2 text-[16px] font-roboto font-bold transition-colors ${pathname === subItem.href
+                            ? "text-[#2F2C8F] bg-[#F8F9FF]"
+                            : "text-[#475569] hover:text-[#2F2C8F] hover:bg-[#F8F9FF]"
                             }`}
                           onClick={() => setActiveDropdown(null)}
                         >
@@ -148,13 +175,13 @@ export default function Navbar() {
                       ))}
                     </div>
                   )}
-                </>
+                </div>
               ) : (
                 <Link
                   href={item.href}
-                  className={`text-[15px] font-semibold transition-colors relative pb-1 h-[20px] flex items-center ${pathname === item.href
-                    ? "text-[#2F2C8E] after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-full after:h-[2px] after:bg-[#2F2C8E]"
-                    : "text-[#475569] hover:text-[#2F2C8E]"
+                  className={`text-[16px] font-roboto font-bold transition-colors relative h-[20px] flex items-center hover:no-underline ${pathname === item.href
+                    ? "text-[#2F2C8F]"
+                    : "text-[#475569] hover:text-[#2F2C8F]"
                     }`}
                 >
                   {item.label}
@@ -237,8 +264,8 @@ export default function Navbar() {
               </button>
             </div>
 
-            {/* Centered Menu Items */}
-            <div className="flex-1 flex flex-col items-center justify-center gap-8 py-10 overflow-y-auto">
+            {/* Mobile Menu Items - Top-aligned for better scrollability when dropdowns open */}
+            <div className="flex-1 flex flex-col items-center justify-start gap-8 py-12 overflow-y-auto no-scrollbar">
               {navItems.map((item, index) => (
                 <motion.div
                   key={item.label}
@@ -249,21 +276,41 @@ export default function Navbar() {
                 >
                   {item.dropdown ? (
                     <>
-                      <button
-                        onClick={() => handleDropdownToggle(index)}
-                        className={`text-[24px] font-bold flex items-center gap-3 transition-colors ${["/about", "/career", "/work"].includes(pathname) ? "text-[#2F2C8E]" : "text-[#1E293B]"
-                          }`}
-                      >
-                        {item.label}
-                        <svg
-                          className={`w-6 h-6 transition-transform ${activeDropdown === index ? 'rotate-180' : ''}`}
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
+                      <div className="flex items-center justify-center gap-2">
+                        {item.label === "Company" ? (
+                          <button
+                            onClick={() => handleDropdownToggle(index)}
+                            className={`text-[24px] font-roboto font-bold transition-colors ${activeDropdown === index ? "text-[#2F2C8F]" : "text-[#1E293B]"
+                              }`}
+                          >
+                            {item.label}
+                          </button>
+                        ) : (
+                          <Link
+                            href={item.href}
+                            onClick={() => setIsMobileMenuOpen(false)}
+                            className={`text-[24px] font-roboto font-bold transition-colors ${(pathname === item.href || item.dropdown.some(d => d.href === pathname)) ? "text-[#2F2C8F]" : "text-[#1E293B]"
+                              }`}
+                          >
+                            {item.label}
+                          </Link>
+                        )}
+                        <button
+                          onClick={() => {
+                            handleDropdownToggle(index);
+                          }}
+                          className="p-2"
                         >
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
-                        </svg>
-                      </button>
+                          <svg
+                            className={`w-6 h-6 transition-transform ${activeDropdown === index ? 'rotate-180' : ''}`}
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
+                          </svg>
+                        </button>
+                      </div>
                       <AnimatePresence>
                         {activeDropdown === index && (
                           <motion.div
@@ -277,7 +324,7 @@ export default function Navbar() {
                                 key={subItem.label}
                                 href={subItem.href}
                                 onClick={() => setIsMobileMenuOpen(false)}
-                                className={`text-[18px] font-semibold transition-colors ${pathname === subItem.href ? "text-[#2F2C8E]" : "text-[#64748B] hover:text-[#2F2C8E]"
+                                className={`text-[18px] font-roboto font-bold transition-colors ${pathname === subItem.href ? "text-[#2F2C8F]" : "text-[#64748B] hover:text-[#2F2C8F]"
                                   }`}
                               >
                                 {subItem.label}
@@ -291,7 +338,7 @@ export default function Navbar() {
                     <Link
                       href={item.href}
                       onClick={() => setIsMobileMenuOpen(false)}
-                      className={`text-[24px] font-bold transition-colors ${pathname === item.href ? "text-[#2F2C8E]" : "text-[#1E293B] hover:text-[#2F2C8E]"
+                      className={`text-[24px] font-roboto font-bold transition-colors ${pathname === item.href ? "text-[#2F2C8F]" : "text-[#1E293B] hover:text-[#2F2C8F]"
                         }`}
                     >
                       {item.label}

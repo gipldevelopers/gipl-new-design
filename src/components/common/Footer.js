@@ -158,7 +158,7 @@ export default function Footer() {
             <div className="grid grid-cols-2 gap-6 sm:col-span-1 lg:contents">
               {/* Quick Links Column */}
               <motion.div
-                className="pt-[8px]"
+                className="pt-[8px] lg:pl-[60px]"
                 initial={{ opacity: 0, x: -10 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6, delay: 0.6 }}
@@ -242,7 +242,7 @@ export default function Footer() {
                   viewport={{ once: false }}
                   whileHover={{ x: 5 }}
                 >
-                   <Image
+                  <Image
                     src={siteData.footer.addressIcon}
                     alt=""
                     width={22}
@@ -268,7 +268,7 @@ export default function Footer() {
                   viewport={{ once: false }}
                   whileHover={{ x: 5 }}
                 >
-                   <Image
+                  <Image
                     src={siteData.footer.phoneIcon}
                     alt=""
                     width={22}
@@ -290,7 +290,7 @@ export default function Footer() {
                   viewport={{ once: false }}
                   whileHover={{ x: 5 }}
                 >
-                   <Image
+                  <Image
                     src={siteData.footer.emailIcon}
                     alt=""
                     width={22}

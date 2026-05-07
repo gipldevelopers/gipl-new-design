@@ -38,31 +38,11 @@ function ServiceCardIcon() {
   );
 }
 
-function ArrowCircleIcon() {
-  return (
-    <svg
-      width="18"
-      height="18"
-      viewBox="0 0 13 13"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      className="shrink-0"
-    >
-      <circle cx="6.5" cy="6.5" r="5" stroke="#2D5BE3" strokeWidth="1.5" />
-      <path
-        d="M4.7 6.5H8.1M8.1 6.5L6.8 5.2M8.1 6.5L6.8 7.8"
-        stroke="#2D5BE3"
-        strokeWidth="1.2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
-  );
-}
+
 
 export default function ServiceCardsSection() {
   return (
-    <section className="w-full bg-[#ECEEF2] py-12 md:py-[72px]">
+    <section id="services" className="w-full bg-[#ECEEF2] py-12 md:py-[72px]">
       <div className="mx-auto w-full max-w-[1440px] px-6 md:px-[34px]">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-[24px]">
           {serviceCards.map((item, index) => (
@@ -75,38 +55,48 @@ export default function ServiceCardsSection() {
               whileHover={{ y: -5 }}
               className="rounded-[24px] bg-white px-6 md:px-[32px] pb-8 md:pb-[32px] pt-7 md:pt-[28px] shadow-[0_2px_12px_rgba(15,23,42,0.05)]"
             >
-              <motion.div whileHover={{ scale: 1.1 }}>
-                <div className="flex h-12 w-12 items-center justify-center rounded-[12px] bg-[#1E2A45]">
-                  {item.imgSrc ? (
-                  <div className="relative w-6 h-6">
-                    <Image
-                      src={item.imgSrc}
-                      alt={item.title}
-                      fill
-                      sizes="24px"
-                      className={`object-contain ${item.imgClassName || ""}`}
-                    />
+              <Link href={item.href} className="block group">
+                <motion.div whileHover={{ scale: 1.1 }}>
+                  <div className="flex h-12 w-12 items-center justify-center rounded-[12px] bg-[#1E2A45]">
+                    {item.imgSrc ? (
+                      <div className="relative w-6 h-6">
+                        <Image
+                          src={item.imgSrc}
+                          alt={item.title}
+                          fill
+                          sizes="24px"
+                          className={`object-contain ${item.imgClassName || ""}`}
+                        />
+                      </div>
+                    ) : (
+                      <ServiceCardIcon />
+                    )}
                   </div>
-                  ) : (
-                    <ServiceCardIcon />
-                  )}
-                </div>
-              </motion.div>
-              <h3 className="mt-5 md:mt-[20px] text-lg md:text-[20px] font-[700] leading-tight md:leading-[1.25] tracking-[-0.02em] text-[#2F3641]">
-                {item.title}
-              </h3>
+                </motion.div>
+                <h3 className="mt-5 md:mt-[20px] text-lg md:text-[20px] font-[700] leading-tight md:leading-[1.25] tracking-[-0.02em] text-[#2F3641] group-hover:text-[#2D5BE3] transition-colors">
+                  {item.title}
+                </h3>
+              </Link>
+
               <p className="mt-3 md:mt-[12px] text-sm md:text-[15px] font-[400] leading-relaxed md:leading-[1.6] text-[#4E5663]">
                 Our {item.title} services help businesses build secure,
                 scalable, and high-performance applications tailored to their
                 needs. From custom solutions to enterprise platforms.
               </p>
+
               <motion.div whileHover={{ scale: 1.05 }}>
                 <Link
                   href={item.href}
-                  className="mt-5 md:mt-[20px] inline-flex items-center gap-[8px] text-[14px] font-[600] leading-[1.2] text-[#2D5BE3] hover:underline"
+                  className="mt-5 md:mt-[30px] inline-flex items-center gap-[8px] text-[16px] font-[600] leading-[1.2] text-[#2D5BE3] hover:underline"
                 >
                   Learn More
-                  <ArrowCircleIcon />
+                  <Image
+                    src={siteData.common.icons.arrowCircle}
+                    alt="Arrow"
+                    width={18}
+                    height={18}
+                    className="shrink-0"
+                  />
                 </Link>
               </motion.div>
             </motion.article>

@@ -69,7 +69,7 @@ export default function CareerBenefitsSection() {
     <section className="w-full bg-white py-12 md:py-[72px]">
       <div className="mx-auto w-full max-w-[1440px] px-6 md:px-[34px]">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-6 items-start">
-          
+
           {/* Heading - Shows first on mobile */}
           <motion.div
             className="flex flex-col lg:order-3 text-center lg:text-left"
@@ -99,7 +99,7 @@ export default function CareerBenefitsSection() {
             </motion.p>
 
             <motion.div
-              className="relative mt-8 md:mt-[28px] w-full overflow-hidden rounded-[16px] bg-[#0E1116] hidden lg:block"
+              className="relative mt-8  w-full overflow-hidden rounded-[16px] bg-[#0E1116] hidden lg:block"
               style={{ aspectRatio: "9/10" }}
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
@@ -108,11 +108,12 @@ export default function CareerBenefitsSection() {
               whileHover={{ scale: 1.02 }}
             >
               <Image
-                src={siteData.home.serviceGrid.network}
-                alt="Global exposure graphic"
+                src={siteData.career.benefits.growthChart}
+                alt="Working At GIPL graphic"
                 fill
                 sizes="(max-width: 1024px) 100vw, 33vw"
-                className="object-cover"
+                className="object-contain"
+                unoptimized={true}
               />
             </motion.div>
           </motion.div>
