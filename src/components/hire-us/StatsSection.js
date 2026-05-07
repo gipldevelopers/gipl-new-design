@@ -21,7 +21,7 @@ const statistics = [
   },
 ];
 
-export default function StatsSection() {
+export default function StatisticsSection() {
   return (
     <section className="w-full bg-[#F7F9FE] pt-8 pb-20">
       <div className="mx-auto w-full max-w-[1440px] px-6 md:px-[34px]">
@@ -30,7 +30,7 @@ export default function StatsSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: false }}
-          className="rounded-[24px] bg-[#1E2A45] px-6 md:px-16 py-12"
+          className="rounded-[24px] bg-[#031744] px-6 md:px-16 py-12 shadow-[0_20px_50px_rgba(3,23,68,0.2)]"
         >
           <div className="grid grid-cols-2 md:grid-cols-4 gap-y-12 md:gap-y-8 gap-x-4 md:gap-x-8">
             {statistics.map((stat, index) => (
@@ -44,7 +44,7 @@ export default function StatsSection() {
               >
                 {/* Divider line - visible between columns on mobile (grid-cols-2) and all except last on desktop */}
                 {index < statistics.length - 1 && (
-                  <div className={`absolute right-[-8px] md:right-0 top-1/2 h-12 md:h-16 w-[1px] bg-white/30 transform -translate-y-1/2 ${index % 2 === 1 ? 'hidden md:block' : ''}`} />
+                  <div className={`absolute right-[-8px] md:right-0 top-1/2 h-12 md:h-16 w-[1.5px] bg-[#4F6EF7] transform -translate-y-1/2 ${index % 2 === 1 ? 'hidden md:block' : ''}`} />
                 )}
 
                 <motion.h3
@@ -72,5 +72,6 @@ export default function StatsSection() {
         </motion.div>
       </div>
     </section>
+
   );
 }

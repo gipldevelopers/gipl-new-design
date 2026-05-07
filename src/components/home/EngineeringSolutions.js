@@ -69,7 +69,7 @@ export default function EngineeringSolutions() {
               Engineering Solutions That Solve Your Biggest Challenges
             </h2>
             <p className="mt-4 text-base md:text-[18px] font-normal leading-relaxed text-[#475569]">
-              We don&apos;t just write code; we engineer value. Our services are tailored to solve specific business bottlenecks.
+              We don&apos;t just write code; we engineer value. Our services are tailored to solve specific business bottlenecks through high-fidelity technology.
             </p>
           </div>
 

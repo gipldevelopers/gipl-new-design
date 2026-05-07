@@ -6,7 +6,7 @@ import { siteData } from "@/data/siteData";
 
 export default function CareerCultureSection() {
   return (
-    <section className="w-full bg-[#F5F7FB] py-12 md:py-[72px]">
+    <section className="w-full bg-white py-12 md:py-[72px]">
       <div className="mx-auto w-full max-w-[1440px] px-6 md:px-[34px]">
         <motion.div
           className="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-[48px] rounded-[24px] bg-[#F4F6FA] px-6 md:px-[56px] py-10 md:py-[64px]"

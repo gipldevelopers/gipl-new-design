@@ -16,7 +16,7 @@ export const siteData = {
       teamImage: "https://cloud.gvoice.app/view.php?token=44fc820b8e7fc101ab8acb23b7f8bd106ff77d8252a74be2873dc37d21f90121",
     },
     origin: {
-      office: "https://cloud.gvoice.app/view.php?token=7b64db81bfc6dc4f0b83b7803fa9e7beb11ad370e135bb0cbc82484768ae08f5",
+      office: "https://cloud.gvoice.app/view.php?token=f869a8de42de79e0eab3a238de1de6a3a60f67972006236f15b124b237f04d2d",
       workspace: "https://cloud.gvoice.app/view.php?token=224e11be9fcfcb0a0afab425586aaa91841ccc69ccfad9ab3019c4ee7140ab75",
     },
     founder: {
@@ -68,11 +68,11 @@ export const siteData = {
   // Home Page Assets
   home: {
     hero: {
-      visual: "https://cloud.gvoice.app/view.php?token=f25fec374a16859d4aa2e70bdfafcef919ea25cac2f3c50b49a56a366d6dd7ba",
+      visual: "https://cloud.gvoice.app/view.php?token=983796376ebfcf631de934fef099dce052db98ad6c268164aca97a2a496f8d19",
       statusIcon: "https://cloud.gvoice.app/view.php?token=0c2951b5a0483d145b446c22ab1549d98cc44c208aaa2f2c576bf1ec68e884ec",
     },
     partner: {
-      office: "https://cloud.gvoice.app/view.php?token=8e715d04f01477e03eb6b1b56922c9aba998824da3c0065cf738024e8985a342",
+      office: "https://cloud.gvoice.app/view.php?token=e0f9c6aa5e0706c09855c51d3c2c705c88e712387cbccbe47fff00695c0db88f",
     },
     testimonials: {
       quoteIcon: "https://cloud.gvoice.app/view.php?token=a30dd1b1334ae785919075b153e1d367ab1ea3e79e1455615923941b227c51c4",
@@ -108,7 +108,7 @@ export const siteData = {
       automation: "https://cloud.gvoice.app/view.php?token=f165f08f07071b60aa9bb1e5ab13ac0bea8e08f5ab77baa8abc0c0afee611ef9",
       erp: "https://cloud.gvoice.app/view.php?token=7b64e308216816ccf2864edb26f5b95cf6e7af1e18023719e77b19cf00d4f864",
       web: "https://cloud.gvoice.app/view.php?token=3d457a8a01e02b8180aeabd97e47ffb53ee558fe93429c56f268a1f4c6f7cb60",
-      network: "https://cloud.gvoice.app/view.php?token=7685b57241fa1d2894b9c27fc078dfe81385942ed4c3ea7032af0a001762052c",
+      network: "https://cloud.gvoice.app/view.php?token=68f771c445fecb1ab71fcef0f1ae56e66da29288c77e3df68e90a89eb1e072ad",
       custom: "https://cloud.gvoice.app/view.php?token=6be72ce81ba0aa4cc65408091e89ffe261a2481d3025054fc08597488d17c101",
     },
     industries: {
@@ -184,7 +184,7 @@ export const siteData = {
       bgPattern2: "https://cloud.gvoice.app/view.php?token=b916528aa77ce1837afd7472b53b4997cc1b8a288e478883979a540a0ca743b5",
     },
     form: {
-      image: "https://cloud.gvoice.app/view.php?token=60b5f18300fdf8c9203c5ed6905feabdcc262eae6238ba02a085563170433dc2",
+      image: "https://cloud.gvoice.app/view.php?token=2e0f70c6c364d9b640bbf673737aedb39df19dc927ab7081ce46ebd87c84cf12",
     }
   },
 
@@ -204,6 +204,9 @@ export const siteData = {
 
   // Service Page Assets
   service: {
+    hero: {
+      bg: "https://cloud.gvoice.app/view.php?token=a421fa415095184ff1d599e452b4aaec931f20bf5a844645a5bb4cb6af33b291",
+    },
     technologies: {
       dotnet: "https://cloud.gvoice.app/view.php?token=599d742bbd939d3038a09278f6d8f519368d4ec0180423054be53817d4acb63b",
       mysql: "https://cloud.gvoice.app/view.php?token=6e0cb279743ba51a63987c6d7a82e9a5c3b82a67faff4656409a69da11c2beab",
@@ -234,7 +237,10 @@ export const siteData = {
       icon1: "https://cloud.gvoice.app/view.php?token=6b55effc1cc41057484066bdc5109a6e4e6dc1b656c9c4e3a5f1fbe2cd436fce",
     },
     process: {
-      icon2: "https://cloud.gvoice.app/view.php?token=bc9868f941c75a4ab21b62d2f3577fb5d96cf929a9a4840afc2ed2081b7b110f",
+      icon1: "https://cloud.gvoice.app/view.php?token=965ef07d99f9f20f29586b43424eb916867946564e07347e41bbe0cdb661ca09",
+      icon2: "https://cloud.gvoice.app/view.php?token=b07378b8df25c05c01a2e822d5280503f48b79f2d8f17c1d0166758d2cf6a9c4",
+      icon3: "https://cloud.gvoice.app/view.php?token=9e8ffed8ab986cc83d4152f28ef904fc82beb03d4357e58672d9833d20bd5e47",
+      icon4: "https://cloud.gvoice.app/view.php?token=cefeb755705edcbb951187dd2e923765b7cbe42a4863d9590548842359d4e0cd",
     }
   },
 
@@ -255,6 +261,7 @@ export const siteData = {
       internet: "https://cloud.gvoice.app/view.php?token=b8cb0153cc9661d9d104ebf605a11d2371ad5fae57102b8d18b281c996c9c047",
       career5: "https://cloud.gvoice.app/view.php?token=69fbcba80e0a4bc79758a5c6d8e04d0d0e2f1c3b9c8b99f27cbbaf7dadeae889",
       career6: "https://cloud.gvoice.app/view.php?token=9cc3aedcb87190a45acaa27ed6af538a98d71039eb8ba3757dbbff6e87522ffe",
+      growthChart: "https://cloud.gvoice.app/view.php?token=0cb539e7114fdeb2565d74e34f7683f65287b7e2a921ebaf6dd6c8f97c1f786a"
     }
   },
 
@@ -317,6 +324,9 @@ export const siteData = {
   common: {
     icons: {
       main: "https://cloud.gvoice.app/view.php?token=afdac71c3032e83a973f9e05ed708399221bd5a32978ca2190d60c160267d15b",
+      arrowCircle: "https://cloud.gvoice.app/view.php?token=f812f5e736a4b00f0256feb8891cefbbab88973cb8fd367abf3923bbd2c3f99d",
+      cardArrow: "https://cloud.gvoice.app/view.php?token=6c3177382df5676f83f5448ba9310ec95845a494e8291b85c079b65494932a14", // Placeholder arrow
+      btnArrow: "https://cloud.gvoice.app/view.php?token=9f29c0263afa742df52200102d0a9c01728820e5c0c849d1b600bded1220da77",
     },
     ogImage: "/gipl-og.png",
   },

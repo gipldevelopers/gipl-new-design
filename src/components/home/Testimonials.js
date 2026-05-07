@@ -118,6 +118,7 @@ export default function Testimonials() {
                       alt="Quote"
                       width={48}
                       height={48}
+                      unoptimized={true}
                       className="opacity-100"
                       style={{ width: "auto", height: "auto" }}
                     />

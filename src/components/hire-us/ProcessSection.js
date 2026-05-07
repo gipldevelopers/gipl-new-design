@@ -4,71 +4,88 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { siteData } from "@/data/siteData";
 
-export default function ProcessSection() {
-  const processes = [
-    {
-      imgSrc: siteData.hireUs.process.discovery,
-      title: "Discovery",
-      description: "Deep-dive into business logic, user persona mapping, and competitive analysis."
-    },
-    {
-      imgSrc: siteData.hireUs.process.design,
-      title: "Design",
-      description: "User-centric UX frameworks and high-end visual systems aligned with brand identity."
-    },
-    {
-      imgSrc: siteData.hireUs.process.develop,
-      title: "Develop",
-      description: "Clean code architecture, robust backend APIs, and seamless frontend integration."
-    },
-    {
-      imgSrc: siteData.hireUs.process.deploy,
-      title: "Deploy",
-      description: "CI/CD pipelines, cloud orchestration, and rigorous post-launch monitoring."
-    }
-  ];
+const cards = [
+  {
+    title: "Discovery",
+    description:
+      "Deep-dive into business logic, user pain points, and competitive analysis.",
+    icon: siteData.technology.process.discovery,
+  },
+  {
+    title: "Design",
+    description:
+      "User-centric UI frameworks and high-end visual systems aligned with brand identity.",
+    icon: siteData.technology.process.design,
+  },
+  {
+    title: "Develop",
+    description:
+      "Clear code architecture, robust backend APIs, and seamless frontend integration.",
+    icon: siteData.technology.process.develop,
+  },
+  {
+    title: "Deploy",
+    description:
+      "CI/CD pipelines, cloud orchestration, and rigorous post-launch monitoring.",
+    icon: siteData.technology.process.deploy,
+  },
+];
 
+export default function TechnologyProcessSection() {
   return (
-    <section className="w-full bg-[#F7F9FE] py-12 md:py-[80px]">
+    <section className="w-full bg-[#F3F5F9] py-12 md:py-[72px]">
       <div className="mx-auto w-full max-w-[1440px] px-6 md:px-[34px]">
-        <motion.div
-          className="text-center mb-10 md:mb-[60px]"
-          initial={{ opacity: 0, y: 30 }}
+        <motion.h2
+          className="text-center text-2xl xs:text-3xl md:text-[40px] font-[700] leading-tight md:leading-[1.2] tracking-[-0.03em] text-[#1F2937]"
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: false }}
         >
-          <h2 className="text-3xl xs:text-4xl md:text-[48px] font-[700] leading-tight md:leading-[1.2] tracking-tight md:tracking-[-0.02em] text-[#0F172A] mb-4 md:mb-[16px]">
-            Our Proven Process
-          </h2>
-          <p className="text-base md:text-[18px] font-[400] leading-relaxed md:leading-[1.7] text-[#64748B] max-w-[800px] mx-auto">
-            We follow a structured methodology to ensure successful project delivery every time.
-          </p>
-        </motion.div>
+          Our Proven Process
+        </motion.h2>
+        <motion.p
+          className="mt-4 md:mt-[16px] text-center text-base md:text-[18px] font-[400] leading-relaxed md:leading-[1.6] text-[#7B8794] max-w-[702px] mx-auto"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.1 }}
+          viewport={{ once: false }}
+        >
+          We follow a structured methodology to ensure successful project delivery every time.
+        </motion.p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 md:gap-[40px]">
-          {processes.map((process, index) => (
-            <motion.div
-              key={index}
-              className="bg-white rounded-[16px] p-6 md:p-[32px] text-center shadow-sm"
-              initial={{ opacity: 0, y: 30 }}
+        <div className="mt-10 md:mt-[48px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-[24px]">
+          {cards.map((card, index) => (
+            <motion.article
+              key={card.title}
+              className="rounded-[20px] bg-white px-6 md:px-[28px] pb-8 md:pb-[28px] pt-7 md:pt-[24px] shadow-[0_6px_20px_rgba(15,23,42,0.06)]"
+              initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
+              transition={{ duration: 0.5, delay: 0.2 + index * 0.1 }}
               viewport={{ once: false }}
-              whileHover={{ y: -5, transition: { duration: 0.2 } }}
+              whileHover={{ y: -5 }}
             >
-              <div className="w-12 h-12 md:w-[56px] md:h-[56px] bg-[#EEF2FF] rounded-[12px] flex items-center justify-center mx-auto mb-5 md:mb-[24px]">
-                {process.imgSrc && (
-                  <Image src={process.imgSrc} alt={process.title} width={24} height={24} className="object-contain" unoptimized={true} style={{ width: "auto", height: "auto" }} />
-                )}
-              </div>
-              <h3 className="text-lg md:text-[20px] font-[600] text-[#0F172A] mb-2 md:mb-[12px]">
-                {process.title}
+              <motion.div
+                className="flex h-[52px] w-[52px] items-center justify-center rounded-[14px] bg-[#DDF1FF]"
+                whileHover={{ scale: 1.1 }}
+              >
+                <Image
+                  src={card.icon}
+                  alt=""
+                  width={28}
+                  height={28}
+                  className="h-[28px] w-[28px] object-contain"
+                  style={{ width: "auto", height: "auto" }}
+                />
+              </motion.div>
+
+              <h3 className="mt-5 md:mt-[20px] text-lg md:text-[22px] font-[700] leading-tight md:leading-[1.2] text-[#1F2937]">
+                {card.title}
               </h3>
-              <p className="text-sm md:text-[14px] font-[400] leading-relaxed md:leading-[1.6] text-[#64748B]">
-                {process.description}
+              <p className="mt-3 md:mt-[12px] text-sm md:text-[15px] font-[400] leading-relaxed md:leading-[1.6] text-[#7B8794]">
+                {card.description}
               </p>
-            </motion.div>
+            </motion.article>
           ))}
         </div>
       </div>

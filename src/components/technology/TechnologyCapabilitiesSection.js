@@ -147,15 +147,15 @@ export default function TechnologyCapabilitiesSection() {
     <section className="w-full bg-[#F3F5F9] py-12 md:py-[64px]">
       <div className="mx-auto w-full max-w-[1440px] px-6 md:px-[34px]">
 
-        {/* Tab bar - Responsive scroll on mobile */}
+        {/* Tab bar - Responsive & Redesigned */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: false }}
-          className="rounded-[12px] bg-[#E7F0FB] px-4 md:px-[16px] py-3 md:py-[12px] flex justify-center"
+          className="rounded-[14px] bg-[#EAF3FF] p-[4px] flex justify-start md:justify-center w-full max-w-full md:max-w-fit mx-auto shadow-sm overflow-hidden"
         >
-          <div className="flex flex-wrap items-center justify-center gap-2 md:gap-[8px]">
+          <div className="flex flex-nowrap items-center gap-1 overflow-x-auto no-scrollbar px-2 md:px-0 w-full md:w-auto">
             {tabs.map((tab, index) => (
               <motion.button
                 key={tab.slug}
@@ -164,11 +164,10 @@ export default function TechnologyCapabilitiesSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: index * 0.05 }}
                 viewport={{ once: false }}
-                whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.98 }}
-                className={`flex h-8 md:h-[36px] items-center justify-center rounded-[8px] px-4 md:px-[16px] text-xs md:text-[14px] font-[500] leading-[1] tracking-[0px] cursor-pointer transition-colors ${activeTab === tab.slug
-                    ? "bg-[#4B64F0] text-white"
-                    : "text-[#4E6073] hover:bg-white/60"
+                className={`flex h-[40px] md:h-[44px] items-center justify-center px-5 md:px-8 rounded-[10px] text-[13px] md:text-[14px] font-[600] leading-[1] tracking-[-0.01em] cursor-pointer transition-all duration-300 whitespace-nowrap ${activeTab === tab.slug
+                  ? "bg-[#3D7BFF] text-white shadow-[0_4px_12px_rgba(61,123,255,0.2)]"
+                  : "text-[#2F3E5A] hover:text-[#3D7BFF] hover:bg-white/40"
                   }`}
               >
                 {tab.label}
@@ -177,26 +176,26 @@ export default function TechnologyCapabilitiesSection() {
           </div>
         </motion.div>
 
-        {/* Content */}
+        {/* Content Section - Responsive Grid */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
           viewport={{ once: false }}
-          className="mt-10 md:mt-[40px] flex flex-col lg:flex-row items-start justify-between gap-12"
+          className="mt-10 md:mt-[48px] flex flex-col lg:flex-row items-start justify-between gap-10 md:gap-16 lg:gap-12"
         >
           <motion.div
-            className="flex-1 w-full max-w-[600px] text-center md:text-left mx-auto md:mx-0"
+            className="flex-1 w-full max-w-full lg:max-w-[640px] text-center md:text-left"
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: false }}
           >
-            <h2 className="text-2xl xs:text-3xl md:text-[36px] font-[700] leading-tight md:leading-[1.2] tracking-[-0.03em] text-[#1D3557]">
+            <h2 className="text-2xl xs:text-3xl md:text-[40px] font-[700] leading-tight md:leading-[1.2] tracking-[-0.03em] text-[#1D3557]">
               {content.title}
             </h2>
 
-            <p className="mt-4 md:mt-[16px] text-base md:text-[18px] font-[400] leading-relaxed md:leading-[1.7] tracking-[-0.01em] text-[#6B7280]">
+            <p className="mt-4 md:mt-[16px] text-[15px] md:text-[18px] font-[400] leading-relaxed md:leading-[1.7] tracking-[-0.01em] text-[#6B7280]">
               {content.description}
             </p>
 
@@ -214,7 +213,7 @@ export default function TechnologyCapabilitiesSection() {
                     transition={{ duration: 0.4, delay: 0.3 + index * 0.1 }}
                     viewport={{ once: false }}
                   >
-                    <span className="h-[6px] w-[6px] rounded-full bg-[#4B64F0] shrink-0" />
+                    <span className="h-[6px] w-[6px] rounded-full bg-[#3D7BFF] shrink-0" />
                     {feature}
                   </motion.li>
                 ))}
@@ -245,7 +244,7 @@ export default function TechnologyCapabilitiesSection() {
 
           {/* Process Timeline */}
           <motion.div
-            className="w-full lg:w-[400px] shrink-0"
+            className="w-full lg:w-[420px] shrink-0"
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
@@ -276,7 +275,7 @@ export default function TechnologyCapabilitiesSection() {
                   >
                     {/* Vertical line connector */}
                     {index < processSteps.length - 1 && (
-                      <div className="absolute left-[-28px] md:left-[-44px] top-[40px] md:top-[48px] h-[36px] md:h-[64px] w-[2px] bg-[#4B64F0]" />
+                      <div className="absolute left-[-24px] md:left-[-37px] top-[40px] md:top-[48px] h-[36px] md:h-[64px] w-[2px] bg-[#3D7BFF]" />
                     )}
 
                     {/* Circle number */}

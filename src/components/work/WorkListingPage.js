@@ -52,24 +52,18 @@ export default function WorkListingPage() {
           viewport={{ once: false }}
           whileHover={{ y: -5 }}
         >
-          <motion.div
-            className="relative min-h-[280px] md:min-h-[360px]"
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            viewport={{ once: false }}
-          >
+          <Link href={`/work/${featured.slug}`} className="relative min-h-[280px] md:min-h-[360px] block cursor-pointer group overflow-hidden">
             <Image
               src={featured.image}
               alt={featured.projectName}
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
-              className="object-cover"
+              className="object-cover transition-transform duration-500 group-hover:scale-105"
               priority
               loading="eager"
               unoptimized={true}
             />
-          </motion.div>
+          </Link>
           <motion.div
             className="px-6 md:px-[40px] py-8 md:py-[40px] flex flex-col justify-center"
             initial={{ opacity: 0, x: 20 }}
@@ -80,9 +74,11 @@ export default function WorkListingPage() {
             <span className="inline-flex w-fit rounded-[999px] bg-[#EEF2FF] px-[14px] py-[6px] text-[12px] font-[600] leading-[1] text-[#4F6EF7]">
               Case Study Preview
             </span>
-            <h2 className="mt-4 md:mt-[20px] text-xl md:text-[28px] font-[600] leading-tight md:leading-[1.3] text-[#1F2937]">
-              {featured.projectName}
-            </h2>
+            <Link href={`/work/${featured.slug}`}>
+              <h2 className="mt-4 md:mt-[20px] text-xl md:text-[28px] font-[600] leading-tight md:leading-[1.3] text-[#1F2937] hover:text-[#4F6EF7] transition-colors cursor-pointer">
+                {featured.projectName}
+              </h2>
+            </Link>
             <p className="mt-3 md:mt-[16px] text-sm md:text-[16px] font-[400] leading-relaxed md:leading-[1.7] text-[#6B7280]">
               {featured.description}
             </p>
@@ -94,20 +90,30 @@ export default function WorkListingPage() {
                 <Image
                   src={siteData.work.reactIcon}
                   alt="React"
-                  width={0}
-                  height={0}
-                  className="h-7 md:h-[32px] w-7 md:w-[32px]"
-                  style={{ width: "auto", height: "auto" }}
+                  width={32}
+                  height={32}
+                  className="h-7 md:h-[32px] w-7 md:w-[32px] object-contain"
+                  unoptimized={true}
                 />
               </div>
             </div>
             <div className="mt-8 md:mt-[28px]">
-              <motion.div whileHover={{ scale: 1.05 }}>
+              <motion.div whileHover={{ scale: 1.05 }} className="w-fit">
                 <Link
                   href={`/work/${featured.slug}`}
-                  className="inline-flex items-center gap-2 text-sm md:text-[14px] font-[600] text-[#4F6EF7] hover:underline"
+                  className="flex items-center gap-2 text-sm md:text-[14px] font-[600] text-[#4F6EF7] hover:underline group"
                 >
-                  View Case Study →
+                  View Case Study
+                  <div className="w-[15px] h-[15px] flex items-center justify-center transition-transform group-hover:translate-x-1">
+                    <Image
+                      src={siteData.common.icons.cardArrow}
+                      alt=""
+                      width={15}
+                      height={15}
+                      className="object-contain"
+                      unoptimized={true}
+                    />
+                  </div>
                 </Link>
               </motion.div>
             </div>

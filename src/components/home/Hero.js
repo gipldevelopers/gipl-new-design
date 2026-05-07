@@ -114,12 +114,13 @@ export default function Hero() {
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 priority
+                unoptimized={true}
                 className="object-cover"
               />
             </motion.div>
 
             <motion.div
-              className="absolute bottom-[-16px] left-[-16px] md:bottom-[-24px] md:left-[-24px] flex h-[72px] md:h-[88px] w-[220px] md:w-[260px] items-center rounded-[16px] bg-[#CFCFD0] pl-4 md:pl-[20px] shadow-[0_10px_24px_rgba(0,0,0,0.12)]"
+              className="absolute bottom-[-16px] left-[-16px] md:bottom-[-24px] md:left-[-100px] flex h-[72px] md:h-[88px] w-[220px] md:w-[220px] items-center rounded-[16px] bg-[#CFCFD0] pl-4 md:pl-[20px] shadow-[0_10px_24px_rgba(0,0,0,0.12)]"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.5 }}
@@ -135,15 +136,16 @@ export default function Hero() {
                   alt=""
                   width={22}
                   height={22}
+                  unoptimized={true}
                   className="h-5 md:h-[22px] w-5 md:w-[22px]"
                 />
               </motion.div>
               <div className="ml-3 md:ml-[12px]">
                 <p className="text-[9px] md:text-[11px] font-[600] uppercase tracking-[1px] md:tracking-[1.4px] text-[#28344D]">
-                  System Status
+                  Project Success
                 </p>
                 <p className="mt-[2px] md:mt-[3px] text-sm md:text-[15px] font-[600] text-white">
-                  100% Operational
+                  250+
                 </p>
               </div>
             </motion.div>

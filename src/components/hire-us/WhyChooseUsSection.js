@@ -79,6 +79,8 @@ export default function WhyChooseUs() {
         >
           {/* Steps Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 lg:gap-8 relative">
+            {/* Connecting Line (Desktop) */}
+            <div className="hidden lg:block absolute top-[25px] left-[40px] right-[10px] h-[1px] bg-white/40 z-0" />
             {reasons.map((reason, index) => (
               <motion.article
                 key={reason.number}
@@ -91,7 +93,7 @@ export default function WhyChooseUs() {
               >
 
                 <motion.div
-                  className="flex h-10 w-10 items-center justify-center rounded-[10px] bg-[#3F5682] text-[18px] font-bold leading-none text-white shadow-lg relative z-10"
+                  className="flex h-12 w-12 items-center justify-center rounded-[10px] bg-[#3F5682] text-[18px] font-bold leading-none text-white shadow-lg relative z-10"
                   whileHover={{ scale: 1.1 }}
                 >
                   {reason.number}

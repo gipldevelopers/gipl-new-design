@@ -45,14 +45,13 @@ export default function TechnologyProcessSection() {
           Our Proven Process
         </motion.h2>
         <motion.p
-          className="mt-4 md:mt-[16px] text-center text-base md:text-[18px] font-[400] leading-relaxed md:leading-[1.6] text-[#7B8794] max-w-[560px] mx-auto"
+          className="mt-4 md:mt-[16px] text-center text-base md:text-[18px] font-[400] leading-relaxed md:leading-[1.6] text-[#7B8794] max-w-[702px] mx-auto"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
           viewport={{ once: false }}
         >
-          We follow a structured methodology to ensure successful project
-          delivery every time.
+          We follow a structured methodology to ensure successful project delivery every time.
         </motion.p>
 
         <div className="mt-10 md:mt-[48px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-[24px]">

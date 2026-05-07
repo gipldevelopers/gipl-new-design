@@ -35,7 +35,7 @@ const roles = [
     title: "Growth Marketing Manager",
     location: "San Francisco",
     time: "Full-time",
-    badge: "NEW",
+    badge: null,
   },
 ];
 
@@ -66,7 +66,7 @@ export default function CareerOpenRolesSection() {
   }, [activeCategory, query]);
 
   return (
-    <section id="open-roles" className="w-full bg-[#F5F7FB] py-12 md:py-[72px]">
+    <section id="open-roles" className="w-full py-12 md:py-[72px]">
       <div className="mx-auto w-full max-w-[1440px] px-6 md:px-[34px]">
 
         {/* Header row */}
@@ -138,8 +138,8 @@ export default function CareerOpenRolesSection() {
                 type="button"
                 onClick={() => setActiveCategory(category)}
                 className={`h-9 md:h-[42px] rounded-full px-5 md:px-[24px] text-sm md:text-[15px] font-[600] tracking-tight transition-colors ${active
-                    ? "bg-[#4F6EF7] text-white"
-                    : "bg-[#EEF2FF] text-[#4F6EF7] hover:bg-[#E0E7FF]"
+                  ? "bg-[#4F6EF7] text-white"
+                  : "bg-[#EEF2FF] text-[#4F6EF7] hover:bg-[#E0E7FF]"
                   }`}
                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}

@@ -62,6 +62,35 @@ function ArrowUpRightIcon({ className = "" }) {
   );
 }
 
+function ArrowRightIcon({ className = "" }) {
+  return (
+    <svg
+      className={className}
+      width="20"
+      height="20"
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      <path
+        d="M4.16663 10H15.8333"
+        stroke="currentColor"
+        strokeWidth="2.2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M10 4.16663L15.8333 10L10 15.8333"
+        stroke="currentColor"
+        strokeWidth="2.2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
 export default function ServiceGrid() {
   return (
     <section className="w-full min-h-screen flex items-center justify-center bg-[#EDF1F7] py-12 md:py-0 overflow-hidden">
@@ -108,6 +137,7 @@ export default function ServiceGrid() {
                 alt="Web development"
                 width={28}
                 height={28}
+                unoptimized={true}
                 className="h-7 w-7"
               />
               <h3 className="mt-4 text-xl md:text-[28px] font-medium text-[#1E293B]">
@@ -123,6 +153,7 @@ export default function ServiceGrid() {
                 alt="Global network map"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
+                unoptimized={true}
                 className="object-cover"
               />
             </div>
@@ -141,6 +172,7 @@ export default function ServiceGrid() {
               alt="Custom software development"
               width={28}
               height={28}
+              unoptimized={true}
               className="h-7 w-7 brightness-0 invert"
             />
             <h3 className="mt-4 text-xl md:text-[28px] font-medium">
@@ -152,10 +184,10 @@ export default function ServiceGrid() {
             <div className="mt-auto pt-6">
               <Link
                 href="/service"
-                className="inline-flex items-center gap-[10px] text-[15px] md:text-[16px] font-bold text-[#426AF2]"
+                className="inline-flex items-center gap-[10px] text-[15px] md:text-[16px] font-bold text-white"
               >
                 Learn More
-                <ArrowUpRightIcon />
+                <ArrowRightIcon />
               </Link>
             </div>
           </motion.article>
@@ -175,6 +207,7 @@ export default function ServiceGrid() {
                 alt={service.title}
                 width={28}
                 height={28}
+                unoptimized={true}
                 className="h-7 w-7"
               />
               <h3 className="mt-4 text-lg md:text-[22px] font-medium text-[#1E293B]">
