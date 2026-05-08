@@ -8,24 +8,20 @@ import { siteData } from "@/data/siteData";
 export default function ServiceDetailHeroSection({ service }) {
   return (
     <section className="relative w-full bg-[#031744] overflow-hidden min-h-screen flex items-center justify-center">
-      <div className="relative mx-auto w-full max-w-[1440px] px-6 md:px-[34px] py-20 md:py-[100px] text-center z-10">
+      {/* Hero Background Image */}
+      <div className="absolute inset-0 z-0">
         <Image
-          src={siteData.serviceDetail.hero.bgPattern1}
-          alt=""
-          width={160}
-          height={160}
-          className="pointer-events-none absolute bottom-[20px] left-[60px] opacity-15 hidden lg:block"
+          src={service.heroBg || siteData.serviceDetail.hero.softwareEngineering}
+          alt="Hero Background"
+          fill
+          className="object-cover opacity-20"
+          priority
           unoptimized={true}
         />
-        <Image
-          src={siteData.serviceDetail.hero.bgPattern2}
-          alt=""
-          width={130}
-          height={130}
-          className="pointer-events-none absolute top-[20px] right-[80px] opacity-15 hidden lg:block"
-          unoptimized={true}
-        />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#031744]/60 via-transparent to-[#031744]/60" />
+      </div>
 
+      <div className="relative mx-auto w-full max-w-[1440px] px-6 md:px-[34px] py-20 md:py-[100px] text-center z-10">
         <motion.h1
           className="text-3xl xs:text-4xl md:text-[56px] font-[800] leading-tight md:leading-[1.1] tracking-[-0.03em] text-white max-w-[900px] mx-auto"
           initial={{ opacity: 0, y: 30 }}
@@ -35,6 +31,7 @@ export default function ServiceDetailHeroSection({ service }) {
         >
           {service.title}
         </motion.h1>
+
         <motion.p
           className="mx-auto mt-6 md:mt-[32px] max-w-[900px] text-base md:text-[19px] font-[400] leading-relaxed md:leading-[1.7] text-[#E7EDF7] font-manrope"
           initial={{ opacity: 0, y: 20 }}

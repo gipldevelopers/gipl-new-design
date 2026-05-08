@@ -13,7 +13,6 @@ const navItems = [
     label: "Services",
     href: "/service",
     dropdown: [
-      { label: "All Services", href: "/service#services" },
       { label: "Software Engineering", href: "/service/software-engineering" },
       { label: "Web Development", href: "/service/web-development" },
       { label: "AI & Automation", href: "/service/ai-automation" },

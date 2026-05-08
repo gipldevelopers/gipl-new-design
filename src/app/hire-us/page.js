@@ -1,5 +1,5 @@
 import Navbar from "@/components/common/Navbar";
-import Footer from "@/components/common/Footer";
+import FooterHome from "@/components/common/FooterHome";
 import HeroSection from "@/components/hire-us/HeroSection";
 import StatsSection from "@/components/hire-us/StatsSection";
 import BenefitsSection from "@/components/hire-us/BenefitsSection";
@@ -30,7 +30,7 @@ export default function HireUsPage() {
         <TestimonialsSection />
         <ContactSection />
       </main>
-      <Footer />
+      <FooterHome />
     </>
   );
 }

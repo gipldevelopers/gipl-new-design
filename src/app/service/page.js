@@ -1,5 +1,5 @@
 import Navbar from "@/components/common/Navbar";
-import Footer from "@/components/common/Footer";
+import FooterHome from "@/components/common/FooterHome";
 import ServicePageSections from "@/components/service/ServicePageSections";
 
 export default function ServicePage() {
@@ -9,7 +9,7 @@ export default function ServicePage() {
       <main className="w-full bg-[#ECEEF2] overflow-x-hidden">
         <ServicePageSections />
       </main>
-      <Footer />
+      <FooterHome />
     </>
   );
 }

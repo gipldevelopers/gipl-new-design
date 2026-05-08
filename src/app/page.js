@@ -1,5 +1,5 @@
 import Navbar from "@/components/common/Navbar";
-import Footer from "@/components/common/Footer";
+import FooterHome from "@/components/common/FooterHome";
 import Hero from "@/components/home/Hero";
 import TrustedLeaders from "@/components/home/TrustedLeaders";
 import PartnerSection from "@/components/home/PartnerSection";
@@ -29,7 +29,7 @@ export default function Home() {
         <Industries />
         <Testimonials />
       </main>
-      <Footer />
+      <FooterHome />
     </>
   );
 }

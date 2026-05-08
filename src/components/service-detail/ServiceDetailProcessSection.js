@@ -5,6 +5,8 @@ import Image from "next/image";
 import { siteData } from "@/data/siteData";
 
 export default function ServiceDetailProcessSection({ items }) {
+  if (!items) return null;
+
   return (
     <section className="w-full bg-[#EEF1F6] py-12 md:py-[72px]">
       <div className="mx-auto w-full max-w-[1440px] px-6 md:px-[34px]">
@@ -41,15 +43,16 @@ export default function ServiceDetailProcessSection({ items }) {
             transition={{ duration: 0.6, delay: 0.4 }}
             viewport={{ once: false }}
           >
-            {/* Connector line - Hidden on mobile/tablet */}
+            {/* Connector line - Spanning across 6 items in one row */}
             <motion.div
-              className="absolute left-0 right-0 top-[28px] h-[2px] bg-[#94F0F9] hidden lg:block"
+              className="absolute left-[8.3%] right-[8.3%] top-[28px] h-[2px] bg-[#94F0F9] hidden lg:block"
               initial={{ scaleX: 0 }}
               whileInView={{ scaleX: 1 }}
               transition={{ duration: 1, delay: 0.5 }}
               viewport={{ once: false }}
             />
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-6">
+            
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-y-10 gap-x-4 md:gap-x-6">
               {items.map((item, index) => (
                 <motion.div
                   key={item.phase}
@@ -64,21 +67,22 @@ export default function ServiceDetailProcessSection({ items }) {
                     whileHover={{ scale: 1.1 }}
                   >
                     <Image
-                      src={siteData.serviceDetail.process[`icon${index + 1}`]}
+                      src={siteData.serviceDetail.process[`icon${index + 1}`] || siteData.serviceDetail.process.icon1}
                       alt={item.title}
-                      width={0}
-                      height={0}
+                      width={24}
+                      height={24}
                       className="h-[24px] w-[24px]"
                       style={{ width: "auto", height: "auto" }}
+                      unoptimized={true}
                     />
                   </motion.div>
-                  <h3 className="mt-5 md:mt-[20px] text-lg md:text-[18px] font-[700] leading-tight md:leading-[1.2] text-[#2E3642]">
+                  <h3 className="mt-5 md:mt-[20px] text-lg md:text-[16px] font-[700] leading-tight md:leading-[1.2] text-[#2E3642]">
                     {item.title}
                   </h3>
-                  <p className="mt-2 md:mt-[8px] text-[11px] md:text-[12px] font-[700] leading-[1.2] tracking-[0.8px] uppercase text-[#4B64F0]">
+                  <p className="mt-2 md:mt-[8px] text-[10px] md:text-[11px] font-[700] leading-[1.2] tracking-[0.8px] uppercase text-[#4B64F0]">
                     {item.phase}
                   </p>
-                  <p className="mt-3 md:mt-[12px] text-sm md:text-[14px] font-[400] leading-relaxed md:leading-[1.6] text-[#58616D]">
+                  <p className="mt-3 md:mt-[12px] text-xs md:text-[13px] font-[400] leading-relaxed md:leading-[1.5] text-[#58616D]">
                     {item.description}
                   </p>
                 </motion.div>
@@ -88,6 +92,5 @@ export default function ServiceDetailProcessSection({ items }) {
         </motion.div>
       </div>
     </section>
-
   );
 }
