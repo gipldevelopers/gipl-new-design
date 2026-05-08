@@ -46,26 +46,26 @@ export default function Hero() {
             viewport={{ once: false }}
           >
             <h1 className="text-4xl xs:text-5xl md:text-[60px] font-[800] leading-tight md:leading-[1.15] tracking-tight md:tracking-[-2px] text-white font-poppins">
-              <span className="block">End-to-End I Services</span>
+              <span className="block">Build Better Software.</span>
               <span className="block">
-                That{" "}
+
                 <span className="bg-[linear-gradient(90deg,#2B99F0_0%,#1F65C2_100%)] bg-clip-text text-transparent">
-                  Power Modern
+                  Grow Without
                 </span>
               </span>
               <span className="block bg-[linear-gradient(180deg,#2F5ACB_0%,#2C43B4_100%)] bg-clip-text text-transparent">
-                Businesses
+                Technical Limits
               </span>
             </h1>
 
             <motion.p
-              className="mt-6 md:mt-[28px] text-base md:text-[20px] leading-relaxed md:leading-[1.6] tracking-tight md:tracking-[-0.3px] text-white/80 font-[400] font-manrope"
+              className="mt-6 md:mt-[28px] text-base md:text-[18px] leading-relaxed md:leading-[1.6] tracking-tight md:tracking-[-0.3px] text-white/80 font-[400] font-manrope"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.2 }}
               viewport={{ once: false }}
             >
-              We build custom software, automate workflows, and design digital experiences that help brands grow faster.
+              We build reliable software, scalable apps, and smart digital systems that help businesses grow faster and work more efficiently.
             </motion.p>
 
             <motion.div

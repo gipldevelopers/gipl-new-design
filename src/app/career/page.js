@@ -1,5 +1,5 @@
 import Navbar from "@/components/common/Navbar";
-import Footer from "@/components/common/Footer";
+import FooterHome from "@/components/common/FooterHome";
 import CareerPageSections from "@/components/career/CareerPageSections";
 
 export const metadata = {
@@ -14,7 +14,7 @@ export default function CareerPage() {
       <main className="w-full bg-[#F5F7FB] overflow-x-hidden">
         <CareerPageSections />
       </main>
-      <Footer />
+      <FooterHome />
     </>
   );
 }

@@ -1,5 +1,5 @@
 import Navbar from "@/components/common/Navbar";
-import Footer from "@/components/common/Footer";
+import FooterHome from "@/components/common/FooterHome";
 import WorkListingPage from "@/components/work/WorkListingPage";
 
 export default function WorkPage() {
@@ -7,7 +7,7 @@ export default function WorkPage() {
     <>
       <Navbar />
       <WorkListingPage />
-      <Footer />
+      <FooterHome />
     </>
   );
 }

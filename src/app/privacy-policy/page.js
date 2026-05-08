@@ -1,5 +1,5 @@
 import Navbar from "@/components/common/Navbar";
-import Footer from "@/components/common/Footer";
+import FooterHome from "@/components/common/FooterHome";
 import PrivacyPolicyContent from "@/components/legal/PrivacyPolicyContent";
 
 export const metadata = {
@@ -14,7 +14,7 @@ export default function PrivacyPolicyPage() {
       <main className="w-full bg-[#F5F7FB]">
         <PrivacyPolicyContent />
       </main>
-      <Footer />
+      <FooterHome />
     </>
   );
 }

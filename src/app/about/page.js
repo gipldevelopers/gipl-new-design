@@ -1,5 +1,5 @@
 import Navbar from "@/components/common/Navbar";
-import Footer from "@/components/common/Footer";
+import FooterHome from "@/components/common/FooterHome";
 import AboutPageSections from "@/components/about/AboutPageSections";
 
 export default function AboutPage() {
@@ -11,7 +11,7 @@ export default function AboutPage() {
           <AboutPageSections />
         </div>
       </main>
-      <Footer />
+      <FooterHome />
     </>
   );
 }

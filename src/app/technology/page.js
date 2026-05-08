@@ -1,5 +1,5 @@
 import Navbar from "@/components/common/Navbar";
-import Footer from "@/components/common/Footer";
+import FooterHome from "@/components/common/FooterHome";
 import TechnologyPageSections from "@/components/technology/TechnologyPageSections";
 
 export default function TechnologyPage() {
@@ -9,7 +9,7 @@ export default function TechnologyPage() {
       <main className="w-full bg-[#F3F5F9] overflow-x-hidden">
         <TechnologyPageSections />
       </main>
-      <Footer />
+      <FooterHome />
     </>
   );
 }

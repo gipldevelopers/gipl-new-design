@@ -29,9 +29,10 @@ export default function ServiceHeroSection() {
           transition={{ duration: 0.8 }}
           viewport={{ once: false }}
         >
-          End-to-End I Services That
+          Custom IT Solutions
+
           <br className="hidden md:block" />
-          Power Modern Businesses
+          Built for Growing Businesses
         </motion.h1>
         <motion.p
           className="mt-6 md:mt-[32px] mx-auto max-w-[800px] text-base md:text-[19px] font-[400] leading-relaxed md:leading-[1.7] text-[#F1F5F9] font-manrope"
@@ -40,7 +41,7 @@ export default function ServiceHeroSection() {
           transition={{ duration: 0.8, delay: 0.2 }}
           viewport={{ once: false }}
         >
-          Transform your business with our expertise in software, data, and digital solutions.
+          We help businesses streamline operations, improve efficiency, and scale faster with custom software, automation, and digital solutions.
         </motion.p>
 
         <motion.div

@@ -7,7 +7,11 @@ export default function ServiceDetailPageSections({ service }) {
   return (
     <>
       <ServiceDetailHeroSection service={service} />
-      <ServiceDetailWhyChooseSection items={service.whyChoose} />
+      <ServiceDetailWhyChooseSection 
+        items={service.whyChoose} 
+        serviceName={service.title} 
+        icons={service.whyChooseIcons} 
+      />
       <ServiceDetailProcessSection items={service.process} />
       <ServiceDetailServicesSection items={service.services} />
     </>

@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import Navbar from "@/components/common/Navbar";
-import Footer from "@/components/common/Footer";
+import FooterHome from "@/components/common/FooterHome";
 import ServiceDetailPageSections from "@/components/service-detail/ServiceDetailPageSections";
 import {
   getAllServiceDetails,
@@ -27,7 +27,7 @@ export default async function ServiceDetailPage({ params }) {
       <main className="w-full bg-[#EEF1F6]">
         <ServiceDetailPageSections service={service} />
       </main>
-      <Footer />
+      <FooterHome />
     </>
   );
 }

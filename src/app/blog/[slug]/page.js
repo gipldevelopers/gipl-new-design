@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import Navbar from "@/components/common/Navbar";
-import Footer from "@/components/common/Footer";
+import FooterHome from "@/components/common/FooterHome";
 import BlogDetailPage from "@/components/blog/BlogDetailPage";
 import { getAllBlogPosts, getBlogPostBySlug } from "@/data/blogData";
 
@@ -26,7 +26,7 @@ export default async function BlogSlugPage({ params }) {
     <>
       <Navbar />
       <BlogDetailPage post={post} relatedPosts={relatedPosts} />
-      <Footer />
+      <FooterHome />
     </>
   );
 }

@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import Navbar from "@/components/common/Navbar";
-import Footer from "@/components/common/Footer";
+import FooterHome from "@/components/common/FooterHome";
 import WorkDetailPage from "@/components/work/WorkDetailPage";
 import { getAllWorkItems, getWorkItemBySlug } from "@/data/workData";
 
@@ -26,7 +26,7 @@ export default async function WorkSlugPage({ params }) {
     <>
       <Navbar />
       <WorkDetailPage item={item} relatedItems={relatedItems} />
-      <Footer />
+      <FooterHome />
     </>
   );
 }

@@ -1,5 +1,5 @@
 import Navbar from "@/components/common/Navbar";
-import Footer from "@/components/common/Footer";
+import FooterHome from "@/components/common/FooterHome";
 import BlogListingPage from "@/components/blog/BlogListingPage";
 
 export default function BlogPage() {
@@ -7,7 +7,7 @@ export default function BlogPage() {
     <>
       <Navbar />
       <BlogListingPage />
-      <Footer />
+      <FooterHome />
     </>
   );
 }
