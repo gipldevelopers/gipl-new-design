@@ -1,148 +1,101 @@
 "use client";
 
 import { useState } from "react";
-import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
+import { useRouter } from "next/navigation";
 
-export default function AdminLogin() {
-  const router = useRouter();
-  const [formData, setFormData] = useState({
-    username: "",
-    password: "",
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
+export default function LoginPage() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const [error, setError] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+  const router = useRouter();
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
-    setError("");
-  };
-
-  const handleSubmit = async (e) => {
+  const handleLogin = async (e) => {
     e.preventDefault();
-    setIsSubmitting(true);
+    setIsLoading(true);
     setError("");
 
     try {
-      // Call PHP backend API using centralized config
-      const response = await fetch("http://localhost/bakend/api/admin-login.php", {
+      const res = await fetch("/api/auth/login", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          username: formData.username,
-          password: formData.password,
-        }),
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email, password }),
       });
 
-      const data = await response.json();
+      const data = await res.json();
 
-      if (response.ok && data.status === "success") {
-        // Store auth token
-        localStorage.setItem("adminToken", data.data.token);
-        localStorage.setItem("adminUsername", data.data.username);
-        router.push("/admin/dashboard");
+      if (res.ok) {
+        router.push("/admin/messages");
       } else {
-        setError(data.message || "Invalid username or password");
+        setError(data.error || "Login failed");
       }
     } catch (err) {
-      setError("Login failed. Please check your connection and try again.");
+      setError("Something went wrong. Please try again.");
     } finally {
-      setIsSubmitting(false);
+      setIsLoading(false);
     }
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-[#F5F7FB] px-[34px] py-[40px]">
-      <motion.div
-        className="w-full max-w-[480px]"
+    <div className="min-h-screen bg-[#F0F4F8] flex items-center justify-center p-6 font-sans">
+      <motion.div 
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
+        className="w-full max-w-md bg-white rounded-[32px] shadow-[0_20px_50px_rgba(0,0,0,0.05)] p-10 md:p-12 border border-slate-100"
       >
-        {/* Logo/Title */}
-        <div className="text-center mb-[40px]">
-          <h1 className="text-[32px] font-[700] text-[#0F172A] mb-[8px]">
-            Admin Panel
-          </h1>
-          <p className="text-[16px] text-[#64748B]">
-            Sign in to manage contact messages
-          </p>
+        <div className="text-center mb-10">
+          <h1 className="text-3xl font-bold text-[#1D3557] tracking-tight">Admin Portal</h1>
+          <p className="text-slate-500 mt-2">Sign in to manage your inquiries</p>
         </div>
 
-        {/* Login Card */}
-        <motion.div
-          className="bg-white rounded-[20px] p-[40px] shadow-[0_4px_24px_rgba(0,0,0,0.06)]"
-          initial={{ opacity: 0, scale: 0.95 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5, delay: 0.1 }}
-        >
-          <form onSubmit={handleSubmit} className="space-y-[24px]">
-            {/* Username Field */}
-            <div>
-              <label className="block text-[14px] font-[500] text-[#0F172A] mb-[8px]">
-                Username
-              </label>
-              <input
-                type="text"
-                name="username"
-                value={formData.username}
-                onChange={handleChange}
-                placeholder="Enter your username"
-                required
-                className="w-full px-[16px] py-[12px] border border-[#D1D5DB] rounded-[8px] text-[16px] focus:outline-none focus:ring-2 focus:ring-[#2F2C8F] focus:border-transparent transition-all"
-              />
-            </div>
-
-            {/* Password Field */}
-            <div>
-              <label className="block text-[14px] font-[500] text-[#0F172A] mb-[8px]">
-                Password
-              </label>
-              <input
-                type="password"
-                name="password"
-                value={formData.password}
-                onChange={handleChange}
-                placeholder="Enter your password"
-                required
-                className="w-full px-[16px] py-[12px] border border-[#D1D5DB] rounded-[8px] text-[16px] focus:outline-none focus:ring-2 focus:ring-[#2F2C8F] focus:border-transparent transition-all"
-              />
-            </div>
-
-            {/* Error Message */}
-            {error && (
-              <motion.div
-                className="bg-red-50 border border-red-200 text-red-600 px-[16px] py-[12px] rounded-[8px] text-[14px]"
-                initial={{ opacity: 0, y: -10 }}
-                animate={{ opacity: 1, y: 0 }}
-              >
-                {error}
-              </motion.div>
-            )}
-
-            {/* Submit Button */}
-            <button
-              type="submit"
-              disabled={isSubmitting}
-              className="w-full bg-[#2F2C8F] text-white py-[14px] rounded-[8px] text-[16px] font-[600] hover:bg-[#2F2C8F]/90 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
-            >
-              {isSubmitting ? "Signing in..." : "Sign In"}
-            </button>
-          </form>
-
-          {/* Demo Credentials */}
-          <div className="mt-[24px] pt-[24px] border-t border-[#E2E8F0]">
-            <p className="text-[12px] text-[#64748B] text-center">
-              Demo: admin / admin123
-            </p>
+        <form onSubmit={handleLogin} className="space-y-6">
+          <div className="space-y-1.5">
+            <label className="text-sm font-semibold text-slate-700 ml-1">Email Address</label>
+            <input 
+              type="email" 
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="developer@gohilinfotech.com"
+              required
+              className="w-full h-14 px-6 rounded-2xl bg-slate-50 border border-slate-100 focus:bg-white focus:border-[#3A38A8] focus:ring-4 focus:ring-[#3A38A8]/5 transition-all outline-none text-slate-700"
+            />
           </div>
-        </motion.div>
+
+          <div className="space-y-1.5">
+            <label className="text-sm font-semibold text-slate-700 ml-1">Password</label>
+            <input 
+              type="password" 
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              placeholder="••••••••"
+              required
+              className="w-full h-14 px-6 rounded-2xl bg-slate-50 border border-slate-100 focus:bg-white focus:border-[#3A38A8] focus:ring-4 focus:ring-[#3A38A8]/5 transition-all outline-none text-slate-700"
+            />
+          </div>
+
+          {error && (
+            <motion.div 
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              className="p-4 bg-red-50 text-red-600 text-sm rounded-xl border border-red-100 text-center"
+            >
+              {error}
+            </motion.div>
+          )}
+
+          <button 
+            type="submit"
+            disabled={isLoading}
+            className="w-full h-14 bg-[#3A38A8] text-white font-bold rounded-2xl hover:bg-[#2f2d8e] active:scale-[0.98] transition-all shadow-lg shadow-[#3A38A8]/20 disabled:opacity-50"
+          >
+            {isLoading ? "Authenticating..." : "Sign In"}
+          </button>
+        </form>
+
+        <div className="mt-8 text-center">
+          <p className="text-xs text-slate-400">© 2026 Gohil Infotech Private Limited</p>
+        </div>
       </motion.div>
     </div>
   );

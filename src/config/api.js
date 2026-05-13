@@ -19,6 +19,7 @@ export const API_ENDPOINTS = {
   
   // Contact endpoint
   CONTACT: `${API_BASE_URL}/contact.php`,
+  NEXT_CONTACT: '/api/contact',
 };
 
 // Helper function to make API calls
