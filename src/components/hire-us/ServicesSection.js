@@ -64,7 +64,7 @@ export default function ServicesSection() {
                 Custom Software Development
               </h3>
               <p className="text-sm md:text-[16px] font-[400] leading-relaxed md:leading-[1.6] text-white/80">
-                Scalable backend architectures and intuitive interfaces built from the ground up.
+                Tailored software systems built to improve workflows, automate operations, and support business scalability.
               </p>
             </div>
           </motion.div>
@@ -85,7 +85,7 @@ export default function ServicesSection() {
               Mobile Apps
             </h3>
             <p className="text-sm md:text-[16px] font-[400] leading-relaxed md:leading-[1.6] text-white/80">
-              iOS, Android & Cross-platform excellence.
+              Modern Android, iOS, and cross-platform mobile applications designed for performance and user engagement.
             </p>
           </motion.div>
         </div>
@@ -108,7 +108,7 @@ export default function ServicesSection() {
               Cloud Solutions
             </h3>
             <p className="text-sm md:text-[14px] font-[400] leading-relaxed md:leading-[1.6] text-[#64748B]">
-              AWS, Azure & Google Cloud migration and management.
+              Secure cloud infrastructure, migration, and management solutions built for scalability and operational flexibility.
             </p>
           </motion.div>
 
@@ -125,7 +125,7 @@ export default function ServicesSection() {
               UI/UX Strategy
             </h3>
             <p className="text-sm md:text-[14px] font-[400] leading-relaxed md:leading-[1.6] text-[#64748B] mb-5 md:mb-[20px]">
-              User-first designs that drive engagement and conversion through scientific research and aesthetic mastery.
+              User-focused digital experiences designed to improve usability, engagement, and conversion performance.
             </p>
             <div className="flex flex-wrap gap-2 md:gap-[8px]">
               <span className="bg-[#E6EAFF] text-[#5B73F7] px-3 md:px-[12px] py-1 md:py-[4px] rounded-[6px] text-[10px] md:text-[12px] font-[500]">

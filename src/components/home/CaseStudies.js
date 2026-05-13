@@ -9,7 +9,7 @@ const projects = [
   {
     id: 1,
     title: "Gvoice POS",
-    description: "A revolutionary point-of-sale system that integrated voice commands and AI inventory management for 5,000+ retail outlets.",
+    description: "A smart POS system with voice-enabled billing and automated inventory management, built to streamline operations across multi-location retail businesses.",
     image: siteData.home.caseStudies.pos,
     stats: [
       { value: "40%", label: "Efficiency Gain" },

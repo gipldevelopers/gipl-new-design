@@ -65,20 +65,26 @@ export default function DetailLayout({
                 <p className="text-[10px] md:text-[11px] font-bold text-[#4F6EF7] uppercase tracking-[0.15em] mb-4">
                   TECHNOLOGY USED:
                 </p>
-                <div className="flex gap-4">
+                <div className="flex flex-wrap justify-center gap-5 md:gap-8">
                   {tech.map((t, i) => (
-                    <div key={i} className="w-11 h-11 flex items-center justify-center rounded-xl bg-white shadow-lg" title={t}>
-                      {t === "React" && (
-                        <Image
-                          src={siteData.blog.reactIcon}
-                          alt="React logo"
-                          width={24}
-                          height={24}
-                          unoptimized={true}
-                          className="w-6 h-6 object-contain"
-                          style={{ width: "auto", height: "auto" }}
-                        />
-                      )}
+                    <div key={i} className="flex flex-col items-center gap-3">
+                      <div className="w-14 h-14 md:w-[60px] md:h-[60px] flex items-center justify-center rounded-[14px] bg-white shadow-[0_8px_20px_rgba(0,0,0,0.06)] p-3 group hover:shadow-[0_12px_24px_rgba(79,110,247,0.15)] transition-all duration-300 overflow-hidden" title={t}>
+                        {siteData.work.techIcons[t] ? (
+                          <Image
+                            src={siteData.work.techIcons[t]}
+                            alt={`${t} logo`}
+                            width={32}
+                            height={32}
+                            unoptimized={true}
+                            className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-110"
+                          />
+                        ) : (
+                          <div className="text-[9px] md:text-[10px] font-[800] text-[#4F6EF7] text-center leading-tight uppercase break-words tracking-tight">
+                            {t}
+                          </div>
+                        )}
+                      </div>
+                      <span className="text-[10px] md:text-[11px] font-[600] text-[#94A3B8] uppercase tracking-[0.1em]">{t}</span>
                     </div>
                   ))}
                 </div>
@@ -138,6 +144,7 @@ export default function DetailLayout({
                       alt={section.imageAlt || section.heading}
                       fill
                       sizes="(max-width: 1024px) 100vw, 50vw"
+                      unoptimized={true}
                       className="object-cover"
                     />
                   </motion.div>
@@ -152,7 +159,7 @@ export default function DetailLayout({
                       {section.heading}
                     </h2>
                     <div className="mt-4 md:mt-[16px] space-y-3 md:space-y-[14px]">
-                      {section.paragraphs.map((paragraph, index) => (
+                      {(section.paragraphs || []).map((paragraph, index) => (
                         <motion.p
                           key={`${section.heading}-${index}`}
                           className="text-sm md:text-[16px] font-[400] leading-relaxed md:leading-[1.8] text-[#303742]"
@@ -189,7 +196,7 @@ export default function DetailLayout({
                   {section.heading}
                 </motion.h2>
                 <div className="mt-4 md:mt-[16px] space-y-3 md:space-y-[14px]">
-                  {section.paragraphs.map((paragraph, index) => (
+                  {(section.paragraphs || []).map((paragraph, index) => (
                     <motion.p
                       key={`${section.heading}-${index}`}
                       className="text-sm md:text-[16px] font-[400] leading-relaxed md:leading-[1.8] text-[#303742]"

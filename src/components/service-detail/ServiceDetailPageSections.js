@@ -12,7 +12,10 @@ export default function ServiceDetailPageSections({ service }) {
         serviceName={service.title} 
         icons={service.whyChooseIcons} 
       />
-      <ServiceDetailProcessSection items={service.process} />
+      <ServiceDetailProcessSection 
+        items={service.process} 
+        subtitle={service.processSubtitle} 
+      />
       <ServiceDetailServicesSection items={service.services} />
     </>
   );

@@ -38,9 +38,9 @@ export default function AboutHeroSection() {
               transition={{ duration: 0.6, delay: 0.2 }}
               viewport={{ once: false }}
             >
-              We Are Gohil Infotech:
+              Gohil Infotech: Building
               <br className="hidden md:block" />
-              Developing Technology That Benefits You
+              Software That Solves Real Business Problems
             </motion.h1>
             <motion.p
               className="text-base md:text-[18px] font-[400] leading-relaxed md:leading-[1.7] text-[#64748B] max-w-[600px]"
@@ -49,9 +49,7 @@ export default function AboutHeroSection() {
               transition={{ duration: 0.6, delay: 0.4 }}
               viewport={{ once: false }}
             >
-              Architecting a decentralized security framework for global
-              financial nodes, achieving sub-millisecond latency under
-              extreme load.
+              We design and develop custom software solutions that help businesses scale faster, improve operations, and stay competitive in a digital-first world.
             </motion.p>
           </motion.div>
 

@@ -7,23 +7,23 @@ import { siteData } from "@/data/siteData";
 export default function BenefitsSection() {
   const benefits = [
     {
-      title: "Proven Expertise",
-      description: "Access a team with deep domain knowledge and technical mastery across industries.",
+      title: "Proven Technical Expertise",
+      description: "Work with experienced professionals skilled in software development, digital products, and scalable business solutions.",
       imgSrc: siteData.hireUs.benefits.expertise
     },
     {
-      title: "Clear Comms",
-      description: "Transparent, real-time updates through dedicated slack channels and weekly sprints.",
+      title: "Transparent Communication",
+      description: "Stay updated through structured communication, regular progress tracking, and collaborative development workflows.",
       imgSrc: siteData.hireUs.benefits.comms
     },
     {
-      title: "Client-Centric",
-      description: "Your business goals drive our technical decisions. We prioritize your success.",
+      title: "Business-Focused Approach",
+      description: "Every solution is aligned with your business goals, operational needs, and long-term growth strategy.",
       imgSrc: siteData.hireUs.benefits.clientCentric
     },
     {
-      title: "Rapid Delivery",
-      description: "Agile methodologies that cut development time by 40% without compromising quality.",
+      title: "Faster Project Delivery",
+      description: "Agile development processes help reduce timelines while maintaining quality, performance, and scalability.",
       imgSrc: siteData.hireUs.benefits.rapidDelivery
     }
   ];

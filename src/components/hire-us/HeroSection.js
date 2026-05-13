@@ -31,9 +31,9 @@ export default function HeroSection() {
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: false }}
           >
-            Hire World-Class Developers
+            Hire Skilled Developers &
             <br className="hidden md:block" />
-            and Designers at GIPL
+            Digital Experts at GIPL
           </motion.h1>
           <motion.p
             className="text-base md:text-[18px] font-[400] leading-relaxed md:leading-[1.7] text-[#64748B] max-w-[900px] md:mx-0"
@@ -42,7 +42,8 @@ export default function HeroSection() {
             transition={{ duration: 0.6, delay: 0.4 }}
             viewport={{ once: false }}
           >
-            Transform your business with our expert team of developers, designers, and digital strategists. From concept to deployment, we deliver exceptional results.
+            at GIPL
+            Work with experienced developers, designers, and technology specialists focused on building scalable digital products and business-driven solutions from strategy to deployment.
           </motion.p>
         </motion.div>
 

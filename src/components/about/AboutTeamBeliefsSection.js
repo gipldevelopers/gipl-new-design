@@ -8,52 +8,41 @@ import { siteData } from "@/data/siteData";
 const teamMembers = [
   {
     id: 1,
-    name: "Dr. Elena Vance",
-    role: "Chief Technology Officer",
-    image: siteData.about.team.placeholder,
+    name: "Sanket Virani",
+    role: "Chief Operation Officer",
+    image: siteData.about.team.placeholder1,
   },
   {
     id: 2,
-    name: "Sarah Mitchell",
-    role: "Chief Executive Officer",
-    image: siteData.about.team.placeholder,
+    name: "Chandrakant Rathod",
+    role: "Chief Technical Officer",
+    image: siteData.about.team.placeholder2,
   },
   {
     id: 3,
-    name: "James Rodriguez",
-    role: "Chief Product Officer",
-    image: siteData.about.team.placeholder,
+    name: "Jigar Chavada",
+    role: "HR Head",
+    image: siteData.about.team.placeholder3,
   },
   {
     id: 4,
-    name: "Priya Sharma",
-    role: "Head of Design",
-    image: siteData.about.team.placeholder,
+    name: "Aayush Solanki",
+    role: "Technical Head",
+    image: siteData.about.team.placeholder4,
   },
   {
     id: 5,
-    name: "Michael Chen",
-    role: "VP Engineering",
-    image: siteData.about.team.placeholder,
+    name: "Kinjal Pambhar",
+    role: "Sales Head",
+    image: siteData.about.team.placeholder5,
   },
   {
     id: 6,
-    name: "Emma Thompson",
-    role: "Head of Operations",
-    image: siteData.about.team.placeholder,
-  },
-  {
-    id: 7,
-    name: "David Kumar",
-    role: "Lead Architect",
-    image: siteData.about.team.placeholder,
-  },
-  {
-    id: 8,
-    name: "Lisa Anderson",
-    role: "Director of Sales",
-    image: siteData.about.team.placeholder,
-  },
+    name: "Vraj Darji",
+    role: "Marketing Head",
+    image: siteData.about.team.placeholder6,
+  }
+
 ];
 
 const beliefs = [
@@ -207,7 +196,7 @@ export default function AboutTeamBeliefsSection() {
                     alt={member.name}
                     fill
                     sizes="(max-width: 768px) 100vw, 278px"
-                    className="object-contain grayscale hover:grayscale-0 transition-all duration-500"
+                    className="object-cover transition-all duration-500"
                   />
                 </motion.div>
                 <div className="text-center md:text-left">

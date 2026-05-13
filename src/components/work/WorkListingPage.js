@@ -28,7 +28,7 @@ export default function WorkListingPage() {
             OUR WORK
           </motion.p>
           <h1 className="text-[28px] xs:text-4xl md:text-[56px] font-[700] leading-tight md:leading-[1.1] tracking-tight md:tracking-[-0.02em] text-[#0F172A] mb-4 md:mb-[16px] max-w-[800px]">
-            Crafting Digital Solutions, Delivering Excellence
+            Building Digital Products That Create Real Business Impact
           </h1>
           <motion.p
             className="text-base md:text-[18px] font-[400] leading-relaxed md:leading-[1.7] text-[#64748B] max-w-[900px] md:mx-0"
@@ -37,9 +37,7 @@ export default function WorkListingPage() {
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: false }}
           >
-            Discover our journey through successful projects, from concept to
-            deployment. Each case study represents a unique challenge solved with
-            our expertise, creative solutions, and a passion for excellence.
+            Explore the solutions we’ve developed for startups, enterprises, and growing businesses. Every project reflects our approach to solving complex challenges through scalable technology, strategic thinking, and user-focused digital experiences.
           </motion.p>
         </div>
 
@@ -87,14 +85,11 @@ export default function WorkListingPage() {
                 Technology Stack
               </p>
               <div className="flex items-center gap-3">
-                <Image
-                  src={siteData.work.reactIcon}
-                  alt="React"
-                  width={32}
-                  height={32}
-                  className="h-7 md:h-[32px] w-7 md:w-[32px] object-contain"
-                  unoptimized={true}
-                />
+                {featured.tech?.slice(0, 3).map((t, i) => (
+                  <div key={i} className="px-3 py-1 rounded-md bg-[#F8FAFC] border border-[#E2E8F0] text-[12px] font-[600] text-[#64748B]">
+                    {t}
+                  </div>
+                ))}
               </div>
             </div>
             <div className="mt-8 md:mt-[28px]">
@@ -128,7 +123,7 @@ export default function WorkListingPage() {
           transition={{ duration: 0.6, delay: 0.4 }}
           viewport={{ once: false }}
         >
-          {workItems.concat(workItems, workItems).slice(0, 6).map((item, index) => (
+          {workItems.map((item, index) => (
             <motion.div
               key={`${item.slug}-${index}`}
               className="h-full"

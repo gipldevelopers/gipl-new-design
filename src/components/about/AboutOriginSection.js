@@ -71,8 +71,8 @@ export default function AboutOriginSection() {
               transition={{ duration: 0.6, delay: 0.3 }}
               viewport={{ once: false }}
             >
-              How Everything Began:<br />
-              From a Basic Concept to a Robust Basis
+              How It Started: From a <br />
+              Simple Idea to a Strong Foundation
             </motion.h2>
             <motion.p
               className="text-[15px] md:text-[18px] font-[400] leading-relaxed md:leading-[1.6] text-[#3F4753]"
@@ -81,7 +81,7 @@ export default function AboutOriginSection() {
               transition={{ duration: 0.6, delay: 0.4 }}
               viewport={{ once: false }}
             >
-              Gohil Infotech began with the straightforward notion that there had to be an improved method for providing IT services. All too frequently, companies had to deal with poor communication, hurried work, and overly complicated solutions. We thought that technology ought to be sincere, useful, and purpose-driven. Although the aim was clear, the early days were modest.
+              Gohil Infotech was started with a clear goal to simplify how businesses build and use technology. Too often, companies struggle with poor communication, delayed delivery, and over-complicated systems. We focus on building practical, reliable software that solves real business problems. What began as a small step has grown into a trusted software development partner for businesses looking to scale with the right technology.
             </motion.p>
           </motion.div>
         </div>

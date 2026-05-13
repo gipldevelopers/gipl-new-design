@@ -35,7 +35,7 @@ export default function AboutFounderQuoteSection() {
               transition={{ duration: 0.6, delay: 0.2 }}
               viewport={{ once: false }}
             >
-              &quot;We believe in developing technology that empowers people and transforms businesses. Our journey is defined by innovation and a commitment to excellence.&quot;
+              &quot;THE MIND IS NOT A VESSEL TO BE FILLED, BUT A FIRE TO BE KINDLED, AND IN THAT FIRE-OF THOUGHT, OF REFLECTION, OF INTENT GREATNESS IS QUIETLY BORN.&quot;
             </motion.h2>
             <motion.div
               initial={{ opacity: 0, x: -20 }}
@@ -62,7 +62,7 @@ export default function AboutFounderQuoteSection() {
               alt="Darshan Gohil - CEO & Founder"
               fill
               sizes="(max-width: 1024px) 100vw, 420px"
-              className="object-cover grayscale hover:grayscale-0 transition-all duration-700"
+              className="object-cover hover:grayscale-0 transition-all duration-700"
               priority
             />
           </motion.div>

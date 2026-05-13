@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { siteData } from "@/data/siteData";
 
-export default function ServiceDetailProcessSection({ items }) {
+export default function ServiceDetailProcessSection({ items, subtitle }) {
   if (!items) return null;
 
   return (
@@ -33,7 +33,7 @@ export default function ServiceDetailProcessSection({ items }) {
             transition={{ duration: 0.6, delay: 0.3 }}
             viewport={{ once: false }}
           >
-            A systematic approach to deliver exceptional results
+            {subtitle || "A systematic approach to deliver exceptional results"}
           </motion.p>
 
           <motion.div
