@@ -140,6 +140,7 @@ export default function WorkListingPage() {
                 category={item.category}
                 title={item.projectName}
                 description={item.excerpt}
+                liveLink={item.liveLink}
               />
             </motion.div>
           ))}

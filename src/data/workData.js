@@ -8,18 +8,27 @@ export const workItems = [
     client: "Houspire",
     image: siteData.work.projects.houspire.main,
     detailImage: siteData.work.projects.houspire.detail,
-    description: "Houspire specializes in creating smart, modern, and personalized interior design solutions that simplify the entire home transformation journey.",
-    excerpt: "One of India's fastest-growing interior design platforms trusted by thousands of homeowners for transparent and efficient home transformations.",
+    description: "Houspire is a revolutionary interior design platform that combines state-of-the-art 3D visualization with a curated marketplace of trusted professionals. Our goal was to eliminate the ambiguity and stress traditionally associated with home renovation, providing homeowners with a transparent, fast, and high-quality design experience.",
+    excerpt: "One of India's fastest-growing interior design platforms offering photorealistic 3D designs and verified vendor connections.",
     images: [siteData.work.projects.houspire.detail],
+    liveLink: "https://houspire.ai",
     tech: ["Next.js", "Tailwind CSS", "Node.js", "Express.js", "PostgreSQL", "AWS"],
     sections: [
       {
-        heading: "At Houspire",
+        heading: "The Challenge",
         paragraphs: [
-          "At Houspire, we specialize in creating smart, modern, and personalized interior design solutions that simplify the entire home transformation journey. Our work focuses on combining innovative technology, creative design expertise, and trusted execution partners to deliver beautiful living spaces quickly and transparently.",
-          "We help homeowners visualize their dream interiors through photorealistic 3D designs, enabling them to make confident decisions before execution begins. Every project is carefully planned with detailed itemized budgets to ensure complete cost transparency and eliminate hidden charges.",
-          "Our platform connects customers directly with verified and trusted vendors, ensuring quality workmanship, timely delivery, and a hassle-free experience without the risk of scams or unreliable contractors.",
-          "With an average delivery timeline of just 48–72 hours, Houspire has become one of India’s fastest-growing interior design platforms trusted by thousands of homeowners."
+          "The interior design industry in India has long been plagued by a lack of transparency, unpredictable timelines, and a fragmented market of unverified contractors. Homeowners often find it difficult to visualize their future spaces and manage budgets effectively, leading to dissatisfaction and cost overruns.",
+          "Houspire approached us to build a digital ecosystem that would bridge the gap between imagination and execution. They needed a platform that could deliver high-fidelity designs rapidly while maintaining a reliable network of execution partners."
+        ]
+      },
+      {
+        type: "imageText",
+        heading: "The Digital Solution",
+        image: siteData.work.projects.houspire.detail,
+        imageAlt: "Houspire Interface",
+        paragraphs: [
+          "We developed a robust web application using Next.js and Node.js that serves as a central hub for homeowners and designers. The platform features an intuitive interface where users can browse design concepts, request customized 3D visualizations, and receive detailed itemized quotes within 48-72 hours.",
+          "By integrating a sophisticated budget planning tool, we empowered users to see the real-time financial impact of their design choices, ensuring complete cost transparency from start to finish."
         ]
       },
       {
@@ -35,39 +44,10 @@ export const workItems = [
         ]
       },
       {
-        type: "imageText",
-        heading: "Our Expertise",
-        image: siteData.work.projects.houspire.detail,
-        imageAlt: "Houspire Expertise",
+        heading: "Technology Powering Houspire",
         paragraphs: [
-          "We offer specialized design services across various home areas to create a cohesive living environment."
-        ],
-        bullets: [
-          "Living Room Interiors",
-          "Modular Kitchen Designs",
-          "Bedroom Interiors",
-          "Full Home Interior Solutions",
-          "Space Planning & Furniture Layouts",
-          "Modern & Luxury Interior Concepts"
-        ]
-      },
-      {
-        heading: "Why Clients Trust Houspire",
-        paragraphs: [
-          "Our commitment to quality and transparency has made us a leader in the digital interior design space."
-        ],
-        bullets: [
-          "2,847+ homes designed every month",
-          "4.8★ customer rating from 247+ reviews",
-          "Affordable design packages starting at ₹499",
-          "Reliable, transparent, and scam-free process",
-          "Modern technology-driven interior solutions"
-        ]
-      },
-      {
-        heading: "Technology Powering Our Work",
-        paragraphs: [
-          "Houspire uses a modern and scalable technology ecosystem to ensure seamless user experience, fast performance, and secure operations."
+          "To handle the intensive image processing and real-time budget calculations, we built a scalable cloud infrastructure on AWS.",
+          "The frontend utilizes Tailwind CSS for a responsive, modern aesthetic, while the backend is powered by a high-performance PostgreSQL database and Redis for fast data retrieval."
         ],
         bullets: [
           "Frontend: Next.js (React), Tailwind CSS",
@@ -87,17 +67,27 @@ export const workItems = [
     client: "Ask Nani",
     image: siteData.work.projects.askNani.main,
     detailImage: siteData.work.projects.askNani.detail,
-    description: "Complete daycare provider marketplace and management solution that connects parents with trusted daycare services.",
-    excerpt: "A comprehensive platform for automated enrollment, staff scheduling, and parent communication in the childcare industry.",
+    description: "Ask Nani is a comprehensive childcare ecosystem that redefines how parents find and manage daycare services. The platform serves a dual purpose: a discovery marketplace for parents and a powerful management ERP for daycare providers, ensuring safety, transparency, and operational excellence in early childhood education.",
+    excerpt: "A dual-sided platform for automated daycare enrollment, staff scheduling, and seamless parent-provider communication.",
     images: [siteData.work.projects.askNani.detail],
+    liveLink: "https://asknani-frontend-omega.vercel.app/",
     tech: ["Next.js", "Node.js", "Express.js", "PostgreSQL", "Vercel", "AWS", "Google Authentication", "JWT Authentication"],
     sections: [
       {
-        heading: "At Ask Nani",
+        heading: "Reimagining Childcare Management",
         paragraphs: [
-          "At Ask Nani, we developed a complete daycare marketplace and daycare management ecosystem that simplifies childcare operations for both parents and daycare providers. The platform was designed to solve the common challenges faced by modern parents in finding trusted daycare services while helping daycare centers manage their operations efficiently through automation.",
-          "The platform allows parents to easily discover daycare centers, compare facilities, check availability, complete registrations, and communicate directly with providers through a seamless digital experience. At the same time, daycare administrators gain access to a centralized management system for enrollment handling, attendance monitoring, staff scheduling, and parent communication.",
-          "Our solution helps daycare businesses reduce manual work, improve operational efficiency, and deliver a more transparent and organized childcare experience."
+          "In the fast-paced modern world, finding a reliable daycare is a major hurdle for parents. Conversely, daycare centers often struggle with manual attendance, complex scheduling, and maintaining clear communication lines with parents. Ask Nani was conceived to solve these structural inefficiencies through automation and smart design.",
+          "We built a platform that handles everything from the initial search to daily operational tracking, providing a secure and organized environment for children to thrive."
+        ]
+      },
+      {
+        type: "imageText",
+        heading: "Unified Marketplace & ERP",
+        image: siteData.work.projects.askNani.detail,
+        imageAlt: "Ask Nani Platform",
+        paragraphs: [
+          "The solution consists of two integrated modules. For parents, it's a mobile-responsive marketplace to discover, compare, and enroll in daycares. For administrators, it's a full-scale ERP that manages staff shifts, child attendance, and capacity in real-time.",
+          "Security was our top priority. We implemented rigorous authentication protocols and real-time notification systems to keep parents updated on their child's status throughout the day."
         ]
       },
       {
@@ -130,17 +120,27 @@ export const workItems = [
     client: "Forever Security",
     image: siteData.work.projects.foreverSecurity.main,
     detailImage: siteData.work.projects.foreverSecurity.detail,
-    description: "Full-scale ERP system built specifically for security service companies that automates guard management and operations.",
-    excerpt: "Automates shift scheduling, incident reporting, and payroll, eliminating manual spreadsheets for security firms.",
+    description: "Forever Security is a robust, enterprise-grade ERP system designed specifically for the security services industry. It digitizes the entire operational lifecycle—from guard deployment and shift scheduling to real-time incident reporting and automated payroll processing—eliminating the need for manual logs and fragmented communication.",
+    excerpt: "Advanced security management platform that automates shift rosters, incident tracking, and billing for large-scale security firms.",
     images: [siteData.work.projects.foreverSecurity.detail],
+    liveLink: "https://app.foreversecurity.in/login",
     tech: ["Next.js", "Node.js", "Express.js", "PostgreSQL", "AWS EC2", "AWS RDS", "AWS S3", "Twilio", "WhatsApp API", "Docker", "PM2"],
     sections: [
       {
-        heading: "At Forever Security",
+        heading: "Operational Excellence in Security",
         paragraphs: [
-          "At Forever Security, we engineered a powerful ERP platform specifically built for security service companies to digitally manage guards, operations, incident reporting, payroll tracking, and workforce coordination from a single centralized system.",
-          "Traditional security agencies often rely heavily on spreadsheets, manual attendance records, and disconnected communication channels. Our ERP solution transformed these operations into an automated and scalable digital workflow that improves efficiency, accountability, and operational visibility.",
-          "The system enables security agencies to manage guard assignments, monitor attendance, automate scheduling, generate invoices, track payments, and handle incident reports in real-time."
+          "Security agencies manage large workforces across multiple locations, often leading to accountability gaps and payroll errors. Forever Security needed a system that could scale with their growth while providing micro-level visibility into every guard's performance and every incident reported on the field.",
+          "Our team developed a centralized command center that integrates field-level reporting with office-level management, ensuring that nothing goes unmonitored."
+        ]
+      },
+      {
+        type: "imageText",
+        heading: "Smart Scheduling & Reporting",
+        image: siteData.work.projects.foreverSecurity.detail,
+        imageAlt: "Forever Security Dashboard",
+        paragraphs: [
+          "The ERP features a smart rostering engine that automatically assigns guards based on availability and site requirements. Guards can submit incident reports directly through a mobile interface, including photo evidence and timestamps, which are immediately visible to supervisors.",
+          "By integrating Twilio and the WhatsApp API, we ensured that critical alerts and shift updates reach the workforce instantly, significantly reducing response times."
         ]
       },
       {
@@ -153,16 +153,6 @@ export const workItems = [
           "Communication & Notification System: Integrated WhatsApp API, Twilio, and SMTP for automated operational alerts.",
           "Admin Dashboard & Analytics: Complete oversight through analytics dashboards, attendance reports, and workforce monitoring."
         ]
-      },
-      {
-        heading: "Business Impact",
-        bullets: [
-          "Reduced manual workforce management",
-          "Improved guard accountability and reporting",
-          "Faster scheduling and operational coordination",
-          "Simplified payroll and billing operations",
-          "Centralized security business management"
-        ]
       }
     ]
   },
@@ -173,17 +163,27 @@ export const workItems = [
     client: "The GVoice",
     image: siteData.work.projects.theGvoice.main,
     detailImage: siteData.work.projects.theGvoice.detail,
-    description: "Modern cloud-enabled POS system designed for retail businesses that handles billing and inventory in real-time.",
-    excerpt: "Handles multi-device synchronization and sales reporting, perfect for single stores or multiple outlets.",
+    description: "The GVoice POS is a high-performance, cloud-native point of sale solution designed for the demands of modern retail. Built to support multi-outlet operations with real-time inventory synchronization, it provides business owners with a unified view of their sales while offering staff a lightning-fast billing interface that works even offline.",
+    excerpt: "Modern cloud POS with multi-device sync, offline billing, and real-time inventory tracking for multi-outlet retail businesses.",
     images: [siteData.work.projects.theGvoice.detail],
+    liveLink: "https://pos.gvoice.app/",
     tech: ["Next.js", "Tailwind CSS", "Node.js", "Express.js", "PostgreSQL", "AWS", "Vercel", "Service Worker", "Docker"],
     sections: [
       {
-        heading: "At The GVoice",
+        heading: "Next-Gen Retail Operations",
         paragraphs: [
-          "At The GVoice, we developed a cloud-enabled Point of Sale (POS) system tailored for modern retail businesses looking to streamline billing, inventory management, and multi-device retail operations.",
-          "The platform was designed to support both single-store retailers and multi-outlet businesses by offering fast billing systems, real-time stock monitoring, synchronized inventory tracking, and advanced sales analytics through a scalable cloud infrastructure.",
-          "The system improves retail efficiency, reduces inventory errors, and provides business owners with complete visibility into sales performance and stock management."
+          "Retailers today face the challenge of managing inventory across multiple channels and locations. Traditional POS systems are often slow, tethered to local servers, and prone to data loss during internet outages. The GVoice POS was engineered to eliminate these pain points by leveraging cloud technology and Service Workers for a resilient, 'offline-first' experience.",
+          "Our goal was to create a system that is as fast as a desktop app but as accessible as a web page, allowing retailers to scale from a single shop to a national chain with ease."
+        ]
+      },
+      {
+        type: "imageText",
+        heading: "Cloud Sync & Offline Reliability",
+        image: siteData.work.projects.theGvoice.detail,
+        imageAlt: "GVoice POS Tablet View",
+        paragraphs: [
+          "The core of the system is a sophisticated synchronization engine. It allows billing to continue uninterrupted during connectivity drops, automatically syncing transactions once the connection is restored. The inventory module provides real-time updates across all branches, preventing stockouts and over-selling.",
+          "The intuitive touch-optimized interface was designed based on extensive feedback from retail staff, focusing on reducing the number of clicks required to complete a transaction."
         ]
       },
       {
@@ -196,16 +196,6 @@ export const workItems = [
           "Cloud-Based Retail Operations: Secure data storage, accessibility, and centralized management for multiple outlets.",
           "Offline Mode Support: Ensures uninterrupted billing and transaction handling even during internet outages."
         ]
-      },
-      {
-        heading: "Business Impact",
-        bullets: [
-          "Faster and more efficient billing operations",
-          "Improved inventory accuracy and stock management",
-          "Better business insights through sales analytics",
-          "Seamless retail operations across devices and locations",
-          "Reduced operational downtime"
-        ]
       }
     ]
   },
@@ -216,16 +206,27 @@ export const workItems = [
     client: "Akhil Industry",
     image: siteData.work.projects.akhilIndustry.main,
     detailImage: siteData.work.projects.akhilIndustry.detail,
-    description: "Professional business website showcasing Akhil Industry's services and offerings.",
-    excerpt: "Clean, professional presentation of service portfolios and company expertise.",
+    description: "Akhil Industry required a digital presence that matched their reputation for industrial excellence. We designed and developed a professional corporate website that showcases their manufacturing capabilities, specialized services, and industrial infrastructure, providing a powerful platform for B2B engagement and global outreach.",
+    excerpt: "Professional industrial corporate website showcasing manufacturing expertise and high-capacity service portfolios.",
     images: [siteData.work.projects.akhilIndustry.detail],
+    liveLink: "https://akhil.gohilinfotech.com/",
     tech: ["WordPress", "HTML5", "CSS3", "Bootstrap", "PHP", "MySQL", "Hostinger"],
     sections: [
       {
-        heading: "At Akhil Industry",
+        heading: "Industrial Branding in the Digital Age",
         paragraphs: [
-          "At Akhil Industry, we created a professional business website focused on presenting the company’s industrial services, expertise, and capabilities through a modern and corporate digital presence.",
-          "The website was strategically designed to improve the company’s online visibility, establish credibility, and provide potential clients with easy access to company information and service offerings."
+          "For industrial companies, a website is more than just an online brochure; it's a tool for building trust with large-scale clients and partners. Akhil Industry needed a site that looked professional on every device and effectively communicated the scale of their operations.",
+          "We focused on a clean, corporate aesthetic that highlights high-resolution industrial photography and technical specifications, ensuring that potential partners can quickly find the information they need."
+        ]
+      },
+      {
+        type: "imageText",
+        heading: "Service Showcase & Inbound Leads",
+        image: siteData.work.projects.akhilIndustry.detail,
+        imageAlt: "Akhil Industry Industrial Section",
+        paragraphs: [
+          "The website features specialized sections for various industrial services, each optimized for search engines to attract qualified B2B leads. We integrated a streamlined inquiry system that allows potential clients to request quotes and technical data sheets directly from the service pages.",
+          "The responsive design ensures that engineers and procurement officers can access the site from the factory floor or the office with equal ease."
         ]
       },
       {
@@ -237,15 +238,6 @@ export const workItems = [
           "Client Inquiry & Contact System: Integrated forms for direct business connection.",
           "Optimized Website Structure: Designed for easy navigation and fast loading speeds."
         ]
-      },
-      {
-        heading: "Business Impact",
-        bullets: [
-          "Enhanced online business presence",
-          "Improved client engagement opportunities",
-          "Professional digital branding",
-          "Better accessibility for potential customers"
-        ]
       }
     ]
   },
@@ -256,17 +248,27 @@ export const workItems = [
     client: "StarX Cleaning",
     image: siteData.work.projects.starxCleaning.main,
     detailImage: siteData.work.projects.starxCleaning.detail,
-    description: "Clean, service-focused website highlighting residential and commercial cleaning solutions.",
-    excerpt: "Features clear service type outlines and emphasizes a reliable, eco-friendly approach.",
+    description: "StarX Cleaning is a modern, service-oriented platform that simplifies the process of booking professional cleaning solutions. From residential deep cleaning to large-scale commercial maintenance, the website provides a seamless user journey that emphasizes hygiene, reliability, and eco-friendly practices.",
+    excerpt: "Conversion-focused service platform for residential and commercial cleaning with integrated booking and eco-friendly branding.",
     images: [siteData.work.projects.starxCleaning.detail],
+    liveLink: "https://starxcleaning.com",
     tech: ["WordPress", "HTML5", "CSS3", "Bootstrap", "PHP", "MySQL", "Hostinger"],
     sections: [
       {
-        heading: "At StarX Cleaning",
+        heading: "A Fresh Approach to Service Booking",
         paragraphs: [
-          "At StarX Cleaning, we designed and developed a modern service-focused business website that effectively showcases the company’s residential and commercial cleaning services through a clean, professional, and user-friendly digital experience.",
-          "The primary goal of the project was to build a trustworthy online presence that highlights StarX Cleaning’s commitment to reliability, hygiene, eco-friendly cleaning solutions, and customer satisfaction.",
-          "The platform was carefully optimized to provide a smooth browsing experience across all devices while maintaining a visually appealing and conversion-focused interface."
+          "The cleaning industry is highly competitive, and first impressions are everything. StarX Cleaning needed a website that felt 'clean' literally and figuratively. They required a platform that could clearly categorize their diverse services and make the booking process as frictionless as possible for busy homeowners and facility managers.",
+          "We designed a bright, airy interface that uses vibrant visuals and clear typography to build immediate trust with visitors."
+        ]
+      },
+      {
+        type: "imageText",
+        heading: "Trust & Accessibility",
+        image: siteData.work.projects.starxCleaning.detail,
+        imageAlt: "StarX Cleaning Booking Interface",
+        paragraphs: [
+          "By highlighting their commitment to eco-friendly products and certified professionals, we helped StarX Cleaning differentiate themselves in the market. The integrated inquiry forms are strategically placed to convert visitors into leads at multiple points in the user journey.",
+          "The site's performance was optimized for mobile devices, recognizing that many residential users book services while on the go."
         ]
       },
       {
@@ -279,16 +281,6 @@ export const workItems = [
           "Professional Branding: Modern layouts and clean typography to establish industry trust.",
           "Fully Responsive Design: Optimized for seamless experience across all screen sizes."
         ]
-      },
-      {
-        heading: "Business Impact",
-        bullets: [
-          "Strengthened online brand identity",
-          "Improved customer trust and engagement",
-          "Simplified service discovery and booking process",
-          "Better accessibility across devices",
-          "Enhanced professional digital presence"
-        ]
       }
     ]
   },
@@ -299,17 +291,27 @@ export const workItems = [
     client: "Giant Asia",
     image: siteData.work.projects.giantAsia.main,
     detailImage: siteData.work.projects.giantAsia.detail,
-    description: "Business site featuring Giant Asia's mission, products, and service range.",
-    excerpt: "Designed for clarity and easy navigation presenting key company details to potential clients.",
+    description: "Giant Asia is a corporate powerhouse that needed a digital platform to reflect its vast operations and international presence. We developed a highly structured, informative website that clearly communicates their mission, diverse product range, and business values, serving as a primary touchpoint for global partners and stakeholders.",
+    excerpt: "Professional corporate business website with a structured product showcase and international business-focused navigation.",
     images: [siteData.work.projects.giantAsia.detail],
+    liveLink: "https://giantasia.gohilinfotech.com/",
     tech: ["WordPress", "HTML5", "CSS3", "Bootstrap", "PHP", "MySQL", "Hostinger"],
     sections: [
       {
-        heading: "At Giant Asia",
+        heading: "Communicating Global Excellence",
         paragraphs: [
-          "At Giant Asia, we developed a professional corporate business website focused on presenting the company’s mission, services, products, and business values through a clean and highly structured digital platform.",
-          "The website was designed to establish a strong online identity while helping potential clients, partners, and stakeholders easily understand the company’s offerings and industry presence.",
-          "The platform combines intuitive navigation, responsive design, and business-focused content presentation to deliver a smooth and informative user experience."
+          "For a company with the scale of Giant Asia, clarity and professionalism are paramount. Their previous digital presence lacked the depth needed to showcase their multi-faceted business units. We were tasked with creating a comprehensive architecture that could house extensive product information while maintaining an intuitive user experience.",
+          "The resulting platform uses a corporate-themed design language that emphasizes stability, growth, and international cooperation."
+        ]
+      },
+      {
+        type: "imageText",
+        heading: "Product & Mission Showcase",
+        image: siteData.work.projects.giantAsia.detail,
+        imageAlt: "Giant Asia Corporate View",
+        paragraphs: [
+          "We developed dedicated modules for their core business areas, allowing stakeholders to easily navigate through their mission statements and product catalogs. The professional UI design uses high-quality imagery and structured layouts to establish immediate credibility with international visitors.",
+          "The site is fully optimized for speed and accessibility, ensuring a smooth experience for users regardless of their geographic location."
         ]
       },
       {
@@ -322,15 +324,6 @@ export const workItems = [
           "Client Engagement: Integrated inquiry systems for business opportunities and partnerships.",
           "Professional UI: Modern business aesthetics with clean layouts and consistent typography."
         ]
-      },
-      {
-        heading: "Business Impact",
-        bullets: [
-          "Improved professional online presence",
-          "Better visibility for products and services",
-          "Enhanced client communication and engagement",
-          "Stronger corporate branding and credibility"
-        ]
       }
     ]
   },
@@ -341,17 +334,27 @@ export const workItems = [
     client: "Maati Food",
     image: siteData.work.projects.maatiFood.main,
     detailImage: siteData.work.projects.maatiFood.detail,
-    description: "Food-centric website showcasing Maati Food's menu, specialties, and culinary offerings.",
-    excerpt: "Provides users with a flavorful introduction to the brand and its gastronomic identity.",
+    description: "Maati Food is a brand that celebrates the authentic flavors of the earth. We designed a visually immersive, food-centric website that captures the brand's culinary philosophy. By blending rich imagery with engaging storytelling, we created a digital experience that allows users to explore specialties and specialties in an appetizing and intuitive way.",
+    excerpt: "Visually rich gastronomic platform featuring specialty menus, brand storytelling, and an immersive culinary experience.",
     images: [siteData.work.projects.maatiFood.detail],
+    liveLink: "https://maatifoods.gohilinfotech.com/",
     tech: ["WordPress", "HTML5", "CSS3", "Bootstrap", "PHP", "MySQL", "Hostinger"],
     sections: [
       {
-        heading: "At Maati Food",
+        heading: "Capturing the Essence of Taste",
         paragraphs: [
-          "At Maati Food, we designed and developed a food-centric website that visually represents the brand’s culinary identity, menu offerings, and specialty food products through an engaging and modern digital experience.",
-          "The website was created to help users explore the brand’s food philosophy, discover signature dishes, and connect with the company through a clean, visually rich, and customer-friendly interface.",
-          "Special attention was given to visual presentation, food imagery, and responsive design to create an appetizing and immersive browsing experience."
+          "Food is an experience, and a food website must reflect that sensory richness. Maati Food wanted a digital platform that felt as authentic and flavorful as their menu. We moved away from generic restaurant templates to create a custom identity that focuses on 'Maati' (Earth) and its connection to traditional culinary wisdom.",
+          "The design uses warm tones, high-resolution food photography, and fluid transitions to keep visitors engaged and hungry for more."
+        ]
+      },
+      {
+        type: "imageText",
+        heading: "An Appetizing Digital Journey",
+        image: siteData.work.projects.maatiFood.detail,
+        imageAlt: "Maati Food Specialties",
+        paragraphs: [
+          "We implemented a dynamic menu showcase that allows users to explore dishes through vivid visuals and detailed descriptions. The storytelling sections highlight the brand's commitment to quality ingredients and traditional cooking methods, building a strong emotional connection with the audience.",
+          "The mobile-first approach ensures that customers can easily browse the menu and find contact information while planning their next meal."
         ]
       },
       {
@@ -364,15 +367,6 @@ export const workItems = [
           "Mobile-Responsive Experience: Optimized for all screen sizes to ensure smooth navigation.",
           "User-Friendly Navigation: Simplified menus for exploring dishes and services."
         ]
-      },
-      {
-        heading: "Business Impact",
-        bullets: [
-          "Improved digital branding for the food business",
-          "Better customer engagement through visual presentation",
-          "Simplified food discovery and inquiries",
-          "Enhanced mobile accessibility and user experience"
-        ]
       }
     ]
   },
@@ -383,17 +377,27 @@ export const workItems = [
     client: "Dr. Aashima Chopra",
     image: siteData.work.projects.entcare.main,
     detailImage: siteData.work.projects.entcare.detail,
-    description: "Professional medical website for ENT care services offering key information about treatments.",
-    excerpt: "Showcases medical expertise and patient care philosophy provided by Dr. Aashima Chopra.",
+    description: "EntCare, led by Dr. Aashima Chopra, provides specialized medical care for ear, nose, and throat conditions. We developed a professional, patient-centric healthcare website that serves as a reliable source of medical information. The platform is designed to build trust through clarity, professional branding, and easy access to treatment details.",
+    excerpt: "Trust-based healthcare platform for specialized ENT services with patient education and streamlined appointments.",
     images: [siteData.work.projects.entcare.detail],
+    liveLink: "https://entcare.gohilinfotech.com/",
     tech: ["WordPress", "HTML5", "CSS3", "Bootstrap", "PHP", "MySQL", "Hostinger"],
     sections: [
       {
-        heading: "At EntCare – Dr. Aashima Chopra",
+        heading: "Professional Healthcare Branding",
         paragraphs: [
-          "At EntCare – Dr. Aashima Chopra, we developed a professional healthcare website designed to provide patients with reliable information about ENT treatments, healthcare services, doctor expertise, and patient care facilities.",
-          "The website was built with a clean medical-focused interface that emphasizes trust, professionalism, accessibility, and patient convenience.",
-          "The platform combines informative healthcare content, responsive design, and streamlined appointment management functionality to improve patient experience."
+          "In healthcare, a digital presence must prioritize empathy and expertise. Dr. Aashima Chopra needed a website that could explain complex ENT procedures simply while reassuring patients of the quality of care they would receive. We designed a clean, clinical yet welcoming interface that emphasizes medical professionalism.",
+          "The site architecture is focused on accessibility, ensuring that patients of all ages can easily find information about treatments and doctor credentials."
+        ]
+      },
+      {
+        type: "imageText",
+        heading: "Patient Education & Ease of Access",
+        image: siteData.work.projects.entcare.detail,
+        imageAlt: "EntCare Medical Information",
+        paragraphs: [
+          "A major part of the project was developing detailed educational content about various ENT conditions and procedures. This not only positions EntCare as an authority in the field but also helps patients make informed decisions about their health. We also integrated a simple, non-intrusive appointment inquiry system to bridge the gap between information and consultation.",
+          "The responsive design ensures that patients can access critical healthcare info on their smartphones, which is often their first point of contact."
         ]
       },
       {
@@ -406,15 +410,6 @@ export const workItems = [
           "Responsive Medical Website: Fully optimized for mobile, tablet, and desktop accessibility.",
           "Professional Healthcare Branding: Establishes trust through modern layouts and clean typography."
         ]
-      },
-      {
-        heading: "Business Impact",
-        bullets: [
-          "Improved online visibility for healthcare services",
-          "Better patient communication and accessibility",
-          "Enhanced trust through professional digital branding",
-          "Simplified appointment and inquiry process"
-        ]
       }
     ]
   },
@@ -425,17 +420,27 @@ export const workItems = [
     client: "Tech Mora",
     image: siteData.work.projects.techMora.main,
     detailImage: siteData.work.projects.techMora.detail,
-    description: "Technology-focused site presenting Tech Mora's digital solutions and tech products.",
-    excerpt: "Offers visitors insights into the company's services and technological strengths.",
+    description: "Tech Mora is a digital-first solutions provider that needed a website to showcase its cutting-edge technological strengths. We built a modern, high-fidelity platform that effectively presents their software products, digital services, and technical expertise, positioning them as a leader in the tech innovation space.",
+    excerpt: "Technology-focused business platform with a modern UI, high-fidelity technical showcases, and streamlined service navigation.",
     images: [siteData.work.projects.techMora.detail],
+    liveLink: "https://techmora.gohilinfotech.com/",
     tech: ["WordPress", "HTML5", "CSS3", "Bootstrap", "PHP", "MySQL", "Hostinger"],
     sections: [
       {
-        heading: "At Tech Mora",
+        heading: "Driving Digital Innovation",
         paragraphs: [
-          "At Tech Mora, we created a modern technology-focused business website designed to showcase the company’s digital solutions, technical capabilities, and innovative service offerings through a clean and professional online platform.",
-          "The website was developed to help the company establish a strong technology-driven brand identity while presenting its expertise, portfolio, and client success stories effectively.",
-          "The platform focuses on modern UI design, responsive performance, and simplified service presentation to improve visitor engagement."
+          "In the crowded tech services market, a company's own digital presence is the ultimate proof of its capabilities. Tech Mora required a website that felt futuristic, fast, and technically superior. We avoided generic 'tech' aesthetics in favor of a custom design that reflects their unique approach to solving complex digital challenges.",
+          "The platform is designed to guide visitors through a logical journey of their expertise, from initial consultation to final product delivery."
+        ]
+      },
+      {
+        type: "imageText",
+        heading: "A Technical Showcase",
+        image: siteData.work.projects.techMora.detail,
+        imageAlt: "Tech Mora Technical Interface",
+        paragraphs: [
+          "We developed a sophisticated portfolio module that highlights their success stories and technical competencies. By using modern UI elements and interactive layouts, we ensured that even complex technical information is presented in an engaging and accessible manner.",
+          "The site's architecture is optimized for lead generation, with multiple points of contact for potential clients to start their digital transformation journey."
         ]
       },
       {
@@ -448,15 +453,6 @@ export const workItems = [
           "Professional Corporate Design: Modern layouts and visual consistency for digital presence.",
           "Optimized Navigation: Easy-to-use structure for exploring services and projects."
         ]
-      },
-      {
-        heading: "Business Impact",
-        bullets: [
-          "Stronger technology brand identity",
-          "Improved lead generation opportunities",
-          "Better presentation of digital services",
-          "Enhanced customer trust and engagement"
-        ]
       }
     ]
   },
@@ -467,17 +463,27 @@ export const workItems = [
     client: "Rapido Force",
     image: siteData.work.projects.rapidoForce.main,
     detailImage: siteData.work.projects.rapidoForce.detail,
-    description: "Professional security services website with custom PHP-based admin panel.",
-    excerpt: "Allows non-technical staff to easily update content without developer support.",
+    description: "Rapido Force Security Services required a professional digital presence integrated with a powerful management backbone. We developed a professional website paired with a custom PHP-based CMS admin panel, allowing their team to manage content, security personnel profiles, and client inquiries without any technical overhead.",
+    excerpt: "Professional security services platform with a custom PHP CMS for independent content and workforce management.",
     images: [siteData.work.projects.rapidoForce.detail],
+    liveLink: "https://rfs.gohilinfotech.com/",
     tech: ["HTML", "CSS", "JavaScript", "PHP", "MySQL", "Custom CMS Admin Panel"],
     sections: [
       {
-        heading: "At Rapido Force Security Services",
+        heading: "Empowering Security Personnel",
         paragraphs: [
-          "At Rapido Force Security Services, we designed and developed a professional security services website integrated with a fully customized PHP-based CMS admin panel that enables non-technical staff to independently manage and update website content.",
-          "The platform was built to improve operational flexibility, simplify website management, and establish a strong professional online identity for the security company.",
-          "Special focus was placed on usability, admin accessibility, and streamlined content management operations."
+          "Operational agility is key in the security industry. Rapido Force needed a way to update their service offerings and staff credentials in real-time as they secured new contracts. We built a custom-tailored CMS that provides full control over the website's content through a secure, user-friendly dashboard.",
+          "This independence allows their non-technical staff to maintain an up-to-date digital presence without relying on external developers for routine updates."
+        ]
+      },
+      {
+        type: "imageText",
+        heading: "Integrated Management Backend",
+        image: siteData.work.projects.rapidoForce.detail,
+        imageAlt: "Rapido Force Admin Panel",
+        paragraphs: [
+          "The custom PHP-based admin panel is the engine that drives the website. It features modules for managing service pages, tracking client inquiries, and updating company news. We focused on a clean, intuitive layout for the admin area to minimize the learning curve for the staff.",
+          "The frontend reflects the same professional and secure aesthetic, building trust with potential clients looking for high-quality security solutions."
         ]
       },
       {
@@ -490,15 +496,6 @@ export const workItems = [
           "Responsive Website Architecture: Adapts seamlessly across desktops, tablets, and smartphones.",
           "Simplified Operational Workflow: Reduces dependency on developers for routine updates."
         ]
-      },
-      {
-        heading: "Business Impact",
-        bullets: [
-          "Faster website content management",
-          "Reduced operational dependency on developers",
-          "Improved digital branding and professionalism",
-          "Better client communication and accessibility"
-        ]
       }
     ]
   },
@@ -509,17 +506,27 @@ export const workItems = [
     client: "Divin",
     image: siteData.work.projects.divinSpiritual.main,
     detailImage: siteData.work.projects.divinSpiritual.detail,
-    description: "Full-featured e-commerce website with smart product categories and variants.",
-    excerpt: "Built for easy product management and scalability with a custom admin panel.",
+    description: "Divin Spiritual Healing is an elegant e-commerce platform designed for the holistic wellness market. We built a high-performance online store that handles complex product variants and categories, providing a serene and seamless shopping experience for users seeking spiritual products and healing services.",
+    excerpt: "Luxury e-commerce platform for spiritual wellness with smart categorization, product variants, and custom admin management.",
     images: [siteData.work.projects.divinSpiritual.detail],
+    liveLink: "https://www.divinspiritualhealing.com/",
     tech: ["HTML", "CSS", "JavaScript", "PHP", "MySQL", "Custom Admin Panel"],
     sections: [
       {
-        heading: "At Divin Spiritual Healing",
+        heading: "Elevating the Wellness E-commerce Experience",
         paragraphs: [
-          "At Divin Spiritual Healing, we developed a complete e-commerce platform designed to provide users with a smooth online shopping experience while enabling the business to efficiently manage products, categories, orders, and customer interactions.",
-          "The project focused on creating a modern and flexible e-commerce solution with smart product organization, responsive user interfaces, and simplified administration workflows.",
-          "The platform supports product variants, category management, secure transactions, and mobile-friendly shopping experiences."
+          "The spiritual wellness market requires a specific aesthetic—one that is calming, elegant, and deeply intuitive. Divin needed an e-commerce platform that could manage a diverse range of products (from crystals to digital courses) while maintaining a premium brand identity.",
+          "We developed a custom e-commerce engine that supports complex product variants, ensuring that users can easily find exactly what they are looking for."
+        ]
+      },
+      {
+        type: "imageText",
+        heading: "A Seamless Path to Purchase",
+        image: siteData.work.projects.divinSpiritual.detail,
+        imageAlt: "Divin Spiritual Shopping Experience",
+        paragraphs: [
+          "The user journey is designed to be frictionless, from the initial category browsing to the final secure checkout. We also built a dedicated admin panel that provides real-time inventory tracking and order management, allowing the Divin team to run their business efficiently.",
+          "The mobile-responsive design ensures that customers can explore the store and make purchases from any device, anywhere."
         ]
       },
       {
@@ -532,15 +539,6 @@ export const workItems = [
           "Secure Backend Architecture: Includes logic for safe handling of product and customer data.",
           "Scalable Website Structure: Designed to support future product expansion."
         ]
-      },
-      {
-        heading: "Business Impact",
-        bullets: [
-          "Improved online sales capabilities",
-          "Simplified product and order management",
-          "Better customer shopping experience",
-          "Enhanced scalability for future growth"
-        ]
       }
     ]
   },
@@ -551,17 +549,27 @@ export const workItems = [
     client: "Novotionservices",
     image: siteData.work.projects.novotion.main,
     detailImage: siteData.work.projects.novotion.detail,
-    description: "Strategic recruitment solutions helping USA and UK organizations hire faster.",
-    excerpt: "Cut recruitment costs and build high-performing teams through data-led RPO solutions.",
+    description: "Novotion Services is a strategic recruitment partner helping organizations in the USA and UK scale their teams. We developed a professional, data-driven platform that highlights their RPO (Recruitment Process Outsourcing) expertise and ability to reduce hiring costs through innovative, technology-led talent acquisition strategies.",
+    excerpt: "Strategic RPO and recruitment platform with a corporate international aesthetic and conversion-focused lead generation.",
     images: [siteData.work.projects.novotion.detail],
+    liveLink: "https://novotionservices.com/",
     tech: ["Next.js", "Tailwind CSS"],
     sections: [
       {
-        heading: "At Novotion Services",
+        heading: "Global Talent Acquisition Platform",
         paragraphs: [
-          "At Novotion Services, we developed a modern recruitment-focused business platform designed to present the company’s strategic hiring solutions, RPO services, and international recruitment expertise for USA and UK organizations.",
-          "The platform was created to communicate the company’s ability to help businesses hire faster, reduce recruitment costs, and build high-performing teams through data-driven recruitment processes.",
-          "The website combines modern design systems, clean user interfaces, and conversion-focused structures to generate business inquiries."
+          "In the international recruitment space, credibility is everything. Novotion needed a platform that could appeal to HR directors and executives in major markets like the USA and UK. We focused on a sleek, data-focused design that emphasizes their results-driven methodology.",
+          "The platform clearly outlines their various RPO models, allowing potential clients to find the solution that best fits their organizational needs."
+        ]
+      },
+      {
+        type: "imageText",
+        heading: "Data-Led Recruitment Branding",
+        image: siteData.work.projects.novotion.detail,
+        imageAlt: "Novotion Recruitment Interface",
+        paragraphs: [
+          "By using modern design systems and clean user interfaces, we ensured that the message of 'efficiency' and 'data' is conveyed at every touchpoint. We integrated strategic call-to-action elements throughout the site to maximize lead generation from interested organizations.",
+          "The platform is built on Next.js for superior performance and SEO, ensuring high visibility for their global recruitment services."
         ]
       },
       {
@@ -574,15 +582,6 @@ export const workItems = [
           "Responsive Website Experience: Ensures smooth navigation across all devices and screen sizes.",
           "Lead Generation: Integrated inquiry systems to help connect with recruitment consultants."
         ]
-      },
-      {
-        heading: "Business Impact",
-        bullets: [
-          "Stronger international recruitment branding",
-          "Better client acquisition opportunities",
-          "Improved professional online visibility",
-          "Enhanced trust and service presentation"
-        ]
       }
     ]
   },
@@ -593,17 +592,27 @@ export const workItems = [
     client: "Drink2Heal",
     image: siteData.work.projects.drink2heal.main,
     detailImage: siteData.work.projects.drink2heal.detail,
-    description: "Wellness platform blending ancient Vedic wisdom with modern scientific research.",
-    excerpt: "Creates health solutions based on timeless secrets of true vitality and modern research.",
+    description: "Drink2Heal is a visionary wellness platform that bridges the gap between ancient Vedic wisdom and modern nutritional science. We designed a vibrant, immersive digital experience that educates and inspires users to embrace a more holistic approach to health and vitality through natural, research-backed wellness concepts.",
+    excerpt: "Vibrant holistic wellness platform blending traditional Vedic principles with modern health research and immersive UI.",
     images: [siteData.work.projects.drink2heal.detail],
+    liveLink: "https://drink2heal.vercel.app/",
     tech: ["Next.js", "Tailwind CSS"],
     sections: [
       {
-        heading: "At Drink2Heal",
+        heading: "The Intersection of Tradition & Science",
         paragraphs: [
-          "At Drink2Heal, we designed and developed a modern wellness platform that combines ancient Vedic wisdom with modern scientific approaches to promote holistic health, vitality, and natural wellness solutions.",
-          "The platform was built to create an engaging and informative digital experience that introduces users to research-backed wellness concepts and natural healing philosophies.",
-          "Our focus was to create a visually immersive and content-driven experience that reflects balance, wellness, mindfulness, and modern health awareness."
+          "The wellness market is flooded with generic advice. Drink2Heal wanted to offer something deeper—a philosophy rooted in timeless Vedic secrets but validated by modern research. We created a design language that reflects this duality: organic yet structured, ancient yet futuristic.",
+          "The resulting platform is a content-rich environment where users can learn about the science of vitality while exploring a wide range of natural healing concepts."
+        ]
+      },
+      {
+        type: "imageText",
+        heading: "A Holistic User Experience",
+        image: siteData.work.projects.drink2heal.detail,
+        imageAlt: "Drink2Heal Wellness Concept",
+        paragraphs: [
+          "The interface uses a calming, nature-inspired palette to create an immediate sense of peace and balance. We developed a unique navigation structure that allows users to explore health concepts based on their specific wellness goals.",
+          "The mobile-optimized design ensures that users can access wellness wisdom and health routines whenever they need them, promoting a mindful and healthy lifestyle."
         ]
       },
       {
@@ -615,15 +624,6 @@ export const workItems = [
           "Modern Wellness UI: Calming interface designed using modern UI principles for peace.",
           "Responsive Cross-Device Accessibility: Optimized for mobile, tablet, and desktop users.",
           "Strong Brand Storytelling: Visual content and typography used to establish wellness identity."
-        ]
-      },
-      {
-        heading: "Business Impact",
-        bullets: [
-          "Enhanced digital wellness brand presence",
-          "Better engagement through educational wellness content",
-          "Improved accessibility across devices",
-          "Stronger connection with health-conscious audiences"
         ]
       }
     ]

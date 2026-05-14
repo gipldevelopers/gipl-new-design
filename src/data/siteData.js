@@ -64,9 +64,9 @@ export const siteData = {
       bg: "https://cloud.gvoice.app/view.php?token=cd5cb57642af480573f049d05005e873856be361de03bd486009479126b068c4",
     },
     contact: {
-      email: "https://cloud.gvoice.app/view.php?token=aca200551cc21ef0aa9eb4d9c077948d6dd7c65b63d0d38771a962f391ec27d4",
-      phone: "https://cloud.gvoice.app/view.php?token=2df65f3d9cb3e3de1bcd3847e86c52e2cb762d60649d6947ce17f0777ae3e61f",
-      location: "https://cloud.gvoice.app/view.php?token=0c3374fae6cc4d526ea250c6ff20230482af99a37004d12bc97d11d7df68fe14",
+      email: "https://cloud.gvoice.app/view.php?token=4394114bc55b43be284875af8b70b171ff1a521524220bbcb3539796cc75b7cf",
+      phone: "https://cloud.gvoice.app/view.php?token=fb87ab1dfb0ddcef48d8f22a362f18002484f4df3920152f3867e6167f893687",
+      location: "https://cloud.gvoice.app/view.php?token=e67e4aa6f63a1ecc30e78b697f0983dd4a68d3ac4955551e5fe47de20f221925",
     }
   },
 
@@ -190,7 +190,13 @@ export const siteData = {
     },
     form: {
       image: "https://cloud.gvoice.app/view.php?token=2e0f70c6c364d9b640bbf673737aedb39df19dc927ab7081ce46ebd87c84cf12",
-    }
+    },
+    address: [
+      "209, Aamrakunj Business Centre,",
+      "Near Panchelok, Chandkheda,",
+      "Ahmedabad, Gujarat 382424"
+    ],
+    mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3669.347318182963!2d72.56783177531777!3d23.120976079105436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xcc09acc1ef7104f%3A0xf69adf204766cc1!2sGohil%20Infotech%20Private%20Limited!5e0!3m2!1sen!2sin!4v1715665561561!5m2!1sen!2sin"
   },
 
   // Technology Page Assets
@@ -398,31 +404,31 @@ export const siteData = {
       },
       houspire: {
         main: "/our work/houspire.png",
-        detail: "/our work/houspire.png",
+        detail: "/our work/houspire-detail.png",
       },
       askNani: {
         main: "/our work/ask-nani.png",
-        detail: "/our work/ask-nani.png",
+        detail: "/our work/ask-nani-detail.png",
       },
       foreverSecurity: {
         main: "/our work/forever-security.png",
-        detail: "/our work/forever-security.png",
+        detail: "/our work/forever-security-detail.png",
       },
       theGvoice: {
         main: "/our work/gvoice-pos.png",
-        detail: "/our work/gvoice-pos.png",
+        detail: "/our work/gvoice-pos-detail.png",
       },
       akhilIndustry: {
-        main: "/our work/corporate-generic.png",
-        detail: "/our work/corporate-generic.png",
+        main: "/our work/akhil-industry.png",
+        detail: "/our work/akhil-industry.png",
       },
       starxCleaning: {
         main: "/our work/starx-cleaning.png",
         detail: "/our work/starx-cleaning.png",
       },
       giantAsia: {
-        main: "/our work/corporate-generic.png",
-        detail: "/our work/corporate-generic.png",
+        main: "/our work/giant-asia.png",
+        detail: "/our work/giant-asia.png",
       },
       maatiFood: {
         main: "/our work/maati-food.png",
@@ -433,20 +439,20 @@ export const siteData = {
         detail: "/our work/entcare.png",
       },
       techMora: {
-        main: "/our work/corporate-generic.png",
-        detail: "/our work/corporate-generic.png",
+        main: "/our work/tech-mora.png",
+        detail: "/our work/tech-mora.png",
       },
       rapidoForce: {
-        main: "/our work/forever-security.png",
-        detail: "/our work/forever-security.png",
+        main: "/our work/rapido-force.png",
+        detail: "/our work/rapido-force.png",
       },
       divinSpiritual: {
-        main: "/our work/ask-nani.png",
-        detail: "/our work/ask-nani.png",
+        main: "/our work/divin-spiritual.png",
+        detail: "/our work/divin-spiritual.png",
       },
       novotion: {
-        main: "/our work/ask-nani.png",
-        detail: "/our work/ask-nani.png",
+        main: "/our work/novotion.png",
+        detail: "/our work/novotion.png",
       },
       drink2heal: {
         main: "/our work/drink2heal.png",

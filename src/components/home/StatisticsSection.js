@@ -42,9 +42,17 @@ export default function StatisticsSection() {
                 viewport={{ once: false }}
                 className="text-left relative md:px-4"
               >
-                {/* Divider line - visible between columns on mobile (grid-cols-2) and all except last on desktop */}
+                {/* Vertical Divider */}
+                {index % 2 === 0 && (
+                  <div className="absolute -right-2 top-1/2 h-12 w-[1px] bg-white/20 -translate-y-1/2 md:hidden" />
+                )}
                 {index < statistics.length - 1 && (
-                  <div className={`absolute right-[-8px] md:right-0 top-1/2 h-12 md:h-16 w-[1px] bg-white/30 transform -translate-y-1/2 ${index % 2 === 1 ? 'hidden md:block' : ''}`} />
+                  <div className="absolute right-0 top-1/2 h-16 w-[1px] bg-white/20 -translate-y-1/2 hidden md:block" />
+                )}
+
+                {/* Horizontal Divider (Mobile only) */}
+                {index < 2 && (
+                  <div className="absolute -bottom-6 left-0 w-[calc(100%+16px)] h-[1px] bg-white/20 md:hidden" />
                 )}
 
                 <motion.h3

@@ -14,7 +14,8 @@ const projects = [
     stats: [
       { value: "40%", label: "Efficiency Gain" },
       { value: "2.4M", label: "Monthly Trans." }
-    ]
+    ],
+    liveLink: "https://pos.gvoice.app/",
   },
   {
     id: 2,
@@ -169,19 +170,40 @@ export default function CaseStudies() {
                   ))}
                 </motion.div>
 
-                <motion.button
-                  className="bg-white text-[#0F172A] px-8 py-4 rounded-full text-base font-bold flex items-center gap-3 hover:bg-slate-100 transition-all shadow-lg"
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: 0.6 }}
-                  whileHover={{ scale: 1.05, x: 5 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  View Full Case Study
-                  <svg width="18" height="18" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
-                </motion.button>
+                <div className="flex flex-wrap gap-4 items-center">
+                  <motion.button
+                    className="bg-white text-[#0F172A] px-8 py-4 rounded-full text-base font-bold flex items-center gap-3 hover:bg-slate-100 transition-all shadow-lg"
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: 0.6 }}
+                    whileHover={{ scale: 1.05, x: 5 }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    View Full Case Study
+                    <svg width="18" height="18" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </motion.button>
+
+                  {project.liveLink && (
+                    <motion.a
+                      href={project.liveLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="border-2 border-white/20 text-white px-8 py-[14px] rounded-full text-base font-bold flex items-center gap-3 hover:bg-white/10 hover:border-white transition-all shadow-lg"
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.5, delay: 0.7 }}
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                    >
+                      Visit Live Site
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M5 12H19M19 12L12 5M19 12L12 19" />
+                      </svg>
+                    </motion.a>
+                  )}
+                </div>
               </div>
             </div>
           </motion.div>

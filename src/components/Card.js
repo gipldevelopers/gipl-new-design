@@ -9,6 +9,7 @@ export default function Card({
   title,
   description,
   imageAlt,
+  liveLink,
 }) {
   return (
     <article className="h-full rounded-[16px] border border-[#E6EAF2] bg-white overflow-hidden shadow-[0_2px_12px_rgba(15,23,42,0.06)] flex flex-col">
@@ -37,12 +38,26 @@ export default function Card({
         </p>
 
         <div className="mt-[20px] flex items-center justify-between">
-          <Link
-            href={href}
-            className="text-[14px] font-[600] leading-[1] text-[#4F6EF7] hover:underline"
-          >
-            Learn More
-          </Link>
+          <div className="flex items-center gap-4">
+            <Link
+              href={href}
+              className="text-[14px] font-[600] leading-1 text-[#4F6EF7] hover:underline"
+            >
+              Learn More
+            </Link>
+            {liveLink && (
+              <Link
+                href={liveLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1.5 text-[14px] font-[600] text-[#64748B] hover:text-[#00E5FF] transition-colors group/live"
+                onClick={(e) => e.stopPropagation()}
+              >
+                <span className="w-1.5 h-1.5 rounded-full bg-[#00E5FF] animate-pulse" />
+                Live Preview
+              </Link>
+            )}
+          </div>
           <Link href={href}>
             <div className="w-[15px] h-[15px] flex items-center justify-center transition-transform hover:translate-x-1">
               <Image

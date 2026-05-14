@@ -9,9 +9,9 @@ const contactDetails = [
     title: "Our Office Location",
     icon: siteData.contact.hero.locationIcon,
     lines: [
-      "Dwarkesh Business Hub",
-      "Motera, Ahmedabad",
-      "Gujarat, India - 380005",
+      "209, Aamrakunj Business Centre,",
+      "Near Panchelok, Chandkheda,",
+      "Ahmedabad, Gujarat 382424",
     ],
   },
   {

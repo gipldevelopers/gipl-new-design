@@ -236,7 +236,7 @@ export default function ContactFormSection() {
             viewport={{ once: false }}
           >
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3670.313460830612!2d72.6008796!3d23.1094649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e83001b56b897%3A0x56ccc1bf8592dba4!2sDwarkesh%20business%20hub!5e0!3m2!1sen!2sin!4v1715623000000!5m2!1sen!2sin"
+              src={siteData.contact.mapEmbedUrl}
               width="100%"
               height="100%"
               style={{ border: 0 }}

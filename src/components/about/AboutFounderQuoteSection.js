@@ -29,7 +29,7 @@ export default function AboutFounderQuoteSection() {
               </svg>
             </motion.div>
             <motion.h2
-              className="text-[20px] sm:text-[24px] md:text-[32px] lg:text-[36px] font-[500] leading-snug text-white mb-8"
+              className="text-[20px] sm:text-[24px] md:text-[32px] lg:text-[36px] font-[500] leading-snug text-white mb-8 font-roboto"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.2 }}
@@ -42,9 +42,10 @@ export default function AboutFounderQuoteSection() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.4 }}
               viewport={{ once: false }}
+              className="flex items-center justify-center lg:justify-start gap-2 font-roboto"
             >
-              <p className="text-[18px] font-bold text-[#00E5FF]">Darshan Gohil</p>
-              <p className="text-[14px] text-gray-400 tracking-wider">CEO &amp; FOUNDER</p>
+              <span className="text-[25px] font-bold font-roboto text-white">- Darshan Gohil,CEO &amp; FOUNDER</span>
+
             </motion.div>
           </div>
 

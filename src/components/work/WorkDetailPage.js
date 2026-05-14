@@ -10,6 +10,7 @@ export default function WorkDetailPage({ item, relatedItems }) {
       relatedItems={relatedItems}
       relatedPathPrefix="/work"
       tech={item.tech}
+      liveLink={item.liveLink}
       sections={item.sections || []}
     />
   );

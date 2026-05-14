@@ -254,11 +254,11 @@ export default function FooterHome() {
                     style={{ width: "auto", height: "auto" }}
                   />
                   <p className="text-[14px] font-normal leading-[22px] tracking-[-0.14px] text-white">
-                    Dwarkesh Business Hub,
+                    209, Aamrakunj Business Centre,
                     <br />
-                    Motera, Ahmedabad,
+                    Near Panchelok, Chandkheda,
                     <br />
-                    Gujarat 380005
+                    Ahmedabad, Gujarat 382424
                   </p>
                 </motion.li>
 
