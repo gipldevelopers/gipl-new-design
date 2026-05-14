@@ -11,36 +11,42 @@ const teamMembers = [
     name: "Sanket Virani",
     role: "Chief Operation Officer",
     image: siteData.about.team.placeholder1,
+    linkedin: "https://www.linkedin.com/in/sanket9121/",
   },
   {
     id: 2,
     name: "Chandrakant Rathod",
     role: "Chief Technical Officer",
     image: siteData.about.team.placeholder2,
+    linkedin: "https://www.linkedin.com/in/chandrakant-rathod-47705336/",
   },
   {
     id: 3,
     name: "Jigar Chavada",
     role: "HR Head",
     image: siteData.about.team.placeholder3,
+    linkedin: "https://www.linkedin.com/in/jigar-chavada-891702369/",
   },
   {
     id: 4,
     name: "Aayush Solanki",
     role: "Technical Head",
     image: siteData.about.team.placeholder4,
+    linkedin: "https://www.linkedin.com/in/ayush-solanki-a3909625a/",
   },
   {
     id: 5,
     name: "Kinjal Pambhar",
     role: "Sales Head",
     image: siteData.about.team.placeholder5,
+    linkedin: "https://www.linkedin.com/in/kinjalpambhar",
   },
   {
     id: 6,
     name: "Vraj Darji",
     role: "Marketing Head",
     image: siteData.about.team.placeholder6,
+    linkedin: "https://www.linkedin.com/in/vraj-darji-61756b39b/",
   }
 
 ];
@@ -200,9 +206,18 @@ export default function AboutTeamBeliefsSection() {
                   />
                 </motion.div>
                 <div className="text-center md:text-left">
-                  <h3 className="mt-4 md:mt-[16px] text-[18px] md:text-[16px] font-[700] leading-tight text-[#1C232B]">
-                    {member.name}
-                  </h3>
+                  <div className="flex items-center justify-center md:justify-start gap-2 mt-4 md:mt-[16px]">
+                    <h3 className="text-[18px] md:text-[16px] font-[700] leading-tight text-[#1C232B]">
+                      {member.name}
+                    </h3>
+                    {member.linkedin && (
+                      <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="text-[#0A66C2] hover:opacity-80 transition-opacity" title={`Visit ${member.name}'s LinkedIn profile`}>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                          <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                        </svg>
+                      </a>
+                    )}
+                  </div>
                   <p className="mt-[4px] text-[11px] font-[600] leading-tight uppercase tracking-[1.5px] text-[#244EE4]">
                     {member.role}
                   </p>

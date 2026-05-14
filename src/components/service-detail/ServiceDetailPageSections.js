@@ -7,13 +7,16 @@ export default function ServiceDetailPageSections({ service }) {
   return (
     <>
       <ServiceDetailHeroSection service={service} />
-      <ServiceDetailWhyChooseSection 
-        items={service.whyChoose} 
-        serviceName={service.title} 
-        icons={service.whyChooseIcons} 
+      <ServiceDetailWhyChooseSection
+        items={service.whyChoose}
+        serviceName={service.title}
+        icons={service.whyChooseIcons}
       />
       <ServiceDetailProcessSection 
-        items={service.process} 
+        items={service.process.map((step, index) => ({
+          ...step,
+          icon: service.processIcons ? service.processIcons[`icon${index + 1}`] : undefined
+        }))} 
         subtitle={service.processSubtitle} 
       />
       <ServiceDetailServicesSection items={service.services} />

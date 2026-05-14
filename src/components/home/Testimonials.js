@@ -76,10 +76,10 @@ export default function Testimonials() {
         >
           <div className="max-w-[700px]">
             <h2 className="text-3xl md:text-[42px] font-bold text-[#1E293B] leading-tight tracking-tight">
-              What Our Clients Say About Us
+              What Our Clients Say
             </h2>
             <p className="mt-4 text-base md:text-[18px] text-[#475569] font-normal leading-relaxed">
-              Real feedback from businesses we&apos;ve helped grow with our IT solutions.
+              Feedback from businesses that trust us for software development, automation, and digital solutions.
             </p>
           </div>
           <div className="hidden md:flex gap-4">

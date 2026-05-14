@@ -7,7 +7,7 @@ export const serviceDetails = [
     description:
       "Build reliable software solutions designed for performance, scalability, and long-term business growth. From custom software development and enterprise applications to API integrations and cloud-based systems, we create technology that improves operations and supports modern businesses.",
     heroBg: siteData.serviceDetail.hero.softwareEngineering,
-    processSubtitle: "A systematic approach to deliver exceptional software results",
+    processSubtitle: "A streamlined process focused on building reliable, scalable, and high-performance digital solutions.",
     whyChooseIcons: siteData.serviceDetail.whyChoose.softwareIcons,
     collageImages: {
       leftBottom: siteData.serviceDetailCollage.collage.leftBottom,
@@ -50,34 +50,34 @@ export const serviceDetails = [
     ],
     process: [
       {
-        title: "Planning",
+        title: "Discovery",
         phase: "PHASE 01",
-        description: "Understanding your requirements",
+        description: "Requirement Analysis",
+      },
+      {
+        title: "Planning",
+        phase: "PHASE 02",
+        description: "Strategy Planning",
       },
       {
         title: "Development",
-        phase: "PHASE 02",
-        description: "Building your solution",
+        phase: "PHASE 03",
+        description: "Software Development",
       },
       {
         title: "Testing",
-        phase: "PHASE 03",
-        description: "Ensuring quality & performance",
+        phase: "PHASE 04",
+        description: "Quality Testing",
       },
       {
         title: "Deployment",
-        phase: "PHASE 04",
-        description: "Creating a detailed roadmap",
-      },
-      {
-        title: "Optimization",
         phase: "PHASE 05",
-        description: "Fine-tuning for peak performance",
+        description: "Product Deployment",
       },
       {
         title: "Support",
         phase: "PHASE 06",
-        description: "Continuous monitoring and help",
+        description: "Technical Maintenance",
       },
     ],
     services: [
@@ -121,7 +121,7 @@ export const serviceDetails = [
     description:
       "Create fast, scalable, and SEO-friendly websites tailored to your business goals. From corporate websites and custom web applications to responsive platforms and CMS development, we build web solutions that improve user experience and support digital growth.",
     heroBg: siteData.serviceDetail.hero.webDevelopment,
-    processSubtitle: "Our proven workflow for building high-performance websites",
+    processSubtitle: "A structured process focused on building scalable, high-performing, and user-friendly web solutions.",
     whyChooseIcons: siteData.serviceDetail.whyChoose.webIcons,
     collageImages: {
       leftBottom: siteData.serviceDetailCollage.collage.leftBottom,
@@ -166,32 +166,32 @@ export const serviceDetails = [
       {
         title: "Discovery",
         phase: "PHASE 01",
-        description: "Understanding your vision and requirements",
+        description: "Goal Analysis",
       },
       {
         title: "Design",
         phase: "PHASE 02",
-        description: "Creating wireframes and prototypes",
+        description: "Project Planning",
       },
       {
         title: "Development",
         phase: "PHASE 03",
-        description: "Building your web application",
+        description: "Website Development",
       },
       {
-        title: "Launch",
+        title: "Testing",
         phase: "PHASE 04",
-        description: "Deployment and ongoing support",
+        description: "Quality Testing",
       },
       {
-        title: "Optimization",
+        title: "Deployment",
         phase: "PHASE 05",
-        description: "Performance and SEO fine-tuning",
+        description: "Website Launch",
       },
       {
-        title: "Growth",
+        title: "Support",
         phase: "PHASE 06",
-        description: "Scaling and feature additions",
+        description: "Technical Support",
       },
     ],
     services: [
@@ -235,7 +235,7 @@ export const serviceDetails = [
     description:
       "Automate business operations and improve efficiency with AI-powered solutions tailored for modern businesses. From intelligent chatbots and workflow automation to machine learning systems and predictive analytics, we develop smart technologies that reduce manual work and support faster decision-making.",
     heroBg: siteData.serviceDetail.hero.aiAutomation,
-    processSubtitle: "Strategic AI implementation for business transformation",
+    processSubtitle: "A structured process focused on building scalable, intelligent, and business-ready AI solutions.",
     whyChooseIcons: siteData.serviceDetail.whyChoose.aiIcons,
     collageImages: {
       leftBottom: siteData.serviceDetailCollage.collage.leftBottom,
@@ -278,34 +278,34 @@ export const serviceDetails = [
     ],
     process: [
       {
-        title: "Assessment",
+        title: "Discovery",
         phase: "PHASE 01",
-        description: "Identifying automation opportunities",
+        description: "Process Analysis",
       },
       {
-        title: "Strategy",
+        title: "Planning",
         phase: "PHASE 02",
-        description: "Developing AI and automation strategy",
+        description: "Workflow Planning",
       },
       {
-        title: "Implementation",
+        title: "Development",
         phase: "PHASE 03",
-        description: "Building and deploying AI solutions",
+        description: "Model Development",
       },
       {
-        title: "Optimization",
+        title: "Testing",
         phase: "PHASE 04",
-        description: "Continuous monitoring and improvement",
+        description: "Accuracy Testing",
       },
       {
-        title: "Refinement",
+        title: "Deployment",
         phase: "PHASE 05",
-        description: "Improving model accuracy and speed",
+        description: "System Deployment",
       },
       {
-        title: "Scaling",
+        title: "Support",
         phase: "PHASE 06",
-        description: "Expanding automation across departments",
+        description: "Performance Monitoring",
       },
     ],
     services: [
@@ -349,7 +349,7 @@ export const serviceDetails = [
     description:
       "Transform raw data into actionable business intelligence. Our Data Solutions services help you collect, process, and analyze data to make informed decisions. From data warehousing to advanced analytics, we provide comprehensive solutions that unlock the value hidden in your data.",
     heroBg: siteData.serviceDetail.hero.dataSolutions,
-    processSubtitle: "Transforming raw data into actionable business intelligence",
+    processSubtitle: "A structured approach focused on building secure, scalable, and business-ready data systems.",
     whyChooseIcons: siteData.serviceDetail.whyChoose.dataIcons,
     collageImages: {
       leftBottom: siteData.serviceDetailCollage.collage.leftBottom,
@@ -463,7 +463,8 @@ export const serviceDetails = [
     description:
       "Grow your brand visibility, generate qualified leads, and increase conversions with result-driven digital marketing solutions. From SEO and social media marketing to paid advertising, content strategy, and marketing automation, we help businesses build a stronger digital presence and achieve measurable growth.",
     heroBg: siteData.serviceDetail.hero.digitalMarketing,
-    processSubtitle: "Data-driven marketing strategies for measurable growth",
+    processSubtitle: "A strategic approach focused on building high-performing digital marketing campaigns and sustainable business growth.",
+    processIcons: siteData.serviceDetail.digitalmarketingprocess,
     whyChooseIcons: siteData.serviceDetail.whyChoose.marketingIcons,
     collageImages: {
       leftBottom: siteData.serviceDetailCollage.collage.leftBottom,
@@ -578,6 +579,7 @@ export const serviceDetails = [
       "Create intuitive and visually engaging digital experiences designed to improve usability, customer engagement, and product performance. From UX research and wireframing to mobile app interfaces and design systems, we craft user-focused designs that combine functionality with modern aesthetics.",
     heroBg: siteData.serviceDetail.hero.uiUxDesign,
     processSubtitle: "A structured design workflow focused on creating intuitive, scalable, and user-friendly digital experiences.",
+    processIcons: siteData.serviceDetail.uiUxProcess,
     whyChooseIcons: siteData.serviceDetail.whyChoose.uiuxIcons,
     collageImages: {
       leftBottom: siteData.serviceDetailCollage.collage.leftBottom,

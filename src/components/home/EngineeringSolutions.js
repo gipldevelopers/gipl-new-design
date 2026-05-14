@@ -9,18 +9,22 @@ const solutions = [
   {
     title: "Customer Management",
     icon: siteData.home.engineering.customer,
+    description: "Manage customer data, track interactions, and improve retention with CRM systems built for your workflow.",
   },
   {
     title: "Sales Management",
     icon: siteData.home.engineering.sales,
+    description: "Track leads, manage pipelines, and improve conversions with structured sales management tools.",
   },
   {
     title: "Business Intelligence",
     icon: siteData.home.engineering.bi,
+    description: "Get clear insights with dashboards and reports that help you make better business decisions.",
   },
   {
     title: "Accounting Integration",
     icon: siteData.home.engineering.accounting,
+    description: "Connect your accounting systems to automate billing, tracking, and financial reporting.",
   },
 ];
 
@@ -115,7 +119,7 @@ export default function EngineeringSolutions() {
                 {solution.title}
               </h3>
               <p className="mt-3 text-[15px] text-[#475569] leading-relaxed">
-                Manage customer data, track interactions, and improve retention with CRM systems built for your workflow.
+                {solution.description}
               </p>
             </motion.article>
           ))}

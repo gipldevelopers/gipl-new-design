@@ -252,11 +252,11 @@ export default function Footer() {
                     style={{ width: "auto", height: "auto" }}
                   />
                   <p className="text-[16px] font-normal leading-[24px] tracking-[-0.14px] text-white">
-                    Aamrakunj Business Centre, 209, nr.
+                    Dwarkesh Business Hub,
                     <br />
-                    PANCHSHLOK RESIDENCY, Zundal,
+                    Motera, Ahmedabad,
                     <br />
-                    Ahmedabad, Gujarat 382424
+                    Gujarat 380005
                   </p>
                 </motion.li>
 
@@ -277,9 +277,12 @@ export default function Footer() {
                     className="h-[22px] w-[22px] shrink-0"
                     style={{ width: "auto", height: "auto" }}
                   />
-                  <p className="text-[16px] font-normal leading-[24px] tracking-[-0.14px] text-white">
+                  <a
+                    href="tel:+918866009512"
+                    className="text-[16px] font-normal leading-[24px] tracking-[-0.14px] text-white hover:text-[#11C7F4] transition-colors"
+                  >
                     +91 8866009512
-                  </p>
+                  </a>
                 </motion.li>
 
                 <motion.li
@@ -299,9 +302,12 @@ export default function Footer() {
                     className="h-[22px] w-[22px] shrink-0"
                     style={{ width: "auto", height: "auto" }}
                   />
-                  <p className="text-[16px] font-normal leading-[24px] tracking-[-0.14px] text-white">
+                  <a
+                    href="mailto:info@gohilinfotech.com"
+                    className="text-[16px] font-normal leading-[24px] tracking-[-0.14px] text-white hover:text-[#11C7F4] transition-colors"
+                  >
                     info@gohilinfotech.com
-                  </p>
+                  </a>
                 </motion.li>
               </ul>
             </motion.div>

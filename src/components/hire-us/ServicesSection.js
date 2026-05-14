@@ -20,7 +20,7 @@ export default function ServicesSection() {
               Our Services
             </h2>
             <p className="text-base md:text-[18px] font-[400] leading-relaxed md:leading-[1.7] text-[#64748B]">
-              Comprehensive technology solutions tailored to your unique business challenges.
+              Scalable technology solutions designed to solve business challenges and support digital growth across industries.
             </p>
           </div>
           <button className="bg-[#5B73F7] text-white px-6 md:px-[28px] py-3 md:py-[14px] rounded-full text-sm md:text-[16px] font-[600] flex items-center gap-[8px] hover:bg-[#4F6EF7] transition-all group shrink-0">
@@ -64,7 +64,7 @@ export default function ServicesSection() {
                 Custom Software Development
               </h3>
               <p className="text-sm md:text-[16px] font-[400] leading-relaxed md:leading-[1.6] text-white/80">
-                Tailored software systems built to improve workflows, automate operations, and support business scalability.
+                Tailored software systems built to improve workflows, <br />automate operations, and support business scalability.
               </p>
             </div>
           </motion.div>

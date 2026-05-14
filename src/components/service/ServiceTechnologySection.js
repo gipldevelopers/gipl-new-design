@@ -30,18 +30,16 @@ export default function ServiceTechnologySection() {
           transition={{ duration: 0.6 }}
           viewport={{ once: false }}
         >
-          The Core Modern Technologies for Better Results
+          Modern Technology Stack Built for Business Growth
         </motion.h2>
         <motion.p
-          className="mx-auto mt-4 md:mt-[16px] max-w-[680px] text-center text-base md:text-[18px] font-[400] leading-relaxed md:leading-[1.6] tracking-[-0.02em] text-[#4E5663]"
+          className="mx-auto mt-4 md:mt-[16px] max-w-[680px] text-center text-base md:text-[17px] font-[400] leading-relaxed md:leading-[1.6] tracking-[-0.02em] text-[#4E5663]"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
           viewport={{ once: false }}
         >
-          We don&apos;t just write code; we engineer value. Our services are
-          tailored to solve specific business bottlenecks through high-fidelity
-          technology.
+          We don’t just develop software; we build scalable digital solutions. Every system is designed to solve real business challenges using reliable, high-performance technologies.
         </motion.p>
 
         <motion.div

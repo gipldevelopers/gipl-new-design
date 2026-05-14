@@ -64,15 +64,15 @@ export default function CareerCultureSection() {
             viewport={{ once: false }}
           >
             <motion.h2
-              className="text-3xl xs:text-4xl md:text-[52px] font-[600] leading-tight md:leading-[1.2] tracking-tight md:tracking-[-2px] text-[#1E252B]"
+              className="text-3xl xs:text-4xl md:text-[50px] font-[600] leading-tight md:leading-[1.2] tracking-tight md:tracking-[-2px] text-[#1E252B]"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
               viewport={{ once: false }}
             >
-              GIPL Life:
+              Life at GIPL: Built Around
               <br className="hidden md:block" />
-              Concerning Our Culture
+              People & Culture
             </motion.h2>
 
             <motion.p
@@ -82,10 +82,7 @@ export default function CareerCultureSection() {
               transition={{ duration: 0.6, delay: 0.4 }}
               viewport={{ once: false }}
             >
-              We think that cooperation, respect, and trust are the cornerstones
-              of a successful workplace. Honest criticism, new ideas, and candid
-              discussions are all encouraged in our culture. Every voice counts
-              here, and we make sure everyone is respected and feels heard.
+              We believe strong teams are built on trust, collaboration, and mutual respect. Our culture encourages open communication, creative thinking, and continuous improvement where every individual contribution matters.
             </motion.p>
 
             <motion.p
@@ -95,9 +92,7 @@ export default function CareerCultureSection() {
               transition={{ duration: 0.6, delay: 0.5 }}
               viewport={{ once: false }}
             >
-              We believe in sustainable growth and continuous learning. Our
-              environment is designed to foster innovation while maintaining a
-              healthy work-life balance for all our team members.
+              We focus on long-term growth, continuous learning, and maintaining a balanced work environment that supports both professional and personal development.
             </motion.p>
           </motion.div>
         </motion.div>

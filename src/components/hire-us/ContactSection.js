@@ -120,8 +120,12 @@ export default function ContactSection() {
                   <div>
                     <div className="text-base md:text-[16px] font-[600] mb-1 md:mb-[4px]">Office Location</div>
                     <div className="text-sm md:text-[14px] text-white/60 leading-relaxed md:leading-[1.5]">
-                      209, Aamrakunj Business Centre, Near Panchelok,<br className="hidden md:block" />
-                      Chandkheda Ahmedabad, Gujarat, India 382424
+                      Dwarkesh Business Hub
+
+                      Motera, Ahmedabad
+
+                      Gujarat, India - 380005<br className="hidden md:block" />
+
                     </div>
                   </div>
                 </motion.div>

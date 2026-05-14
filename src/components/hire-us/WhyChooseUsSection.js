@@ -5,30 +5,30 @@ import { motion } from "framer-motion";
 const reasons = [
   {
     number: "01",
-    title: "Business-First Approach",
+    title: "Business-Focused Solutions",
     description: [
-      "We understand your business model and build software that actually supports your operations.",
+      "We understand business workflows and build practical software solutions designed for daily operations.",
     ],
   },
   {
     number: "02",
     title: "Cost-Effective Development",
     description: [
-      "Get high-quality software solutions that fit your budget without compromising performance.",
+      "Get scalable technology solutions optimized for performance, efficiency, and long-term value.",
     ],
   },
   {
     number: "03",
-    title: "Fully Custom Solutions",
+    title: "Fully Customized Systems",
     description: [
-      "Every system is built from scratch based on your exact business requirements.",
+      "Every platform is designed around your processes, workflows, and business requirements.",
     ],
   },
   {
     number: "04",
-    title: "Ongoing Support",
+    title: "Dedicated Technical Support",
     description: [
-      "We provide continuous support, updates, and improvements as your business grows..",
+      "Our team provides continuous support, maintenance, and technical guidance whenever needed.",
     ],
   },
 ];

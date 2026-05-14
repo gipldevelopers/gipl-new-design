@@ -42,7 +42,7 @@ export default function HeroSection() {
             transition={{ duration: 0.6, delay: 0.4 }}
             viewport={{ once: false }}
           >
-            at GIPL
+            at GIPL <br></br>
             Work with experienced developers, designers, and technology specialists focused on building scalable digital products and business-driven solutions from strategy to deployment.
           </motion.p>
         </motion.div>

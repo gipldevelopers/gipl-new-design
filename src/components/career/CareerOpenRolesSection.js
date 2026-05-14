@@ -87,13 +87,13 @@ export default function CareerOpenRolesSection() {
               Open Roles
             </motion.h2>
             <motion.p
-              className="mt-4 md:mt-[16px] text-base md:text-[20px] font-[400] leading-relaxed md:leading-[1.5] tracking-tight md:tracking-[-0.3px] text-[#374151]"
+              className="mt-4 md:mt-[16px] text-base md:text-[18px] font-[400] leading-relaxed md:leading-[1.5] tracking-tight md:tracking-[-0.3px] text-[#374151]"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
               viewport={{ once: false }}
             >
-              Help us shape the next generation of curated experiences.
+              Join our team and help build impactful digital experiences, scalable software products, and <br /> modern technology solutions.
             </motion.p>
           </motion.div>
 

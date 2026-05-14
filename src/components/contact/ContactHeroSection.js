@@ -9,9 +9,9 @@ const contactDetails = [
     title: "Our Office Location",
     icon: siteData.contact.hero.locationIcon,
     lines: [
-      "209, Aamrakunj Business Centre",
-      "Near Panchshlok, Chandkheda",
-      "Ahmedabad, Gujarat, India - 382424",
+      "Dwarkesh Business Hub",
+      "Motera, Ahmedabad",
+      "Gujarat, India - 380005",
     ],
   },
   {
@@ -70,8 +70,7 @@ export default function ContactHeroSection() {
             transition={{ duration: 0.6, delay: 0.3 }}
             viewport={{ once: false }}
           >
-            We&apos;d love to hear from you! Whether you have a project idea, a
-            question, or just want to say hello, our team is ready to connect.
+            Have a project in mind or looking for the right technology partner? Let’s connect and discuss how we can build software solutions that support your business growth.
           </motion.p>
         </motion.div>
 
@@ -113,19 +112,39 @@ export default function ContactHeroSection() {
                   {detail.title}
                 </h2>
                 <div className="mt-2 md:mt-[10px] space-y-1 md:space-y-[4px] text-center md:text-left">
-                  {detail.lines.map((line, lineIndex) => (
-                    <motion.p
-                      key={line}
-                      className={`text-sm md:text-[15px] font-[400] leading-relaxed md:leading-[1.6] text-[#475569] ${detail.title === "Email" ? "underline text-[#4F6EF7]" : ""
-                        }`}
-                      initial={{ opacity: 0 }}
-                      whileInView={{ opacity: 1 }}
-                      transition={{ duration: 0.4, delay: 0.4 + index * 0.1 + lineIndex * 0.05 }}
-                      viewport={{ once: false }}
-                    >
-                      {line}
-                    </motion.p>
-                  ))}
+                  {detail.lines.map((line, lineIndex) => {
+                    const isPhone = detail.title === "Phone";
+                    const isEmail = detail.title === "Email";
+
+                    if (isPhone || isEmail) {
+                      return (
+                        <motion.a
+                          key={line}
+                          href={isPhone ? `tel:${line.replace(/\s+/g, '')}` : `mailto:${line}`}
+                          className={`block text-sm md:text-[15px] font-[400] leading-relaxed md:leading-[1.6] text-[#475569] hover:text-[#4F6EF7] transition-colors ${isEmail ? "underline text-[#4F6EF7]" : ""}`}
+                          initial={{ opacity: 0 }}
+                          whileInView={{ opacity: 1 }}
+                          transition={{ duration: 0.4, delay: 0.4 + index * 0.1 + lineIndex * 0.05 }}
+                          viewport={{ once: false }}
+                        >
+                          {line}
+                        </motion.a>
+                      );
+                    }
+
+                    return (
+                      <motion.p
+                        key={line}
+                        className="text-sm md:text-[15px] font-[400] leading-relaxed md:leading-[1.6] text-[#475569]"
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        transition={{ duration: 0.4, delay: 0.4 + index * 0.1 + lineIndex * 0.05 }}
+                        viewport={{ once: false }}
+                      >
+                        {line}
+                      </motion.p>
+                    );
+                  })}
                 </div>
               </motion.div>
             ))}

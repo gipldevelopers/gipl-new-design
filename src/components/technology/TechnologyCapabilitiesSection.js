@@ -26,117 +26,161 @@ const tabContent = {
       "Security-First Approach",
     ],
     technologies: ["React", "Node.js", "Next.js", "Python", "AWS"],
+    processSteps: [
+      { number: "1", title: "Phase 1", description: "Requirements Analysis" },
+      { number: "2", title: "Phase 2", description: "Design & Prototyping" },
+      { number: "3", title: "Phase 3", description: "Development & Testing" },
+      { number: "4", title: "Phase 4", description: "Deployment & Maintenance" },
+    ],
   },
   "mobile-app-development": {
     title: "Mobile App Development",
     description:
-      "Create powerful mobile applications for iOS and Android platforms using native and cross-platform technologies.",
+      "Crafting intuitive and feature-rich mobile applications for iOS and Android platforms to deliver seamless user experiences.",
     keyFeatures: [
-      "Native Performance",
-      "Cross-Platform Support",
-      "User-Centric Design",
-      "App Store Optimization",
+      "Cross-Platform Apps",
+      "Native Development",
+      "Custom UI/UX",
+      "Scalable Architecture",
     ],
     technologies: ["React Native", "Flutter", "Swift", "Kotlin", "Firebase"],
+    processSteps: [
+      { number: "1", title: "Phase 1", description: "Market Research" },
+      { number: "2", title: "Phase 2", description: "UX/UI Design" },
+      { number: "3", title: "Phase 3", description: "Development & Testing" },
+      { number: "4", title: "Phase 4", description: "App Store Deployment" },
+    ],
   },
   devops: {
     title: "DevOps",
     description:
-      "Streamline your development and operations with modern DevOps practices and tools for continuous integration and deployment.",
+      "Streamlining software delivery processes by integrating development and operations to ensure faster, more reliable releases.",
     keyFeatures: [
       "CI/CD Pipelines",
       "Infrastructure Automation",
+      "Cloud Integration",
       "Monitoring & Logging",
-      "Container Orchestration",
     ],
-    technologies: ["Docker", "Kubernetes", "Jenkins", "GitLab CI", "Terraform"],
+    technologies: ["Docker", "Kubernetes", "Jenkins", "GitLab", "Terraform"],
+    processSteps: [
+      { number: "1", title: "Phase 1", description: "Workflow Assessment" },
+      { number: "2", title: "Phase 2", description: "Tooling Selection" },
+      { number: "3", title: "Phase 3", description: "Pipeline Implementation" },
+      { number: "4", title: "Phase 4", description: "Ongoing Optimization" },
+    ],
   },
   "cloud-solutions": {
     title: "Cloud Solutions",
     description:
-      "Migrate to the cloud and unlock scalability, reliability, and cost efficiency with our comprehensive cloud services.",
+      "Migrating and managing business operations on the cloud for enhanced scalability, security, and cost-efficiency.",
     keyFeatures: [
       "Cloud Migration",
-      "Infrastructure Management",
-      "Cost Optimization",
-      "Security & Compliance",
+      "IaaS",
+      "PaaS",
+      "Cloud Security",
     ],
-    technologies: ["AWS", "Azure", "Google Cloud", "Kubernetes", "Terraform"],
+    technologies: ["AWS", "Google Cloud Platform (GCP)", "Microsoft Azure", "Docker", "Heroku"],
+    processSteps: [
+      { number: "1", title: "Phase 1", description: "Assessment" },
+      { number: "2", title: "Phase 2", description: "Architecture Design" },
+      { number: "3", title: "Phase 3", description: "Migration & Implementation" },
+      { number: "4", title: "Phase 4", description: "Monitoring & Support" },
+    ],
   },
   platforms: {
     title: "Platforms",
     description:
-      "Build scalable platform solutions that connect users, services, and data in powerful ways.",
+      "Designing and developing robust digital platforms that serve as a foundation for marketplaces, e-commerce, and other scalable solutions.",
     keyFeatures: [
-      "Microservices Architecture",
-      "API-First Design",
-      "Scalability",
-      "Multi-Tenancy Support",
+      "Custom Platform",
+      "Multi-Vendor",
+      "E-commerce Solutions",
+      "API Integration",
     ],
-    technologies: ["Node.js", "Python", "Java", "PostgreSQL", "Redis"],
+    technologies: ["WordPress", "Shopify", "Magento", "Ruby on Rails", "Django"],
+    processSteps: [
+      { number: "1", title: "Phase 1", description: "Concept & Strategy" },
+      { number: "2", title: "Phase 2", description: "Architectural Design" },
+      { number: "3", title: "Phase 3", description: "Platform Development" },
+      { number: "4", title: "Phase 4", description: "Launch & Evolution" },
+    ],
   },
   database: {
     title: "Database",
     description:
-      "Design and manage robust database solutions optimized for performance, reliability, and scalability.",
+      "Implementing and managing high-performance database systems to ensure data integrity, security, and efficient retrieval for all applications.",
     keyFeatures: [
-      "Data Optimization",
-      "High Availability",
-      "Backup & Recovery",
-      "Query Performance",
+      "Database Design",
+      "Data Migration",
+      "Performance Tuning",
+      "Disaster Recovery",
     ],
-    technologies: ["PostgreSQL", "MongoDB", "MySQL", "Redis", "Elasticsearch"],
+    technologies: ["MySQL", "PostgreSQL", "MongoDB", "Microsoft SQL Server", "Redis"],
+    processSteps: [
+      { number: "1", title: "Phase 1", description: "Requirements Gathering" },
+      { number: "2", title: "Phase 2", description: "Data Modeling" },
+      { number: "3", title: "Phase 3", description: "Implementation" },
+      { number: "4", title: "Phase 4", description: "Maintenance & Optimization" },
+    ],
   },
   "big-data": {
     title: "Big Data",
     description:
-      "Process and analyze massive datasets to unlock valuable insights and drive data-driven decision making.",
+      "Harnessing the power of large datasets to uncover insights and drive business decisions through advanced analytics and data processing.",
     keyFeatures: [
-      "Data Processing",
-      "Real-time Analytics",
-      "Data Visualization",
-      "Predictive Analytics",
+      "Data Warehousing",
+      "Data Lake",
+      "ETL Pipelines",
+      "Real-Time Analytics",
     ],
     technologies: ["Hadoop", "Spark", "Kafka", "Hive", "Tableau"],
+    processSteps: [
+      { number: "1", title: "Phase 1", description: "Data Strategy" },
+      { number: "2", title: "Phase 2", description: "Data Engineering" },
+      { number: "3", title: "Phase 3", description: "Data Analysis" },
+      { number: "4", title: "Phase 4", description: "Insight Delivery" },
+    ],
   },
   "machine-learning": {
     title: "Machine Learning",
     description:
-      "Leverage artificial intelligence and machine learning to build intelligent systems that learn and improve over time.",
+      "Developing intelligent systems that learn from data to automate tasks, predict outcomes, and enhance business processes.",
     keyFeatures: [
-      "Model Development",
-      "Data Science",
-      "Neural Networks",
-      "Predictive Models",
+      "Predictive Modeling",
+      "Natural Language Processing",
+      "Computer Vision",
+      "Recommendation Engines",
     ],
-    technologies: ["Python", "TensorFlow", "PyTorch", "Scikit-learn", "Pandas"],
+    technologies: ["Python", "TensorFlow", "PyTorch", "Scikit-learn", "R"],
+    processSteps: [
+      { number: "1", title: "Phase 1", description: "Problem Definition" },
+      { number: "2", title: "Phase 2", description: "Data Preparation" },
+      { number: "3", title: "Phase 3", description: "Model Development" },
+      { number: "4", title: "Phase 4", description: "Deployment & Monitoring" },
+    ],
   },
 };
 
 const processSteps = [
   {
-    number: "01",
-    title: "Requirements Analysis",
-    description:
-      "Understand business goals and define scope, MVP, UX flow to finalize vision.",
+    number: "1",
+    title: "Phase 1",
+    description: "Requirements Analysis",
   },
   {
-    number: "02",
-    title: "Design & Prototyping",
-    description:
-      "Creating high-fidelity prototypes and interface designs.",
+    number: "2",
+    title: "Phase 2",
+    description: "Design & Prototyping",
   },
   {
-    number: "03",
-    title: "Development & Testing",
-    description:
-      "Build scalable systems with continuous feedback loops.",
+    number: "3",
+    title: "Phase 3",
+    description: "Development & Testing",
   },
   {
-    number: "04",
-    title: "Deployment & Maintenance",
-    description:
-      "Launch your app services with continuous monitoring.",
+    number: "4",
+    title: "Phase 4",
+    description: "Deployment & Maintenance",
   },
 ];
 
@@ -264,7 +308,7 @@ export default function TechnologyCapabilitiesSection() {
               whileHover={{ y: -2, boxShadow: "0 4px 12px rgba(0,0,0,0.1)" }}
             >
               <div className="relative flex flex-col gap-6 md:gap-[32px] pl-10 md:pl-[60px]">
-                {processSteps.map((step, index) => (
+                {(content.processSteps || processSteps).map((step, index, arr) => (
                   <motion.div
                     key={step.number}
                     className="relative"
@@ -274,7 +318,7 @@ export default function TechnologyCapabilitiesSection() {
                     viewport={{ once: false }}
                   >
                     {/* Vertical line connector */}
-                    {index < processSteps.length - 1 && (
+                    {index < arr.length - 1 && (
                       <div className="absolute left-[-24px] md:left-[-37px] top-[40px] md:top-[48px] h-[36px] md:h-[64px] w-[2px] bg-[#3D7BFF]" />
                     )}
 

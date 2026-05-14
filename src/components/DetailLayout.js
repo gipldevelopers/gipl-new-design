@@ -155,9 +155,11 @@ export default function DetailLayout({
                     transition={{ duration: 0.6, delay: sectionIndex * 0.1 + 0.3 }}
                     viewport={{ once: false }}
                   >
-                    <h2 className="text-xl md:text-[26px] font-[700] leading-tight md:leading-[1.3] tracking-[-0.02em] text-[#1F2937]">
-                      {section.heading}
-                    </h2>
+                    {section.heading && (
+                      <h2 className="text-xl md:text-[26px] font-[700] leading-tight md:leading-[1.3] tracking-[-0.02em] text-[#1F2937]">
+                        {section.heading}
+                      </h2>
+                    )}
                     <div className="mt-4 md:mt-[16px] space-y-3 md:space-y-[14px]">
                       {(section.paragraphs || []).map((paragraph, index) => (
                         <motion.p
@@ -177,6 +179,28 @@ export default function DetailLayout({
               );
             }
 
+            if (section.type === "fullImage") {
+              return (
+                <motion.div
+                  key={`fullImage-${sectionIndex}`}
+                  className="w-full relative h-[300px] md:h-[500px] rounded-[16px] overflow-hidden my-8 md:my-[40px]"
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.6, delay: sectionIndex * 0.1 }}
+                  viewport={{ once: false }}
+                >
+                  <Image
+                    src={section.image}
+                    alt={section.imageAlt || "Full width image"}
+                    fill
+                    sizes="100vw"
+                    unoptimized={true}
+                    className="object-cover"
+                  />
+                </motion.div>
+              );
+            }
+
             return (
               <motion.div
                 key={section.heading}
@@ -186,15 +210,17 @@ export default function DetailLayout({
                 transition={{ duration: 0.6, delay: sectionIndex * 0.1 }}
                 viewport={{ once: false }}
               >
-                <motion.h2
-                  className="text-xl md:text-[28px] font-[700] leading-tight md:leading-[1.3] tracking-[-0.02em] text-[#1F2937]"
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: sectionIndex * 0.1 + 0.1 }}
-                  viewport={{ once: false }}
-                >
-                  {section.heading}
-                </motion.h2>
+                {section.heading && (
+                  <motion.h2
+                    className="text-xl md:text-[28px] font-[700] leading-tight md:leading-[1.3] tracking-[-0.02em] text-[#1F2937]"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, delay: sectionIndex * 0.1 + 0.1 }}
+                    viewport={{ once: false }}
+                  >
+                    {section.heading}
+                  </motion.h2>
+                )}
                 <div className="mt-4 md:mt-[16px] space-y-3 md:space-y-[14px]">
                   {(section.paragraphs || []).map((paragraph, index) => (
                     <motion.p

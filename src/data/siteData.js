@@ -326,6 +326,22 @@ export const siteData = {
       icon4: "https://cloud.gvoice.app/view.php?token=d8f99dd1bbdf8ba90888e0c48a74fb97567d0fc5bf755a4066aab22022a0173f",
       icon5: "https://cloud.gvoice.app/view.php?token=7ef94c83a8ba33d6b77f1334a5fe6de92a30b446cc9ab9118f3e5e0f84966e6d",
       icon6: "https://cloud.gvoice.app/view.php?token=59f197b361d4cce8f70780225850455a02d7d5467070046c9e7c93ddb7e4c98a",
+    },
+    uiUxProcess: {
+      icon1: "https://cloud.gvoice.app/view.php?token=f989d49020afc444b810130bf9fa18aa34ec641529ccb955f245c9960c1dc812",
+      icon2: "https://cloud.gvoice.app/view.php?token=b4fa303c35a65738e5a10ec9a7e2567a40a2fc848d4405069b668b7804f38468",
+      icon3: "https://cloud.gvoice.app/view.php?token=bdd8800f2bb044807678ea4b10373ce817723197c2cf53d6ecdc40b124fd693f",
+      icon4: "https://cloud.gvoice.app/view.php?token=67b10079131cda15eac71628c45fc81ea022264486ece7ec72671a6450b55481",
+      icon5: "https://cloud.gvoice.app/view.php?token=7ef94c83a8ba33d6b77f1334a5fe6de92a30b446cc9ab9118f3e5e0f84966e6d",
+      icon6: "https://cloud.gvoice.app/view.php?token=28b3054a92b4ceaeb5b50700f5d4662a9aa607fbadd49cff6a216d80cd97e4ca",
+    },
+    digitalmarketingprocess: {
+      icon1: "https://cloud.gvoice.app/view.php?token=f989d49020afc444b810130bf9fa18aa34ec641529ccb955f245c9960c1dc812",
+      icon2: "https://cloud.gvoice.app/view.php?token=65ac6f7518514f2bd152b75494295acbed201427b5338e7e7da4fffc9a4740dc",
+      icon3: "https://cloud.gvoice.app/view.php?token=70a2030af5dfebf17d1dd507869a22254fb691b4f49523817bc28f5cc9cd0352",
+      icon4: "https://cloud.gvoice.app/view.php?token=31899d1e3bd041cc2abbf33f40c7703d9b1c2f74512d7a55b333802e63b06470",
+      icon5: "https://cloud.gvoice.app/view.php?token=029dc502aff4436b8b5542297f44440689b0f2acd9ce08ff3f550fe31ac54445",
+      icon6: "https://cloud.gvoice.app/view.php?token=8669005ec29afe33336c2d907c9f3027f708cf5cddd2a5ed984906109248ec0a"
     }
   },
 
@@ -443,25 +459,22 @@ export const siteData = {
   blogDetails: {
     posts: {
       mobileApp2026: {
-        main: "https://www.gohilinfotech.com/_next/image?url=%2Fblog-assets%2Fmobile-app-2026.jpg&w=1200&q=75",
-        detail: "https://www.gohilinfotech.com/_next/image?url=%2Fblog-assets%2Fmobile-app-2026.jpg&w=1200&q=75",
+        main: "https://gipl-site.gohilinfotech.com/uploads/feat_69df60bb12657.jpeg",
+        detail: "https://gipl-site.gohilinfotech.com/uploads/69df602032c54.jpeg",
       },
       aiRevolution: {
-        main: "https://www.gohilinfotech.com/_next/image?url=%2Fblog-assets%2Fai-revolution.jpg&w=1200&q=75",
-        detail: "https://www.gohilinfotech.com/_next/image?url=%2Fblog-assets%2Fai-revolution.jpg&w=1200&q=75",
+        main: "https://gipl-site.gohilinfotech.com/uploads/feat_69412bc5c98af.jpg",
+        detail: "https://gipl-site.gohilinfotech.com/uploads/feat_69412bc5c98af.jpg",
       },
       lowCode: {
-        main: "https://www.gohilinfotech.com/_next/image?url=%2Fblog-assets%2Flow-code-vs-full-code.jpg&w=1200&q=75",
-        detail: "https://www.gohilinfotech.com/_next/image?url=%2Fblog-assets%2Flow-code-vs-full-code.jpg&w=1200&q=75",
+        main: "https://gipl-site.gohilinfotech.com/uploads/feat_69413768ebb9f.jpeg",
+        detail: "https://gipl-site.gohilinfotech.com/uploads/feat_69413768ebb9f.jpeg",
       },
       retailApp: {
-        main: "https://www.gohilinfotech.com/_next/image?url=%2Fblog-assets%2Fretail-mobile-app.jpg&w=1200&q=75",
-        detail: "https://www.gohilinfotech.com/_next/image?url=%2Fblog-assets%2Fretail-mobile-app.jpg&w=1200&q=75",
-      },
-      businessConnect: {
-        main: "https://www.gohilinfotech.com/_next/image?url=%2Fblog-assets%2Fbusiness-connect-feature.jpg&w=1200&q=75",
-        detail: "https://www.gohilinfotech.com/_next/image?url=%2Fblog-assets%2Fbusiness-connect-feature.jpg&w=1200&q=75",
+        main: "https://gipl-site.gohilinfotech.com/uploads/feat_694140e526ef9.jpeg",
+        detail: "https://gipl-site.gohilinfotech.com/uploads/feat_694140e526ef9.jpeg",
       }
+
     }
   },
 

@@ -26,11 +26,9 @@ export default function CareerHeroSection() {
               transition={{ duration: 0.6, delay: 0.2 }}
               viewport={{ once: false }}
             >
-              Gohil Infotech will
+              Build Your Future
               <br className="hidden md:block" />
-              help you shape your
-              <br className="hidden md:block" />
-              future
+              with Gohil Infotech
             </motion.h1>
 
             <motion.p
@@ -40,9 +38,7 @@ export default function CareerHeroSection() {
               transition={{ duration: 0.6, delay: 0.3 }}
               viewport={{ once: false }}
             >
-              Our group of builders, thinkers, and problem solvers takes
-              pleasure in producing significant digital solutions. Here your
-              work matters and your development is handled seriously.
+              Join a team of creators, developers, and problem solvers building meaningful digital products. At Gohil Infotech, your ideas matter, your growth is supported, and your work creates real impact.
             </motion.p>
 
             <motion.div

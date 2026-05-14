@@ -53,7 +53,7 @@ export default function PartnerSection() {
             viewport={{ once: false }}
           >
             <p className="text-[13px] md:text-[14px] font-bold uppercase tracking-[0.15em] text-[#2F3AA8] mb-6">
-              SMART IT SOLUTIONS FOR GROWING BUSINESSES
+              Smart Technology for Scaling Businesses
             </p>
 
             <h2 className="text-3xl md:text-[45px] font-bold leading-[1.1] tracking-tight text-[#1E293B]">

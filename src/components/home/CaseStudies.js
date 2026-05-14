@@ -71,13 +71,13 @@ export default function CaseStudies() {
           viewport={{ once: false }}
         >
           <motion.h2
-            className="text-3xl md:text-[42px] font-bold leading-[1.2] tracking-tight text-[#1E293B]"
+            className="text-3xl md:text-[40px] font-bold leading-[1.2] tracking-tight text-[#1E293B]"
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
             viewport={{ once: false }}
           >
-            Exploring Case Studies
+            From Challenge to Victory: Exploring Case Studies of <br />Innovation and Excellence
           </motion.h2>
 
           <motion.div

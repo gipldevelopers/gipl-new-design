@@ -14,9 +14,9 @@ const categories = [
   {
     slug: "all",
     label: "All",
-    title: "Insights & Ideas",
+    title: "Insights, Trends & Digital Perspectives",
     subtitle: "MEDIA",
-    description: "Updated articles, how-tos and deep dives on design, development and product thinking.",
+    description: "Explore expert insights, practical guides, and industry updates on software development, digital strategy, design systems, and modern technology solutions.",
     heroImage: siteData.blog.heroAll
   },
   {
@@ -50,14 +50,14 @@ export default function BlogListingPage() {
   const currentCategory = categories.find(cat => cat.slug === activeCategory) || categories[0];
 
   // Filter blog posts based on active category
-  const filteredPosts = activeCategory === "all" 
-    ? blogPosts 
+  const filteredPosts = activeCategory === "all"
+    ? blogPosts
     : blogPosts.filter(post => post.category.toUpperCase().includes(activeCategory.toUpperCase()) || post.slug.includes(activeCategory));
 
   // Dynamic featured content based on selected category
   const getFeaturedContent = () => {
     const featured = filteredPosts[0] || blogPosts[0];
-    
+
     return {
       slug: featured.slug,
       image: featured.image,
@@ -201,7 +201,7 @@ export default function BlogListingPage() {
 
           {/* Grid */}
           <div className="mt-10 md:mt-[48px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-[24px]">
-            {filteredPosts.map((post, index) => (
+            {filteredPosts.slice(1).map((post, index) => (
               <motion.div
                 key={`${post.slug}-${index}`}
                 className="h-full"

@@ -7,33 +7,33 @@ import { siteData } from "@/data/siteData";
 const benefitCards = [
   {
     icon: siteData.career.benefits.career1,
-    title: "Development of Professionals",
-    copy: "Through ongoing instruction, hands-on courses, and certifications, we make an investment in your education. You'll have the chance to hone your abilities and keep up with emerging technologies.",
+    title: "Professional Growth & Learning",
+    copy: "We support continuous learning through practical training, mentorship, certifications, and exposure to modern technologies.",
   },
   {
     icon: siteData.career.benefits.career2,
-    title: "An Environment Focused on Growth",
-    copy: "Through ongoing instruction, hands-on courses, and certifications, we make an investment in your education. You'll have the chance to hone your abilities and keep up with emerging technologies.",
+    title: "Growth-Driven Environment",
+    copy: "Our culture encourages innovation, skill development, and career growth through real-world project experience.",
   },
   {
     icon: siteData.career.benefits.internet,
-    title: "Global Exposure",
-    copy: "Work on projects for a diverse client base and collaborate with teams and partners from around the world. Gain invaluable experience in a global business landscape.",
+    title: "Global Project Exposure",
+    copy: "Work on diverse projects and collaborate with businesses, teams, and clients across multiple industries and regions.",
   },
   {
     icon: siteData.career.benefits.internet,
-    title: "Worldwide Exposure",
-    copy: "Work on projects for customers in various sectors and geographical areas. Gain practical experience in a global workplace by working with teams and partners throughout the globe.",
+    title: "Industry-Wide Experience",
+    copy: "Gain hands-on experience across different sectors while working on scalable digital products and business solutions.",
   },
   {
     icon: siteData.career.benefits.career5,
-    title: "Cooperation Team",
-    copy: "The foundation of our work is teamwork. We support one another, exchange ideas, and think that teamwork yields the finest outcomes.",
+    title: "Collaborative Team Culture",
+    copy: "We believe strong teamwork, open communication, and shared ideas lead to better innovation and stronger outcomes.",
   },
   {
     icon: siteData.career.benefits.career6,
-    title: "Self-determination and Empowerment",
-    copy: "We have faith in our people. With the backing of a helpful team, you will be able to take responsibility for your work, make decisions, and confidently lead your tasks.",
+    title: "Ownership & Empowerment",
+    copy: "Take ownership of your work, contribute ideas confidently, and grow within a supportive and collaborative environment.",
   },
 ];
 
@@ -55,7 +55,7 @@ function BenefitCard({ icon, title, copy, index }) {
           <h3 className="text-[20px] font-[600] leading-[1.2] tracking-[-0.4px] text-[#1E252B] mb-[10px]">
             {title}
           </h3>
-          <p className="text-[15px] leading-[1.6] tracking-[-0.2px] text-[#4E565C] font-[400]">
+          <p className="text-[16px] leading-[1.6] tracking-[-0.2px] text-[#4E565C] font-[400]">
             {copy}
           </p>
         </div>
@@ -88,14 +88,13 @@ export default function CareerBenefitsSection() {
               Working At GIPL
             </motion.h2>
             <motion.p
-              className="mt-4 md:mt-[20px] text-base md:text-[18px] leading-relaxed md:leading-[1.6] tracking-tight md:tracking-[-0.3px] text-[#4E565C] font-[400]"
+              className="mt-4 md:mt-[px] text-base md:text-[18px] leading-relaxed md:leading-[1.6] tracking-tight md:tracking-[-0.3px] text-[#4E565C] font-[400]"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
               viewport={{ once: false }}
             >
-              We take care of our people so they can take
-              care of the world&apos;s biggest challenges.
+              We create an environment where talented people can grow, innovate, and contribute to meaningful technology solutions that solve real business challenges.
             </motion.p>
 
             <motion.div

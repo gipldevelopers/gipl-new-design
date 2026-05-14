@@ -51,7 +51,7 @@ export default function ServiceDetailProcessSection({ items, subtitle }) {
               transition={{ duration: 1, delay: 0.5 }}
               viewport={{ once: false }}
             />
-            
+
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-y-10 gap-x-4 md:gap-x-6">
               {items.map((item, index) => (
                 <motion.div
@@ -67,7 +67,7 @@ export default function ServiceDetailProcessSection({ items, subtitle }) {
                     whileHover={{ scale: 1.1 }}
                   >
                     <Image
-                      src={siteData.serviceDetail.process[`icon${index + 1}`] || siteData.serviceDetail.process.icon1}
+                      src={item.icon || siteData.serviceDetail.process[`icon${index + 1}`] || siteData.serviceDetail.process.icon1}
                       alt={item.title}
                       width={24}
                       height={24}
