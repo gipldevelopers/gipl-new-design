@@ -6,6 +6,8 @@ import { useState, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 import { siteData } from "@/data/siteData";
 
+import { API_ENDPOINTS, apiCall } from "@/config/api";
+
 export default function ContactFormSection() {
   const searchParams = useSearchParams();
   const [positionParam, setPositionParam] = useState("");
@@ -46,12 +48,8 @@ export default function ContactFormSection() {
     setSubmitStatus(null);
 
     try {
-      // You can replace this with your actual API endpoint
-      const response = await fetch("/api/contact", {
+      const response = await apiCall(API_ENDPOINTS.NEXT_CONTACT, {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
         body: JSON.stringify(formData),
       });
 
@@ -76,6 +74,7 @@ export default function ContactFormSection() {
       setIsSubmitting(false);
     }
   };
+
 
   return (
     <section className="w-full min-h-screen flex items-center bg-[#F2F4F8] py-12 md:py-[72px]">
