@@ -53,16 +53,16 @@ export default function PartnerSection() {
             viewport={{ once: false }}
           >
             <p className="text-[13px] md:text-[14px] font-bold uppercase tracking-[0.15em] text-[#2F3AA8] mb-6">
-              SMART IT SOLUTIONS FOR GROWING BUSINESSES
+              Smart Technology for Scaling Businesses
             </p>
 
-            <h2 className="text-3xl md:text-[52px] font-bold leading-[1.1] tracking-tight text-[#1E293B]">
-              Your Trusted IT Development<br />
+            <h2 className="text-3xl md:text-[45px] font-bold leading-[1.1] tracking-tight text-[#1E293B]">
+              Your Reliable Software Development <br />
               Partner <span className="text-[#2F5AB0]">in Ahmedabad</span>
             </h2>
 
             <p className="mt-8 text-base md:text-[19px] font-normal leading-relaxed text-[#475569] max-w-[650px]">
-              We help local businesses and companies worldwide grow with reliable IT solutions. From custom software to mobile apps, we build technology that works for your business. Based in Ahmedabad, we understand what Gujarat businesses need to succeed.
+              We work with startups and growing companies to build custom software, web platforms, and mobile apps that solve real business problems. Based in Ahmedabad, we understand how local and global businesses operate and scale.
             </p>
 
             <motion.div

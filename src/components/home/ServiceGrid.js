@@ -9,26 +9,21 @@ const miniServices = [
   {
     title: "Mobile App Development",
     description: [
-      "Robust blueprinting for microservices",
-      "and distributed systems.",
+      "We build user-friendly mobile apps that help businesses reach customers, streamline services, and scale faster.",
     ],
     icon: siteData.home.serviceGrid.mobile,
   },
   {
     title: "Business Automation",
     description: [
-      "Highly responsive, SEO-optimized",
-      "web platforms built with modern",
-      "stacks.",
+      "Automate repetitive tasks, reduce manual work, and improve efficiency with smart business process automation systems.",
     ],
     icon: siteData.home.serviceGrid.automation,
   },
   {
     title: "ERP Solutions",
     description: [
-      "Zero-trust security frameworks",
-      "integrated at every layer of",
-      "development.",
+      "Manage your entire business from one system with ERP software for operations, finance, and reporting.",
     ],
     icon: siteData.home.serviceGrid.erp,
   },
@@ -104,10 +99,10 @@ export default function ServiceGrid() {
         >
           <div className="max-w-full md:max-w-[75%] text-center md:text-left">
             <h2 className="text-3xl md:text-[38px] font-medium leading-tight tracking-tight text-[#1E293B]">
-              Complete IT Development Services
+              Custom Software & IT Services That Drive Growth
             </h2>
             <p className="mt-3 text-base md:text-[17px] font-normal leading-relaxed text-[#475569] max-w-[600px]">
-              Professional IT solutions designed to help your business grow faster and work smarter in today&apos;s digital landscape.
+              We build practical digital solutions that improve operations, increase efficiency, and support long-term business growth.
             </p>
           </div>
 
@@ -144,7 +139,7 @@ export default function ServiceGrid() {
                 Web Development
               </h3>
               <p className="mt-3 text-sm md:text-[16px] text-[#475569] leading-relaxed">
-                Professional websites that look great and help you get more customers. Mobile-friendly and easy to manage.
+                We design fast, SEO-ready websites that convert visitors into customers and support your business growth online.
               </p>
             </div>
             <div className="relative mt-6 h-[140px] md:h-[180px] w-full overflow-hidden rounded-[20px]">
@@ -179,7 +174,7 @@ export default function ServiceGrid() {
               Custom Software Development
             </h3>
             <p className="mt-4 text-sm md:text-[16px] text-white/80 leading-relaxed">
-              Build software that fits your exact business needs. From billing systems to inventory management.
+              We develop tailored software solutions to manage operations, automate workflows, and improve business performance.
             </p>
             <div className="mt-auto pt-6">
               <Link

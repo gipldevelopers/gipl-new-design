@@ -9,18 +9,22 @@ const solutions = [
   {
     title: "Customer Management",
     icon: siteData.home.engineering.customer,
+    description: "Manage customer data, track interactions, and improve retention with CRM systems built for your workflow.",
   },
   {
     title: "Sales Management",
     icon: siteData.home.engineering.sales,
+    description: "Track leads, manage pipelines, and improve conversions with structured sales management tools.",
   },
   {
     title: "Business Intelligence",
     icon: siteData.home.engineering.bi,
+    description: "Get clear insights with dashboards and reports that help you make better business decisions.",
   },
   {
     title: "Accounting Integration",
     icon: siteData.home.engineering.accounting,
+    description: "Connect your accounting systems to automate billing, tracking, and financial reporting.",
   },
 ];
 
@@ -66,10 +70,10 @@ export default function EngineeringSolutions() {
           <div className="max-w-[800px]">
 
             <h2 className="text-3xl md:text-[38px] font-bold leading-tight tracking-tight text-[#1E293B]">
-              Engineering Solutions That Solve Your Biggest Challenges
+              Built to Solve Real Business Challenges
             </h2>
             <p className="mt-4 text-base md:text-[18px] font-normal leading-relaxed text-[#475569]">
-              We don&apos;t just write code; we engineer value. Our services are tailored to solve specific business bottlenecks through high-fidelity technology.
+              We focus on building systems that remove bottlenecks, improve workflows, and help businesses operate more efficiently.
             </p>
           </div>
 
@@ -115,7 +119,7 @@ export default function EngineeringSolutions() {
                 {solution.title}
               </h3>
               <p className="mt-3 text-[15px] text-[#475569] leading-relaxed">
-                Track sales performance, manage leads, and grow your revenue efficiently.
+                {solution.description}
               </p>
             </motion.article>
           ))}

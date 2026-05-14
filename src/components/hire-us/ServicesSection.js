@@ -20,7 +20,7 @@ export default function ServicesSection() {
               Our Services
             </h2>
             <p className="text-base md:text-[18px] font-[400] leading-relaxed md:leading-[1.7] text-[#64748B]">
-              Comprehensive technology solutions tailored to your unique business challenges.
+              Scalable technology solutions designed to solve business challenges and support digital growth across industries.
             </p>
           </div>
           <button className="bg-[#5B73F7] text-white px-6 md:px-[28px] py-3 md:py-[14px] rounded-full text-sm md:text-[16px] font-[600] flex items-center gap-[8px] hover:bg-[#4F6EF7] transition-all group shrink-0">
@@ -64,7 +64,7 @@ export default function ServicesSection() {
                 Custom Software Development
               </h3>
               <p className="text-sm md:text-[16px] font-[400] leading-relaxed md:leading-[1.6] text-white/80">
-                Scalable backend architectures and intuitive interfaces built from the ground up.
+                Tailored software systems built to improve workflows, <br />automate operations, and support business scalability.
               </p>
             </div>
           </motion.div>
@@ -85,7 +85,7 @@ export default function ServicesSection() {
               Mobile Apps
             </h3>
             <p className="text-sm md:text-[16px] font-[400] leading-relaxed md:leading-[1.6] text-white/80">
-              iOS, Android & Cross-platform excellence.
+              Modern Android, iOS, and cross-platform mobile applications designed for performance and user engagement.
             </p>
           </motion.div>
         </div>
@@ -108,7 +108,7 @@ export default function ServicesSection() {
               Cloud Solutions
             </h3>
             <p className="text-sm md:text-[14px] font-[400] leading-relaxed md:leading-[1.6] text-[#64748B]">
-              AWS, Azure & Google Cloud migration and management.
+              Secure cloud infrastructure, migration, and management solutions built for scalability and operational flexibility.
             </p>
           </motion.div>
 
@@ -125,7 +125,7 @@ export default function ServicesSection() {
               UI/UX Strategy
             </h3>
             <p className="text-sm md:text-[14px] font-[400] leading-relaxed md:leading-[1.6] text-[#64748B] mb-5 md:mb-[20px]">
-              User-first designs that drive engagement and conversion through scientific research and aesthetic mastery.
+              User-focused digital experiences designed to improve usability, engagement, and conversion performance.
             </p>
             <div className="flex flex-wrap gap-2 md:gap-[8px]">
               <span className="bg-[#E6EAFF] text-[#5B73F7] px-3 md:px-[12px] py-1 md:py-[4px] rounded-[6px] text-[10px] md:text-[12px] font-[500]">

@@ -7,6 +7,7 @@ export const serviceDetails = [
     description:
       "Build reliable software solutions designed for performance, scalability, and long-term business growth. From custom software development and enterprise applications to API integrations and cloud-based systems, we create technology that improves operations and supports modern businesses.",
     heroBg: siteData.serviceDetail.hero.softwareEngineering,
+    processSubtitle: "A streamlined process focused on building reliable, scalable, and high-performance digital solutions.",
     whyChooseIcons: siteData.serviceDetail.whyChoose.softwareIcons,
     collageImages: {
       leftBottom: siteData.serviceDetailCollage.collage.leftBottom,
@@ -49,34 +50,34 @@ export const serviceDetails = [
     ],
     process: [
       {
-        title: "Planning",
+        title: "Discovery",
         phase: "PHASE 01",
-        description: "Understanding your requirements",
+        description: "Requirement Analysis",
+      },
+      {
+        title: "Planning",
+        phase: "PHASE 02",
+        description: "Strategy Planning",
       },
       {
         title: "Development",
-        phase: "PHASE 02",
-        description: "Building your solution",
+        phase: "PHASE 03",
+        description: "Software Development",
       },
       {
         title: "Testing",
-        phase: "PHASE 03",
-        description: "Ensuring quality & performance",
+        phase: "PHASE 04",
+        description: "Quality Testing",
       },
       {
         title: "Deployment",
-        phase: "PHASE 04",
-        description: "Creating a detailed roadmap",
-      },
-      {
-        title: "Optimization",
         phase: "PHASE 05",
-        description: "Fine-tuning for peak performance",
+        description: "Product Deployment",
       },
       {
         title: "Support",
         phase: "PHASE 06",
-        description: "Continuous monitoring and help",
+        description: "Technical Maintenance",
       },
     ],
     services: [
@@ -120,6 +121,7 @@ export const serviceDetails = [
     description:
       "Create fast, scalable, and SEO-friendly websites tailored to your business goals. From corporate websites and custom web applications to responsive platforms and CMS development, we build web solutions that improve user experience and support digital growth.",
     heroBg: siteData.serviceDetail.hero.webDevelopment,
+    processSubtitle: "A structured process focused on building scalable, high-performing, and user-friendly web solutions.",
     whyChooseIcons: siteData.serviceDetail.whyChoose.webIcons,
     collageImages: {
       leftBottom: siteData.serviceDetailCollage.collage.leftBottom,
@@ -164,32 +166,32 @@ export const serviceDetails = [
       {
         title: "Discovery",
         phase: "PHASE 01",
-        description: "Understanding your vision and requirements",
+        description: "Goal Analysis",
       },
       {
         title: "Design",
         phase: "PHASE 02",
-        description: "Creating wireframes and prototypes",
+        description: "Project Planning",
       },
       {
         title: "Development",
         phase: "PHASE 03",
-        description: "Building your web application",
+        description: "Website Development",
       },
       {
-        title: "Launch",
+        title: "Testing",
         phase: "PHASE 04",
-        description: "Deployment and ongoing support",
+        description: "Quality Testing",
       },
       {
-        title: "Optimization",
+        title: "Deployment",
         phase: "PHASE 05",
-        description: "Performance and SEO fine-tuning",
+        description: "Website Launch",
       },
       {
-        title: "Growth",
+        title: "Support",
         phase: "PHASE 06",
-        description: "Scaling and feature additions",
+        description: "Technical Support",
       },
     ],
     services: [
@@ -233,6 +235,7 @@ export const serviceDetails = [
     description:
       "Automate business operations and improve efficiency with AI-powered solutions tailored for modern businesses. From intelligent chatbots and workflow automation to machine learning systems and predictive analytics, we develop smart technologies that reduce manual work and support faster decision-making.",
     heroBg: siteData.serviceDetail.hero.aiAutomation,
+    processSubtitle: "A structured process focused on building scalable, intelligent, and business-ready AI solutions.",
     whyChooseIcons: siteData.serviceDetail.whyChoose.aiIcons,
     collageImages: {
       leftBottom: siteData.serviceDetailCollage.collage.leftBottom,
@@ -275,34 +278,34 @@ export const serviceDetails = [
     ],
     process: [
       {
-        title: "Assessment",
+        title: "Discovery",
         phase: "PHASE 01",
-        description: "Identifying automation opportunities",
+        description: "Process Analysis",
       },
       {
-        title: "Strategy",
+        title: "Planning",
         phase: "PHASE 02",
-        description: "Developing AI and automation strategy",
+        description: "Workflow Planning",
       },
       {
-        title: "Implementation",
+        title: "Development",
         phase: "PHASE 03",
-        description: "Building and deploying AI solutions",
+        description: "Model Development",
       },
       {
-        title: "Optimization",
+        title: "Testing",
         phase: "PHASE 04",
-        description: "Continuous monitoring and improvement",
+        description: "Accuracy Testing",
       },
       {
-        title: "Refinement",
+        title: "Deployment",
         phase: "PHASE 05",
-        description: "Improving model accuracy and speed",
+        description: "System Deployment",
       },
       {
-        title: "Scaling",
+        title: "Support",
         phase: "PHASE 06",
-        description: "Expanding automation across departments",
+        description: "Performance Monitoring",
       },
     ],
     services: [
@@ -346,6 +349,7 @@ export const serviceDetails = [
     description:
       "Transform raw data into actionable business intelligence. Our Data Solutions services help you collect, process, and analyze data to make informed decisions. From data warehousing to advanced analytics, we provide comprehensive solutions that unlock the value hidden in your data.",
     heroBg: siteData.serviceDetail.hero.dataSolutions,
+    processSubtitle: "A structured approach focused on building secure, scalable, and business-ready data systems.",
     whyChooseIcons: siteData.serviceDetail.whyChoose.dataIcons,
     collageImages: {
       leftBottom: siteData.serviceDetailCollage.collage.leftBottom,
@@ -388,34 +392,34 @@ export const serviceDetails = [
     ],
     process: [
       {
-        title: "Data Assessment",
+        title: "Discovery",
         phase: "PHASE 01",
-        description: "Understanding your data landscape",
+        description: "Data Analysis",
       },
       {
-        title: "Architecture Design",
+        title: "Planning",
         phase: "PHASE 02",
-        description: "Designing data infrastructure",
+        description: "Architecture Planning",
       },
       {
-        title: "Implementation",
+        title: "Development",
         phase: "PHASE 03",
-        description: "Building data pipelines and systems",
+        description: "Pipeline Development",
       },
       {
-        title: "Analytics",
+        title: "Testing",
         phase: "PHASE 04",
-        description: "Delivering insights and dashboards",
+        description: "System Testing",
       },
       {
-        title: "Insights",
+        title: "Deployment",
         phase: "PHASE 05",
-        description: "Extracting actionable intelligence",
+        description: "Platform Deployment",
       },
       {
-        title: "Management",
+        title: "Support",
         phase: "PHASE 06",
-        description: "Ongoing data governance and quality",
+        description: "System Monitoring",
       },
     ],
     services: [
@@ -459,6 +463,8 @@ export const serviceDetails = [
     description:
       "Grow your brand visibility, generate qualified leads, and increase conversions with result-driven digital marketing solutions. From SEO and social media marketing to paid advertising, content strategy, and marketing automation, we help businesses build a stronger digital presence and achieve measurable growth.",
     heroBg: siteData.serviceDetail.hero.digitalMarketing,
+    processSubtitle: "A strategic approach focused on building high-performing digital marketing campaigns and sustainable business growth.",
+    processIcons: siteData.serviceDetail.digitalmarketingprocess,
     whyChooseIcons: siteData.serviceDetail.whyChoose.marketingIcons,
     collageImages: {
       leftBottom: siteData.serviceDetailCollage.collage.leftBottom,
@@ -501,34 +507,34 @@ export const serviceDetails = [
     ],
     process: [
       {
-        title: "Strategy",
+        title: "Discovery",
         phase: "PHASE 01",
-        description: "Developing your marketing strategy",
+        description: "Market Research",
       },
       {
         title: "Planning",
         phase: "PHASE 02",
-        description: "Creating detailed campaign plans",
+        description: "Campaign Planning",
       },
       {
         title: "Execution",
         phase: "PHASE 03",
-        description: "Launching and managing campaigns",
+        description: "Campaign Launch",
       },
       {
-        title: "Analysis",
+        title: "Optimization",
         phase: "PHASE 04",
-        description: "Measuring results and optimizing",
+        description: "Performance Optimization",
       },
       {
         title: "Reporting",
         phase: "PHASE 05",
-        description: "Providing detailed performance insights",
+        description: "Growth Reporting",
       },
       {
-        title: "Refinement",
+        title: "Scaling",
         phase: "PHASE 06",
-        description: "Adjusting strategies for better ROI",
+        description: "Campaign Scaling",
       },
     ],
     services: [
@@ -572,6 +578,8 @@ export const serviceDetails = [
     description:
       "Create intuitive and visually engaging digital experiences designed to improve usability, customer engagement, and product performance. From UX research and wireframing to mobile app interfaces and design systems, we craft user-focused designs that combine functionality with modern aesthetics.",
     heroBg: siteData.serviceDetail.hero.uiUxDesign,
+    processSubtitle: "A structured design workflow focused on creating intuitive, scalable, and user-friendly digital experiences.",
+    processIcons: siteData.serviceDetail.uiUxProcess,
     whyChooseIcons: siteData.serviceDetail.whyChoose.uiuxIcons,
     collageImages: {
       leftBottom: siteData.serviceDetailCollage.collage.leftBottom,
@@ -614,34 +622,34 @@ export const serviceDetails = [
     ],
     process: [
       {
-        title: "Research",
+        title: "Discovery",
         phase: "PHASE 01",
-        description: "Understanding user needs and behaviors",
+        description: "User Analysis",
+      },
+      {
+        title: "Research",
+        phase: "PHASE 02",
+        description: "Audience Research",
       },
       {
         title: "Wireframing",
-        phase: "PHASE 02",
-        description: "Creating wireframes and user flows",
+        phase: "PHASE 03",
+        description: "Prototype Creation",
       },
       {
-        title: "Design",
-        phase: "PHASE 03",
-        description: "Developing high-fidelity designs",
+        title: "UI Design",
+        phase: "PHASE 04",
+        description: "Interface Design",
       },
       {
         title: "Testing",
-        phase: "PHASE 04",
-        description: "Validating designs with users",
-      },
-      {
-        title: "Handover",
         phase: "PHASE 05",
-        description: "Delivering design assets to developers",
+        description: "Usability Testing",
       },
       {
-        title: "Feedback",
+        title: "Optimization",
         phase: "PHASE 06",
-        description: "Post-launch user testing and iteration",
+        description: "Design Optimization",
       },
     ],
     services: [
@@ -685,6 +693,7 @@ export const serviceDetails = [
     description:
       "Build secure, scalable, and cloud-ready infrastructure designed for modern business operations. From cloud migration and DevOps automation to server management and disaster recovery solutions, we help businesses improve flexibility, performance, and operational reliability through optimized cloud technologies.",
     heroBg: siteData.serviceDetail.hero.cloudSolutions,
+    processSubtitle: "A structured workflow focused on building secure, scalable, and high-performing cloud environments.",
     whyChooseIcons: siteData.serviceDetail.whyChoose.cloudIcons,
     collageImages: {
       leftBottom: siteData.serviceDetailCollage.collage.leftBottom,
@@ -727,34 +736,34 @@ export const serviceDetails = [
     ],
     process: [
       {
-        title: "Assessment",
+        title: "Discovery",
         phase: "PHASE 01",
-        description: "Evaluating your current infrastructure",
+        description: "Requirement Gathering",
       },
       {
         title: "Planning",
         phase: "PHASE 02",
-        description: "Designing cloud architecture",
+        description: "Strategy Planning",
       },
       {
-        title: "Migration",
+        title: "Development",
         phase: "PHASE 03",
-        description: "Migrating to cloud",
+        description: "System Development",
       },
       {
-        title: "Management",
+        title: "Testing",
         phase: "PHASE 04",
-        description: "Ongoing management and optimization",
+        description: "Performance Testing",
       },
       {
-        title: "Security",
+        title: "Deployment",
         phase: "PHASE 05",
-        description: "Regular audits and threat mitigation",
+        description: "Solution Deployment",
       },
       {
-        title: "Scaling",
+        title: "Support",
         phase: "PHASE 06",
-        description: "Dynamic resource allocation for growth",
+        description: "Continuous Support",
       },
     ],
     services: [
@@ -798,6 +807,7 @@ export const serviceDetails = [
     description:
       "Build scalable eCommerce platforms designed to improve customer experience, streamline operations, and increase online sales. From custom online stores and marketplace development to payment integrations and mobile commerce applications, we create digital commerce solutions built for long-term business growth.",
     heroBg: siteData.serviceDetail.hero.ecommerceSolutions,
+    processSubtitle: "A structured approach focused on building scalable, secure, and conversion-focused eCommerce solutions.",
     whyChooseIcons: siteData.serviceDetail.whyChoose.ecommerceIcons,
     collageImages: {
       leftBottom: siteData.serviceDetailCollage.collage.leftBottom,
@@ -840,34 +850,34 @@ export const serviceDetails = [
     ],
     process: [
       {
-        title: "Strategy",
+        title: "Discovery",
         phase: "PHASE 01",
-        description: "Planning your eCommerce strategy",
+        description: "Business Requirement Analysis",
       },
       {
-        title: "Platform Selection",
+        title: "Planning",
         phase: "PHASE 02",
-        description: "Choosing the right eCommerce platform",
+        description: "Store Strategy Planning",
       },
       {
         title: "Development",
         phase: "PHASE 03",
-        description: "Building your online store",
+        description: "Platform Development Process",
       },
       {
-        title: "Launch & Growth",
+        title: "Testing",
         phase: "PHASE 04",
-        description: "Launching and optimizing for growth",
+        description: "Performance & Testing",
       },
       {
-        title: "Optimization",
+        title: "Deployment",
         phase: "PHASE 05",
-        description: "Improving checkout and page speed",
+        description: "Store Launch Setup",
       },
       {
-        title: "Maintenance",
+        title: "Support",
         phase: "PHASE 06",
-        description: "Updating products and security patches",
+        description: "Maintenance & Optimization",
       },
     ],
     services: [
@@ -909,8 +919,9 @@ export const serviceDetails = [
     slug: "mobile-app-development",
     title: "Mobile App Development",
     description:
-      "Create powerful mobile applications that engage your users. Our Mobile App Development services deliver native and cross-platform apps that are fast, secure, and user-friendly. From concept to launch and beyond, we provide end-to-end mobile development expertise.",
+      "Build high-performance mobile applications designed for scalability, user engagement, and business growth. From Android and iOS apps to cross-platform mobile solutions, we develop secure, intuitive, and feature-rich applications that help businesses improve customer experience and digital accessibility.",
     heroBg: siteData.serviceDetail.hero.mobileAppDevelopment,
+    processSubtitle: "A structured workflow focused on building scalable, secure, and high-performing mobile applications.",
     whyChooseIcons: siteData.serviceDetail.whyChoose.mobileIcons,
     collageImages: {
       leftBottom: siteData.serviceDetailCollage.collage.leftBottom,
@@ -921,100 +932,100 @@ export const serviceDetails = [
     },
     whyChoose: [
       {
-        title: "Native & Cross-Platform",
+        title: "Cross-Platform Development",
         description:
-          "We develop for iOS, Android, and cross-platform solutions.",
+          "Build scalable mobile applications for Android and iOS with seamless performance across devices.",
       },
       {
-        title: "User Experience",
+        title: "User-Centered App Experiences",
         description:
-          "We create intuitive and engaging mobile experiences.",
+          "We design intuitive mobile interfaces focused on engagement, usability, and customer satisfaction.",
       },
       {
-        title: "Performance",
+        title: "Scalable Mobile Architecture",
         description:
-          "Our apps are optimized for speed and efficiency.",
+          "Our applications are built to support growing users, advanced features, and long-term scalability.",
       },
       {
-        title: "Security",
+        title: "Secure & Reliable Applications",
         description:
-          "We implement security best practices in all our apps.",
+          "Mobile apps are optimized for security, stability, and smooth operational performance.",
       },
       {
-        title: "Scalability",
+        title: "Performance Optimization",
         description:
-          "Our apps scale to handle millions of users.",
+          "We improve application speed, responsiveness, and overall mobile user experience.",
       },
       {
-        title: "Support & Maintenance",
+        title: "Continuous Support & Maintenance",
         description:
-          "We provide ongoing support and updates.",
+          "Ongoing updates, monitoring, and technical support ensure long-term mobile app stability.",
       },
     ],
     process: [
       {
         title: "Discovery",
         phase: "PHASE 01",
-        description: "Understanding your app vision",
+        description: "Requirement Analysis",
       },
       {
-        title: "Design",
+        title: "Planning",
         phase: "PHASE 02",
-        description: "Creating app designs and prototypes",
+        description: "Project Roadmap",
+      },
+      {
+        title: "UI/UX Design",
+        phase: "PHASE 03",
+        description: "Interface Design",
       },
       {
         title: "Development",
-        phase: "PHASE 03",
-        description: "Building your mobile app",
-      },
-      {
-        title: "Launch & Support",
         phase: "PHASE 04",
-        description: "Launching and supporting your app",
+        description: "App Development",
       },
       {
-        title: "Optimization",
+        title: "Testing",
         phase: "PHASE 05",
-        description: "App store and performance optimization",
+        description: "Quality Assurance",
       },
       {
-        title: "Updates",
+        title: "Deployment & Support",
         phase: "PHASE 06",
-        description: "Regular feature releases and fixes",
+        description: "Launch & Support",
       },
     ],
     services: [
       {
-        title: "iOS Development",
-        description: "Native iPhone and iPad applications built for performance and high-fidelity user experiences."
+        title: "Android App Development",
+        description: "Custom Android applications built for performance, scalability, and seamless mobile experiences."
       },
       {
-        title: "Android Development",
-        description: "Scalable Android apps designed to perform flawlessly across a wide range of devices and screens."
+        title: "iOS App Development",
+        description: "High-quality iOS applications designed for smooth functionality and premium user engagement."
       },
       {
-        title: "React Native Apps",
-        description: "Cross-platform mobile applications that share code across iOS and Android for faster delivery."
+        title: "Cross-Platform App Development",
+        description: "Scalable cross-platform applications built using modern frameworks for faster deployment."
       },
       {
-        title: "Flutter Development",
-        description: "Beautiful, high-performance apps built with a single codebase for multiple platforms."
+        title: "UI/UX Design for Mobile Apps",
+        description: "User-focused mobile app interfaces designed for intuitive navigation and better engagement."
       },
       {
-        title: "App Design",
-        description: "User-centered mobile interfaces that focus on ease of use, engagement, and brand consistency."
+        title: "Enterprise Mobile Applications",
+        description: "Secure enterprise mobile solutions designed to streamline workflows and business operations."
       },
       {
-        title: "App Testing",
-        description: "Rigorous quality assurance to ensure your app is secure, bug-free, and performs optimally."
+        title: "App Maintenance & Support",
+        description: "Continuous updates, bug fixes, monitoring, and technical support for mobile applications."
       },
       {
-        title: "App Maintenance",
-        description: "Ongoing updates and support to keep your mobile app compatible with new OS versions."
+        title: "API Integration Services",
+        description: "Secure API integrations that improve application functionality and third-party connectivity."
       },
       {
-        title: "App Marketing",
-        description: "Strategic App Store Optimization (ASO) and marketing to help your app reach the right users."
+        title: "App Performance Optimization",
+        description: "Mobile application optimization focused on speed, responsiveness, and overall user experience."
       },
     ],
   },

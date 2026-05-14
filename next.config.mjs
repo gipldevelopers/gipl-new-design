@@ -10,6 +10,10 @@ const nextConfig = {
         protocol: "https",
         hostname: "cloud.gvoice.app",
       },
+      {
+        protocol: "https",
+        hostname: "www.gohilinfotech.com",
+      },
     ],
     dangerouslyAllowSVG: true,
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",

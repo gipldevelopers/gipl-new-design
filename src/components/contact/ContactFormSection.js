@@ -88,15 +88,7 @@ export default function ContactFormSection() {
         >
           Get in Touch With Us
         </motion.h2>
-        <motion.p
-          className="mx-auto mt-4 md:mt-[16px] max-w-[520px] text-center text-base md:text-[17px] font-[400] leading-relaxed md:leading-[1.6] text-[#6B7280]"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.1 }}
-          viewport={{ once: false }}
-        >
-          Fill out the form below and our team will get back to you within 24 hours.
-        </motion.p>
+
 
         <div className="mx-auto mt-10 md:mt-[48px] grid grid-cols-1 lg:grid-cols-[1fr_480px] gap-8 md:gap-[32px] items-start max-w-[1200px]">
 
@@ -237,43 +229,24 @@ export default function ContactFormSection() {
 
           {/* Image */}
           <motion.div
-            className="relative h-[300px] md:h-[480px] overflow-hidden rounded-[20px] shadow-[0_4px_24px_rgba(15,23,42,0.10)]"
+            className="relative h-[300px] md:h-[480px] overflow-hidden rounded-[20px] shadow-[0_4px_24px_rgba(15,23,42,0.10)] border border-[#D7DEE8]"
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: false }}
-            whileHover={{ scale: 1.02 }}
           >
-            <Image
-              src={siteData.contact.form.image}
-              alt="Office interior"
-              fill
-              className="object-cover"
-            />
-            {/* Decorative pin */}
-            <motion.div
-              className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex h-12 w-12 md:h-[64px] md:w-[64px] items-center justify-center rounded-full bg-[rgba(95,110,255,0.25)]"
-              initial={{ opacity: 0, scale: 0 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{
-                duration: 0.6,
-                delay: 0.5,
-                scale: {
-                  duration: 2,
-                  repeat: Infinity,
-                  repeatType: "reverse",
-                  delay: 1.1 // Start loop after entry animation
-                }
-              }}
-              viewport={{ once: false }}
-              animate={{
-                scale: [1, 1.1, 1],
-              }}
-            >
-              <div className="flex h-8 w-8 md:h-[36px] md:w-[36px] items-center justify-center rounded-full bg-[rgba(95,110,255,0.85)]">
-                <div className="h-2 w-2 rounded-full bg-white" />
-              </div>
-            </motion.div>
+            <iframe
+              src={siteData.contact.mapEmbedUrl}
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Office Location Map"
+              className="transition-all duration-700"
+            ></iframe>
+
           </motion.div>
         </div>
       </div>

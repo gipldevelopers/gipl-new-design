@@ -87,7 +87,7 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <div className="text-base md:text-[16px] font-[600] mb-1 md:mb-[4px]">Email Us</div>
-                    <div className="text-sm md:text-[14px] text-white/60">hello@gohilinfotech.com</div>
+                    <a href="mailto:info@gohilinfotech.com" className="text-sm md:text-[14px] text-white/60 hover:text-white transition-colors">info@gohilinfotech.com</a>
                   </div>
                 </motion.div>
 
@@ -103,7 +103,7 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <div className="text-base md:text-[16px] font-[600] mb-1 md:mb-[4px]">Call Anytime</div>
-                    <div className="text-sm md:text-[14px] text-white/60">+91 987 654 3210</div>
+                    <a href="tel:+918866009512" className="text-sm md:text-[14px] text-white/60 hover:text-white transition-colors">+91 88660 09512</a>
                   </div>
                 </motion.div>
 

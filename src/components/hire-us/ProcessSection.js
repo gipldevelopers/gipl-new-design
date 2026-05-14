@@ -8,25 +8,25 @@ const cards = [
   {
     title: "Discovery",
     description:
-      "Deep-dive into business logic, user pain points, and competitive analysis.",
+      "Understanding business goals, operational challenges, and user requirements before development begins.",
     icon: siteData.technology.process.discovery,
   },
   {
     title: "Design",
     description:
-      "User-centric UI frameworks and high-end visual systems aligned with brand identity.",
+      "Creating intuitive UI systems and user-focused digital experiences aligned with your brand identity.",
     icon: siteData.technology.process.design,
   },
   {
     title: "Develop",
     description:
-      "Clear code architecture, robust backend APIs, and seamless frontend integration.",
+      "Building scalable architectures, secure backend systems, and seamless frontend experiences.",
     icon: siteData.technology.process.develop,
   },
   {
     title: "Deploy",
     description:
-      "CI/CD pipelines, cloud orchestration, and rigorous post-launch monitoring.",
+      "Launching optimized solutions with secure infrastructure, monitoring systems, and deployment workflows.",
     icon: siteData.technology.process.deploy,
   },
 ];

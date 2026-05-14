@@ -46,9 +46,9 @@ export default function Hero() {
             viewport={{ once: false }}
           >
             <h1 className="text-4xl xs:text-5xl md:text-[64px] font-[800] leading-tight md:leading-[1.15] tracking-tight md:tracking-[-2px] text-white font-poppins">
-              <span className="block">Growth and Digital</span>
+              <span className="block">Digital Solutions for </span>
               <span className="block">
-                Transformation
+                Business Growth
               </span>
             </h1>
 
@@ -59,7 +59,7 @@ export default function Hero() {
               transition={{ duration: 0.8, delay: 0.2 }}
               viewport={{ once: false }}
             >
-              Comprehensive solutions designed to accelerate your business growth and digital transformation.
+              Strategic technology solutions designed to improve operations, drive efficiency, and support long-term digital transformation.
             </motion.p>
 
             <motion.div

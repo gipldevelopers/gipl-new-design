@@ -7,23 +7,23 @@ import { siteData } from "@/data/siteData";
 export default function BenefitsSection() {
   const benefits = [
     {
-      title: "Proven Expertise",
-      description: "Access a team with deep domain knowledge and technical mastery across industries.",
+      title: "Proven Technical Expertise",
+      description: "Work with experienced professionals skilled in software development, digital products, and scalable business solutions.",
       imgSrc: siteData.hireUs.benefits.expertise
     },
     {
-      title: "Clear Comms",
-      description: "Transparent, real-time updates through dedicated slack channels and weekly sprints.",
+      title: "Transparent Communication",
+      description: "Stay updated through structured communication, regular progress tracking, and collaborative development workflows.",
       imgSrc: siteData.hireUs.benefits.comms
     },
     {
-      title: "Client-Centric",
-      description: "Your business goals drive our technical decisions. We prioritize your success.",
+      title: "Business-Focused Approach",
+      description: "Every solution is aligned with your business goals, operational needs, and long-term growth strategy.",
       imgSrc: siteData.hireUs.benefits.clientCentric
     },
     {
-      title: "Rapid Delivery",
-      description: "Agile methodologies that cut development time by 40% without compromising quality.",
+      title: "Faster Project Delivery",
+      description: "Agile development processes help reduce timelines while maintaining quality, performance, and scalability.",
       imgSrc: siteData.hireUs.benefits.rapidDelivery
     }
   ];
@@ -41,8 +41,8 @@ export default function BenefitsSection() {
           <h2 className="text-3xl xs:text-4xl md:text-[48px] font-[700] leading-tight md:leading-[1.2] tracking-tight md:tracking-[-0.02em] text-[#0F172A] mb-4 md:mb-[16px]">
             Benefits of Partnering with Us
           </h2>
-          <p className="text-base md:text-[18px] font-[400] leading-relaxed md:leading-[1.7] text-[#64748B] max-w-[600px] mx-auto">
-            We don't just build software; we build the future of your business through strategic technical partnership.
+          <p className="text-base md:text-[16px] font-[400] leading-relaxed md:leading-[1.7] text-[#64748B] max-w-[600px] mx-auto">
+            We build long-term technology partnerships focused on helping businesses scale through reliable software solutions and strategic development support.
           </p>
         </motion.div>
 

@@ -20,10 +20,15 @@ export const siteData = {
       workspace: "https://cloud.gvoice.app/view.php?token=224e11be9fcfcb0a0afab425586aaa91841ccc69ccfad9ab3019c4ee7140ab75",
     },
     founder: {
-      portrait: "https://cloud.gvoice.app/view.php?token=a646595a3cdedcea5cd27120bc7e2b9b0a67cb75fc217ad006e13eceb01fb1a7",
+      portrait: "https://cloud.gvoice.app/view.php?token=0e9774eb4209113d5f0a84c25c05f543135cd318f95755638ca92cf290dc34f1",
     },
     team: {
-      placeholder: "https://cloud.gvoice.app/view.php?token=1aadf74cfb8e9d99a31ed6a98479ae1b817eeb32e742bbed58915238d9483dba",
+      placeholder1: "https://cloud.gvoice.app/view.php?token=26c573a7956c608b2e351411e020b918a9253308e6cd1fca2f82b244538e09c4",
+      placeholder2: "https://cloud.gvoice.app/view.php?token=729ca4a971658344a6f2204bd9be741a7dd07711551976bba156f8491fadba70",
+      placeholder3: "https://cloud.gvoice.app/view.php?token=18b5a68efd8d94cf55b25110f8f21af6836df7592b39d5b4d46c07f6aefc23e7",
+      placeholder4: "https://cloud.gvoice.app/view.php?token=0c6ee89ff4a9e21382cac1cc9aade63945172d00e32a8eb7abdf39841504757b",
+      placeholder5: "https://cloud.gvoice.app/view.php?token=d1b43e7e2f514709aa384537a23355d7dcd805f93e99ae273c56555508a778b9",
+      placeholder6: "https://cloud.gvoice.app/view.php?token=8f0c5f2db0ff6a20a8fd064cf3878b41a87bc38c6cbf60a9cec7720b1b088703",
     }
   },
 
@@ -59,9 +64,9 @@ export const siteData = {
       bg: "https://cloud.gvoice.app/view.php?token=cd5cb57642af480573f049d05005e873856be361de03bd486009479126b068c4",
     },
     contact: {
-      email: "https://cloud.gvoice.app/view.php?token=aca200551cc21ef0aa9eb4d9c077948d6dd7c65b63d0d38771a962f391ec27d4",
-      phone: "https://cloud.gvoice.app/view.php?token=2df65f3d9cb3e3de1bcd3847e86c52e2cb762d60649d6947ce17f0777ae3e61f",
-      location: "https://cloud.gvoice.app/view.php?token=0c3374fae6cc4d526ea250c6ff20230482af99a37004d12bc97d11d7df68fe14",
+      email: "https://cloud.gvoice.app/view.php?token=4394114bc55b43be284875af8b70b171ff1a521524220bbcb3539796cc75b7cf",
+      phone: "https://cloud.gvoice.app/view.php?token=fb87ab1dfb0ddcef48d8f22a362f18002484f4df3920152f3867e6167f893687",
+      location: "https://cloud.gvoice.app/view.php?token=e67e4aa6f63a1ecc30e78b697f0983dd4a68d3ac4955551e5fe47de20f221925",
     }
   },
 
@@ -185,7 +190,13 @@ export const siteData = {
     },
     form: {
       image: "https://cloud.gvoice.app/view.php?token=2e0f70c6c364d9b640bbf673737aedb39df19dc927ab7081ce46ebd87c84cf12",
-    }
+    },
+    address: [
+      "209, Aamrakunj Business Centre,",
+      "Near Panchelok, Chandkheda,",
+      "Ahmedabad, Gujarat 382424"
+    ],
+    mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3669.347318182963!2d72.56783177531777!3d23.120976079105436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xcc09acc1ef7104f%3A0xf69adf204766cc1!2sGohil%20Infotech%20Private%20Limited!5e0!3m2!1sen!2sin!4v1715665561561!5m2!1sen!2sin"
   },
 
   // Technology Page Assets
@@ -235,7 +246,7 @@ export const siteData = {
       uiUxDesign: "https://cloud.gvoice.app/view.php?token=4e77dbc7f556cb6fbf6061b39d4bbd27a7b648d6d19da07023d836677629ea0e",
       cloudSolutions: "https://cloud.gvoice.app/view.php?token=a3647300eb02ab5766f3614dce4ce8aa774d509541aee79d0a7bb318c161eddf",
       ecommerceSolutions: "https://cloud.gvoice.app/view.php?token=a5ea48fc92b8fc76fdefb8b7061fb68d2d7669584a70e1398d433d8a428e3ffd",
-      mobileAppDevelopment: "https://cloud.gvoice.app/view.php?token=f48b79f2d8f17c1d0166758d2cf6a9c49e8ffed8ab986cc83d4152f28ef904fc",
+      mobileAppDevelopment: "https://cloud.gvoice.app/view.php?token=be402669132cee05a5310b6de0bb4dfca537fe0a8b79a43d8e33af715eaf536b",
     },
     whyChoose: {
       softwareIcons: [
@@ -303,24 +314,40 @@ export const siteData = {
         "https://cloud.gvoice.app/view.php?token=faef46ade75747526800408b4fa941bf58a12bf7c131b993dfe3b62bbdc3af69",
       ],
       mobileIcons: [
-        "https://cloud.gvoice.app/view.php?token=c1f35ab51d66b52e84608f5a6013de09ecc3362220ab47a77b091ccad8c59dca",
-        "https://cloud.gvoice.app/view.php?token=a83f2099e0291321851b441180d520b07e9c5668517893732989dae0cb0d2394",
-        "https://cloud.gvoice.app/view.php?token=6b55effc1cc41057484066bdc5109a6e4e6dc1b656c9c4e3a5f1fbe2cd436fce",
-        "https://cloud.gvoice.app/view.php?token=965ef07d99f9f20f29586b43424eb916867946564e07347e41bbe0cdb661ca09",
-        "https://cloud.gvoice.app/view.php?token=b07378b8df25c05c01a2e822d5280503f48b79f2d8f17c1d0166758d2cf6a9c4",
-        "https://cloud.gvoice.app/view.php?token=9e8ffed8ab986cc83d4152f28ef904fc82beb03d4357e58672d9833d20bd5e47",
+        "https://cloud.gvoice.app/view.php?token=901343a0a5b28a2a91ce4e0df0057a0255f43590f8e904f2d1c5844a436596de",
+        "https://cloud.gvoice.app/view.php?token=71a325c64a8db7548247476e5b45ccb65b32d5018a63a7a146e619facf842720",
+        "https://cloud.gvoice.app/view.php?token=c82a1361464519d121927958337d08852072da09c3c612402038e803d93fc17e",
+        "https://cloud.gvoice.app/view.php?token=fcdb7021fccdf77df75d78437b89fc6a9cec52af1b3e8b7c7a0e6dd0f701d536",
+        "https://cloud.gvoice.app/view.php?token=d78dba6eee954d5e2cd9e5cf82ed354455bc3dae936184f3098113b884409908",
+        "https://cloud.gvoice.app/view.php?token=eb2a79eaa1b47f65e7350495a49cf6cf9b8f6d67a5d6706e97e3decb5f508de6",
       ],
     },
     services: {
       icon1: "https://cloud.gvoice.app/view.php?token=6b55effc1cc41057484066bdc5109a6e4e6dc1b656c9c4e3a5f1fbe2cd436fce",
     },
     process: {
-      icon1: "https://cloud.gvoice.app/view.php?token=965ef07d99f9f20f29586b43424eb916867946564e07347e41bbe0cdb661ca09",
-      icon2: "https://cloud.gvoice.app/view.php?token=b07378b8df25c05c01a2e822d5280503f48b79f2d8f17c1d0166758d2cf6a9c4",
-      icon3: "https://cloud.gvoice.app/view.php?token=9e8ffed8ab986cc83d4152f28ef904fc82beb03d4357e58672d9833d20bd5e47",
-      icon4: "https://cloud.gvoice.app/view.php?token=cefeb755705edcbb951187dd2e923765b7cbe42a4863d9590548842359d4e0cd",
-      icon5: "https://cloud.gvoice.app/view.php?token=53975f798834004edf3bf57484f284d9a7fb61d87fc54a9e6b70ae570dbecad8",
-      icon6: "https://cloud.gvoice.app/view.php?token=0cb539e7114fdeb2565d74e34f7683f65287b7e2a921ebaf6dd6c8f97c1f786a",
+      icon1: "https://cloud.gvoice.app/view.php?token=f989d49020afc444b810130bf9fa18aa34ec641529ccb955f245c9960c1dc812",
+      icon2: "https://cloud.gvoice.app/view.php?token=b4fa303c35a65738e5a10ec9a7e2567a40a2fc848d4405069b668b7804f38468",
+      icon3: "https://cloud.gvoice.app/view.php?token=bdd8800f2bb044807678ea4b10373ce817723197c2cf53d6ecdc40b124fd693f",
+      icon4: "https://cloud.gvoice.app/view.php?token=d8f99dd1bbdf8ba90888e0c48a74fb97567d0fc5bf755a4066aab22022a0173f",
+      icon5: "https://cloud.gvoice.app/view.php?token=7ef94c83a8ba33d6b77f1334a5fe6de92a30b446cc9ab9118f3e5e0f84966e6d",
+      icon6: "https://cloud.gvoice.app/view.php?token=59f197b361d4cce8f70780225850455a02d7d5467070046c9e7c93ddb7e4c98a",
+    },
+    uiUxProcess: {
+      icon1: "https://cloud.gvoice.app/view.php?token=f989d49020afc444b810130bf9fa18aa34ec641529ccb955f245c9960c1dc812",
+      icon2: "https://cloud.gvoice.app/view.php?token=b4fa303c35a65738e5a10ec9a7e2567a40a2fc848d4405069b668b7804f38468",
+      icon3: "https://cloud.gvoice.app/view.php?token=bdd8800f2bb044807678ea4b10373ce817723197c2cf53d6ecdc40b124fd693f",
+      icon4: "https://cloud.gvoice.app/view.php?token=67b10079131cda15eac71628c45fc81ea022264486ece7ec72671a6450b55481",
+      icon5: "https://cloud.gvoice.app/view.php?token=7ef94c83a8ba33d6b77f1334a5fe6de92a30b446cc9ab9118f3e5e0f84966e6d",
+      icon6: "https://cloud.gvoice.app/view.php?token=28b3054a92b4ceaeb5b50700f5d4662a9aa607fbadd49cff6a216d80cd97e4ca",
+    },
+    digitalmarketingprocess: {
+      icon1: "https://cloud.gvoice.app/view.php?token=f989d49020afc444b810130bf9fa18aa34ec641529ccb955f245c9960c1dc812",
+      icon2: "https://cloud.gvoice.app/view.php?token=65ac6f7518514f2bd152b75494295acbed201427b5338e7e7da4fffc9a4740dc",
+      icon3: "https://cloud.gvoice.app/view.php?token=70a2030af5dfebf17d1dd507869a22254fb691b4f49523817bc28f5cc9cd0352",
+      icon4: "https://cloud.gvoice.app/view.php?token=31899d1e3bd041cc2abbf33f40c7703d9b1c2f74512d7a55b333802e63b06470",
+      icon5: "https://cloud.gvoice.app/view.php?token=029dc502aff4436b8b5542297f44440689b0f2acd9ce08ff3f550fe31ac54445",
+      icon6: "https://cloud.gvoice.app/view.php?token=8669005ec29afe33336c2d907c9f3027f708cf5cddd2a5ed984906109248ec0a"
     }
   },
 
@@ -355,6 +382,17 @@ export const siteData = {
   },
   work: {
     reactIcon: "https://cloud.gvoice.app/view.php?token=3ccb9fe3d4885d4e51a26228b8756f592599cace2e4feca84a34190fe3e4c9ea",
+    techIcons: {
+      "React": "https://cloud.gvoice.app/view.php?token=3ccb9fe3d4885d4e51a26228b8756f592599cace2e4feca84a34190fe3e4c9ea",
+      "Next.js": "https://cloud.gvoice.app/view.php?token=3ccb9fe3d4885d4e51a26228b8756f592599cace2e4feca84a34190fe3e4c9ea",
+      "Node.js": "https://cloud.gvoice.app/view.php?token=bc9fb0605191e9157fa26cad4cadcb45a8455f27254f277095ad23ea470aa66a",
+      "Tailwind CSS": "https://cloud.gvoice.app/view.php?token=6093ce6a70647e239e20dd5ea26097ef58ce59c22c42658de98495e09e1004f2",
+      "PostgreSQL": "https://cloud.gvoice.app/view.php?token=0bca0b12af96ee7db6a30175d7a81ab78044e1adfaf6627f5e478f60aa5169e5",
+      "AWS": "https://cloud.gvoice.app/view.php?token=cc4d08e40b628170167672ac79ca05a9a1367cc75dddf9bc484182d481fc7412",
+      "Docker": "https://cloud.gvoice.app/view.php?token=9111b68ee4146bd6ac267a36f7debea3c827b22781b07cc2ebcd36acba32e78d",
+      "WordPress": "https://cloud.gvoice.app/view.php?token=5ede7e6c6a74bcfafbe3b60fd59996cc5e7d67d90e77bed50b27133ad2787ea7",
+      "PHP": "https://cloud.gvoice.app/view.php?token=2d208ea49916b487151319f4ae2ee204eac457c023d009300172bafe390b59ad",
+    },
     projects: {
       gvoice: {
         main: "https://cloud.gvoice.app/view.php?token=704e6bf3d32adb66999d02875c643ccb79e7d509c48403729e8725b72197a8f4",
@@ -364,28 +402,85 @@ export const siteData = {
         main: "https://cloud.gvoice.app/view.php?token=8a26d58510f7853b764f33b4566b8c1d7dcdc327da3f293ab0a9e530947cb008",
         detail: "https://cloud.gvoice.app/view.php?token=93d31e38ef4ebf15173bda54df68a6d33d2fb3f026b2488b746d97f7031193ff",
       },
+      houspire: {
+        main: "/our work/houspire.png",
+        detail: "/our work/houspire-detail.png",
+      },
+      askNani: {
+        main: "/our work/ask-nani.png",
+        detail: "/our work/ask-nani-detail.png",
+      },
+      foreverSecurity: {
+        main: "/our work/forever-security.png",
+        detail: "/our work/forever-security-detail.png",
+      },
+      theGvoice: {
+        main: "/our work/gvoice-pos.png",
+        detail: "/our work/gvoice-pos-detail.png",
+      },
+      akhilIndustry: {
+        main: "/our work/akhil-industry.png",
+        detail: "/our work/akhil-industry.png",
+      },
+      starxCleaning: {
+        main: "/our work/starx-cleaning.png",
+        detail: "/our work/starx-cleaning.png",
+      },
+      giantAsia: {
+        main: "/our work/giant-asia.png",
+        detail: "/our work/giant-asia.png",
+      },
+      maatiFood: {
+        main: "/our work/maati-food.png",
+        detail: "/our work/maati-food.png",
+      },
+      entcare: {
+        main: "/our work/entcare.png",
+        detail: "/our work/entcare.png",
+      },
+      techMora: {
+        main: "/our work/tech-mora.png",
+        detail: "/our work/tech-mora.png",
+      },
+      rapidoForce: {
+        main: "/our work/rapido-force.png",
+        detail: "/our work/rapido-force.png",
+      },
+      divinSpiritual: {
+        main: "/our work/divin-spiritual.png",
+        detail: "/our work/divin-spiritual.png",
+      },
+      novotion: {
+        main: "/our work/novotion.png",
+        detail: "/our work/novotion.png",
+      },
+      drink2heal: {
+        main: "/our work/drink2heal.png",
+        detail: "/our work/drink2heal.png",
+      },
     }
   },
 
   // Blog Details Assets
   blogDetails: {
     posts: {
-      hrSoftware: {
-        main: "https://cloud.gvoice.app/view.php?token=62a5b12580fdcc45676326dbf0e02a802fefa15d1019ee4a34158164eb6f031c",
-        detail: "https://cloud.gvoice.app/view.php?token=62a5b12580fdcc45676326dbf0e02a802fefa15d1019ee4a34158164eb6f031c",
+      mobileApp2026: {
+        main: "https://gipl-site.gohilinfotech.com/uploads/feat_69df60bb12657.jpeg",
+        detail: "https://gipl-site.gohilinfotech.com/uploads/69df602032c54.jpeg",
       },
-      daycare: {
-        main: "https://cloud.gvoice.app/view.php?token=25371711a5565daecdfea75045ffe19359d2f4c0a18a74e77bec2c2aadef9d18",
-        detail: "https://cloud.gvoice.app/view.php?token=cc1c4e689ebfbb529f80139c2180062d151cdbd4733f3c748e7b8164b0cf0515",
+      aiRevolution: {
+        main: "https://gipl-site.gohilinfotech.com/uploads/feat_69412bc5c98af.jpg",
+        detail: "https://gipl-site.gohilinfotech.com/uploads/feat_69412bc5c98af.jpg",
       },
-      webSystems: {
-        main: "https://cloud.gvoice.app/view.php?token=35b8bba763c8bd5c6cf9c99ca25e3f295693a1e4a46d6eaab0080773d7cc3db5",
-        detail: "https://cloud.gvoice.app/view.php?token=96f2e1df681157ecbaf05de0569be7748f04d8ac4e30de0722eeea03593f1380",
+      lowCode: {
+        main: "https://gipl-site.gohilinfotech.com/uploads/feat_69413768ebb9f.jpeg",
+        detail: "https://gipl-site.gohilinfotech.com/uploads/feat_69413768ebb9f.jpeg",
       },
-      experiences: {
-        main: "https://cloud.gvoice.app/view.php?token=0d2123882aea1e680724a62a6d59afa85034806d56a3d957fa34b9ae49f65549",
-        detail: "https://cloud.gvoice.app/view.php?token=ac6f8d6d35b09bca670ec010f53a141655f4f65378c40d6eb4119a4343631348",
+      retailApp: {
+        main: "https://gipl-site.gohilinfotech.com/uploads/feat_694140e526ef9.jpeg",
+        detail: "https://gipl-site.gohilinfotech.com/uploads/feat_694140e526ef9.jpeg",
       }
+
     }
   },
 

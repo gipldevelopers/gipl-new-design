@@ -5,38 +5,30 @@ import { motion } from "framer-motion";
 const reasons = [
   {
     number: "01",
-    title: "Local Business Focus",
+    title: "Business-Focused Solutions",
     description: [
-      "We know Gujarat market requirements",
-      "and build solutions that work for local",
-      "businesses.",
+      "We understand business workflows and build practical software solutions designed for daily operations.",
     ],
   },
   {
     number: "02",
-    title: "Affordable Solutions",
+    title: "Cost-Effective Development",
     description: [
-      "Quality IT development without heavy",
-      "costs. Perfect for growing businesses",
-      "with smart budgets.",
+      "Get scalable technology solutions optimized for performance, efficiency, and long-term value.",
     ],
   },
   {
     number: "03",
-    title: "Complete Customization",
+    title: "Fully Customized Systems",
     description: [
-      "Every business is different. We build",
-      "software that matches your exact way of",
-      "working.",
+      "Every platform is designed around your processes, workflows, and business requirements.",
     ],
   },
   {
     number: "04",
-    title: "Reliable Support",
+    title: "Dedicated Technical Support",
     description: [
-      "Based in Ahmedabad, we provide quick",
-      "support when you need it. Your success",
-      "is our priority.",
+      "Our team provides continuous support, maintenance, and technical guidance whenever needed.",
     ],
   },
 ];
