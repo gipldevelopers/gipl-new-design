@@ -1,12 +1,24 @@
 import { siteData } from "./siteData";
 
+export const authors = {
+  "Shrey Suthar": {
+    name: "Shrey Suthar",
+    role: "Author | Junior Marketing Strategist",
+    bio: "Helping businesses grow their brand and connect with the right audience through impactful, content-driven marketing.",
+    image: "/blog/blog-detail/shrey-1.jpeg",
+    linkedin: "https://www.linkedin.com/in/shrey-suthar"
+  }
+};
+
+
 export const blogPosts = [
   {
     slug: "why-every-business-must-invest-in-mobile-app-development-services-in-2026",
     title: "Why Every Business Must Invest in Mobile App Development Services in 2026",
     category: "Mobile App Development",
     date: "April 15, 2026",
-    author: "GIPL Editorial Team",
+    author: "Shrey Suthar",
+    heroBg: "https://gipl-site.gohilinfotech.com/uploads/feat_69df60bb12657.jpeg",
     image: siteData.blogDetails.posts.mobileApp2026.main,
     detailImage: siteData.blogDetails.posts.mobileApp2026.detail,
     summary: "Running a successful business in 2026 means doing far more than just maintaining a website. The digital landscape has fundamentally shifted and mobile is now at the centre of it.",
@@ -98,7 +110,8 @@ export const blogPosts = [
     title: "THE INTELLIGENCE REVOLUTION",
     category: "AI",
     date: "December 16, 2025",
-    author: "GIPL Editorial Team",
+    author: "Shrey Suthar",
+    heroBg: "https://gipl-site.gohilinfotech.com/uploads/6941275048b7d.png",
     image: siteData.blogDetails.posts.aiRevolution.main,
     detailImage: siteData.blogDetails.posts.aiRevolution.detail,
     summary: "How generative AI is reshaping the IT service Industry.",
@@ -206,7 +219,8 @@ export const blogPosts = [
     title: "Low-Code vs. Full-Code",
     category: "DEVELOPMENT",
     date: "December 16, 2025",
-    author: "GIPL Editorial Team",
+    author: "Shrey Suthar",
+    heroBg: "https://gipl-site.gohilinfotech.com/uploads/69412f2356eea.jpeg",
     image: siteData.blogDetails.posts.lowCode.main,
     detailImage: siteData.blogDetails.posts.lowCode.detail,
     summary: "The 2025 Strategic Guide for Startups",
@@ -295,7 +309,8 @@ export const blogPosts = [
     title: "Why Your Retail Store Needs a Mobile App",
     category: "APPLICATION",
     date: "December 16, 2025",
-    author: "GIPL Editorial Team",
+    author: "Shrey Suthar",
+    heroBg: "https://gipl-site.gohilinfotech.com/uploads/69413ee1c509b.jpg",
     image: siteData.blogDetails.posts.retailApp.main,
     detailImage: siteData.blogDetails.posts.retailApp.detail,
     summary: "And How to Make Customers Love It",
